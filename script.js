@@ -71,10 +71,10 @@ function initThemeToggle() {
     function applyTheme(theme) {
         document.documentElement.setAttribute('data-theme', theme);
         btn.textContent = theme === 'light' ? '☀️' : '🌙';
-        localStorage.setItem('signal-theme', theme);
+        localStorage.setItem('yarivi-theme', theme);
     }
 
-    applyTheme(localStorage.getItem('signal-theme') || 'dark');
+    applyTheme(localStorage.getItem('yarivi-theme') || 'dark');
 
     btn.addEventListener('click', () => {
         const current = document.documentElement.getAttribute('data-theme');
@@ -93,11 +93,15 @@ function initCategoryFilter() {
         document.querySelectorAll('[data-filter]').forEach(c => c.classList.remove('active'));
         document.querySelectorAll('[data-category]').forEach(card => card.classList.remove('hidden'));
 
-        if (!isActive) {
-            catCard.classList.add('active');
+        if (!isActive && filter) {
+            // Filtro de categoria — ativar nav-link e cat-card correspondentes
+            document.querySelectorAll(`[data-filter="${filter}"]`).forEach(c => c.classList.add('active'));
             document.querySelectorAll('[data-category]').forEach(card => {
                 if (card.dataset.category !== filter) card.classList.add('hidden');
             });
+        } else {
+            // Início ou clique no mesmo filtro — mostrar tudo e ativar Início
+            document.querySelectorAll('[data-filter=""]').forEach(c => c.classList.add('active'));
         }
     });
 }
