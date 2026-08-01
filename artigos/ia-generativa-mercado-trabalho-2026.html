@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Como a IA Generativa está mudando o mercado de trabalho em 2026 | Yarivi</title>
+    <meta name="description" content="5,4% dos trabalhadores brasileiros já estão em ocupações de alta exposição à IA. Quem está perdendo, quem está ganhando e o que fazer — com dados reais do Brookings e PwC.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yarivi.com/artigos/ia-generativa-mercado-trabalho-2026">
+
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Yarivi">
+    <meta property="og:title" content="Como a IA Generativa está mudando o mercado de trabalho em 2026">
+    <meta property="og:description" content="5,4% dos trabalhadores brasileiros já estão em ocupações de alta exposição à IA. Dados reais — sem alarmismo, sem negacionismo.">
+    <meta property="og:url" content="https://yarivi.com/artigos/ia-generativa-mercado-trabalho-2026">
+    <meta property="og:image" content="https://yarivi.com/og-cover.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="article:published_time" content="2026-08-01">
+    <meta property="article:section" content="IA & ML">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@yarivi_tech">
+    <meta name="twitter:title" content="Como a IA Generativa está mudando o mercado de trabalho em 2026">
+    <meta name="twitter:description" content="Quem está perdendo, quem está ganhando e o que fazer — com dados reais.">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Como a IA Generativa está mudando o mercado de trabalho em 2026",
+      "description": "5,4% dos trabalhadores brasileiros já estão em ocupações de alta exposição à IA generativa. Análise com dados do Brookings Institution e PwC.",
+      "datePublished": "2026-08-01",
+      "dateModified": "2026-08-01",
+      "inLanguage": "pt-BR",
+      "url": "https://yarivi.com/artigos/ia-generativa-mercado-trabalho-2026",
+      "publisher": {
+        "@type": "NewsMediaOrganization",
+        "name": "Yarivi",
+        "url": "https://yarivi.com"
+      },
+      "articleSection": "IA & ML",
+      "keywords": ["IA generativa", "mercado de trabalho", "inteligência artificial", "empregos", "Brasil 2026", "prompt engineer", "automação"]
+    }
+    </script>
+
+    <script>
+        const t = localStorage.getItem('yarivi-theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* ─── PROGRESS BAR ─── */
+        #progress-bar {
+            position: fixed; top: 64px; left: 0; height: 3px; width: 0%;
+            background: linear-gradient(90deg, var(--accent), var(--teal));
+            z-index: 199; transition: width .1s linear;
+        }
+
+        /* ─── ARTICLE LAYOUT ─── */
+        .art-page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 6rem 2rem 4rem;
+        }
+
+        /* ─── HEADER ─── */
+        .art-header { margin-bottom: 2.5rem; }
+
+        .art-header .tags { margin-bottom: 1rem; }
+
+        .art-headline {
+            font-family: 'Fraunces', serif;
+            font-weight: 800;
+            font-size: clamp(1.75rem, 5vw, 2.75rem);
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+            color: var(--text-1);
+            margin-bottom: 1.25rem;
+        }
+
+        .art-lead {
+            font-size: 1.125rem;
+            line-height: 1.7;
+            color: var(--text-2);
+            border-left: 3px solid var(--accent);
+            padding-left: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .art-byline {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.85rem;
+            color: var(--text-3);
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .art-byline strong { color: var(--text-2); }
+        .art-byline .sep::before { content: '·'; margin-right: 1rem; }
+
+        /* ─── BODY ─── */
+        .art-body { line-height: 1.8; font-size: 1.0625rem; }
+
+        .art-body p { margin-bottom: 1.5rem; color: var(--text-1); }
+
+        .art-body h2 {
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: -0.015em;
+            color: var(--text-1);
+            margin: 2.5rem 0 1rem;
+            padding-top: 0.5rem;
+        }
+
+        .art-body h3 {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--text-1);
+            margin: 2rem 0 0.75rem;
+        }
+
+        .art-body ul, .art-body ol {
+            margin: 0 0 1.5rem 1.5rem;
+            color: var(--text-1);
+        }
+
+        .art-body li { margin-bottom: 0.5rem; line-height: 1.7; }
+
+        .art-body strong { color: var(--text-1); font-weight: 700; }
+
+        .art-body em { color: var(--accent); font-style: normal; font-weight: 600; }
+
+        /* ─── DATA CALLOUT ─── */
+        .data-callout {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--teal);
+            border-radius: var(--radius);
+            padding: 1.25rem 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .data-callout p { margin-bottom: 0; font-size: 0.95rem; }
+
+        /* ─── TABLE ─── */
+        .art-table-wrap {
+            overflow-x: auto;
+            margin: 2rem 0;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+        }
+
+        .art-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .art-table th {
+            background: var(--bg-elevated);
+            color: var(--text-2);
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .art-table td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-1);
+            vertical-align: top;
+        }
+
+        .art-table tr:last-child td { border-bottom: none; }
+
+        .art-table tr:hover td { background: var(--bg-elevated); }
+
+        .sal-badge {
+            display: inline-block;
+            background: var(--accent-dim);
+            color: var(--accent);
+            border-radius: 6px;
+            padding: 0.15rem 0.5rem;
+            font-size: 0.82rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        /* ─── STAT HIGHLIGHT ─── */
+        .stat-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.25rem;
+            text-align: center;
+        }
+
+        .stat-num {
+            font-family: 'Fraunces', serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--teal);
+            line-height: 1;
+            margin-bottom: 0.4rem;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-2);
+            line-height: 1.4;
+        }
+
+        /* ─── PARADOX BOX ─── */
+        .paradox-box {
+            background: linear-gradient(135deg, rgba(162,89,255,0.08), rgba(245,166,35,0.06));
+            border: 1px solid rgba(162,89,255,0.3);
+            border-radius: var(--radius-lg);
+            padding: 1.75rem 2rem;
+            margin: 2.5rem 0;
+        }
+
+        .paradox-box h3 {
+            color: var(--violet);
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+        }
+
+        .paradox-box p { margin-bottom: 0.75rem; }
+        .paradox-box p:last-child { margin-bottom: 0; }
+
+        /* ─── SUMMARY BOX ─── */
+        .summary-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 1.75rem 2rem;
+            margin: 2.5rem 0;
+        }
+
+        .summary-box h2 {
+            font-size: 1.1rem;
+            color: var(--accent);
+            font-family: 'Manrope', sans-serif;
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-size: 0.82rem;
+            margin-bottom: 1rem !important;
+        }
+
+        .summary-box ol {
+            margin-left: 1.25rem;
+            margin-bottom: 0;
+        }
+
+        .summary-box li { margin-bottom: 0.6rem; font-size: 0.95rem; }
+
+        /* ─── SOURCES ─── */
+        .art-sources {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .art-sources h4 {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-3);
+            margin-bottom: 0.75rem;
+        }
+
+        .art-sources ul {
+            list-style: none;
+            margin: 0;
+        }
+
+        .art-sources li {
+            font-size: 0.82rem;
+            color: var(--text-3);
+            margin-bottom: 0.35rem;
+        }
+
+        .art-sources em { color: var(--text-3); font-weight: 400; font-style: italic; }
+
+        /* ─── NEWSLETTER CTA ─── */
+        .art-nl-cta {
+            background: linear-gradient(135deg, var(--bg-elevated), var(--bg-card));
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .art-nl-cta h3 {
+            font-family: 'Fraunces', serif;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-1);
+        }
+
+        .art-nl-cta p {
+            color: var(--text-2);
+            font-size: 0.9rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .art-nl-form {
+            display: flex;
+            gap: 0.5rem;
+            max-width: 420px;
+            margin: 0 auto;
+        }
+
+        .art-nl-form input {
+            flex: 1;
+            background: var(--bg-deep);
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            padding: 0.7rem 1rem;
+            font-family: 'Manrope', sans-serif;
+            font-size: 0.9rem;
+            color: var(--text-1);
+            outline: none;
+        }
+
+        .art-nl-form input:focus { border-color: var(--accent); }
+
+        .art-nl-form button {
+            background: var(--accent);
+            color: #08080F;
+            border: none;
+            border-radius: 8px;
+            padding: 0.7rem 1.25rem;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 700;
+            font-size: 0.875rem;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: opacity .2s;
+        }
+
+        .art-nl-form button:hover { opacity: 0.88; }
+
+        /* ─── BACK LINK ─── */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.85rem;
+            color: var(--text-3);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color .2s;
+        }
+
+        .back-link:hover { color: var(--accent); }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 640px) {
+            .art-page { padding: 5rem 1.25rem 3rem; }
+            .art-nl-form { flex-direction: column; }
+            .stat-row { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAV -->
+    <nav class="nav" role="navigation" aria-label="Navegação principal">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-logo" aria-label="Yarivi — página inicial">Yarivi</a>
+            <div class="nav-links" style="display:flex;align-items:center;gap:1.5rem;">
+                <a href="../index.html#em-destaque" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Destaques</a>
+                <a href="../index.html#ultimas" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Notícias</a>
+                <button id="theme-toggle" aria-label="Alternar tema" style="background:none;border:none;cursor:pointer;font-size:1.1rem;color:var(--text-2);padding:0.25rem;">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- READING PROGRESS -->
+    <div id="progress-bar" role="progressbar" aria-hidden="true"></div>
+
+    <!-- ARTICLE -->
+    <main class="art-page">
+
+        <a href="../index.html" class="back-link">← Voltar para Yarivi</a>
+
+        <header class="art-header">
+            <div class="tags">
+                <span class="tag tag-ai">IA & ML</span>
+                <span class="tag tag-dest">Análise</span>
+            </div>
+
+            <h1 class="art-headline">Como a IA Generativa está mudando o mercado de trabalho em 2026</h1>
+
+            <p class="art-lead">
+                Você provavelmente já ouviu as duas versões extremas: "a IA vai roubar todos os empregos" e "não vai mudar nada, isso é hype". A realidade é mais interessante — e mais útil de entender.
+            </p>
+
+            <div class="art-byline">
+                <span><strong>Yarivi</strong> Redação</span>
+                <span class="sep">1 ago 2026</span>
+                <span class="sep">8 min de leitura</span>
+            </div>
+        </header>
+
+        <article class="art-body">
+
+            <p>Os dados de 2026 já são suficientes para passar longe do alarmismo e do negacionismo. Vamos ao que está acontecendo de fato.</p>
+
+            <!-- SEÇÃO 1 -->
+            <h2>O número que importa: quem está sendo afetado no Brasil</h2>
+
+            <p>O Brookings Institution mapeou a exposição dos trabalhadores brasileiros à IA generativa. O resultado: <strong>5,4% da força de trabalho brasileira</strong> está em ocupações de alta exposição — aquelas onde a IA já consegue executar a maioria das tarefas com qualidade comparável ou superior à humana.</p>
+
+            <p>Não é 50%. Não é 0,5%. É 5,4% — e esses trabalhadores estão sentindo agora.</p>
+
+            <p>Quem são eles?</p>
+
+            <ul>
+                <li><strong>Redatores e criadores de conteúdo</strong>: contratos de criação de imagem caíram 17% entre freelancers. Contratos gerais recuaram 2%, e os ganhos médios caíram 5%.</li>
+                <li><strong>Analistas de dados de nível júnior</strong>: tarefas de extração, limpeza e relatórios básicos são hoje rotina de IA.</li>
+                <li><strong>Tradutores de textos padronizados</strong>: documentação técnica, textos jurídicos simples, conteúdo corporativo genérico.</li>
+                <li><strong>Desenvolvedores de código repetitivo</strong>: CRUD básico, boilerplate, scripts de automação.</li>
+            </ul>
+
+            <div class="data-callout">
+                <p>Há um padrão contraintuitivo aqui: <strong>os melhores profissionais em cada uma dessas áreas são os mais afetados</strong>. A IA não substituiu os medíocres — substituiu a <em>vantagem diferencial</em> dos bons. Se você era o redator mais rápido e consistente da equipe, essa vantagem foi commoditizada. O mercado paga menos pela velocidade quando o ChatGPT escreve em segundos.</p>
+            </div>
+
+            <!-- SEÇÃO 2 -->
+            <h2>Quem está ganhando — e quanto</h2>
+
+            <p>A outra metade da história é que <strong>profissionais que integram IA ao trabalho estão ganhando significativamente mais</strong>.</p>
+
+            <p>A PwC analisou 15 mil trabalhadores em 15 países e encontrou:</p>
+
+            <div class="stat-row">
+                <div class="stat-box">
+                    <div class="stat-num">+53%</div>
+                    <div class="stat-label">prêmio salarial para designers com skills de IA</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-num">+49%</div>
+                    <div class="stat-label">para advogados com skills de IA</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-num">+25%</div>
+                    <div class="stat-label">de média geral para quem demonstra proficiência em IA</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-num">4,8×</div>
+                    <div class="stat-label">crescimento de produtividade em setores de alta exposição</div>
+                </div>
+            </div>
+
+            <p>Não é só salário. Um engenheiro usando GitHub Copilot + Claude produz o equivalente a quase cinco engenheiros do mesmo nível de 2022.</p>
+
+            <p>O padrão que está emergindo é claro: <strong>a IA elimina cargos juniores e protege — e valoriza — cargos seniores</strong>. Empresas estão contratando menos analistas iniciantes e pagando mais para profissionais seniores que sabem usar IA para multiplicar output.</p>
+
+            <!-- SEÇÃO 3 -->
+            <h2>As novas profissões que ninguém imaginava em 2022</h2>
+
+            <p>Três anos atrás, "Engenheiro de Prompt" era piada em tweets de tech. Hoje é uma das profissões de maior crescimento no Brasil — <strong>sem exigência de diploma</strong> e com salários que surpreendem.</p>
+
+            <div class="art-table-wrap">
+                <table class="art-table">
+                    <thead>
+                        <tr>
+                            <th>Cargo</th>
+                            <th>Faixa salarial (Brasil)</th>
+                            <th>Cenário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Prompt Engineer</strong></td>
+                            <td><span class="sal-badge">R$ 6k – R$ 20k+</span></td>
+                            <td>Escassez de profissionais</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AI Engineer</strong></td>
+                            <td><span class="sal-badge">R$ 8k – R$ 27k</span></td>
+                            <td>Mercado aquecido</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AI Product Manager</strong></td>
+                            <td><span class="sal-badge">R$ 12k – R$ 35k</span></td>
+                            <td>Crescimento acelerado</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Especialista em AI Ethics</strong></td>
+                            <td><span class="sal-badge">R$ 7k – R$ 18k</span></td>
+                            <td>Demanda crescente em enterprise</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>O dado que mais impressiona: <strong>78% das vagas de tecnologia abertas em 2026 já exigem algum nível de skill em IA</strong> — mesmo para posições que não têm "IA" no título. Designer de produto, analista de marketing, engenheiro de dados: todos com IA na lista de requisitos.</p>
+
+            <!-- SEÇÃO 4 -->
+            <h2>O que fazer — com ações concretas, não conselhos vagos</h2>
+
+            <p>"Aprenda IA" é um conselho inútil. Aqui está o que os dados sugerem que funciona:</p>
+
+            <h3>1. Comece com 20 a 40 horas de treinamento focado</h3>
+
+            <p>Pesquisas sobre curvas de aprendizado em IA generativa mostram que <strong>20 a 40 horas</strong> de estudo estruturado são suficientes para atingir proficiência intermediária — o suficiente para aumentar produtividade em 2 a 3 vezes na maioria das funções. Não é meses. Não é uma graduação. É um mês de estudo consistente.</p>
+
+            <h3>2. O governo brasileiro tem recursos gratuitos</h3>
+
+            <p>O Ministério do Trabalho lançou o programa <strong>Escola do Trabalhador 4.0</strong> em parceria com a Microsoft, oferecendo cursos gratuitos de IA, automação e habilidades digitais. Se você está em transição de carreira ou quer requalificação, é o ponto de partida mais acessível disponível hoje.</p>
+
+            <h3>3. As skills que mais valem agora</h3>
+
+            <ol>
+                <li><strong>Prompt engineering</strong>: aprender a comunicar com modelos de linguagem de forma eficiente — não é "fazer perguntas bonitinhas", é entender como estruturar contexto, constraints e outputs.</li>
+                <li><strong>Integração de IA em workflows</strong>: conectar ferramentas de IA aos processos existentes. Quem sabe fazer isso sem precisar de um desenvolvedor vale ouro.</li>
+                <li><strong>Avaliação crítica de outputs de IA</strong>: a habilidade de identificar alucinações, vieses e erros. Quanto mais IA é usada, mais valioso é o humano que sabe quando não confiar nela.</li>
+                <li><strong>AI ethics e governança</strong>: especialmente em empresas grandes e reguladas — financeiro, saúde, jurídico.</li>
+            </ol>
+
+            <!-- PARADOX -->
+            <div class="paradox-box">
+                <h3>O paradoxo central de 2026</h3>
+                <p><strong>A IA beneficia os que já têm vantagem — e elimina quem depende de velocidade e consistência como diferencial.</strong></p>
+                <p>Se você é sênior, tem contexto profundo de domínio, toma decisões complexas e gerencia ambiguidade: a IA amplifica seu trabalho. Você faz mais, mais rápido, com menos esforço operacional.</p>
+                <p>Se você está começando e seu valor principal era entregar rápido tarefas bem definidas: essa posição ficou mais difícil. O caminho mudou — a entrada no mercado agora exige demonstrar capacidade de trabalhar com IA desde o início.</p>
+            </div>
+
+            <!-- SEÇÃO 5 -->
+            <h2>O que esperar nos próximos 12 meses</h2>
+
+            <p>Sem especulação — os trends que já são visíveis e devem se intensificar:</p>
+
+            <ul>
+                <li><strong>Mais "equipes de 1"</strong>: profissionais seniores usando IA para entregar o que antes demandaria equipes de 3 a 5 pessoas. Isso vai continuar comprimindo contratações júnior.</li>
+                <li><strong>Profissões de IA se especializam</strong>: "Prompt Engineer" genérico vai perder valor. "Prompt Engineer para aplicações médicas" ou "AI Engineer especializado em RAG para documentos jurídicos" vai valer mais.</li>
+                <li><strong>Regulação começa a importar</strong>: com a União Europeia aplicando o AI Act e o Brasil avançando no PL de regulação de IA, compliance e AI ethics vão gerar empregos — especialmente em grandes corporações.</li>
+            </ul>
+
+            <!-- RESUMO -->
+            <div class="summary-box">
+                <h2>Resumo em 5 pontos</h2>
+                <ol>
+                    <li><strong>5,4% dos trabalhadores brasileiros</strong> estão em ocupações de alta exposição à IA — impacto já presente, não futuro.</li>
+                    <li><strong>Quem perde mais</strong> são profissionais cujo diferencial era velocidade e consistência em tarefas bem definidas.</li>
+                    <li><strong>Quem ganha mais</strong> (+25% a +53% em salário) são profissionais com skills de IA integradas ao trabalho.</li>
+                    <li><strong>20 a 40 horas</strong> de estudo estruturado são suficientes para proficiência intermediária — há recursos gratuitos disponíveis.</li>
+                    <li><strong>78% das vagas de tech</strong> já exigem skills de IA, independente do cargo.</li>
+                </ol>
+            </div>
+
+            <!-- SOURCES -->
+            <div class="art-sources">
+                <h4>Fontes</h4>
+                <ul>
+                    <li>Brookings Institution — <em>Generative AI's Impact on Brazilian Labor Markets</em> (2025–2026)</li>
+                    <li>PwC — <em>AI Jobs Barometer 2026</em> (15 países, 15.000 trabalhadores)</li>
+                    <li>Ministério do Trabalho e Emprego — Programa Escola do Trabalhador 4.0</li>
+                    <li>LinkedIn Economic Graph — <em>AI Skills on the Rise</em> (Q1 2026)</li>
+                </ul>
+            </div>
+
+        </article>
+
+
+    </main>
+
+    <script>
+        // Theme toggle
+        const btn = document.getElementById('theme-toggle');
+        function applyTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            btn.textContent = theme === 'light' ? '☀️' : '🌙';
+            localStorage.setItem('yarivi-theme', theme);
+        }
+        applyTheme(localStorage.getItem('yarivi-theme') || 'dark');
+        btn.addEventListener('click', () => {
+            const cur = document.documentElement.getAttribute('data-theme');
+            applyTheme(cur === 'light' ? 'dark' : 'light');
+        });
+
+        // Reading progress bar
+        const bar = document.getElementById('progress-bar');
+        window.addEventListener('scroll', () => {
+            const doc = document.documentElement;
+            const scrolled = (doc.scrollTop / (doc.scrollHeight - doc.clientHeight)) * 100;
+            bar.style.width = Math.min(scrolled, 100) + '%';
+        });
+
+        // Newsletter form
+        const nlForm = document.getElementById('art-nl-form');
+        const nlBtn = document.getElementById('art-nl-btn');
+        if (nlForm) {
+            nlForm.addEventListener('submit', e => {
+                e.preventDefault();
+                nlBtn.textContent = '✓ Inscrito!';
+                nlBtn.style.background = '#3DFFD0';
+                nlForm.querySelector('input').value = '';
+                setTimeout(() => {
+                    nlBtn.textContent = 'Assinar grátis';
+                    nlBtn.style.background = '';
+                }, 3000);
+            });
+        }
+    </script>
+</body>
+</html>

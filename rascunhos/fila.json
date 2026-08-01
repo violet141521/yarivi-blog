@@ -1,0 +1,73 @@
+{
+  "horario_publicacao": "08:00",
+  "dias": "segunda a sexta",
+  "fila": [
+    {
+      "slug": "agente-de-ia-o-que-e-2026",
+      "titulo_seo": "Agente de IA: o que é e como age sozinho | Yarivi",
+      "manchete_h1": "Enquanto você lê este texto, uma IA está terminando o trabalho de alguém",
+      "categoria": "ai",
+      "emoji": "🤖",
+      "excerpt": "Chatbot responde, agente resolve: entenda o que é um agente de IA, como ele age sozinho, os casos reais de 2026 no Brasil — e os riscos dessa autonomia.",
+      "read_time": "8 min",
+      "keyword": "agente de ia o que é",
+      "status": "aprovado",
+      "ordem": 1,
+      "criado_em": "2026-07-16",
+      "aprovado_em": "2026-07-18"
+    },
+    {
+      "slug": "robo-humanoide-2026",
+      "titulo_seo": "Robô humanoide 2026: preços, empregos e o que muda | Yarivi",
+      "manchete_h1": "A fila para levar um robô para casa já tem 10 mil nomes",
+      "categoria": "fut",
+      "emoji": "🔮",
+      "excerpt": "Na CES 2026 os humanoides ganharam preço de prateleira: de US$ 2.899 a US$ 20 mil, com 10 mil reservas em 5 dias e mercado de US$ 38 bi projetado pela Goldman Sachs.",
+      "read_time": "7 min",
+      "keyword": "robô humanoide 2026",
+      "status": "aguardando-revisao",
+      "ordem": 2,
+      "criado_em": "2026-07-16"
+    },
+    {
+      "slug": "pc-com-ia-npu-vale-a-pena-2026",
+      "titulo_seo": "PC com IA e NPU vale a pena? Guia RTX Spark | Yarivi",
+      "manchete_h1": "A Nvidia quer transformar seu próximo notebook numa máquina de IA",
+      "categoria": "hw",
+      "emoji": "💻",
+      "excerpt": "O RTX Spark, chip ARM da Nvidia com 1 petaflop de IA, chega no 2º semestre e muda a conta de quem vai comprar notebook. Veja quando a NPU vale a pena — e quando esperar.",
+      "read_time": "8 min",
+      "keyword": "pc com ia npu vale a pena",
+      "status": "aguardando-revisao",
+      "ordem": 3,
+      "criado_em": "2026-07-16"
+    },
+    {
+      "slug": "celular-dobravel-vale-a-pena-2026",
+      "titulo_seo": "Celular dobrável vale a pena em 2026? | Yarivi",
+      "manchete_h1": "Até a Apple dobrou: vale a pena entrar na onda dos foldables agora?",
+      "categoria": "mob",
+      "emoji": "📱",
+      "excerpt": "iPhone dobrável chega em setembro por até US$ 2.400 e a Samsung prepara um Galaxy formato 'passaporte'. Preços no Brasil, prós e contras — e se compensa esperar.",
+      "read_time": "7 min",
+      "keyword": "celular dobrável vale a pena",
+      "status": "aprovado",
+      "ordem": 4,
+      "criado_em": "2026-07-16",
+      "aprovado_em": "2026-07-18"
+    },
+    {
+      "slug": "bateria-estado-solido-celular-2026",
+      "titulo_seo": "Bateria de estado sólido no celular: quando chega? | Yarivi",
+      "manchete_h1": "A guerra contra a tomada: as duas tecnologias que querem aposentar seu carregador",
+      "categoria": "hw",
+      "emoji": "🔋",
+      "excerpt": "Baterias sólidas de Toyota e Samsung dobram a autonomia; chips neuromórficos gastam até 1.000x menos energia. Entenda qual revolução chega primeiro ao seu bolso.",
+      "read_time": "7 min",
+      "keyword": "bateria estado sólido celular",
+      "status": "aguardando-revisao",
+      "ordem": 5,
+      "criado_em": "2026-07-16"
+    }
+  ]
+}

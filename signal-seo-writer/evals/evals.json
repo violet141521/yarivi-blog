@@ -1,0 +1,19 @@
+{
+  "skill_name": "signal-seo-writer",
+  "evals": [
+    {
+      "id": 0,
+      "eval_name": "deepfake-voz-golpes",
+      "prompt": "Escreve e publica um artigo no blog Signal sobre golpes com deepfake de voz atingindo brasileiros. Categoria: Segurança.",
+      "expected_output": "Artigo HTML completo no estilo Signal + versões atualizadas de featured.html e latest.html, salvos na pasta de outputs do teste (sem tocar no blog real).",
+      "files": []
+    },
+    {
+      "id": 1,
+      "eval_name": "passkeys-vs-senhas",
+      "prompt": "Quero um post no blog Signal sobre passkeys substituírem senhas — vale a pena ativar? Categoria: Segurança ou Software.",
+      "expected_output": "Artigo HTML completo no estilo Signal + versões atualizadas de featured.html e latest.html, salvos na pasta de outputs do teste (sem tocar no blog real).",
+      "files": []
+    }
+  ]
+}

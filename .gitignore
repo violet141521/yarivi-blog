@@ -1,0 +1,10 @@
+# Artefatos de desenvolvimento das skills
+signal-seo-writer-workspace/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+*.swp
+
+# Node (caso futuro)
+node_modules/

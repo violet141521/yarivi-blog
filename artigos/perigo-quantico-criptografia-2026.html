@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Seus dados bancários de hoje podem ser lidos por hackers em 2031 | Yarivi</title>
+    <meta name="description" content="Computadores quânticos ameaçam quebrar toda a criptografia atual. E o pior: hackers já estão coletando seus dados hoje para descriptografar depois. Entenda o Q-Day.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yarivi.com/artigos/perigo-quantico-criptografia-2026">
+
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Yarivi">
+    <meta property="og:title" content="Seus dados bancários de hoje podem ser lidos por hackers em 2031">
+    <meta property="og:description" content="Hackers já estão coletando dados criptografados agora para abrir depois. Entenda o Q-Day e o que já está sendo feito.">
+    <meta property="og:url" content="https://yarivi.com/artigos/perigo-quantico-criptografia-2026">
+    <meta property="og:image" content="https://yarivi.com/og-cover.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="article:published_time" content="2026-08-01">
+    <meta property="article:section" content="Segurança">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@yarivi_tech">
+    <meta name="twitter:title" content="Seus dados bancários de hoje podem ser lidos por hackers em 2031">
+    <meta name="twitter:description" content="O perigo quântico para a criptografia — e por que o ataque já começou.">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Seus dados bancários de hoje podem ser lidos por hackers em 2031 — e você provavelmente não sabe disso",
+      "description": "Computadores quânticos ameaçam quebrar toda a criptografia que protege seus dados. E o pior: a estratégia Harvest Now, Decrypt Later significa que o ataque silencioso já começou.",
+      "datePublished": "2026-08-01",
+      "dateModified": "2026-08-01",
+      "inLanguage": "pt-BR",
+      "url": "https://yarivi.com/artigos/perigo-quantico-criptografia-2026",
+      "publisher": {
+        "@type": "NewsMediaOrganization",
+        "name": "Yarivi",
+        "url": "https://yarivi.com"
+      },
+      "articleSection": "Segurança",
+      "keywords": ["computação quântica", "criptografia", "Q-Day", "cibersegurança", "RSA", "harvest now decrypt later", "criptografia pós-quântica", "NIST"]
+    }
+    </script>
+
+    <script>
+        const t = localStorage.getItem('yarivi-theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* ─── PROGRESS BAR ─── */
+        #progress-bar {
+            position: fixed; top: 64px; left: 0; height: 3px; width: 0%;
+            background: linear-gradient(90deg, var(--accent), var(--teal));
+            z-index: 199; transition: width .1s linear;
+        }
+
+        /* ─── ARTICLE LAYOUT ─── */
+        .art-page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 6rem 2rem 4rem;
+        }
+
+        /* ─── HEADER ─── */
+        .art-header { margin-bottom: 2.5rem; }
+        .art-header .tags { margin-bottom: 1rem; }
+
+        .art-headline {
+            font-family: 'Fraunces', serif;
+            font-weight: 800;
+            font-size: clamp(1.75rem, 5vw, 2.75rem);
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+            color: var(--text-1);
+            margin-bottom: 1.25rem;
+        }
+
+        .art-lead {
+            font-size: 1.125rem;
+            line-height: 1.7;
+            color: var(--text-2);
+            border-left: 3px solid var(--accent);
+            padding-left: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .art-byline {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.85rem;
+            color: var(--text-3);
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .art-byline strong { color: var(--text-2); }
+        .art-byline .sep::before { content: '·'; margin-right: 1rem; }
+
+        /* ─── BODY ─── */
+        .art-body { line-height: 1.8; font-size: 1.0625rem; }
+        .art-body p { margin-bottom: 1.5rem; color: var(--text-1); }
+
+        .art-body h2 {
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: -0.015em;
+            color: var(--text-1);
+            margin: 2.5rem 0 1rem;
+            padding-top: 0.5rem;
+        }
+
+        .art-body h3 {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--text-1);
+            margin: 2rem 0 0.75rem;
+        }
+
+        .art-body ul, .art-body ol {
+            margin: 0 0 1.5rem 1.5rem;
+            color: var(--text-1);
+        }
+
+        .art-body li { margin-bottom: 0.5rem; line-height: 1.7; }
+        .art-body strong { color: var(--text-1); font-weight: 700; }
+        .art-body em { color: var(--accent); font-style: normal; font-weight: 600; }
+
+        /* ─── DATA CALLOUT ─── */
+        .data-callout {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--teal);
+            border-radius: var(--radius);
+            padding: 1.25rem 1.5rem;
+            margin: 2rem 0;
+        }
+        .data-callout p { margin-bottom: 0; font-size: 0.95rem; }
+
+        /* ─── TABLE ─── */
+        .art-table-wrap {
+            overflow-x: auto;
+            margin: 2rem 0;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+        }
+
+        .art-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .art-table th {
+            background: var(--bg-elevated);
+            color: var(--text-2);
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .art-table td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-1);
+            vertical-align: top;
+        }
+
+        .art-table tr:last-child td { border-bottom: none; }
+        .art-table tr:hover td { background: var(--bg-elevated); }
+
+        .prob-badge {
+            display: inline-block;
+            background: rgba(255, 100, 100, 0.12);
+            color: #ff6b6b;
+            border-radius: 6px;
+            padding: 0.15rem 0.5rem;
+            font-size: 0.82rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        /* ─── STAT HIGHLIGHT ─── */
+        .stat-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.25rem;
+            text-align: center;
+        }
+
+        .stat-num {
+            font-family: 'Fraunces', serif;
+            font-size: 1.9rem;
+            font-weight: 800;
+            color: var(--teal);
+            line-height: 1;
+            margin-bottom: 0.4rem;
+        }
+
+        .stat-label {
+            font-size: 0.78rem;
+            color: var(--text-2);
+            line-height: 1.4;
+        }
+
+        /* ─── PARADOX BOX ─── */
+        .paradox-box {
+            background: linear-gradient(135deg, rgba(162,89,255,0.08), rgba(245,166,35,0.06));
+            border: 1px solid rgba(162,89,255,0.3);
+            border-radius: var(--radius-lg);
+            padding: 1.75rem 2rem;
+            margin: 2.5rem 0;
+        }
+
+        .paradox-box h3 {
+            color: var(--violet);
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+        }
+
+        .paradox-box p { margin-bottom: 0.75rem; }
+        .paradox-box p:last-child { margin-bottom: 0; }
+
+        /* ─── SUMMARY BOX ─── */
+        .summary-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 1.75rem 2rem;
+            margin: 2.5rem 0;
+        }
+
+        .summary-box h2 {
+            font-family: 'Manrope', sans-serif;
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-size: 0.82rem;
+            color: var(--accent);
+            margin-bottom: 1rem !important;
+        }
+
+        .summary-box ol { margin-left: 1.25rem; margin-bottom: 0; }
+        .summary-box li { margin-bottom: 0.6rem; font-size: 0.95rem; }
+
+        /* ─── SOURCES ─── */
+        .art-sources {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .art-sources h4 {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-3);
+            margin-bottom: 0.75rem;
+        }
+
+        .art-sources ul { list-style: none; margin: 0; }
+
+        .art-sources li {
+            font-size: 0.82rem;
+            color: var(--text-3);
+            margin-bottom: 0.35rem;
+        }
+
+        .art-sources a {
+            color: var(--text-3);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .art-sources a:hover { color: var(--accent); }
+        .art-sources em { color: var(--text-3); font-weight: 400; font-style: italic; }
+
+        /* ─── NEWSLETTER CTA ─── */
+        .art-nl-cta {
+            background: linear-gradient(135deg, var(--bg-elevated), var(--bg-card));
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .art-nl-cta h3 {
+            font-family: 'Fraunces', serif;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-1);
+        }
+
+        .art-nl-cta p {
+            color: var(--text-2);
+            font-size: 0.9rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .art-nl-form {
+            display: flex;
+            gap: 0.5rem;
+            max-width: 420px;
+            margin: 0 auto;
+        }
+
+        .art-nl-form input {
+            flex: 1;
+            background: var(--bg-deep);
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            padding: 0.7rem 1rem;
+            font-family: 'Manrope', sans-serif;
+            font-size: 0.9rem;
+            color: var(--text-1);
+            outline: none;
+        }
+
+        .art-nl-form input:focus { border-color: var(--accent); }
+
+        .art-nl-form button {
+            background: var(--accent);
+            color: #08080F;
+            border: none;
+            border-radius: 8px;
+            padding: 0.7rem 1.25rem;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 700;
+            font-size: 0.875rem;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: opacity .2s;
+        }
+
+        .art-nl-form button:hover { opacity: 0.88; }
+
+        /* ─── BACK LINK ─── */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.85rem;
+            color: var(--text-3);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color .2s;
+        }
+
+        .back-link:hover { color: var(--accent); }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 640px) {
+            .art-page { padding: 5rem 1.25rem 3rem; }
+            .art-nl-form { flex-direction: column; }
+            .stat-row { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAV -->
+    <nav class="nav" role="navigation" aria-label="Navegação principal">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-logo" aria-label="Yarivi — página inicial">Yarivi</a>
+            <div class="nav-links" style="display:flex;align-items:center;gap:1.5rem;">
+                <a href="../index.html#em-destaque" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Destaques</a>
+                <a href="../index.html#ultimas" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Notícias</a>
+                <button id="theme-toggle" aria-label="Alternar tema" style="background:none;border:none;cursor:pointer;font-size:1.1rem;color:var(--text-2);padding:0.25rem;">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- READING PROGRESS -->
+    <div id="progress-bar" role="progressbar" aria-hidden="true"></div>
+
+    <!-- ARTICLE -->
+    <main class="art-page">
+
+        <a href="../index.html" class="back-link">← Voltar para Yarivi</a>
+
+        <header class="art-header">
+            <div class="tags">
+                <span class="tag tag-sec">Segurança</span>
+                <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+            </div>
+
+            <h1 class="art-headline">Seus dados bancários de hoje podem ser lidos por hackers em 2031 — e você provavelmente não sabe disso</h1>
+
+            <p class="art-lead">
+                Existe uma corrida silenciosa acontecendo agora mesmo. De um lado, laboratórios construindo os computadores mais poderosos da história. Do outro, criminosos acumulando pacientemente arquivos cheios de dados criptografados — os seus. Esse momento tem um nome: <strong>Q-Day</strong>.
+            </p>
+
+            <div class="art-byline">
+                <span><strong>Yarivi</strong> Redação</span>
+                <span class="sep">1 ago 2026</span>
+                <span class="sep">7 min de leitura</span>
+            </div>
+        </header>
+
+        <article class="art-body">
+
+            <!-- SEÇÃO 1 -->
+            <h2>O cadeado que protege sua vida digital — e por que ele vai quebrar</h2>
+
+            <p>Toda vez que você acessa seu banco pelo celular, envia uma mensagem no WhatsApp ou faz uma compra online, seus dados passam por uma espécie de cadeado matemático chamado <strong>RSA</strong>. Ele é o padrão de segurança que protege praticamente toda a internet há décadas.</p>
+
+            <p>O funcionamento é elegante na sua simplicidade: imagine dois números primos enormes — cada um com centenas de dígitos. Multiplicá-los é fácil, qualquer computador faz em segundos. Mas fazer o caminho inverso — pegar o resultado e descobrir quais eram os dois números originais — é praticamente impossível para uma máquina convencional. Um computador comum levaria <strong>bilhões de anos</strong> para resolver esse problema.</p>
+
+            <p>Essa impossibilidade é exatamente o que mantém seus dados seguros. Ou melhor: <em>mantinha</em>.</p>
+
+            <!-- SEÇÃO 2 -->
+            <h2>O Algoritmo de Shor: a chave mestra que abre qualquer cadeado</h2>
+
+            <p>Em 1994, o matemático Peter Shor criou um algoritmo capaz de fatorar números enormes em tempo absurdamente curto — desde que rodando em um computador quântico. Na época, era teoria pura. Computadores quânticos funcionais eram ficção científica.</p>
+
+            <p>Hoje, não são mais.</p>
+
+            <div class="stat-row">
+                <div class="stat-box">
+                    <div class="stat-num">1M</div>
+                    <div class="stat-label">qubits para quebrar RSA-2048 em uma semana</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-num">500k</div>
+                    <div class="stat-label">qubits suficientes para quebrar o Bitcoin em minutos</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-num">$3,77B</div>
+                    <div class="stat-label">investidos em computação quântica em 9 meses de 2025</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-num">3×</div>
+                    <div class="stat-label">mais que todo o investimento de 2024</div>
+                </div>
+            </div>
+
+            <p>A IBM prometeu demonstrar vantagem quântica comprovada ainda em 2026. A Fujitsu e o RIKEN japonês já têm uma máquina de 256 qubits, com planos para 1.000 qubits este ano. O algoritmo já existe há 30 anos. O hardware está sendo construído agora mesmo.</p>
+
+            <!-- SEÇÃO 3 -->
+            <h2>A parte que ninguém está te contando: o perigo já chegou</h2>
+
+            <p>Aqui está o twist que faz especialistas em segurança perderem o sono: você não precisa esperar o Q-Day para ser afetado. <strong>O ataque já começou.</strong></p>
+
+            <div class="paradox-box">
+                <h3>⚠️ Harvest Now, Decrypt Later — "Colher Agora, Descriptografar Depois"</h3>
+                <p>Um hacker não precisa quebrar sua criptografia hoje. Ele só precisa <strong>guardar seus dados criptografados agora</strong> e esperar até que a tecnologia quântica esteja madura — daqui a 5, 10 ou 15 anos.</p>
+                <p>Enquanto você lê este artigo, agentes mal-intencionados — e possivelmente alguns Estados nacionais — estão interceptando e armazenando silenciosamente tráfego criptografado da internet. Esses dados estão inacessíveis <em>hoje</em>. Mas quando o Q-Day chegar, todo esse arquivo poderá ser aberto de uma vez.</p>
+            </div>
+
+            <p>O que já está sendo coletado hoje para descriptografar amanhã:</p>
+
+            <ul>
+                <li><strong>Transações financeiras</strong> e extratos bancários</li>
+                <li><strong>Registros médicos</strong> e prontuários</li>
+                <li><strong>E-mails corporativos</strong> confidenciais e contratos</li>
+                <li><strong>Comunicações governamentais</strong> e militares</li>
+                <li><strong>Segredos industriais</strong> e propriedade intelectual</li>
+            </ul>
+
+            <div class="data-callout">
+                <p>A ameaça é tão séria que o <strong>Banco Central dos EUA (Federal Reserve)</strong> publicou um paper oficial sobre o tema em 2025, detalhando os riscos do HNDL para redes financeiras distribuídas. Não é teoria conspiratória. É pauta de banco central.</p>
+            </div>
+
+            <!-- SEÇÃO 4 -->
+            <h2>Quando exatamente isso vai acontecer?</h2>
+
+            <p>A resposta honesta é: ninguém sabe com precisão. Mas os números são sérios o suficiente para não ignorar:</p>
+
+            <div class="art-table-wrap">
+                <table class="art-table">
+                    <thead>
+                        <tr>
+                            <th>Prazo</th>
+                            <th>Probabilidade (computador quebrar RSA)</th>
+                            <th>Referência</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Até 2029</strong></td>
+                            <td><span class="prob-badge">Ponto de virada crítico</span></td>
+                            <td>Instituto Modal, 2026</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Até 2036 (10 anos)</strong></td>
+                            <td><span class="prob-badge">17% – 31%</span></td>
+                            <td>Análise de especialistas do setor</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Até 2041 (15 anos)</strong></td>
+                            <td><span class="prob-badge">33% – 54%</span></td>
+                            <td>Análise de especialistas do setor</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>Estudos recentes do Google indicam que <strong>os prazos podem ser mais curtos do que o esperado.</strong> E o problema do HNDL transforma isso em algo ainda mais urgente: mesmo que o Q-Day esteja a 15 anos de distância, os dados coletados <em>hoje</em> estarão disponíveis para descriptografia <em>amanhã</em>.</p>
+
+            <p>A incerteza em si é o risco.</p>
+
+            <!-- SEÇÃO 5 -->
+            <h2>A boa notícia: a solução já existe (e está sendo implementada agora)</h2>
+
+            <p>O mundo não está parado. Em <strong>agosto de 2024</strong>, o NIST — o instituto americano que define padrões tecnológicos globais — aprovou oficialmente os primeiros algoritmos de <strong>criptografia pós-quântica</strong>: sistemas matematicamente projetados para resistir mesmo a ataques de computadores quânticos.</p>
+
+            <p>Os três padrões aprovados são:</p>
+
+            <ul>
+                <li><strong>ML-KEM</strong> (baseado no Kyber) — para proteger a troca de chaves</li>
+                <li><strong>ML-DSA</strong> (baseado no Dilithium) — para assinaturas digitais</li>
+                <li><strong>SLH-DSA</strong> (Sphincs+) — algoritmo de segurança adicional</li>
+            </ul>
+
+            <p>Em março de 2025, um quarto algoritmo, o <strong>HQC</strong>, foi aprovado como backup estratégico.</p>
+
+            <p>Os grandes players já estão agindo: o <strong>Google Chrome</strong> implementou o ML-KEM por padrão em todas as conexões TLS desde 2024. O <strong>Red Hat Enterprise Linux 10</strong> já vem com suporte nativo à criptografia pós-quântica. Bancos centrais e governos ao redor do mundo estão acelerando a migração.</p>
+
+            <div class="data-callout">
+                <p>O problema? Especialistas do NIST alertam que transições criptográficas levam entre <strong>10 e 20 anos</strong> em ambientes corporativos complexos. O Gartner elevou a migração para criptografia pós-quântica como <strong>prioridade para o conselho de administração</strong>, com prazo recomendado antes de 2030. Isso significa que a corrida precisa começar agora — e muitas organizações ainda nem começaram.</p>
+            </div>
+
+            <!-- SEÇÃO 6 -->
+            <h2>O que você pode fazer?</h2>
+
+            <h3>Se você é um usuário comum</h3>
+
+            <p>Parte da proteção já está sendo implementada nos serviços que você usa. Mas algumas atitudes valem agora:</p>
+
+            <ul>
+                <li><strong>Mantenha apps e sistema operacional sempre atualizados</strong> — as correções pós-quânticas chegam via updates automáticos</li>
+                <li><strong>Prefira serviços que já anunciaram migração</strong> pós-quântica (Google, Apple, Microsoft estão nessa lista)</li>
+                <li><strong>Evite armazenar dados extremamente sensíveis</strong> em serviços com histórico de segurança fraco</li>
+                <li><strong>Fique atento às notícias sobre Q-Day</strong> — quando ele se aproximar, os impactos serão amplamente noticiados</li>
+            </ul>
+
+            <h3>Se você trabalha em TI ou segurança</h3>
+
+            <p>O recado é mais urgente: comece agora o inventário de quais sistemas da sua organização dependem de RSA e ECC. O ciclo completo de redesenho, teste e migração pode levar anos — e o relógio já está correndo.</p>
+
+            <!-- RESUMO -->
+            <div class="summary-box">
+                <h2>Resumo em 5 pontos</h2>
+                <ol>
+                    <li><strong>RSA vai quebrar</strong> — computadores quânticos com ~1 milhão de qubits conseguem fazê-lo em uma semana. O hardware está sendo construído agora.</li>
+                    <li><strong>O ataque já começou</strong> — a estratégia "Harvest Now, Decrypt Later" significa que seus dados criptografados de hoje podem ser abertos amanhã.</li>
+                    <li><strong>O prazo é incerto, mas próximo</strong> — 17% a 31% de probabilidade de ruptura total em 10 anos; 2029 é apontado como ponto crítico.</li>
+                    <li><strong>A solução existe</strong> — o NIST aprovou 3 padrões pós-quânticos em 2024; Google Chrome já os usa por padrão.</li>
+                    <li><strong>A transição leva 10 a 20 anos</strong> — organizações que não começaram agora podem chegar tarde.</li>
+                </ol>
+            </div>
+
+            <!-- SOURCES -->
+            <div class="art-sources">
+                <h4>Fontes</h4>
+                <ul>
+                    <li>NIST — <em>Post-Quantum Cryptography Standards</em> (FIPS 203, 204, 205), agosto 2024</li>
+                    <li>Federal Reserve — <em>"Harvest Now Decrypt Later": Post-Quantum Cryptography and Data Privacy Risks</em>, 2025</li>
+                    <li>IBM Quantum — <em>Path to Quantum Advantage and Fault Tolerance</em>, novembro 2025</li>
+                    <li><a href="https://canaltech.com.br/seguranca/fim-da-criptografia-especialistas-do-cesar-e-bb-explicam-riscos-da-era-quantica/" target="_blank" rel="noopener">Canaltech — Especialistas do CESAR e BB explicam riscos da era quântica</a></li>
+                    <li><a href="https://modal.org.br/2026/04/22/criptografia-pos-quantica-prazo-estrategico-2026-proteger-negocio/" target="_blank" rel="noopener">Instituto Modal — Criptografia Pós-Quântica: Por que 2026 é o Ponto de Virada</a></li>
+                    <li>Palo Alto Networks — <em>Harvest Now, Decrypt Later (HNDL): The Quantum-Era Threat</em></li>
+                    <li><a href="https://fastcompanybrasil.com/tech/computacao-quantica-vai-tornar-a-criptografia-atual-obsoleta-mas-ha-uma-saida/" target="_blank" rel="noopener">Fast Company Brasil — Computação quântica vai tornar a criptografia obsoleta. Mas há uma saída.</a></li>
+                    <li>Gartner — <em>Post-Quantum Cryptography as Board-Level Priority</em>, 2026</li>
+                </ul>
+            </div>
+
+        </article>
+
+
+    </main>
+
+    <script>
+        // Theme toggle
+        const btn = document.getElementById('theme-toggle');
+        function applyTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            btn.textContent = theme === 'light' ? '☀️' : '🌙';
+            localStorage.setItem('yarivi-theme', theme);
+        }
+        applyTheme(localStorage.getItem('yarivi-theme') || 'dark');
+        btn.addEventListener('click', () => {
+            const cur = document.documentElement.getAttribute('data-theme');
+            applyTheme(cur === 'light' ? 'dark' : 'light');
+        });
+
+        // Reading progress bar
+        const bar = document.getElementById('progress-bar');
+        window.addEventListener('scroll', () => {
+            const doc = document.documentElement;
+            const scrolled = (doc.scrollTop / (doc.scrollHeight - doc.clientHeight)) * 100;
+            bar.style.width = Math.min(scrolled, 100) + '%';
+        });
+
+        // Newsletter form
+        const nlForm = document.getElementById('art-nl-form');
+        const nlBtn = document.getElementById('art-nl-btn');
+        if (nlForm) {
+            nlForm.addEventListener('submit', e => {
+                e.preventDefault();
+                nlBtn.textContent = '✓ Inscrito!';
+                nlBtn.style.background = '#3DFFD0';
+                nlForm.querySelector('input').value = '';
+                setTimeout(() => {
+                    nlBtn.textContent = 'Assinar grátis';
+                    nlBtn.style.background = '';
+                }, 3000);
+            });
+        }
+    </script>
+</body>
+</html>
