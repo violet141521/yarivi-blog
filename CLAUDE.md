@@ -47,9 +47,11 @@ Dona: Mi (violet141521@gmail.com).
 
 ## Pendências
 
-1. Configurar Cloudflare Pages (conectar repositório + DNS yarivi.com → Pages)
-2. Gerar sitemap.xml e robots.txt após deploy
+1. ~~Configurar Cloudflare Pages~~ — concluído (2026-08-01)
+2. ~~Gerar sitemap.xml e robots.txt~~ — concluído (2026-08-01)
 3. Submeter ao Google Search Console
 4. Aprovar 3 rascunhos restantes → criar tarefa agendada de publicação seg-sex 08:00
 5. Pós-deploy: páginas legais (privacidade/contato) e aplicar ao AdSense com 12+ artigos
-6. Reativar a assinatura por e-mail (newsletter) mais para frente — reinserir `nl-root` em `script.js`, o botão do nav e o CTA nos artigos quando a usuária decidir retomar
+6. Reativar newsletter — reinserir `nl-root` em `script.js`, botão no nav, CTA nos artigos e coluna "Yarivi" no footer (`partials/footer.html`)
+7. Criar redes sociais do Yarivi (Twitter/X, Instagram, LinkedIn, YouTube) e adicionar coluna "Social" no footer (`partials/footer.html`) com links reais
+8. Criar páginas: Sobre nós, Anuncie, Escreva para nós, Contato — e reincluir coluna "Yarivi" no footer com links reais
