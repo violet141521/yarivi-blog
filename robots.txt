@@ -1,6 +1,13 @@
 User-agent: *
 Allow: /
 Disallow: /rascunhos/
+Disallow: /pesquisas/
+Disallow: /signal-seo-writer/
+Disallow: /signal-seo-writer-workspace/
+Disallow: /signal-publicador/
+Disallow: /signal-blog-publisher/
+Disallow: /CLAUDE.md
+Disallow: /pendencias.md
 
 # Bloquear AI crawlers
 User-agent: GPTBot

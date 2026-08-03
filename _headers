@@ -1,0 +1,41 @@
+# Cloudflare Pages — Cabeçalhos de segurança HTTP
+# Documentação: https://developers.cloudflare.com/pages/configuration/headers/
+
+/*
+  # Impede que o navegador "adivinhe" o tipo MIME de respostas — previne ataques de sniffing
+  X-Content-Type-Options: nosniff
+
+  # Bloqueia o site de ser embutido em iframes (proteção contra clickjacking)
+  X-Frame-Options: DENY
+
+  # Controla quais informações de origem são enviadas com requisições — não vaza URL completa para externos
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # Desativa APIs do navegador que o blog não usa — reduz superfície de ataque
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=(), accelerometer=(), gyroscope=(), magnetometer=()
+
+  # Content Security Policy — define quais origens podem carregar recursos
+  # Notas:
+  #   'unsafe-inline' em script-src: necessário pelo script de tema inline em cada página
+  #   'unsafe-inline' em style-src: necessário pelos blocos <style> inline nos artigos
+  #   Se no futuro mover o script de tema para arquivo externo, remover 'unsafe-inline' de script-src
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-src 'none'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests
+
+# Diretórios internos — bloquear framing e indexação por bots secundários
+/pesquisas/*
+  X-Robots-Tag: noindex, nofollow
+
+/signal-seo-writer/*
+  X-Robots-Tag: noindex, nofollow
+
+/signal-publicador/*
+  X-Robots-Tag: noindex, nofollow
+
+/signal-blog-publisher/*
+  X-Robots-Tag: noindex, nofollow
+
+/signal-seo-writer-workspace/*
+  X-Robots-Tag: noindex, nofollow
+
+/rascunhos/*
+  X-Robots-Tag: noindex, nofollow

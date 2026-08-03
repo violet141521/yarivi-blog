@@ -1,1 +1,11 @@
+# Rascunhos — redireciona para home (arquivos não publicados)
 /rascunhos/* /index.html 302
+
+# Diretórios internos — nunca devem ser acessíveis publicamente
+/pesquisas/* /index.html 302
+/signal-seo-writer/* /index.html 302
+/signal-seo-writer-workspace/* /index.html 302
+/signal-publicador/* /index.html 302
+/signal-blog-publisher/* /index.html 302
+/CLAUDE.md /index.html 302
+/pendencias.md /index.html 302
