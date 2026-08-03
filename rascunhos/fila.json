@@ -11,10 +11,11 @@
       "excerpt": "Chatbot responde, agente resolve: entenda o que é um agente de IA, como ele age sozinho, os casos reais de 2026 no Brasil — e os riscos dessa autonomia.",
       "read_time": "8 min",
       "keyword": "agente de ia o que é",
-      "status": "aprovado",
+      "status": "publicado",
       "ordem": 1,
       "criado_em": "2026-07-16",
-      "aprovado_em": "2026-07-18"
+      "aprovado_em": "2026-07-18",
+      "publicado_em": "2026-08-03"
     },
     {
       "slug": "robo-humanoide-2026",
@@ -25,9 +26,10 @@
       "excerpt": "Na CES 2026 os humanoides ganharam preço de prateleira: de US$ 2.899 a US$ 20 mil, com 10 mil reservas em 5 dias e mercado de US$ 38 bi projetado pela Goldman Sachs.",
       "read_time": "7 min",
       "keyword": "robô humanoide 2026",
-      "status": "aguardando-revisao",
+      "status": "aprovado",
       "ordem": 2,
-      "criado_em": "2026-07-16"
+      "criado_em": "2026-07-16",
+      "aprovado_em": "2026-08-02"
     },
     {
       "slug": "pc-com-ia-npu-vale-a-pena-2026",
@@ -65,9 +67,77 @@
       "excerpt": "Baterias sólidas de Toyota e Samsung dobram a autonomia; chips neuromórficos gastam até 1.000x menos energia. Entenda qual revolução chega primeiro ao seu bolso.",
       "read_time": "7 min",
       "keyword": "bateria estado sólido celular",
-      "status": "aguardando-revisao",
+      "status": "aprovado",
       "ordem": 5,
-      "criado_em": "2026-07-16"
+      "criado_em": "2026-07-16",
+      "aprovado_em": "2026-08-02"
+    }
+  ],
+  "novos_rascunhos": [
+    {
+      "slug": "plano-brasileiro-inteligencia-artificial-pbia-2026",
+      "titulo_seo": "Plano Brasileiro de Inteligência Artificial: o que é o PBIA | Yarivi",
+      "manchete_h1": "R$ 23 bilhões para IA: o que o governo brasileiro planeja fazer com esse dinheiro",
+      "categoria": "ai",
+      "emoji": "🤖",
+      "excerpt": "O PBIA investe R$ 23 bi em IA até 2028 — supercomputador, nuvem soberana e capacitação. Entenda o que muda para o brasileiro comum.",
+      "read_time": "7 min",
+      "keyword": "plano brasileiro inteligencia artificial pbia",
+      "status": "aguardando-revisao",
+      "ordem": 6,
+      "criado_em": "2026-08-02"
+    },
+    {
+      "slug": "monitor-glicemia-sem-furo-dedo-wearable-2026",
+      "titulo_seo": "Monitor de glicemia sem furar o dedo: como funciona em 2026 | Yarivi",
+      "manchete_h1": "O patch que lê o seu açúcar no sangue sem agulha — e já vende em farmácia",
+      "categoria": "hw",
+      "emoji": "⌚",
+      "excerpt": "Patches colados na pele, anéis que leem o suor e sensores de respiração: o monitor de glicemia sem furar o dedo chegou. Veja como funciona e quanto custa no Brasil.",
+      "read_time": "7 min",
+      "keyword": "monitor glicemia sem furo dedo wearable",
+      "status": "aguardando-revisao",
+      "ordem": 7,
+      "criado_em": "2026-08-02"
+    },
+    {
+      "slug": "deepfake-voz-golpe-whatsapp-2026",
+      "titulo_seo": "Deepfake de voz no WhatsApp: como funciona o golpe e como se proteger | Yarivi",
+      "manchete_h1": "A IA clonou a voz do filho em 15 segundos — e a mãe fez o Pix na mesma hora",
+      "categoria": "sec",
+      "emoji": "🔐",
+      "excerpt": "Deepfake de voz cresceu 830% no Brasil entre 2024 e 2025. Com 15 segundos de áudio, a IA clona qualquer voz. Veja como o golpe funciona no WhatsApp e como a palavra-código te protege.",
+      "read_time": "7 min",
+      "keyword": "deepfake voz golpe whatsapp",
+      "status": "aguardando-revisao",
+      "ordem": 8,
+      "criado_em": "2026-08-02"
+    },
+    {
+      "slug": "agente-ia-substituindo-aplicativos-2026",
+      "titulo_seo": "Agente de IA substituindo aplicativos: o fim dos apps? | Yarivi",
+      "manchete_h1": "A Apple paga US$ 1 bilhão por ano para o Google virar seu assistente — e os apps nunca mais serão os mesmos",
+      "categoria": "sw",
+      "emoji": "📱",
+      "excerpt": "Carl Pei (Nothing) disse que os apps vão acabar. A Apple paga US$ 1 bi/ano ao Google pelo Gemini. Entenda como o agente de IA está substituindo aplicativos em 2026.",
+      "read_time": "8 min",
+      "keyword": "agente ia substituindo aplicativos",
+      "status": "aguardando-revisao",
+      "ordem": 9,
+      "criado_em": "2026-08-02"
+    },
+    {
+      "slug": "ia-multimodal-o-que-e-como-funciona-2026",
+      "titulo_seo": "IA multimodal: o que é e como funciona em 2026 | Yarivi",
+      "manchete_h1": "Você tirou foto da sua planta doente e a IA receitou o remédio — isso tem nome e está em todo lugar",
+      "categoria": "ai",
+      "emoji": "🤖",
+      "excerpt": "IA multimodal entende texto, imagem, áudio e vídeo ao mesmo tempo. O Gartner prevê 40% dos apps de IA como multimodais em 2026. Veja o que isso muda na prática.",
+      "read_time": "7 min",
+      "keyword": "ia multimodal o que é",
+      "status": "aguardando-revisao",
+      "ordem": 10,
+      "criado_em": "2026-08-02"
     }
   ]
 }
