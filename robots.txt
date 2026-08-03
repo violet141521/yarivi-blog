@@ -9,20 +9,63 @@ Disallow: /signal-blog-publisher/
 Disallow: /CLAUDE.md
 Disallow: /pendencias.md
 
-# Bloquear AI crawlers
+# ── Bloquear rastreadores de treinamento de IA ──────────────────────────────
+
+# OpenAI
 User-agent: GPTBot
 Disallow: /
 
+User-agent: ChatGPT-User
+Disallow: /
+
+# Google (Gemini / treinamento)
 User-agent: Google-Extended
 Disallow: /
 
+# Common Crawl (usado por muitos modelos)
 User-agent: CCBot
 Disallow: /
 
+# Anthropic
 User-agent: anthropic-ai
 Disallow: /
 
 User-agent: Claude-Web
+Disallow: /
+
+# Meta
+User-agent: FacebookBot
+Disallow: /
+
+# Apple
+User-agent: Applebot-Extended
+Disallow: /
+
+# Cohere
+User-agent: cohere-ai
+Disallow: /
+
+# Amazon
+User-agent: Amazonbot
+Disallow: /
+
+# ByteDance / TikTok
+User-agent: Bytespider
+Disallow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Disallow: /
+
+# xAI (Grok)
+User-agent: Grok
+Disallow: /
+
+# Scrapers genéricos de dataset
+User-agent: img2dataset
+Disallow: /
+
+User-agent: DataForSeoBot
 Disallow: /
 
 Sitemap: https://yarivi.com/sitemap.xml

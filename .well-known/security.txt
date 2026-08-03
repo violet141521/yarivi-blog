@@ -1,0 +1,7 @@
+# Yarivi — Política de divulgação de vulnerabilidades
+# Para reportar uma vulnerabilidade de segurança neste site, entre em contato:
+
+Contact: mailto:violet141521@gmail.com
+Expires: 2027-08-03T00:00:00.000Z
+Preferred-Languages: pt-BR, en
+Canonical: https://yarivi.com/.well-known/security.txt
