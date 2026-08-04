@@ -26,10 +26,11 @@
       "excerpt": "Na CES 2026 os humanoides ganharam preço de prateleira: de US$ 2.899 a US$ 20 mil, com 10 mil reservas em 5 dias e mercado de US$ 38 bi projetado pela Goldman Sachs.",
       "read_time": "7 min",
       "keyword": "robô humanoide 2026",
-      "status": "aprovado",
+      "status": "publicado",
       "ordem": 2,
       "criado_em": "2026-07-16",
-      "aprovado_em": "2026-08-02"
+      "aprovado_em": "2026-08-02",
+      "publicado_em": "2026-08-04"
     },
     {
       "slug": "pc-com-ia-npu-vale-a-pena-2026",
@@ -40,9 +41,10 @@
       "excerpt": "O RTX Spark, chip ARM da Nvidia com 1 petaflop de IA, chega no 2º semestre e muda a conta de quem vai comprar notebook. Veja quando a NPU vale a pena — e quando esperar.",
       "read_time": "8 min",
       "keyword": "pc com ia npu vale a pena",
-      "status": "aguardando-revisao",
+      "status": "aprovado",
       "ordem": 3,
-      "criado_em": "2026-07-16"
+      "criado_em": "2026-07-16",
+      "aprovado_em": "2026-08-03"
     },
     {
       "slug": "celular-dobravel-vale-a-pena-2026",

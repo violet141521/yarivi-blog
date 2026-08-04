@@ -1,9 +1,24 @@
 # Deploy — Cloudflare Pages
 
-STATUS: DEPLOY AINDA NÃO CONFIGURADO — pule esta etapa ao publicar.
+STATUS: CONFIGURADO — deploy automático via git push para o branch main.
 
-Quando o blog for colocado no ar, substituir este arquivo pelas instruções reais:
-- Método (wrangler pages deploy OU git push com integração Git)
-- Nome do projeto no Cloudflare Pages
-- Onde está o API token / credenciais
-- Comando exato de deploy e como verificar que foi ao ar
+## Como funciona
+
+- **Projeto Cloudflare Pages:** yarivi-blog
+- **Domínios:** yarivi.com, www.yarivi.com, yarivi-blog.pages.dev
+- **Método:** integração Git — qualquer push para `main` dispara deploy automático
+- **Sem token necessário:** o deploy acontece via GitHub; basta `git push origin main`
+
+## Comando de deploy (executar após publicar artigo)
+
+```bash
+cd C:\Repositorio\ClaudeProject\Aula1\BlogTI
+git add artigos/{SLUG}.html partials/featured.html partials/latest.html rascunhos/fila.json
+git commit -m "feat: publica {SLUG}"
+git push origin main
+```
+
+## Como verificar
+
+Aguardar ~1 min e checar https://yarivi.com ou https://yarivi-blog.pages.dev
+O painel de deployments fica em: Cloudflare Dashboard → Workers & Pages → yarivi-blog
