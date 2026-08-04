@@ -39,3 +39,38 @@
 
 /rascunhos/*
   X-Robots-Tag: noindex, nofollow
+
+# ─── Cache ──────────────────────────────────────────────────────────────────
+# s-maxage controla o edge da Cloudflare; max-age controla o browser.
+# Artigos publicados não mudam após publicação → cache longo (4h).
+# Partials mudam a cada artigo novo → cache curto (30 min).
+
+# CSS e JS — raramente mudam
+/style.css
+  Cache-Control: public, max-age=86400, s-maxage=86400
+
+/script.js
+  Cache-Control: public, max-age=86400, s-maxage=86400
+
+# Sitemap e robots
+/sitemap.xml
+  Cache-Control: public, max-age=86400, s-maxage=86400
+
+/robots.txt
+  Cache-Control: public, max-age=86400, s-maxage=86400
+
+# Partials gerais (footer, nav, etc.) — cache 1h
+/partials/*
+  Cache-Control: public, max-age=3600, s-maxage=3600
+
+# Partials da home que mudam a cada publicação — cache 30 min
+# (regras mais específicas sobrepõem /partials/* acima)
+/partials/featured.html
+  Cache-Control: public, max-age=1800, s-maxage=1800
+
+/partials/latest.html
+  Cache-Control: public, max-age=1800, s-maxage=1800
+
+# Artigos publicados — estáticos após publicação
+/artigos/*
+  Cache-Control: public, max-age=14400, s-maxage=14400
