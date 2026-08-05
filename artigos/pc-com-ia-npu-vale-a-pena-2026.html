@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC com IA e NPU vale a pena? Guia RTX Spark | Yarivi</title>
+    <meta name="description" content="PC com IA e NPU vale a pena? Veja o que muda com o Nvidia RTX Spark, o Windows agêntico e quando comprar (ou esperar) seu próximo notebook.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yarivi.com/artigos/pc-com-ia-npu-vale-a-pena-2026">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Yarivi">
+    <meta property="og:title" content="PC com IA e NPU vale a pena? Guia RTX Spark">
+    <meta property="og:description" content="PC com IA e NPU vale a pena? Veja o que muda com o Nvidia RTX Spark, o Windows agêntico e quando comprar (ou esperar) seu próximo notebook.">
+    <meta property="og:url" content="https://yarivi.com/artigos/pc-com-ia-npu-vale-a-pena-2026">
+    <meta property="og:image" content="https://yarivi.com/og-cover.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="article:published_time" content="2026-08-05">
+    <meta property="article:section" content="Hardware">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@yarivi_tech">
+    <meta name="twitter:title" content="PC com IA e NPU vale a pena? Guia RTX Spark">
+    <meta name="twitter:description" content="PC com IA e NPU vale a pena? Veja o que muda com o Nvidia RTX Spark, o Windows agêntico e quando comprar (ou esperar) seu próximo notebook.">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "PC com IA e NPU vale a pena? Guia RTX Spark",
+      "description": "PC com IA e NPU vale a pena? Veja o que muda com o Nvidia RTX Spark, o Windows agêntico e quando comprar (ou esperar) seu próximo notebook.",
+      "datePublished": "2026-08-05",
+      "dateModified": "2026-08-05",
+      "inLanguage": "pt-BR",
+      "url": "https://yarivi.com/artigos/pc-com-ia-npu-vale-a-pena-2026",
+      "publisher": { "@type": "NewsMediaOrganization", "name": "Yarivi", "url": "https://yarivi.com" },
+      "articleSection": "Hardware",
+      "keywords": ["pc com ia npu vale a pena", "notebook com npu", "nvidia rtx spark", "windows agêntico", "copilot+ pc", "notebook com ia preço brasil"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre AI PC e Copilot+ PC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI PC é qualquer computador com NPU, de qualquer potência. Copilot+ PC é um selo da Microsoft com requisitos mínimos: NPU de pelo menos 40 TOPS, 16 GB de RAM e SSD de 256 GB. Todo Copilot+ PC é um AI PC, mas nem todo AI PC atinge o selo — e só os certificados recebem os recursos de IA mais avançados do Windows."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O RTX Spark vai rodar os programas atuais do Windows?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, mas com uma ressalva. O RTX Spark usa arquitetura ARM, e programas feitos para chips Intel/AMD (x86) rodam via camada de emulação do Windows. Apps populares já têm versão nativa ARM, mas softwares antigos, jogos com anti-cheat e drivers específicos podem apresentar problemas — o mesmo desafio que os chips Snapdragon enfrentaram em 2024."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Notebook com NPU funciona sem internet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Esse é justamente o ponto forte. A NPU processa IA localmente: tradução, transcrição, edição de imagem e assistentes funcionam sem conexão, com resposta quase instantânea. Seus arquivos também não saem da máquina, o que aumenta a privacidade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Notebook com NPU gasta menos bateria?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para tarefas de IA, sim. A NPU consome de 5 a 10 watts em trabalhos que exigiriam 30 a 40 watts de uma GPU, o que pode prolongar a bateria em 15% a 20% em cargas com IA, segundo a HP. No uso comum (navegar, editar textos), a diferença é pequena."
+          }
+        }
+      ]
+    }
+    </script>
+    <script>const t=localStorage.getItem('yarivi-theme');if(t)document.documentElement.setAttribute('data-theme',t);</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        #progress-bar{position:fixed;top:64px;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),var(--teal));z-index:199;transition:width .1s linear}
+        .art-page{max-width:720px;margin:0 auto;padding:6rem 2rem 4rem}
+        .art-header{margin-bottom:2.5rem}
+        .art-header .tags{margin-bottom:1rem}
+        .art-headline{font-family:'Fraunces',serif;font-weight:800;font-size:clamp(1.75rem,5vw,2.75rem);line-height:1.15;letter-spacing:-0.02em;color:var(--text-1);margin-bottom:1.25rem}
+        .art-lead{font-size:1.125rem;line-height:1.7;color:var(--text-2);border-left:3px solid var(--accent);padding-left:1.25rem;margin-bottom:1.5rem}
+        .art-byline{display:flex;align-items:center;gap:1rem;font-size:0.85rem;color:var(--text-3);padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+        .art-byline strong{color:var(--text-2)}
+        .art-byline .sep::before{content:'·';margin-right:1rem}
+        .art-body{line-height:1.8;font-size:1.0625rem}
+        .art-body p{margin-bottom:1.5rem;color:var(--text-1)}
+        .art-body h2{font-family:'Fraunces',serif;font-weight:700;font-size:1.5rem;letter-spacing:-0.015em;color:var(--text-1);margin:2.5rem 0 1rem;padding-top:0.5rem}
+        .art-body h3{font-weight:700;font-size:1.1rem;color:var(--text-1);margin:2rem 0 0.75rem}
+        .art-body ul,.art-body ol{margin:0 0 1.5rem 1.5rem;color:var(--text-1)}
+        .art-body li{margin-bottom:0.5rem;line-height:1.7}
+        .art-body strong{color:var(--text-1);font-weight:700}
+        .art-body em{color:var(--accent);font-style:normal;font-weight:600}
+        .art-body a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+        .data-callout{background:var(--bg-card);border:1px solid var(--border);border-left:4px solid var(--teal);border-radius:var(--radius);padding:1.25rem 1.5rem;margin:2rem 0}
+        .data-callout p{margin-bottom:0;font-size:0.95rem}
+        .art-table-wrap{overflow-x:auto;margin:2rem 0;border-radius:var(--radius);border:1px solid var(--border)}
+        .art-table{width:100%;border-collapse:collapse;font-size:0.9rem}
+        .art-table th{background:var(--bg-elevated);color:var(--text-2);font-weight:600;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.06em;padding:0.75rem 1rem;text-align:left;border-bottom:1px solid var(--border)}
+        .art-table td{padding:0.75rem 1rem;border-bottom:1px solid var(--border);color:var(--text-1);vertical-align:top}
+        .art-table tr:last-child td{border-bottom:none}
+        .art-table tr:hover td{background:var(--bg-elevated)}
+        .stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin:2rem 0}
+        .stat-box{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;text-align:center}
+        .stat-num{font-family:'Fraunces',serif;font-size:1.9rem;font-weight:800;color:var(--teal);line-height:1;margin-bottom:0.4rem}
+        .stat-label{font-size:0.78rem;color:var(--text-2);line-height:1.4}
+        .paradox-box{background:linear-gradient(135deg,rgba(162,89,255,0.08),rgba(245,166,35,0.06));border:1px solid rgba(162,89,255,0.3);border-radius:var(--radius-lg);padding:1.75rem 2rem;margin:2.5rem 0}
+        .paradox-box h3{color:var(--violet);margin-top:0;margin-bottom:0.75rem}
+        .paradox-box p{margin-bottom:0.75rem}
+        .paradox-box p:last-child{margin-bottom:0}
+        .summary-box{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem 2rem;margin:2.5rem 0}
+        .summary-box h2{font-family:'Manrope',sans-serif;margin-top:0!important;padding-top:0!important;letter-spacing:0.05em;text-transform:uppercase;font-size:0.82rem;color:var(--accent);margin-bottom:1rem!important}
+        .summary-box ol{margin-left:1.25rem;margin-bottom:0}
+        .summary-box li{margin-bottom:0.6rem;font-size:0.95rem}
+        .art-sources{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border)}
+        .art-sources h4{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-3);margin-bottom:0.75rem}
+        .art-sources ul{list-style:none;margin:0}
+        .art-sources li{font-size:0.82rem;color:var(--text-3);margin-bottom:0.35rem}
+        .art-sources a{color:var(--text-3);text-decoration:underline;text-underline-offset:3px}
+        .art-sources a:hover{color:var(--accent)}
+        .art-nl-cta{background:linear-gradient(135deg,var(--bg-elevated),var(--bg-card));border:1px solid var(--border);border-radius:var(--radius-lg);padding:2rem;margin-top:3rem;text-align:center}
+        .art-nl-cta h3{font-family:'Fraunces',serif;font-size:1.4rem;margin-bottom:0.5rem;color:var(--text-1)}
+        .art-nl-cta p{color:var(--text-2);font-size:0.9rem;margin-bottom:1.25rem}
+        .art-nl-form{display:flex;gap:0.5rem;max-width:420px;margin:0 auto}
+        .art-nl-form input{flex:1;background:var(--bg-deep);border:1px solid var(--border-light);border-radius:8px;padding:0.7rem 1rem;font-family:'Manrope',sans-serif;font-size:0.9rem;color:var(--text-1);outline:none}
+        .art-nl-form input:focus{border-color:var(--accent)}
+        .art-nl-form button{background:var(--accent);color:#08080F;border:none;border-radius:8px;padding:0.7rem 1.25rem;font-family:'Manrope',sans-serif;font-weight:700;font-size:0.875rem;cursor:pointer;white-space:nowrap;transition:opacity .2s}
+        .art-nl-form button:hover{opacity:0.88}
+        .back-link{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.85rem;color:var(--text-3);text-decoration:none;margin-bottom:2rem;transition:color .2s}
+        .back-link:hover{color:var(--accent)}
+        @media(max-width:640px){.art-page{padding:5rem 1.25rem 3rem}.art-nl-form{flex-direction:column}.stat-row{grid-template-columns:repeat(2,1fr)}}
+    </style>
+</head>
+<body>
+    <nav class="nav" role="navigation" aria-label="Navegação principal">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-logo" aria-label="Yarivi — página inicial">Yarivi</a>
+            <div class="nav-links" style="display:flex;align-items:center;gap:1.5rem;">
+                <a href="../index.html#em-destaque" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Destaques</a>
+                <a href="../index.html#ultimas" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Notícias</a>
+                <button id="theme-toggle" aria-label="Alternar tema" style="background:none;border:none;cursor:pointer;font-size:1.1rem;color:var(--text-2);padding:0.25rem;">🌙</button>
+            </div>
+        </div>
+    </nav>
+    <div id="progress-bar" role="progressbar" aria-hidden="true"></div>
+    <main class="art-page">
+        <a href="../index.html" class="back-link">← Voltar para Yarivi</a>
+        <header class="art-header">
+            <div class="tags">
+                <span class="tag tag-hw">Hardware</span>
+                <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+            </div>
+            <h1 class="art-headline">A Nvidia quer transformar seu próximo notebook numa máquina de IA</h1>
+            <p class="art-lead">Comprar notebook em 2026 virou prova de matemática: PC com IA e NPU vale a pena ou é etiqueta de marketing? A resposta curta: vale, se você usa IA todo dia — e a conta muda de novo no fim do ano, quando chega o RTX Spark, o primeiro chip ARM da Nvidia para PCs, capaz de 1 petaflop de IA — 1 quadrilhão de cálculos por segundo, potência que até pouco tempo só existia em data center — dentro de um notebook.</p>
+            <div class="art-byline">
+                <span><strong>Yarivi</strong> Redação</span>
+                <span class="sep">5 ago 2026</span>
+                <span class="sep">8 min de leitura</span>
+            </div>
+        </header>
+        <article class="art-body">
+            <h2>PC com IA e NPU vale a pena em 2026?</h2>
+            <p>Depende do que você faz na frente da tela — e é possível resumir em uma regra simples. Se você usa IA todos os dias (transcreve reuniões, edita imagem e vídeo, programa com assistentes, resume documentos), um notebook com NPU <strong>já se paga hoje</strong>: as tarefas rodam na máquina, mais rápido, sem mensalidade de nuvem e sem enviar seus arquivos para servidores de terceiros.</p>
+            <p>Se o seu uso é navegar, planilha e streaming, a resposta honesta é <strong>ainda não</strong>. Cerca de dois anos depois de os AI PCs chegarem ao mercado, ainda faltam aplicativos que aproveitem a NPU de forma consistente no dia a dia — a avaliação é de veículos que testaram a categoria, como Exame e TechTudo. Um notebook comum, mais barato, resolve.</p>
+            <p>E há um terceiro grupo: quem pode esperar até o fim do ano. Para esses, o anúncio da Nvidia na Computex 2026 muda a régua do que significa "notebook com IA" — e é aí que a história fica interessante.</p>
+
+            <h2>O que a NPU faz de verdade no seu notebook?</h2>
+            <p>Pense no computador como uma cozinha. A CPU é o chef generalista: faz qualquer prato, um de cada vez, muito bem. A GPU é a linha de montagem: centenas de braços fazendo a mesma tarefa em paralelo, ao mesmo tempo. A NPU é o confeiteiro: só faz um tipo de coisa — cálculos de rede neural, o "raciocínio" da IA —, mas faz isso de forma absurdamente eficiente.</p>
+            <p>Eficiência é a palavra-chave. Segundo a HP, uma NPU consome de <strong>5 a 10 watts</strong> em tarefas que exigiriam 30 a 40 watts de uma GPU — o que pode esticar a bateria em 15% a 20% em cargas com IA. É por isso que desfoque de câmera, legendas ao vivo e tradução instantânea rodam a tarde inteira sem derreter a carga.</p>
+            <p>A Microsoft transformou isso em selo: o padrão <em>Copilot+ PC</em> exige NPU de no mínimo 40 TOPS (trilhões de operações por segundo), 16 GB de RAM e SSD de 256 GB. É o mesmo movimento que já aconteceu nos smartphones — contamos essa corrida em <a href="celular-obsoleto-ia-npu-2026.html">nosso guia sobre NPU nos celulares e a "obsolescência de IA"</a> — agora repetido nos notebooks.</p>
+
+            <h2>O que é o Nvidia RTX Spark anunciado na Computex 2026?</h2>
+            <p>Em maio, Jensen Huang subiu ao palco da Computex para apresentar o <strong>RTX Spark Superchip</strong>: a primeira investida séria da Nvidia no processador principal do seu notebook, território histórico de Intel e AMD. Em vez da arquitetura x86 de sempre, o chip usa <strong>ARM</strong> — a mesma família dos chips de celular e dos Apple Silicon — com CPU Grace de 20 núcleos (em parceria com a MediaTek) colada a uma GPU Blackwell RTX.</p>
+            <div class="stat-row">
+                <div class="stat-box">
+                    <div class="stat-num">1 PF</div>
+                    <div class="stat-label">petaflop de IA (FP4): 1 quadrilhão de cálculos por segundo — potência de mini data center</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-num">128 GB</div>
+                    <div class="stat-label">memória unificada LPDDR5X compartilhada entre CPU e GPU</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-num">70 bi</div>
+                    <div class="stat-label">transistores, com CPU e GPU ligadas por NVLink a 600 GB/s</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-num">30+</div>
+                    <div class="stat-label">notebooks anunciados por Dell, HP, Lenovo, ASUS e Microsoft</div>
+                </div>
+            </div>
+            <p>Por que 128 GB de memória unificada importam? Porque modelos de IA grandes precisam caber inteiros na memória que a GPU enxerga. Notebooks atuais topam em 16 ou 24 GB de VRAM; com memória unificada, o RTX Spark roda localmente modelos que hoje só existem na nuvem. É a diferença entre ter um dicionário de bolso e a biblioteca inteira em casa.</p>
+            <p>As máquinas — incluindo Dell XPS 16, HP OmniBook Ultra 16 e um novo Surface Laptop Ultra — chegam no <strong>segundo semestre de 2026</strong>. Haverá duas versões do chip: o topo de linha N1X (20 núcleos, 6.144 núcleos CUDA) e o N1, mais econômico (18 a 45 W, até 64 GB), para notebooks finos.</p>
+
+            <h2>O que muda com o "Windows agêntico"?</h2>
+            <p>O hardware é metade da história. No Build 2026, Microsoft e Nvidia apresentaram a outra metade: transformar o Windows em um sistema operacional <em>agêntico</em> — em que agentes de IA deixam de ser um chat que responde perguntas e passam a ser estagiários digitais que executam tarefas: organizar arquivos, preencher relatórios, montar apresentações, tudo rodando localmente.</p>
+            <p>Para isso existir sem virar pesadelo de segurança, os agentes rodam em ambientes isolados — o runtime OpenShell, da Nvidia, e os Execution Containers (MXC), da Microsoft — uma espécie de "sala fechada" onde o agente trabalha sem tocar no resto do sistema. Segundo as empresas, a inferência de agentes no RTX Spark é até 2x mais rápida que nos AI PCs atuais.</p>
+            <p>Se agentes locais realmente decolarem, o efeito vai muito além do hardware — já mapeamos <a href="ia-generativa-mercado-trabalho-2026.html">o impacto da IA generativa no mercado de trabalho</a>, e o PC agêntico é o próximo capítulo dessa mesma história.</p>
+            <div class="data-callout">
+                <p>A indústria já apostou: segundo o <strong>Gartner</strong>, os AI PCs fecharam 2025 com 31% do mercado mundial e devem chegar a <strong>55% em 2026</strong> — cerca de 143 milhões de unidades. Em poucos anos, "PC com IA" deixará de ser categoria: será só "PC".</p>
+            </div>
+
+            <h2>Quanto custa um notebook com IA no Brasil?</h2>
+            <p>Hoje o mercado tem três degraus de preço — e o RTX Spark vai adicionar um quarto, salgado, no fim do ano:</p>
+            <div class="art-table-wrap">
+                <table class="art-table">
+                    <thead><tr><th>Categoria</th><th>O que entrega</th><th>Faixa de preço</th></tr></thead>
+                    <tbody>
+                        <tr><td>Notebook com NPU básica</td><td>IA leve (câmera, legendas); sem selo Copilot+</td><td>a partir de R$ 3.500</td></tr>
+                        <tr><td>Copilot+ PC (40+ TOPS)</td><td>Recursos de IA completos do Windows, bateria longa</td><td>R$ 5.500 a R$ 6.000+</td></tr>
+                        <tr><td>Notebook gamer com RTX</td><td>IA pesada via GPU, mas com consumo alto</td><td>R$ 7.000+</td></tr>
+                        <tr><td>RTX Spark N1 / N1X</td><td>Modelos grandes locais, Windows agêntico</td><td>estimados US$ 1.799 a US$ 2.899 (Morgan Stanley)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>No Brasil, com impostos e câmbio, as primeiras máquinas RTX Spark dificilmente sairão por menos de R$ 15 mil — preço de estreia de tecnologia, como foi com os primeiros Copilot+ em 2024. A boa notícia: cada geração nova empurra a anterior para baixo na prateleira.</p>
+
+            <h2>Comprar agora ou esperar o RTX Spark?</h2>
+            <div class="paradox-box">
+                <h3>⚠️ O paradoxo de 2026: esperar pode sair mais caro</h3>
+                <p>A intuição diz "espere a tecnologia nova". Mas a IDC alerta que a corrida da IA criou uma escassez global de memória, e o preço médio dos PCs deve subir de 6% a 8% ainda em 2026 — o mercado todo pode encolher até 9% por causa disso.</p>
+                <p>Ou seja: o notebook "comum" que você adiou para o ano que vem pode custar mais do que custa hoje. Esperar só compensa se o que você espera é exatamente o que o RTX Spark entrega.</p>
+            </div>
+            <p>Nossa leitura, em três perfis:</p>
+            <ul>
+                <li><strong>Uso básico (navegar, Office, aulas):</strong> compre um notebook comum agora, antes da alta da memória. NPU não é prioridade.</li>
+                <li><strong>Trabalho com IA no dia a dia:</strong> um Copilot+ PC na faixa de R$ 5.500 a R$ 6.000 já entrega bateria, privacidade e velocidade. Não precisa esperar.</li>
+                <li><strong>Desenvolvedor, criador 3D/vídeo ou entusiasta de IA local:</strong> segure a compra até o fim do ano. O RTX Spark é a primeira máquina de consumo pensada para rodar modelos grandes e agentes locais — mas espere as primeiras análises de compatibilidade ARM antes de pagar caro em geração 1.</li>
+            </ul>
+
+            <h2>Perguntas frequentes sobre PC com IA</h2>
+            <h3>Qual a diferença entre AI PC e Copilot+ PC?</h3>
+            <p>AI PC é qualquer computador com NPU, de qualquer potência. Copilot+ PC é o selo da Microsoft com requisitos mínimos: NPU de 40 TOPS, 16 GB de RAM e SSD de 256 GB. Só os certificados recebem os recursos de IA mais avançados do Windows.</p>
+            <h3>O RTX Spark vai rodar os programas atuais do Windows?</h3>
+            <p>Sim, mas com ressalva. Por ser ARM, programas feitos para Intel/AMD (x86) rodam via emulação do Windows. Apps populares já têm versão nativa, mas softwares antigos, jogos com anti-cheat e drivers específicos podem falhar — o mesmo desafio dos chips Snapdragon em 2024.</p>
+            <h3>Notebook com NPU funciona sem internet?</h3>
+            <p>Esse é o ponto forte. A NPU processa IA localmente: tradução, transcrição e edição de imagem funcionam offline, com resposta quase instantânea — e seus arquivos não saem da máquina.</p>
+            <h3>Notebook com NPU gasta menos bateria?</h3>
+            <p>Para tarefas de IA, sim: 5 a 10 watts na NPU contra 30 a 40 watts na GPU, com ganho de 15% a 20% de bateria em cargas com IA, segundo a HP. No uso comum, a diferença é pequena.</p>
+
+            <div class="summary-box">
+                <h2>Resumo em 5 pontos</h2>
+                <ol>
+                    <li><strong>PC com IA e NPU vale a pena se você usa IA todo dia</strong> — para uso básico, um notebook comum ainda é a compra racional.</li>
+                    <li><strong>O RTX Spark é a Nvidia entrando no coração do PC</strong> — chip ARM com 1 petaflop de IA e 128 GB de memória unificada, em 30+ notebooks no 2º semestre de 2026.</li>
+                    <li><strong>O Windows vira agêntico</strong> — agentes de IA locais executando tarefas em sandboxes, não apenas respondendo perguntas.</li>
+                    <li><strong>Preços no Brasil:</strong> NPU de entrada a partir de R$ 3.500; Copilot+ entre R$ 5.500 e R$ 6.000; RTX Spark deve estrear na casa dos R$ 15 mil.</li>
+                    <li><strong>Esperar tem custo:</strong> a escassez de memória deve encarecer PCs em 6% a 8% ainda em 2026 — se seu perfil não exige o Spark, compre antes da alta.</li>
+                </ol>
+            </div>
+            <p>Ação concreta para hoje: defina seu perfil nos três acima, cheque se os programas que você mais usa já têm versão ARM nativa (a lista pública da Microsoft mostra isso) e, se for de uso básico, feche a compra antes que a alta da memória chegue à etiqueta.</p>
+            <div class="art-sources">
+                <h4>Fontes</h4>
+                <ul>
+                    <li><a href="https://www.tomshardware.com/laptops/nvidia-unveils-rtx-spark-superchip-at-computex-2026-new-platform-promises-to-turn-windows-into-an-agentic-ai-os-with-arm-cpu-blackwell-gpu-and-128gb-unified-memory" target="_blank" rel="noopener">Tom's Hardware — Nvidia unveils RTX Spark Superchip at Computex 2026</a></li>
+                    <li><a href="https://nvidianews.nvidia.com/news/nvidia-microsoft-windows-pcs-agents-rtx-spark" target="_blank" rel="noopener">NVIDIA Newsroom — NVIDIA and Microsoft Reinvent Windows PCs for the Age of Personal AI</a></li>
+                    <li><a href="https://blogs.windows.com/windowsexperience/2026/05/31/introducing-a-powerful-new-chapter-for-windows-pcs-accelerated-by-nvidia-rtx-spark/" target="_blank" rel="noopener">Windows Experience Blog — A powerful new chapter for Windows PCs</a></li>
+                    <li><a href="https://www.gartner.com/en/newsroom/press-releases/2025-08-28-gartner-says-artificial-intelligence-pcs-will-represent-31-percent-of-worldwide-pc-market-by-the-end-of-2025" target="_blank" rel="noopener">Gartner — AI PCs: 31% do mercado em 2025, projeção de 55% em 2026</a></li>
+                    <li><a href="https://www.pcworld.com/article/3156219/the-price-of-nvidia-rtx-spark-pcs-is-going-to-hurt.html" target="_blank" rel="noopener">PCWorld — The price of Nvidia RTX Spark PCs (estimativas Morgan Stanley)</a></li>
+                    <li><a href="https://exame.com/tecnologia/examelab/notebook-com-ia-npu-qual-a-diferenca-do-tradicional-e-como-saber-se-vale-a-pena/" target="_blank" rel="noopener">Exame — Notebook com IA/NPU: qual a diferença e quando vale a pena</a></li>
+                    <li><a href="https://www.hp.com/br-pt/shop/tech-takes/o-que-e-npu-unidade-processamento-neural-explicado" target="_blank" rel="noopener">HP Tech Takes — Por que as NPUs são importantes</a></li>
+                    <li><a href="https://www.idc.com/promo/pcdforecast/" target="_blank" rel="noopener">IDC — WW Personal Computing Device Market: 2026 Outlook</a></li>
+                </ul>
+            </div>
+        </article>
+    </main>
+    <script>
+        const btn=document.getElementById('theme-toggle');
+        function applyTheme(t){document.documentElement.setAttribute('data-theme',t);btn.textContent=t==='light'?'☀️':'🌙';localStorage.setItem('yarivi-theme',t);}
+        applyTheme(localStorage.getItem('yarivi-theme')||'dark');
+        btn.addEventListener('click',()=>applyTheme(document.documentElement.getAttribute('data-theme')==='light'?'dark':'light'));
+        const bar=document.getElementById('progress-bar');
+        window.addEventListener('scroll',()=>{const d=document.documentElement;bar.style.width=Math.min((d.scrollTop/(d.scrollHeight-d.clientHeight))*100,100)+'%';});
+        const nlForm=document.getElementById('art-nl-form'),nlBtn=document.getElementById('art-nl-btn');
+        if(nlForm)nlForm.addEventListener('submit',e=>{e.preventDefault();nlBtn.textContent='✓ Inscrito!';nlBtn.style.background='#3DFFD0';nlForm.querySelector('input').value='';setTimeout(()=>{nlBtn.textContent='Assinar grátis';nlBtn.style.background='';},3000);});
+    </script>
+</body>
+</html>
