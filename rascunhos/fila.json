@@ -56,10 +56,11 @@
       "excerpt": "iPhone dobrável chega em setembro por até US$ 2.400 e a Samsung prepara um Galaxy formato 'passaporte'. Preços no Brasil, prós e contras — e se compensa esperar.",
       "read_time": "7 min",
       "keyword": "celular dobrável vale a pena",
-      "status": "aprovado",
+      "status": "publicado",
       "ordem": 4,
       "criado_em": "2026-07-16",
-      "aprovado_em": "2026-07-18"
+      "aprovado_em": "2026-07-18",
+      "publicado_em": "2026-08-06"
     },
     {
       "slug": "bateria-estado-solido-celular-2026",
@@ -86,9 +87,10 @@
       "excerpt": "O PBIA investe R$ 23 bi em IA até 2028 — supercomputador, nuvem soberana e capacitação. Entenda o que muda para o brasileiro comum.",
       "read_time": "7 min",
       "keyword": "plano brasileiro inteligencia artificial pbia",
-      "status": "aguardando-revisao",
+      "status": "aprovado",
       "ordem": 6,
-      "criado_em": "2026-08-02"
+      "criado_em": "2026-08-02",
+      "aprovado_em": "2026-08-05"
     },
     {
       "slug": "monitor-glicemia-sem-furo-dedo-wearable-2026",
