@@ -15,7 +15,7 @@
     <meta property="og:url" content="https://yarivi.com/artigos/como-explicar-ia-para-leigos-2026">
     <meta property="og:image" content="https://yarivi.com/og-cover.jpg">
     <meta property="og:locale" content="pt_BR">
-    <meta property="article:published_time" content="2026-08-01">
+    <meta property="article:published_time" content="2026-08-01T18:00:00-03:00">
     <meta property="article:section" content="IA & ML">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@yarivi_tech">
@@ -27,8 +27,8 @@
       "@type": "NewsArticle",
       "headline": "Como Explicar IA pra Sua Avó (e Por Que Você Deveria)",
       "description": "'Algoritmo' é só uma receita de bolo. 'Machine learning' é a receita que se reescreve sozinha. As melhores analogias para entender — e explicar — IA sem jargão.",
-      "datePublished": "2026-08-01",
-      "dateModified": "2026-08-01",
+      "datePublished": "2026-08-01T18:00:00-03:00",
+      "dateModified": "2026-08-01T18:00:00-03:00",
       "inLanguage": "pt-BR",
       "url": "https://yarivi.com/artigos/como-explicar-ia-para-leigos-2026",
       "publisher": { "@type": "NewsMediaOrganization", "name": "Yarivi", "url": "https://yarivi.com" },
@@ -37,6 +37,11 @@
     }
     </script>
     <script>const t=localStorage.getItem('yarivi-theme');if(t)document.documentElement.setAttribute('data-theme',t);</script>
+    <!-- ═══ Favicon ═══ -->
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap">
@@ -96,16 +101,21 @@
         .back-link{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.85rem;color:var(--text-3);text-decoration:none;margin-bottom:2rem;transition:color .2s}
         .back-link:hover{color:var(--accent)}
         @media(max-width:640px){.art-page{padding:5rem 1.25rem 3rem}.art-nl-form{flex-direction:column}.stat-row{grid-template-columns:repeat(2,1fr)}}
+
+        /* Overrides nav simplificada do artigo */
+        .nav-links{flex:0 0 auto;justify-content:flex-end;gap:1.5rem}
+        .nav-link{font-size:.875rem;text-transform:none;letter-spacing:0;padding:.25rem 0}
+        .theme-toggle{background:none;border:none;width:auto;height:auto;padding:.25rem;font-size:1.1rem;color:var(--text-2)}
     </style>
 </head>
 <body>
     <nav class="nav" role="navigation" aria-label="Navegação principal">
         <div class="nav-inner">
             <a href="../index.html" class="nav-logo" aria-label="Yarivi — página inicial">Yarivi</a>
-            <div class="nav-links" style="display:flex;align-items:center;gap:1.5rem;">
-                <a href="../index.html#em-destaque" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Destaques</a>
-                <a href="../index.html#ultimas" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Notícias</a>
-                <button id="theme-toggle" aria-label="Alternar tema" style="background:none;border:none;cursor:pointer;font-size:1.1rem;color:var(--text-2);padding:0.25rem;">🌙</button>
+            <div class="nav-links">
+                <a href="../index.html#em-destaque" class="nav-link">Destaques</a>
+                <a href="../index.html#ultimas" class="nav-link">Notícias</a>
+                <button id="theme-toggle" aria-label="Alternar tema">🌙</button>
             </div>
         </div>
     </nav>
@@ -115,7 +125,7 @@
         <header class="art-header">
             <div class="tags">
                 <span class="tag tag-ai">IA & ML</span>
-                <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                <span class="tag tag-dest">Análise</span>
             </div>
             <h1 class="art-headline">Como Explicar IA pra Sua Avó (e Por Que Você Deveria)</h1>
             <p class="art-lead">"Algoritmo" é só uma receita de bolo. "Machine learning" é a receita que se reescreve sozinha. Uma vez que você entende as analogias certas, a inteligência artificial para de assustar — e começa a fazer sentido.</p>

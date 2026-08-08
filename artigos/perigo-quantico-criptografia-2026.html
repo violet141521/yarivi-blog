@@ -16,7 +16,7 @@
     <meta property="og:url" content="https://yarivi.com/artigos/perigo-quantico-criptografia-2026">
     <meta property="og:image" content="https://yarivi.com/og-cover.jpg">
     <meta property="og:locale" content="pt_BR">
-    <meta property="article:published_time" content="2026-08-01">
+    <meta property="article:published_time" content="2026-08-01T18:00:00-03:00">
     <meta property="article:section" content="Segurança">
 
     <meta name="twitter:card" content="summary_large_image">
@@ -30,8 +30,8 @@
       "@type": "NewsArticle",
       "headline": "Seus dados bancários de hoje podem ser lidos por hackers em 2031 — e você provavelmente não sabe disso",
       "description": "Computadores quânticos ameaçam quebrar toda a criptografia que protege seus dados. E o pior: a estratégia Harvest Now, Decrypt Later significa que o ataque silencioso já começou.",
-      "datePublished": "2026-08-01",
-      "dateModified": "2026-08-01",
+      "datePublished": "2026-08-01T18:00:00-03:00",
+      "dateModified": "2026-08-01T18:00:00-03:00",
       "inLanguage": "pt-BR",
       "url": "https://yarivi.com/artigos/perigo-quantico-criptografia-2026",
       "publisher": {
@@ -48,6 +48,11 @@
         const t = localStorage.getItem('yarivi-theme');
         if (t) document.documentElement.setAttribute('data-theme', t);
     </script>
+    <!-- ═══ Favicon ═══ -->
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap">
@@ -376,6 +381,11 @@
             .art-nl-form { flex-direction: column; }
             .stat-row { grid-template-columns: repeat(2, 1fr); }
         }
+
+        /* Overrides nav simplificada do artigo */
+        .nav-links{flex:0 0 auto;justify-content:flex-end;gap:1.5rem}
+        .nav-link{font-size:.875rem;text-transform:none;letter-spacing:0;padding:.25rem 0}
+        .theme-toggle{background:none;border:none;width:auto;height:auto;padding:.25rem;font-size:1.1rem;color:var(--text-2)}
     </style>
 </head>
 <body>
@@ -383,10 +393,10 @@
     <nav class="nav" role="navigation" aria-label="Navegação principal">
         <div class="nav-inner">
             <a href="../index.html" class="nav-logo" aria-label="Yarivi — página inicial">Yarivi</a>
-            <div class="nav-links" style="display:flex;align-items:center;gap:1.5rem;">
-                <a href="../index.html#em-destaque" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Destaques</a>
-                <a href="../index.html#ultimas" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Notícias</a>
-                <button id="theme-toggle" aria-label="Alternar tema" style="background:none;border:none;cursor:pointer;font-size:1.1rem;color:var(--text-2);padding:0.25rem;">🌙</button>
+            <div class="nav-links">
+                <a href="../index.html#em-destaque" class="nav-link">Destaques</a>
+                <a href="../index.html#ultimas" class="nav-link">Notícias</a>
+                <button id="theme-toggle" aria-label="Alternar tema">🌙</button>
             </div>
         </div>
     </nav>
@@ -402,7 +412,7 @@
         <header class="art-header">
             <div class="tags">
                 <span class="tag tag-sec">Segurança</span>
-                <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                <span class="tag tag-dest">Análise</span>
             </div>
 
             <h1 class="art-headline">Seus dados bancários de hoje podem ser lidos por hackers em 2031 — e você provavelmente não sabe disso</h1>
