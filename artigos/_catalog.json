@@ -1,0 +1,125 @@
+{
+  "_comment": "Catálogo de todos os artigos do Yarivi. Ordem importa: artigos com mesma data_pub aparecem na ordem deste array. Não edite manualmente — atualizado pela skill signal-publicador.",
+  "articles": [
+    {
+      "slug": "bateria-estado-solido-celular-2026",
+      "manchete": "A guerra contra a tomada: as duas tecnologias que querem aposentar seu carregador",
+      "categoria": "hw",
+      "emoji": "🔋",
+      "grad": "g2",
+      "excerpt": "Baterias sólidas de Toyota e Samsung dobram a autonomia; chips neuromórficos gastam até 1.000x menos energia. Entenda qual revolução chega primeiro ao seu bolso.",
+      "read_time": "7 min",
+      "data_pub": "2026-08-07"
+    },
+    {
+      "slug": "celular-dobravel-vale-a-pena-2026",
+      "manchete": "Até a Apple dobrou: vale a pena entrar na onda dos foldables agora?",
+      "categoria": "mob",
+      "emoji": "📱",
+      "grad": "g5",
+      "excerpt": "iPhone dobrável chega em setembro por até US$ 2.400 e a Samsung prepara um Galaxy formato \"passaporte\". Preços no Brasil, prós e contras — e se compensa esperar.",
+      "read_time": "7 min",
+      "data_pub": "2026-08-06"
+    },
+    {
+      "slug": "pc-com-ia-npu-vale-a-pena-2026",
+      "manchete": "A Nvidia quer transformar seu próximo notebook numa máquina de IA",
+      "categoria": "hw",
+      "emoji": "💻",
+      "grad": "g2",
+      "excerpt": "O RTX Spark, chip ARM da Nvidia com 1 petaflop de IA, chega no 2º semestre e muda a conta de quem vai comprar notebook. Veja quando a NPU vale a pena — e quando esperar.",
+      "read_time": "8 min",
+      "data_pub": "2026-08-05"
+    },
+    {
+      "slug": "robo-humanoide-2026",
+      "manchete": "A fila para levar um robô para casa já tem 10 mil nomes",
+      "categoria": "fut",
+      "emoji": "🔮",
+      "grad": "g2",
+      "excerpt": "Na CES 2026 os humanoides ganharam preço de prateleira: de US$ 2.899 a US$ 20 mil, com 10 mil reservas em 5 dias e mercado de US$ 38 bi projetado pela Goldman Sachs.",
+      "read_time": "7 min",
+      "data_pub": "2026-08-04"
+    },
+    {
+      "slug": "agente-de-ia-o-que-e-2026",
+      "manchete": "Enquanto você lê este texto, uma IA está terminando o trabalho de alguém",
+      "categoria": "ai",
+      "emoji": "🤖",
+      "grad": "g1",
+      "excerpt": "Chatbot responde, agente resolve: entenda o que é um agente de IA, como ele age sozinho, os casos reais de 2026 no Brasil — e os riscos dessa autonomia.",
+      "read_time": "8 min",
+      "data_pub": "2026-08-03"
+    },
+    {
+      "slug": "como-explicar-ia-para-leigos-2026",
+      "manchete": "Como Explicar IA pra Sua Avó (e Por Que Você Deveria)",
+      "categoria": "ai",
+      "emoji": "🤖",
+      "grad": "g1",
+      "excerpt": "Do algoritmo ao agente autônomo: as 5 melhores analogias para entender — e explicar — inteligência artificial sem uma linha de jargão.",
+      "read_time": "7 min",
+      "data_pub": "2026-08-01"
+    },
+    {
+      "slug": "qualquer-pessoa-pode-criar-um-app-2026",
+      "manchete": "Qualquer pessoa pode criar um app agora — e isso vai mudar tudo",
+      "categoria": "sw",
+      "emoji": "🧩",
+      "grad": "g4",
+      "excerpt": "75% das novas apps de 2026 serão feitas sem programação. Entenda o que é low-code, quem já usa e o risco que ninguém menciona na apresentação de vendas.",
+      "read_time": "7 min",
+      "data_pub": "2026-08-01"
+    },
+    {
+      "slug": "celular-obsoleto-ia-npu-2026",
+      "manchete": "Seu Celular Está Ficando Obsoleto Mais Rápido — E Agora a Culpa É da IA",
+      "categoria": "mob",
+      "emoji": "📱",
+      "grad": "g5",
+      "excerpt": "A NPU virou o novo divisor: sem ela, seu celular fica de fora das funções de IA — e o próximo que você comprar vai custar mais por causa disso.",
+      "read_time": "7 min",
+      "data_pub": "2026-08-01"
+    },
+    {
+      "slug": "futuro-profissoes-2026-2030",
+      "manchete": "2026–2030: o mapa das profissões que vão sumir — e as que vão explodir",
+      "categoria": "fut",
+      "emoji": "🔮",
+      "grad": "g6",
+      "excerpt": "Quanto mais repetitiva sua tarefa, maior o risco. Veja quais carreiras estão em colapso, quais vão explodir e o que fazer agora.",
+      "read_time": "8 min",
+      "data_pub": "2026-08-01"
+    },
+    {
+      "slug": "phishing-whatsapp-email-2026",
+      "manchete": "O golpe que chega pela tela do seu celular: como o phishing dominou 2026",
+      "categoria": "sec",
+      "emoji": "🔒",
+      "grad": "g3",
+      "excerpt": "WhatsApp, e-mail, SMS — os golpistas estão em todo lugar. Entenda como o phishing funciona, por que o Brasil é o 2º mais atacado do mundo e o que fazer para não cair.",
+      "read_time": "7 min",
+      "data_pub": "2026-08-01"
+    },
+    {
+      "slug": "perigo-quantico-criptografia-2026",
+      "manchete": "Seus dados bancários de hoje podem ser lidos por hackers em 2031",
+      "categoria": "sec",
+      "emoji": "⚛️",
+      "grad": "g3",
+      "excerpt": "Hackers já coletam dados criptografados para abrir depois com computadores quânticos. Entenda o Q-Day e o que já está sendo feito.",
+      "read_time": "7 min",
+      "data_pub": "2026-08-01"
+    },
+    {
+      "slug": "ia-generativa-mercado-trabalho-2026",
+      "manchete": "Como a IA Generativa está mudando o mercado de trabalho em 2026",
+      "categoria": "ai",
+      "emoji": "🤖",
+      "grad": "g1",
+      "excerpt": "5,4% dos trabalhadores brasileiros em alta exposição. Quem perde, quem ganha e o que fazer — com dados do Brookings e PwC.",
+      "read_time": "8 min",
+      "data_pub": "2026-08-01"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 <nav class="nav">
     <div class="nav-inner">
-        <a href="#" class="nav-logo">
+        <a href="/" class="nav-logo">
             <div class="live-dot"></div>
             Yarivi
         </a>
@@ -12,24 +12,32 @@
             <a href="#ultimas" class="nav-link" data-filter="sw">Software</a>
             <a href="#ultimas" class="nav-link" data-filter="mob">Mobile</a>
         </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
         <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">🌙</button>
     </div>
 </nav>
 
 <div class="ticker" aria-label="Notícias em destaque">
     <div class="ticker-tag">Agora</div>
-    <div class="ticker-track">
-        <div class="ticker-item">OpenAI lança GPT-5 com raciocínio multi-domínio avançado</div>
-        <div class="ticker-item">Samsung revela Galaxy S26 Ultra com câmera de 200 MP e IA generativa nativa</div>
-        <div class="ticker-item">Novo ransomware ataca infraestrutura crítica em 12 países simultaneamente</div>
-        <div class="ticker-item">Apple confirma Vision Pro 2 para setembro de 2026</div>
-        <div class="ticker-item">Google anuncia Gemini Ultra 2 com janela de contexto de 2 milhões de tokens</div>
-        <div class="ticker-item">Meta lança óculos AR para consumidores a partir de R$ 3.500</div>
-        <div class="ticker-item">OpenAI lança GPT-5 com raciocínio multi-domínio avançado</div>
-        <div class="ticker-item">Samsung revela Galaxy S26 Ultra com câmera de 200 MP e IA generativa nativa</div>
-        <div class="ticker-item">Novo ransomware ataca infraestrutura crítica em 12 países simultaneamente</div>
-        <div class="ticker-item">Apple confirma Vision Pro 2 para setembro de 2026</div>
-        <div class="ticker-item">Google anuncia Gemini Ultra 2 com janela de contexto de 2 milhões de tokens</div>
-        <div class="ticker-item">Meta lança óculos AR para consumidores a partir de R$ 3.500</div>
+    <!-- Os itens são duplicados intencionalmente para criar o loop contínuo da animação CSS -->
+    <div class="ticker-track" aria-hidden="true">
+        <div class="ticker-item">Bateria de estado sólido: as duas tecnologias que querem aposentar seu carregador</div>
+        <div class="ticker-item">Até a Apple dobrou: vale a pena entrar na onda dos foldables agora?</div>
+        <div class="ticker-item">A Nvidia quer transformar seu próximo notebook numa máquina de IA</div>
+        <div class="ticker-item">Robôs humanoides têm fila de espera de 10 mil reservas e preços a partir de US$ 2.899</div>
+        <div class="ticker-item">Agente de IA: a IA que age sozinha — e os riscos de deixar ela sem supervisão</div>
+        <div class="ticker-item">Phishing dominou 2026: Brasil é o 2º país mais atacado do mundo</div>
+        <div class="ticker-item">Computação quântica pode quebrar a criptografia atual até 2031 — o Q-Day se aproxima</div>
+        <div class="ticker-item">IA generativa e mercado de trabalho: quem perde, quem ganha e o que fazer agora</div>
+        <div class="ticker-item">Bateria de estado sólido: as duas tecnologias que querem aposentar seu carregador</div>
+        <div class="ticker-item">Até a Apple dobrou: vale a pena entrar na onda dos foldables agora?</div>
+        <div class="ticker-item">A Nvidia quer transformar seu próximo notebook numa máquina de IA</div>
+        <div class="ticker-item">Robôs humanoides têm fila de espera de 10 mil reservas e preços a partir de US$ 2.899</div>
+        <div class="ticker-item">Agente de IA: a IA que age sozinha — e os riscos de deixar ela sem supervisão</div>
+        <div class="ticker-item">Phishing dominou 2026: Brasil é o 2º país mais atacado do mundo</div>
+        <div class="ticker-item">Computação quântica pode quebrar a criptografia atual até 2031 — o Q-Day se aproxima</div>
+        <div class="ticker-item">IA generativa e mercado de trabalho: quem perde, quem ganha e o que fazer agora</div>
     </div>
 </div>

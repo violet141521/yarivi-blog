@@ -8,33 +8,76 @@ const PARTIALS = [
     { id: 'footer-root',     file: 'partials/footer.html' },
 ];
 
+async function fetchPartial(partial) {
+    const res = await fetch(partial.file);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    return res.text();
+}
+
 async function loadPartials() {
     const root = document.getElementById('root');
 
-    for (const partial of PARTIALS) {
+    // Cria os wrappers na ordem correta antes de buscar em paralelo
+    const wrappers = PARTIALS.map(partial => {
         const wrapper = document.createElement('div');
         wrapper.id = partial.id;
         root.appendChild(wrapper);
-        try {
-            const res = await fetch(partial.file);
-            if (!res.ok) throw new Error(`HTTP ${res.status}`);
-            wrapper.innerHTML = await res.text();
-        } catch (e) {
-            console.error(`Failed to load ${partial.file}:`, e);
+        return wrapper;
+    });
+
+    // Busca todos os partials em paralelo
+    const results = await Promise.allSettled(PARTIALS.map(fetchPartial));
+
+    results.forEach((result, index) => {
+        if (result.status === 'fulfilled') {
+            wrappers[index].innerHTML = result.value;
+        } else {
+            console.error(`Failed to load ${PARTIALS[index].file}:`, result.reason);
         }
-    }
+    });
 
     initScrollAnimation();
     initNewsletter();
     initSmoothScroll();
     initThemeToggle();
     initCategoryFilter();
+    initHamburger();
+}
+
+function initHamburger() {
+    const btn   = document.getElementById('hamburger');
+    const links = document.querySelector('.nav-links');
+    if (!btn || !links) return;
+
+    function close() {
+        links.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+    }
+
+    btn.addEventListener('click', () => {
+        const isOpen = links.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    // Fecha ao clicar em qualquer link do menu
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+
+    // Fecha ao clicar fora do nav
+    document.addEventListener('click', e => {
+        if (!btn.contains(e.target) && !links.contains(e.target)) close();
+    });
 }
 
 function initScrollAnimation() {
-    const io = new IntersectionObserver(entries => {
-        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+    const io = new IntersectionObserver((entries, observer) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('in');
+                observer.unobserve(e.target); // Para de observar após animar
+            }
+        });
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
     document.querySelectorAll('.fu').forEach(el => io.observe(el));
 }
 
@@ -46,7 +89,7 @@ function initNewsletter() {
         const btn = document.getElementById('nl-btn');
         const input = e.target.querySelector('input');
         btn.textContent = '✓ Inscrito!';
-        btn.style.background = '#3DFFD0';
+        btn.style.background = 'var(--teal)';
         input.value = '';
         setTimeout(() => {
             btn.textContent = 'Quero receber';

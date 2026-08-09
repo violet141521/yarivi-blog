@@ -6,7 +6,7 @@
         <div class="hero-text">
             <div class="hero-badge">
                 <span class="live-dot"></span>
-                Atualizado em tempo real
+                Novo artigo todo dia útil
             </div>
 
             <h1 class="hero-h1">
@@ -28,27 +28,37 @@
         <div class="hero-card" tabindex="0" role="article">
             <div class="hcard-img">
                 <svg class="hcard-circuit" viewBox="0 0 600 375" fill="none" aria-hidden="true">
-                    <line x1="60"  y1="60"  x2="210" y2="60"  stroke="#F5A623" stroke-width="1"/>
-                    <line x1="210" y1="60"  x2="210" y2="160" stroke="#F5A623" stroke-width="1"/>
-                    <line x1="210" y1="160" x2="370" y2="160" stroke="#F5A623" stroke-width="1"/>
-                    <line x1="370" y1="160" x2="370" y2="85"  stroke="#3DFFD0" stroke-width="1"/>
-                    <line x1="370" y1="85"  x2="520" y2="85"  stroke="#3DFFD0" stroke-width="1"/>
-                    <line x1="100" y1="210" x2="260" y2="210" stroke="#5B8DFF" stroke-width="1"/>
-                    <line x1="260" y1="210" x2="260" y2="295" stroke="#5B8DFF" stroke-width="1"/>
-                    <line x1="260" y1="295" x2="460" y2="295" stroke="#5B8DFF" stroke-width="1"/>
-                    <line x1="460" y1="295" x2="460" y2="210" stroke="#FF4F8B" stroke-width="1"/>
-                    <line x1="460" y1="210" x2="550" y2="210" stroke="#FF4F8B" stroke-width="1"/>
-                    <line x1="155" y1="50"  x2="155" y2="330" stroke="#F5A623" stroke-width=".5" stroke-dasharray="4 4"/>
-                    <line x1="420" y1="50"  x2="420" y2="330" stroke="#3DFFD0" stroke-width=".5" stroke-dasharray="4 4"/>
-                    <circle cx="210" cy="60"  r="5" fill="#F5A623"/>
-                    <circle cx="210" cy="160" r="5" fill="#F5A623"/>
-                    <circle cx="370" cy="160" r="5" fill="#3DFFD0"/>
-                    <circle cx="370" cy="85"  r="5" fill="#3DFFD0"/>
-                    <circle cx="260" cy="210" r="5" fill="#5B8DFF"/>
-                    <circle cx="460" cy="295" r="5" fill="#FF4F8B"/>
+                    <style>
+                        .hc-accent  { stroke: var(--accent); }
+                        .hc-teal    { stroke: var(--teal); }
+                        .hc-blue    { stroke: var(--blue); }
+                        .hc-pink    { stroke: var(--pink); }
+                        .hc-dot-a   { fill: var(--accent); }
+                        .hc-dot-t   { fill: var(--teal); }
+                        .hc-dot-b   { fill: var(--blue); }
+                        .hc-dot-p   { fill: var(--pink); }
+                    </style>
+                    <line class="hc-accent" x1="60"  y1="60"  x2="210" y2="60"  stroke-width="1"/>
+                    <line class="hc-accent" x1="210" y1="60"  x2="210" y2="160" stroke-width="1"/>
+                    <line class="hc-accent" x1="210" y1="160" x2="370" y2="160" stroke-width="1"/>
+                    <line class="hc-teal"   x1="370" y1="160" x2="370" y2="85"  stroke-width="1"/>
+                    <line class="hc-teal"   x1="370" y1="85"  x2="520" y2="85"  stroke-width="1"/>
+                    <line class="hc-blue"   x1="100" y1="210" x2="260" y2="210" stroke-width="1"/>
+                    <line class="hc-blue"   x1="260" y1="210" x2="260" y2="295" stroke-width="1"/>
+                    <line class="hc-blue"   x1="260" y1="295" x2="460" y2="295" stroke-width="1"/>
+                    <line class="hc-pink"   x1="460" y1="295" x2="460" y2="210" stroke-width="1"/>
+                    <line class="hc-pink"   x1="460" y1="210" x2="550" y2="210" stroke-width="1"/>
+                    <line class="hc-accent" x1="155" y1="50"  x2="155" y2="330" stroke-width=".5" stroke-dasharray="4 4"/>
+                    <line class="hc-teal"   x1="420" y1="50"  x2="420" y2="330" stroke-width=".5" stroke-dasharray="4 4"/>
+                    <circle class="hc-dot-a" cx="210" cy="60"  r="5"/>
+                    <circle class="hc-dot-a" cx="210" cy="160" r="5"/>
+                    <circle class="hc-dot-t" cx="370" cy="160" r="5"/>
+                    <circle class="hc-dot-t" cx="370" cy="85"  r="5"/>
+                    <circle class="hc-dot-b" cx="260" cy="210" r="5"/>
+                    <circle class="hc-dot-p" cx="460" cy="295" r="5"/>
                     <rect x="290" y="145" width="80" height="80" rx="4"
-                          stroke="#F5A623" stroke-width="1.5" fill="rgba(245,166,35,.06)"/>
-                    <text x="330" y="191" text-anchor="middle" fill="#F5A623"
+                          class="hc-accent" stroke-width="1.5" fill="var(--accent-dim)"/>
+                    <text x="330" y="191" text-anchor="middle" style="fill:var(--accent)"
                           font-size="10" font-family="monospace" opacity=".8">CPU</text>
                 </svg>
                 <span class="hcard-emoji">🤖</span>
@@ -58,17 +68,17 @@
                     <span class="tag tag-ai">IA & ML</span>
                     <span class="tag tag-dest">Em destaque</span>
                 </div>
-                <h2 class="art-title" style="font-size:1.25rem; margin-bottom:.5rem;">
+                <h2 class="art-title hcard-title">
                     Como a IA Generativa está mudando o mercado de trabalho em 2026
                 </h2>
-                <p class="art-excerpt" style="margin-bottom:.875rem;">
+                <p class="art-excerpt">
                     Não é ficção científica. Engenheiros, designers e redatores já sentem o impacto — e as oportunidades inesperadas que surgiram junto.
                 </p>
                 <div class="art-meta">
                     <span>1 ago 2026</span>
                     <span class="sep">8 min de leitura</span>
                 </div>
-                <a href="artigos/ia-generativa-mercado-trabalho-2026.html" class="read-link">Ler artigo →</a>
+                <a href="artigos/ia-generativa-mercado-trabalho-2026" class="read-link">Ler artigo →</a>
             </div>
         </div>
     </div>

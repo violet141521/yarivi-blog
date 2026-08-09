@@ -50,11 +50,13 @@ Quando o usuário pedir para agendar:
    - no JSON-LD `NewsArticle`: `"datePublished"` e `"dateModified"` → data de hoje (ISO)
    - o `<span class="sep">` do byline (ex. `16 jul 2026`) → data de hoje por extenso, no
      mesmo formato (dia, mês abreviado em minúsculas, ano)
-4. Atualizar `partials/featured.html` e `partials/latest.html` seguindo exatamente os
-   padrões de `references/blog-structure.md` (novo artigo vira destaque; destaque anterior
-   vai ao 1º side-card, máximo 4; novo card no topo do latest). Use os metadados do
-   próprio item da fila (titulo, manchete, emoji, categoria, excerpt, read_time) — a
-   manchete H1 (`manchete_h1`) é o texto do título nos cards, não o `titulo_seo`.
+4. Atualizar `artigos/_catalog.json`: adicionar o artigo publicado ao array `articles`
+   com os campos: slug, manchete (= `manchete_h1` da fila), categoria, emoji, grad
+   (usar mapa: ai→g1, hw→g2, sec→g3, sw→g4, mob→g5, fut→g6), excerpt, read_time e
+   data_pub = data de hoje (ISO, ex: "2026-08-11"). Inserir no INÍCIO do array (mais
+   recente primeiro). **Não atualizar `partials/featured.html` nem `partials/latest.html`
+   — a visibilidade agora é controlada pelo Cloudflare KV `YARIVI_PUBLISHED`.**
+   O artigo ficará invisível na home até a usuária publicar via URL ou dashboard Cloudflare.
 5. Atualizar a fila: `status` → `"publicado"`, adicionar `"publicado_em"` (ISO).
 6. **Deploy (quando o blog estiver no Cloudflare Pages):** rodar o deploy conforme
    `references/deploy.md`. Enquanto o arquivo indicar "DEPLOY AINDA NÃO CONFIGURADO",

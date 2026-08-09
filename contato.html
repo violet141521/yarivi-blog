@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Yarivi</title>
+    <meta name="description" content="Fale com a equipe do Yarivi. Dúvidas, sugestões de pauta, parcerias ou correções — estamos aqui.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yarivi.com/contato">
+    <script>const t=localStorage.getItem('yarivi-theme');if(t)document.documentElement.setAttribute('data-theme',t);</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-page {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 7rem 2rem 5rem;
+        }
+        .contact-header {
+            margin-bottom: 3rem;
+        }
+        .legal-label {
+            font-size: .72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            color: var(--blue);
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .contact-title {
+            font-family: 'Fraunces', serif;
+            font-weight: 800;
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            line-height: 1.15;
+            letter-spacing: -.02em;
+            color: var(--text-1);
+            margin-bottom: .75rem;
+        }
+        .contact-lead {
+            font-size: 1.05rem;
+            color: var(--text-2);
+            line-height: 1.7;
+        }
+
+        /* Motivos de contato */
+        .contact-reasons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2.5rem 0 3rem;
+        }
+        .reason-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.25rem 1.5rem;
+            transition: border-color .2s;
+        }
+        .reason-card:hover { border-color: var(--blue); }
+        .reason-icon {
+            font-size: 1.5rem;
+            margin-bottom: .6rem;
+            display: block;
+        }
+        .reason-title {
+            font-weight: 700;
+            font-size: .9rem;
+            color: var(--text-1);
+            margin-bottom: .25rem;
+        }
+        .reason-desc {
+            font-size: .82rem;
+            color: var(--text-3);
+            line-height: 1.5;
+        }
+
+        /* Formulário */
+        .contact-form-wrap {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        .form-title {
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--text-1);
+            margin-bottom: 1.75rem;
+        }
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        .form-group label {
+            display: block;
+            font-size: .82rem;
+            font-weight: 600;
+            color: var(--text-2);
+            margin-bottom: .5rem;
+            letter-spacing: .02em;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            background: var(--bg-deep);
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            padding: .75rem 1rem;
+            font-family: 'Manrope', sans-serif;
+            font-size: .9375rem;
+            color: var(--text-1);
+            outline: none;
+            transition: border-color .2s, box-shadow .2s;
+        }
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--text-3);
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--blue);
+            box-shadow: 0 0 0 3px rgba(91,141,255,0.12);
+        }
+        .form-group select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238A8AA8' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            cursor: pointer;
+        }
+        .form-group select option {
+            background: var(--bg-elevated);
+            color: var(--text-1);
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 140px;
+            line-height: 1.6;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .form-submit {
+            background: var(--blue);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: .85rem 2rem;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 700;
+            font-size: .95rem;
+            cursor: pointer;
+            width: 100%;
+            margin-top: .5rem;
+            transition: opacity .2s, transform .1s;
+            letter-spacing: .02em;
+        }
+        .form-submit:hover { opacity: .88; transform: translateY(-1px); }
+        .form-submit:active { transform: translateY(0); }
+        .form-notice {
+            font-size: .78rem;
+            color: var(--text-3);
+            margin-top: .875rem;
+            text-align: center;
+        }
+
+        /* Mensagem de sucesso */
+        .form-success {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+        .form-success .success-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .form-success h3 {
+            font-family: 'Fraunces', serif;
+            font-size: 1.4rem;
+            color: var(--text-1);
+            margin-bottom: .5rem;
+        }
+        .form-success p {
+            color: var(--text-2);
+            font-size: .9rem;
+        }
+
+        /* Contato direto */
+        .contact-direct {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .contact-direct-text p {
+            font-size: .875rem;
+            color: var(--text-3);
+            margin: .25rem 0 0;
+        }
+        .contact-direct-text strong {
+            font-size: 1rem;
+            color: var(--text-1);
+        }
+        .contact-email-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            padding: .65rem 1.25rem;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 600;
+            font-size: .875rem;
+            color: var(--text-1);
+            text-decoration: none;
+            white-space: nowrap;
+            transition: border-color .2s, background .2s;
+            flex-shrink: 0;
+        }
+        .contact-email-btn:hover {
+            border-color: var(--blue);
+            background: var(--bg-elevated);
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: .4rem;
+            font-size: .85rem;
+            color: var(--text-3);
+            text-decoration: none;
+            margin-bottom: 2.5rem;
+            transition: color .2s;
+        }
+        .back-link:hover { color: var(--accent); }
+
+        @media(max-width:640px){
+            .contact-page { padding: 6rem 1.25rem 3rem; }
+            .form-row { grid-template-columns: 1fr; }
+            .contact-form-wrap { padding: 1.5rem; }
+            .contact-direct { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav" role="navigation" aria-label="Navegação principal">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo" aria-label="Yarivi — página inicial">Yarivi</a>
+            <div class="nav-links" style="display:flex;align-items:center;gap:1.5rem;">
+                <a href="index.html#em-destaque" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Destaques</a>
+                <a href="index.html#ultimas" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Notícias</a>
+                <button id="theme-toggle" aria-label="Alternar tema" style="background:none;border:none;cursor:pointer;font-size:1.1rem;color:var(--text-2);padding:0.25rem;">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contact-page">
+        <a href="index.html" class="back-link">← Voltar para Yarivi</a>
+
+        <header class="contact-header">
+            <span class="legal-label">Fale conosco</span>
+            <h1 class="contact-title">Contato</h1>
+            <p class="contact-lead">Tem uma dúvida, sugestão de pauta ou encontrou um erro? Adoramos receber mensagens de leitores. Respondemos em até 3 dias úteis.</p>
+        </header>
+
+        <!-- Motivos -->
+        <div class="contact-reasons">
+            <div class="reason-card">
+                <span class="reason-icon">💡</span>
+                <div class="reason-title">Sugestão de pauta</div>
+                <div class="reason-desc">Tem um tema tech que quer ver aqui? Conta pra gente.</div>
+            </div>
+            <div class="reason-card">
+                <span class="reason-icon">🔧</span>
+                <div class="reason-title">Correção de erro</div>
+                <div class="reason-desc">Encontrou algo desatualizado ou incorreto em um artigo?</div>
+            </div>
+            <div class="reason-card">
+                <span class="reason-icon">🤝</span>
+                <div class="reason-title">Parceria</div>
+                <div class="reason-desc">Propostas de colaboração editorial ou comercial.</div>
+            </div>
+            <div class="reason-card">
+                <span class="reason-icon">💬</span>
+                <div class="reason-title">Outros assuntos</div>
+                <div class="reason-desc">Qualquer outra mensagem que queira mandar.</div>
+            </div>
+        </div>
+
+        <!-- Formulário -->
+        <div class="contact-form-wrap">
+            <h2 class="form-title">Envie sua mensagem</h2>
+
+            <form id="contact-form" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Nome <span style="color:var(--text-3)">(opcional)</span></label>
+                        <input type="text" id="name" name="name" placeholder="Como posso te chamar?">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail <span style="color:var(--pink)">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Assunto <span style="color:var(--pink)">*</span></label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Selecione o motivo do contato</option>
+                        <option value="sugestao-pauta">💡 Sugestão de pauta</option>
+                        <option value="correcao">🔧 Correção de erro</option>
+                        <option value="parceria-editorial">🤝 Parceria editorial</option>
+                        <option value="parceria-comercial">📈 Parceria comercial / publicidade</option>
+                        <option value="privacidade">🔒 Dados pessoais / privacidade</option>
+                        <option value="outro">💬 Outro assunto</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem <span style="color:var(--pink)">*</span></label>
+                    <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui. Quanto mais contexto, melhor!" required></textarea>
+                </div>
+
+                <button type="submit" class="form-submit">Enviar mensagem →</button>
+                <p class="form-notice">Seus dados são usados apenas para responder sua mensagem. Veja nossa <a href="privacidade.html" style="color:var(--text-2);text-underline-offset:3px;">Política de Privacidade</a>.</p>
+            </form>
+
+            <div class="form-success" id="form-success">
+                <span class="success-icon">✅</span>
+                <h3>Mensagem enviada!</h3>
+                <p>Obrigada pelo contato. Respondemos em até 3 dias úteis no e-mail que você informou.</p>
+            </div>
+        </div>
+
+        <!-- Contato direto -->
+        <div class="contact-direct">
+            <div class="contact-direct-text">
+                <strong>Prefere mandar um e-mail direto?</strong>
+                <p>Sem problemas — chegamos no mesmo lugar.</p>
+            </div>
+            <a href="mailto:contato@yarivi.com" class="contact-email-btn">
+                ✉️ contato@yarivi.com
+            </a>
+        </div>
+    </main>
+
+    <div id="footer-root"></div>
+    <script src="script.js"></script>
+    <script>
+        // Theme toggle
+        const toggle = document.getElementById('theme-toggle');
+        if (toggle) {
+            const html = document.documentElement;
+            const updateIcon = () => toggle.textContent = html.getAttribute('data-theme') === 'light' ? '🌙' : '☀️';
+            updateIcon();
+            toggle.addEventListener('click', () => {
+                const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                html.setAttribute('data-theme', next);
+                localStorage.setItem('yarivi-theme', next);
+                updateIcon();
+            });
+        }
+
+        // Formulário — simulação (sem backend ainda)
+        const form = document.getElementById('contact-form');
+        const success = document.getElementById('form-success');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value.trim();
+
+            if (!email || !subject || !message) {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                return;
+            }
+
+            // Abre o cliente de e-mail como fallback até termos backend
+            const name = document.getElementById('name').value.trim() || 'Leitor';
+            const subjectMap = {
+                'sugestao-pauta': 'Sugestão de pauta',
+                'correcao': 'Correção de erro',
+                'parceria-editorial': 'Parceria editorial',
+                'parceria-comercial': 'Parceria comercial',
+                'privacidade': 'Dados pessoais / privacidade',
+                'outro': 'Outro assunto'
+            };
+            const subjectLabel = subjectMap[subject] || subject;
+            const body = `Nome: ${name}\nAssunto: ${subjectLabel}\n\n${message}`;
+            const mailto = `mailto:contato@yarivi.com?subject=[Yarivi] ${encodeURIComponent(subjectLabel)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailto;
+
+            // Mostra mensagem de sucesso
+            form.style.display = 'none';
+            success.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
