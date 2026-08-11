@@ -2,6 +2,16 @@
   "_comment": "Catálogo de todos os artigos do Yarivi. Ordem importa: artigos com mesma data_pub aparecem na ordem deste array. Não edite manualmente — atualizado pela skill signal-publicador.",
   "articles": [
     {
+      "slug": "deepfake-voz-golpe-whatsapp-2026",
+      "manchete": "A IA clonou a voz do filho em 15 segundos — e a mãe fez o Pix na mesma hora",
+      "categoria": "sec",
+      "emoji": "🔐",
+      "grad": "g3",
+      "excerpt": "Deepfake de voz cresceu 830% no Brasil entre 2024 e 2025. Com 15 segundos de áudio, a IA clona qualquer voz. Veja como o golpe funciona no WhatsApp e como a palavra-código te protege.",
+      "read_time": "7 min",
+      "data_pub": "2026-08-11"
+    },
+    {
       "slug": "plano-brasileiro-inteligencia-artificial-pbia-2026",
       "manchete": "R$ 23 bilhões para IA: o que o governo brasileiro planeja fazer com esse dinheiro",
       "categoria": "ai",
