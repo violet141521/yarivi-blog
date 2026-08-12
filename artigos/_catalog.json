@@ -2,6 +2,16 @@
   "_comment": "Catálogo de todos os artigos do Yarivi. Ordem importa: artigos com mesma data_pub aparecem na ordem deste array. Não edite manualmente — atualizado pela skill signal-publicador.",
   "articles": [
     {
+      "slug": "agente-ia-substituindo-aplicativos-2026",
+      "manchete": "A Apple paga US$ 1 bilhão por ano para o Google virar seu assistente — e os apps nunca mais serão os mesmos",
+      "categoria": "sw",
+      "emoji": "📱",
+      "grad": "g4",
+      "excerpt": "Carl Pei (Nothing) disse que os apps vão acabar. A Apple paga US$ 1 bi/ano ao Google pelo Gemini. Entenda como o agente de IA está substituindo aplicativos em 2026.",
+      "read_time": "8 min",
+      "data_pub": "2026-08-12"
+    },
+    {
       "slug": "deepfake-voz-golpe-whatsapp-2026",
       "manchete": "A IA clonou a voz do filho em 15 segundos — e a mãe fez o Pix na mesma hora",
       "categoria": "sec",
