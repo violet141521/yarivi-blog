@@ -19,6 +19,7 @@ Dona: Mi (violet141521@gmail.com).
 - `functions/partials/_middleware.js` — Pages Function que serve featured/latest dinâmico via KV
 - `functions/api/publicar.js` — endpoint para publicar artigo de qualquer dispositivo
 - `signal-seo-writer/` e `signal-publicador/` — fonte das skills (instaladas no Claude)
+- `validador-text/` — skill de QA editorial: antiplágio, links, SEO automático (instalar no Claude)
 - `signal-blog-publisher/` — skill antiga (aposentada; referência)
 - `pesquisas/` — relatórios de pesquisa salvos
 
@@ -26,7 +27,8 @@ Dona: Mi (violet141521@gmail.com).
 
 1. **Pauta**: skill `signal-seo-writer` — pesquisa (via skill `pesquisa`, fallback WebSearch), 10 temas, usuária escolhe 5
 2. **Produção**: os 5 artigos viram rascunhos em `rascunhos/` com status `aguardando-revisao` na fila — **nunca publicar direto**
-3. **Revisão**: a usuária lê e aprova/pede mudanças no chat
+2.5. **QA automático** (novo): skill `validador-text` gera `rascunhos/qa-[slug].md` com antiplágio, links quebrados e checklist SEO — rodar antes de apresentar o artigo à usuária para revisão
+3. **Revisão**: a usuária lê o artigo + relatório QA e aprova/pede mudanças no chat
 4. **Commit** (requer PC): skill `signal-publicador` move artigo para `artigos/`, atualiza `_catalog.json` e `fila.json`. O artigo fica acessível pela URL direta mas **invisível na home**.
 5. **Publicar na home** (qualquer dispositivo): a usuária decide quando tornar o artigo visível — via URL do celular ou dashboard Cloudflare (ver seção abaixo).
 
@@ -90,16 +92,20 @@ A home atualiza em até 1 minuto após a publicação (cache de 60s).
 
 ## Pendências
 
+### ✅ Concluídos
 1. ~~Configurar Cloudflare Pages~~ — concluído (2026-08-01)
 2. ~~Gerar sitemap.xml e robots.txt~~ — concluído (2026-08-01)
-3. Submeter ao Google Search Console
-4. Aprovar 3 rascunhos restantes → criar tarefa agendada de publicação seg-sex 08:00
-5. Pós-deploy: páginas legais (privacidade/contato) e aplicar ao AdSense com 12+ artigos
-6. Reativar newsletter — reinserir `nl-root` em `script.js`, botão no nav, CTA nos artigos e coluna "Yarivi" no footer (`partials/footer.html`)
-7. Criar redes sociais do Yarivi (Twitter/X, Instagram, LinkedIn, YouTube) e adicionar coluna "Social" no footer (`partials/footer.html`) com links reais
-8. Criar páginas: Sobre nós, Anuncie, Escreva para nós, Contato — e reincluir coluna "Yarivi" no footer com links reais
-9. ~~Cloudflare: investigar origem dos ~274 redirects 301/308 (22% do tráfego)~~ — concluído (2026-08-08): causa era links internos com `.html`; corrigidos em `partials/featured.html`, `partials/latest.html`, `functions/partials/_middleware.js` e artigos com cross-links
-10. Versão em inglês do blog — artigos menos Brasil-específicos, maior alcance orgânico (decidir estrutura: subdomínio `en.yarivi.com` vs. pasta `/en/`)
-11. Abrir MEI para formalizar o blog como negócio — após abrir, atualizar `contato.html`, `privacidade.html` e `termos.html`: trocar "Milena" pela razão social e adicionar CNPJ como identificador do controlador de dados (LGPD)
-12. Inserir links de afiliados nos artigos pertinentes (mapear quais artigos já publicados têm oportunidade e adicionar antes/durante a revisão dos novos)
-13. Cloudflare: criar Cache Rules **após concluir item 12** — 2 regras no dashboard (dash.cloudflare.com → yarivi.com → Caching → Cache Rules): (a) `yarivi-cache-artigos`: URI Path matches regex `^/artigos/[a-z0-9-]+$` → Eligible for cache, Edge TTL: respect origin header; (b) `yarivi-bypass-api`: URI Path starts with `/api/` → Bypass cache
+3. ~~Aprovar 3 rascunhos restantes~~ — concluído (2026-08-07); tarefa agendada seg-sex ativa às 18:00 (yarivi-publicador-diario)
+4. ~~Cloudflare: investigar origem dos ~274 redirects 301/308 (22% do tráfego)~~ — concluído (2026-08-08): causa era links internos com `.html`; corrigidos em `partials/featured.html`, `partials/latest.html`, `functions/partials/_middleware.js` e artigos com cross-links
+5. ~~Cloudflare: criar Cache Rules~~ — concluído (2026-08-10): `yarivi-cache-artigos` (URI Path starts with `/artigos/` and does not contain `.` → Eligible for cache) e `yarivi-bypass-api` (URI Path starts with `/api/` → Bypass cache). Nota: operador `matches regex` requer plano Business; substituído por `starts_with` + `not contains "."`
+
+### 🔜 A fazer (em ordem)
+6. Submeter ao Google Search Console
+7. Aplicar ao AdSense — pré-requisitos cumpridos: páginas legais criadas + 13 artigos publicados
+8. Abrir MEI para formalizar o blog como negócio — após abrir, atualizar `contato.html`, `privacidade.html` e `termos.html`: trocar "Milena" pela razão social e adicionar CNPJ como identificador do controlador de dados (LGPD)
+9. Criar páginas: Sobre nós, Anuncie, Escreva para nós, Contato — e reincluir coluna "Yarivi" no footer com links reais
+10. Inserir links de afiliados nos artigos pertinentes — fazer após aprovação do AdSense (mapear quais artigos já publicados têm oportunidade e adicionar antes/durante a revisão dos novos)
+11. Reativar newsletter — reinserir `nl-root` em `script.js`, botão no nav, CTA nos artigos e coluna "Yarivi" no footer (`partials/footer.html`)
+12. Criar redes sociais do Yarivi (Twitter/X, Instagram, LinkedIn, YouTube) e adicionar coluna "Social" no footer (`partials/footer.html`) com links reais
+13. Versão em inglês do blog — artigos menos Brasil-específicos, maior alcance orgânico (decidir estrutura: subdomínio `en.yarivi.com` vs. pasta `/en/`)
+14. ~~Validação de plágio dos artigos~~ — skill `validador-text` criada (2026-08-12): antiplágio DIY via WebSearch + link checker + checklist SEO automático. **Pendente: instalar a skill no Claude** (abrir `validador-text/SKILL.md` no Claude → Save skill). Spec em `docs/validador-text-spec.md`.
