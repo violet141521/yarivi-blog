@@ -88,10 +88,11 @@
       "excerpt": "Ray-Ban Meta vendeu 2 milhões de pares, Samsung XR chega no 2º semestre e Xreal abre reservas com display abaixo de US$ 1.500. Guia completo com preços no Brasil e quando vale comprar.",
       "read_time": "7 min",
       "keyword": "óculos inteligentes 2026",
-      "status": "aprovado",
+      "status": "publicado",
       "ordem": 10,
       "criado_em": "2026-08-08",
-      "aprovado_em": "2026-08-10"
+      "aprovado_em": "2026-08-10",
+      "publicado_em": "2026-08-14"
     },
     {
       "slug": "ia-gerar-video-como-usar-2026",
@@ -130,9 +131,10 @@
       "excerpt": "Samsung tem mais recursos e suporte ao português; Apple tem mais privacidade e polimento. Comparativo completo com o que cada IA faz de verdade no seu celular em 2026.",
       "read_time": "8 min",
       "keyword": "galaxy ai vs apple intelligence",
-      "status": "aguardando-revisao",
+      "status": "aprovado",
       "ordem": 13,
-      "criado_em": "2026-08-08"
+      "criado_em": "2026-08-08",
+      "aprovado_em": "2026-08-13"
     },
     {
       "slug": "cursor-ai-copilot-programar-sem-codigo-2026",
