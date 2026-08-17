@@ -2,6 +2,16 @@
   "_comment": "Catálogo de todos os artigos do Yarivi. Ordem importa: artigos com mesma data_pub aparecem na ordem deste array. Não edite manualmente — atualizado pela skill signal-publicador.",
   "articles": [
     {
+      "slug": "ia-agronegocio-brasil-2026",
+      "manchete": "Seu pacote de açúcar foi colhido por um drone que viu a praga antes do produtor",
+      "categoria": "ai",
+      "emoji": "🤖",
+      "grad": "g1",
+      "excerpt": "Drones com visão computacional reduziram o uso de defensivos em até 90% e robôs autônomos já operam no Cerrado. Como a IA está transformando o campo brasileiro em 2026.",
+      "read_time": "7 min",
+      "data_pub": "2026-08-17"
+    },
+    {
       "slug": "ia-gerar-video-como-usar-2026",
       "manchete": "Os custos de produção de vídeo caíram 97% — e qualquer um pode usar agora",
       "categoria": "ai",
