@@ -299,9 +299,11 @@
       "excerpt": "O MEC publicou o primeiro guia nacional de IA para escolas em abril de 2026. Saiba o que muda para alunos e professores, quais ferramentas usar e os riscos reais do uso sem orientação.",
       "read_time": "8 min",
       "keyword": "ia educacao escola brasil 2026",
-      "status": "aguardando-revisao",
+      "status": "publicado",
       "ordem": 21,
-      "criado_em": "2026-08-17"
+      "criado_em": "2026-08-17",
+      "aprovado_em": "2026-08-19",
+      "publicado_em": "2026-08-19"
     }
   ]
 }
