@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Windows Copilot+: o que é Recall e como desativar | Yarivi</title>
+  <meta name="description" content="Windows Recall tira print da sua tela a cada poucos segundos. Entenda o que é Copilot+, por que o Recall gera polêmica e como desativar de vez." />
+  <link rel="canonical" href="https://yarivi.com/artigos/windows-copilot-plus-recall-2026" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Windows Copilot+: o que é Recall e como desativar | Yarivi" />
+  <meta property="og:description" content="Windows Recall tira print da sua tela a cada poucos segundos. Entenda o que é Copilot+, por que o Recall gera polêmica e como desativar de vez." />
+  <meta property="og:url" content="https://yarivi.com/artigos/windows-copilot-plus-recall-2026" />
+  <meta property="og:site_name" content="Yarivi" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Article meta -->
+  <meta property="article:published_time" content="2026-08-17T12:00:00-03:00" />
+  <meta property="article:modified_time" content="2026-08-17T12:00:00-03:00" />
+  <meta property="article:author" content="Yarivi" />
+  <meta property="article:section" content="Software" />
+  <meta property="article:tag" content="Windows" />
+  <meta property="article:tag" content="Copilot+" />
+  <meta property="article:tag" content="Recall" />
+  <meta property="article:tag" content="Privacidade" />
+  <meta property="article:tag" content="IA" />
+
+  <!-- JSON-LD: NewsArticle -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Seu PC tira print da sua tela a cada 5 segundos — e você provavelmente não sabe",
+    "description": "Windows Recall tira print da sua tela a cada poucos segundos. Entenda o que é Copilot+, por que o Recall gera polêmica e como desativar de vez.",
+    "url": "https://yarivi.com/artigos/windows-copilot-plus-recall-2026",
+    "datePublished": "2026-08-17T12:00:00-03:00",
+    "dateModified": "2026-08-17T12:00:00-03:00",
+    "author": { "@type": "Organization", "name": "Yarivi" },
+    "publisher": { "@type": "Organization", "name": "Yarivi", "url": "https://yarivi.com" },
+    "articleSection": "Software",
+    "keywords": ["windows copilot plus", "recall windows", "copilot+ pc", "privacidade windows", "como desativar recall"]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "O que é Windows Recall?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Recall é um recurso dos PCs Copilot+ que captura prints automáticos da sua tela a cada poucos segundos e usa IA para indexar o conteúdo. A ideia é que você possa pesquisar qualquer coisa que já viu no PC com uma busca em linguagem natural — tipo 'aquele PDF que li terça' ou 'o e-mail com o orçamento da reforma'."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O Recall envia meus dados para a Microsoft?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Não — o banco de dados do Recall fica armazenado localmente no seu PC, criptografado. As imagens e indexações não são enviadas para servidores da Microsoft. O processamento acontece no próprio dispositivo, usando a NPU do chip."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quais PCs são Copilot+?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "São PCs com NPU de pelo menos 40 TOPS, 16 GB de RAM e 256 GB de armazenamento. Processadores compatíveis incluem Qualcomm Snapdragon X Elite/Plus, AMD Ryzen AI 300 e Intel Core Ultra (série 2). Surface Pro 11 e Surface Laptop 7 foram os primeiros lançados."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como desativar o Recall no Windows 11?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vá em Configurações > Privacidade e segurança > Recall e instantâneos. Ali você pode desligar completamente o Recall, pausar temporariamente a captura ou excluir todos os snapshots já armazenados. O recurso também pode ser desativado pelo administrador em máquinas corporativas via política de grupo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Além do Recall, o que mais vem no Copilot+?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Os PCs Copilot+ trazem: Click to Do (ação rápida sobre qualquer coisa na tela — traduzir, copiar, buscar), Live Captions com tradução em tempo real para 44 idiomas, Cocreator no Paint (geração de imagem por IA), Super Resolution de vídeo (upscaling por IA) e acesso prioritário a recursos do Microsoft 365 com IA."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="theme-dark">
+
+  <!-- NAV -->
+  <nav class="nav-bar">
+    <a href="../index.html" class="nav-logo">Yarivi<span class="nav-logo-dot">.</span></a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+    </div>
+  </nav>
+
+  <!-- PROGRESS BAR -->
+  <div class="progress-bar-wrap"><div class="progress-bar" id="progressBar"></div></div>
+
+  <!-- HERO -->
+  <header class="art-hero">
+    <div class="art-meta-top">
+      <span class="art-tag tag-sw">Software</span>
+      <span class="art-read-time">7 min de leitura</span>
+    </div>
+    <h1 class="art-title">Seu PC tira print da sua tela a cada 5 segundos — e você provavelmente não sabe</h1>
+    <p class="art-subtitle">O Windows Recall promete encontrar qualquer coisa que você já viu no computador. Mas para isso, ele guarda tudo. Entenda como funciona, por que especialistas se preocupam e como desligar se quiser.</p>
+    <div class="art-byline">
+      <span>Por <strong>Yarivi</strong></span>
+      <span class="art-byline-sep">·</span>
+      <time datetime="2026-08-17">17 de agosto de 2026</time>
+    </div>
+  </header>
+
+  <!-- ARTICLE BODY -->
+  <article class="art-body">
+
+    <p>Imagine um assistente que lembra de absolutamente tudo que você fez no computador. Cada site visitado, cada documento aberto, cada conversa no Teams, cada foto que apareceu na tela. Agora você pode perguntar: "onde estava aquela proposta que eu vi semana passada?" e ele te mostra.</p>
+
+    <p>É exatamente isso que o <strong>Windows Recall</strong> faz — e é exatamente por isso que metade do mundo tech ficou em pânico quando a Microsoft anunciou o recurso em 2024.</p>
+
+    <p>O Recall é uma das principais novidades dos <strong>PCs Copilot+</strong>, a nova categoria de computadores com Windows criada para rodar IA localmente. E um ano depois do lançamento controverso, o debate sobre privacidade continua.</p>
+
+    <!-- CALLOUT: o que é Copilot+ -->
+    <aside class="data-callout">
+      <span class="data-callout-label">📌 O que é um PC Copilot+?</span>
+      <p>É a nova categoria de PCs com Windows que tem poder de processamento de IA embutido. Para ser Copilot+, o computador precisa ter uma <strong>NPU</strong> (unidade de processamento neural) com pelo menos <strong>40 TOPS</strong> de capacidade, 16 GB de RAM e 256 GB de armazenamento SSD. Qualcomm Snapdragon X, AMD Ryzen AI 300 e Intel Core Ultra série 2 são os processadores compatíveis.</p>
+    </aside>
+
+    <h2>O que é Windows Recall — e como ele funciona de verdade</h2>
+
+    <p>O Recall captura prints automáticos da sua tela em intervalos regulares enquanto você usa o PC. Não são fotos aleatórias: o Windows analisa cada imagem com IA local e extrai o texto, os elementos visuais e o contexto de cada momento.</p>
+
+    <p>Toda essa informação vai para um banco de dados indexado, armazenado localmente no seu dispositivo. Quando você quiser encontrar algo, basta digitar uma descrição em linguagem natural na barra de busca — "aquele contrato PDF de março", "o site com a receita de bolo de cenoura" — e o Recall vai buscar entre os snapshots para te mostrar o momento exato.</p>
+
+    <div class="stat-row">
+      <div class="stat-box">
+        <span class="stat-num">40+</span>
+        <span class="stat-desc">TOPS de NPU exigidos para Copilot+</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num">16 GB</span>
+        <span class="stat-desc">RAM mínima para rodar Recall</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num">100%</span>
+        <span class="stat-desc">dos dados ficam no seu dispositivo — nada vai para a nuvem</span>
+      </div>
+    </div>
+
+    <p>É basicamente uma <strong>memória fotográfica para o seu computador</strong>. O processamento acontece inteiramente no chip do seu PC, sem enviar nada para servidores da Microsoft.</p>
+
+    <h2>Por que o Recall gerou tanta polêmica de privacidade?</h2>
+
+    <p>Quando a Microsoft anunciou o Recall em maio de 2024, pesquisadores de segurança imediatamente levantaram alertas. O mais vocal foi Kevin Beaumont, analista de cibersegurança britânico, que demonstrou como seria possível para um malware extrair o banco de dados do Recall e ter acesso a todo o histórico visual de um usuário — incluindo senhas digitadas, extratos bancários e conversas privadas.</p>
+
+    <div class="paradox-box">
+      <p class="paradox-text">"O Recall é essencialmente um keylogger visual embutido no sistema operacional."</p>
+      <p class="paradox-source">— Kevin Beaumont, pesquisador de segurança, 2024</p>
+    </div>
+
+    <p>A Microsoft adiou o lançamento, revisou a arquitetura de segurança e relançou o Recall como um recurso <strong>opt-in</strong> — ou seja, desativado por padrão. Para usar, o usuário precisa ativar conscientemente.</p>
+
+    <p>Em 2026, um ano depois do lançamento efetivo, o GeekWire reportou que especialistas ainda veem riscos: o banco de dados, embora criptografado, pode ser acessado por qualquer aplicativo com permissão de administrador na mesma máquina. Em redes corporativas sem controle de políticas de grupo, isso é uma superfície de ataque real.</p>
+
+    <h2>O Recall manda seus dados para a Microsoft?</h2>
+
+    <p>Não — e esse é o ponto central da arquitetura. Todo o processamento acontece localmente, usando a NPU do chip. As imagens capturadas e o banco de dados indexado ficam no seu dispositivo, criptografados.</p>
+
+    <p>A Microsoft compara com o iCloud da Apple: assim como fotos no iPhone podem ficar só no dispositivo ou sincronizar com a nuvem, o Recall só processa no dispositivo. Não há opção de sincronizar os snapshots na nuvem, nem a Microsoft acessa esses dados remotamente.</p>
+
+    <aside class="data-callout">
+      <span class="data-callout-label">🔒 O que o Recall exclui automaticamente</span>
+      <p>O Recall tem filtros padrão que evitam capturar: <strong>janelas de modo InPrivate/incógnito</strong> no Edge (e navegadores que seguem o protocolo), conteúdo de DRM (filmes na Netflix, Prime Video), e algumas categorias de conteúdo sensível detectadas por IA. Aplicativos corporativos podem desativar o Recall para suas janelas.</p>
+    </aside>
+
+    <h2>Além do Recall: o que mais vem nos PCs Copilot+</h2>
+
+    <p>O Recall é o recurso mais falado, mas os PCs Copilot+ trazem outras funcionalidades de IA que funcionam localmente:</p>
+
+    <p><strong>Click to Do:</strong> Clicou em qualquer coisa na tela — texto, imagem, link — e um menu aparece com ações contextuais: traduzir, buscar, copiar, criar tarefa. Funciona em qualquer aplicativo, sem precisar abrir outro programa.</p>
+
+    <p><strong>Live Captions com tradução:</strong> Legenda em tempo real para qualquer áudio do PC, com tradução automática para inglês ou português. Funciona mesmo sem internet, porque o modelo de linguagem fica local. Útil para reuniões em inglês, vídeos sem legenda e chamadas com pessoas em outro idioma.</p>
+
+    <p><strong>Cocreator no Paint:</strong> Geração de imagens por IA diretamente no Paint. Você faz um esboço e o Cocreator gera uma imagem completa a partir dele, em tempo real, enquanto você desenha.</p>
+
+    <p><strong>Super Resolution de vídeo:</strong> Upscaling de vídeos por IA — um arquivo em 720p pode ser exibido com qualidade de 1080p ou 4K, com o chip fazendo o processamento em tempo real.</p>
+
+    <p><strong>Acesso antecipado ao Microsoft 365 Copilot:</strong> PCs Copilot+ têm acesso prioritário a novos recursos de IA no Word, Excel, PowerPoint e Teams antes de outros usuários.</p>
+
+    <h2>Como desativar o Recall (passo a passo)</h2>
+
+    <p>Se você tem um PC Copilot+ e quer desligar o Recall, é simples:</p>
+
+    <ol>
+      <li>Abra <strong>Configurações</strong> (Win + I)</li>
+      <li>Vá em <strong>Privacidade e segurança</strong></li>
+      <li>Clique em <strong>Recall e instantâneos</strong></li>
+      <li>Desligue a chave <strong>"Salvar instantâneos"</strong></li>
+      <li>Opcional: clique em <strong>"Excluir instantâneos"</strong> para apagar tudo que já foi capturado</li>
+    </ol>
+
+    <p>Em ambientes corporativos, o administrador de TI pode bloquear o Recall para todos os dispositivos via política de grupo (Group Policy) ou configurações de MDM no Microsoft Intune.</p>
+
+    <h2>Vale a pena usar os PCs Copilot+?</h2>
+
+    <p>Depende do que você faz. Para quem usa o PC profissionalmente — pesquisa, redação, reuniões em vários idiomas, trabalho com imagens — os recursos Copilot+ têm utilidade real. O Click to Do e o Live Captions com tradução são genuinamente úteis no dia a dia.</p>
+
+    <p>Já o Recall é opcional. Se você se preocupa com privacidade, deixe desativado. Você ainda tem todos os outros recursos Copilot+.</p>
+
+    <div class="summary-box">
+      <h3>Resumo rápido</h3>
+      <ul>
+        <li><strong>Recall:</strong> captura prints automáticos da tela e indexa com IA para busca posterior — tudo local, nada vai para a nuvem</li>
+        <li><strong>Está desativado por padrão</strong> depois da polêmica de 2024; você precisa ativar conscientemente</li>
+        <li><strong>PCs Copilot+</strong> exigem NPU 40+ TOPS, 16 GB RAM, 256 GB SSD</li>
+        <li><strong>Outros recursos</strong>: Click to Do, Live Captions com tradução, Cocreator no Paint, Super Resolution de vídeo</li>
+        <li>Para desativar: Configurações → Privacidade e segurança → Recall e instantâneos → desligar</li>
+      </ul>
+    </div>
+
+    <!-- FAQ -->
+    <h2>Perguntas frequentes</h2>
+
+    <div class="faq-item">
+      <h3>O que é Windows Recall?</h3>
+      <p>Recall é um recurso dos PCs Copilot+ que captura prints automáticos da sua tela a cada poucos segundos e usa IA para indexar o conteúdo. A ideia é que você possa pesquisar qualquer coisa que já viu no PC com uma busca em linguagem natural — tipo "aquele PDF que li terça" ou "o e-mail com o orçamento da reforma".</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>O Recall envia meus dados para a Microsoft?</h3>
+      <p>Não — o banco de dados do Recall fica armazenado localmente no seu PC, criptografado. As imagens e indexações não são enviadas para servidores da Microsoft. O processamento acontece no próprio dispositivo, usando a NPU do chip.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Quais PCs são Copilot+?</h3>
+      <p>São PCs com NPU de pelo menos 40 TOPS, 16 GB de RAM e 256 GB de armazenamento. Processadores compatíveis incluem Qualcomm Snapdragon X Elite/Plus, AMD Ryzen AI 300 e Intel Core Ultra (série 2). Surface Pro 11 e Surface Laptop 7 foram os primeiros lançados.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Como desativar o Recall no Windows 11?</h3>
+      <p>Vá em Configurações → Privacidade e segurança → Recall e instantâneos. Ali você pode desligar completamente o Recall, pausar temporariamente a captura ou excluir todos os snapshots já armazenados. O recurso também pode ser desativado pelo administrador em máquinas corporativas via política de grupo.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Além do Recall, o que mais vem no Copilot+?</h3>
+      <p>Os PCs Copilot+ trazem: Click to Do (ação rápida sobre qualquer coisa na tela), Live Captions com tradução em tempo real para 44 idiomas, Cocreator no Paint (geração de imagem por IA), Super Resolution de vídeo (upscaling por IA) e acesso prioritário a recursos do Microsoft 365 com IA.</p>
+    </div>
+
+    <!-- LINKS INTERNOS -->
+    <h2>Leia também</h2>
+    <p>Quer entender melhor como a IA está mudando os dispositivos? Veja nosso artigo sobre <a href="pc-com-ia-npu-vale-a-pena-2026.html">PCs com IA e NPU: vale a pena comprar agora?</a> e como os <a href="agente-de-ia-o-que-e-2026.html">agentes de IA</a> estão transformando a forma de usar o computador.</p>
+
+    <!-- FONTES -->
+    <div class="art-sources">
+      <h4>Fontes</h4>
+      <ul>
+        <li>Microsoft — <a href="https://news.microsoft.com/source/latam/features/ia-pt-br/atualizacao-na-previa-do-recurso-recall-para-os-copilot-pcs/" target="_blank" rel="noopener">Atualização na prévia do recurso Recall para os Copilot+ PCs</a></li>
+        <li>GeekWire — <a href="https://www.geekwire.com/2026/one-year-after-its-rocky-launch-microsofts-windows-recall-still-raises-security-red-flags/" target="_blank" rel="noopener">One year after its rocky launch, Windows Recall still raises security red flags</a></li>
+        <li>Wikipedia — <a href="https://en.wikipedia.org/wiki/Windows_Recall" target="_blank" rel="noopener">Windows Recall</a></li>
+        <li>Kaspersky — <a href="https://www.kaspersky.com.br/blog/how-to-disable-copilot-recall-spyware/22738/" target="_blank" rel="noopener">Como desativar o Microsoft Recall</a></li>
+        <li>Thurrott — <a href="https://www.thurrott.com/books/windows-11-field-guide/productivity-apps/340031/copilot-pc-click-to-do-and-recall" target="_blank" rel="noopener">Copilot+ PC: Click to Do and Recall</a></li>
+        <li>Pureinfotech — <a href="https://pureinfotech.com/windows-recall-hardware-requirements/" target="_blank" rel="noopener">Windows Recall hardware requirements</a></li>
+      </ul>
+    </div>
+
+  </article>
+
+  <!-- FOOTER -->
+  <footer class="art-footer">
+    <p>© 2026 Yarivi · <a href="../privacidade.html">Privacidade</a> · <a href="../termos.html">Termos</a></p>
+  </footer>
+
+  <script>
+    // Progress bar
+    window.addEventListener('scroll', () => {
+      const doc = document.documentElement;
+      const scrollTop = doc.scrollTop || document.body.scrollTop;
+      const scrollHeight = doc.scrollHeight - doc.clientHeight;
+      const pct = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+      document.getElementById('progressBar').style.width = pct + '%';
+    });
+    // Theme toggle (dark default)
+    const saved = localStorage.getItem('yarivi-theme');
+    if (saved) document.body.className = saved;
+  </script>
+
+</body>
+</html>

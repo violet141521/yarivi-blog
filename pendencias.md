@@ -1,28 +1,29 @@
-# Pendências — Blog Signal.
+# Pendências — Blog Yarivi
 
-Atualizado em 2026-07-17. Ordem = prioridade (dependências primeiro).
+Atualizado em 2026-08-17. Ordem = prioridade (dependências primeiro).
 
 ## Crítico (bloqueia o resto)
 
-- [ ] **Domínio do blog** — registrar domínio (~R$40/ano)
-- [ ] **Configurar Cloudflare** — Pages + DNS + SSL (ver `signal-publicador/references/deploy.md`)
-- [ ] **Abrir empresa (MEI ou CNPJ)** — necessário para afiliados e para AdSense/Mediavine como pessoa jurídica
+- [x] **Domínio do blog** — yarivi.com registrado na Cloudflare (2026-08-01)
+- [x] **Configurar Cloudflare** — Pages + DNS + SSL configurados (2026-08-01)
+- [ ] **Abrir empresa (MEI ou CNPJ)** — necessário para afiliados e para AdSense/Mediavine como pessoa jurídica; após abrir, atualizar `contato.html`, `privacidade.html` e `termos.html` com razão social e CNPJ
 
 ## Alto
 
 - [ ] **Análise de risco jurídico** — exposição em conteúdo (marcas/produtos citados, reviews, links de afiliado, dados de acesso)
-- [ ] **Proteção de direitos autorais** — licença das imagens usadas, registro de marca do nome "Signal", termos sobre reuso do conteúdo
-- [ ] **Páginas legais (LGPD)** — política de privacidade, termos de uso, aviso de cookies, disclosure de links afiliados
-- [ ] **AdSense** — aplicar só após páginas legais prontas e 12+ artigos no ar
+- [ ] **Proteção de direitos autorais** — licença das imagens usadas, registro de marca do nome "Yarivi", termos sobre reuso do conteúdo
+- [ ] **Páginas legais (LGPD)** — privacidade, termos e contato já existem; atualizar com CNPJ após abrir MEI; disclosure de links afiliados a incluir
+- [ ] **AdSense** — pré-requisitos já cumpridos (13 artigos publicados + páginas legais no ar); submeter em google.com/adsense
 
 ## Médio
 
 - [ ] **Analisar concorrentes** — benchmarking de blogs de tech BR (estrutura, monetização, SEO)
-- [ ] **Agendar "Programado" e publicar via Claude** — tarefa seg-sex 08:00 (depende do deploy no ar + rascunhos aprovados)
-- [ ] **Google Search Console + Analytics** — indexação e métricas (também pré-requisito comum do AdSense)
-- [ ] **Sitemap.xml / robots.txt** — SEO técnico, normalmente resolvido no deploy
+- [x] **Agendar publicação via Claude** — task `yarivi-publicador-diario` ativa seg–sex 18:00 (2026-08-07)
+- [ ] **Google Search Console + Analytics** — indexação e métricas (pré-requisito comum do AdSense)
+- [x] **Sitemap.xml / robots.txt** — gerados e no ar (2026-08-01)
 - [ ] **Cadastro em programas de afiliados** (Amazon Associates etc.) — depende do CNPJ
 - [ ] **Backup / versionamento do site** — segurança básica antes de escalar o volume de artigos
+- [ ] **Instalar skill validador-text** — skill criada em 2026-08-12 (antiplágio + link checker + checklist SEO); abrir `validador-text/SKILL.md` no Claude → Save skill
 
 ## Segurança — Painel Cloudflare (fazer após o deploy)
 
@@ -42,6 +43,12 @@ Arquivos já configurados (commit e deploy atualizam automaticamente):
 - `_redirects` — diretórios internos redirecionam para /index.html
 - `robots.txt` — diretórios internos bloqueados para crawlers
 
-## Já em andamento (contexto do projeto)
+## Concluídos recentemente
 
-- [ ] 5 rascunhos aguardando aprovação (agente de IA, robô humanoide, RTX Spark, dobráveis, bateria sólida)
+- [x] **Cloudflare Cache Rules** — `yarivi-cache-artigos` e `yarivi-bypass-api` criadas (2026-08-10)
+- [x] **Corrigir redirects 301/308** — links internos com `.html` corrigidos em partials, middleware e artigos (2026-08-08)
+- [x] **Skill validador-text criada** — antiplágio DIY + link checker + checklist SEO (2026-08-12); pendente apenas a instalação
+
+## Em andamento
+
+- [ ] 5 rascunhos aguardando revisão (agente-de-ia, robô humanoide, RTX Spark, dobráveis, bateria sólida)

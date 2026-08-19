@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA nas eleições 2026: como identificar deepfakes | Yarivi</title>
+    <meta name="description" content="Deepfakes de candidatos circulam no WhatsApp antes das eleições 2026. O TSE aprovou regras, mas como identificar um vídeo falso? Guia prático com sinais e ferramentas.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yarivi.com/artigos/ia-eleicoes-2026-deepfake">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Yarivi">
+    <meta property="og:title" content="IA nas eleições 2026: como identificar deepfakes">
+    <meta property="og:description" content="Deepfakes de candidatos circulam no WhatsApp antes das eleições 2026. O TSE aprovou regras, mas como identificar um vídeo falso? Guia prático com sinais e ferramentas.">
+    <meta property="og:url" content="https://yarivi.com/artigos/ia-eleicoes-2026-deepfake">
+    <meta property="og:image" content="https://yarivi.com/og-cover.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="article:published_time" content="2026-08-17">
+    <meta property="article:section" content="Segurança">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "IA nas eleições 2026: como identificar deepfakes",
+      "description": "Deepfakes de candidatos circulam no WhatsApp antes das eleições 2026. O TSE aprovou regras, mas como identificar um vídeo falso? Guia prático com sinais e ferramentas.",
+      "datePublished": "2026-08-17",
+      "dateModified": "2026-08-17",
+      "inLanguage": "pt-BR",
+      "url": "https://yarivi.com/artigos/ia-eleicoes-2026-deepfake",
+      "publisher": { "@type": "NewsMediaOrganization", "name": "Yarivi", "url": "https://yarivi.com" },
+      "articleSection": "Segurança",
+      "keywords": ["ia eleições 2026 deepfake", "deepfake candidato como identificar", "desinformação eleitoral IA", "TSE regras inteligência artificial"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"Deepfake político é crime no Brasil?","acceptedAnswer":{"@type":"Answer","text":"Sim, desde a Resolução TSE nº 23.760 de 2026, o uso de deepfakes para criar conteúdo falso atribuído a candidatos é vedado e sujeito a sanções eleitorais. O criador e o distribuidor podem responder criminalmente por desinformação eleitoral e uso indevido da imagem."}},
+        {"@type":"Question","name":"Como saber se um vídeo de candidato é deepfake?","acceptedAnswer":{"@type":"Answer","text":"Observe: piscadas irregulares ou ausentes; bordas do rosto com textura diferente do fundo; lábios que não sincronizam perfeitamente com o áudio; iluminação inconsistente no rosto. Use ferramentas como InVID (extensão gratuita para Chrome) ou FotoForensics para analisar imagens."}},
+        {"@type":"Question","name":"O TSE tem como derrubar deepfakes rapidamente?","acceptedAnswer":{"@type":"Answer","text":"O TSE criou um canal específico para denúncias de desinformação eleitoral com IA. A plataforma se comprometeu com remoção em até 24h para conteúdos manifestamente falsos. Na prática, o WhatsApp é o maior desafio — por ser criptografado, o monitoramento é muito mais difícil."}},
+        {"@type":"Question","name":"IA pode ser usada legalmente em campanhas eleitorais?","acceptedAnswer":{"@type":"Answer","text":"Sim, com restrições. A Resolução TSE nº 23.760 permite uso de IA para produção de conteúdo legítimo (edição de vídeo, geração de imagens), desde que o conteúdo seja verdadeiro e haja identificação clara de que foi produzido com IA. Fica proibido criar falas, posições ou imagens falsas de candidatos."}}
+      ]
+    }
+    </script>
+    <script>const t=localStorage.getItem('yarivi-theme');if(t)document.documentElement.setAttribute('data-theme',t);</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        #progress-bar{position:fixed;top:64px;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),var(--teal));z-index:199;transition:width .1s linear}
+        .art-page{max-width:720px;margin:0 auto;padding:6rem 2rem 4rem}
+        .art-header{margin-bottom:2.5rem}
+        .art-header .tags{margin-bottom:1rem}
+        .art-headline{font-family:'Fraunces',serif;font-weight:800;font-size:clamp(1.75rem,5vw,2.75rem);line-height:1.15;letter-spacing:-0.02em;color:var(--text-1);margin-bottom:1.25rem}
+        .art-lead{font-size:1.125rem;line-height:1.7;color:var(--text-2);border-left:3px solid var(--accent);padding-left:1.25rem;margin-bottom:1.5rem}
+        .art-byline{display:flex;align-items:center;gap:1rem;font-size:0.85rem;color:var(--text-3);padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+        .art-byline strong{color:var(--text-2)}
+        .art-byline .sep::before{content:'·';margin-right:1rem}
+        .art-body{line-height:1.8;font-size:1.0625rem}
+        .art-body p{margin-bottom:1.5rem;color:var(--text-1)}
+        .art-body h2{font-family:'Fraunces',serif;font-weight:700;font-size:1.5rem;letter-spacing:-0.015em;color:var(--text-1);margin:2.5rem 0 1rem;padding-top:0.5rem}
+        .art-body h3{font-weight:700;font-size:1.1rem;color:var(--text-1);margin:2rem 0 0.75rem}
+        .art-body ul,.art-body ol{margin:0 0 1.5rem 1.5rem;color:var(--text-1)}
+        .art-body li{margin-bottom:0.5rem;line-height:1.7}
+        .art-body strong{color:var(--text-1);font-weight:700}
+        .art-body em{color:var(--accent);font-style:normal;font-weight:600}
+        .data-callout{background:var(--bg-card);border:1px solid var(--border);border-left:4px solid var(--teal);border-radius:var(--radius);padding:1.25rem 1.5rem;margin:2rem 0}
+        .data-callout p{margin-bottom:0;font-size:0.95rem}
+        .stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin:2rem 0}
+        .stat-box{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;text-align:center}
+        .stat-num{font-family:'Fraunces',serif;font-size:1.9rem;font-weight:800;color:var(--teal);line-height:1;margin-bottom:0.4rem}
+        .stat-label{font-size:0.78rem;color:var(--text-2);line-height:1.4}
+        .paradox-box{background:linear-gradient(135deg,rgba(162,89,255,0.08),rgba(245,166,35,0.06));border:1px solid rgba(162,89,255,0.3);border-radius:var(--radius-lg);padding:1.75rem 2rem;margin:2.5rem 0}
+        .paradox-box h3{color:var(--violet);margin-top:0;margin-bottom:0.75rem}
+        .paradox-box p{margin-bottom:0.75rem}
+        .paradox-box p:last-child{margin-bottom:0}
+        .summary-box{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem 2rem;margin:2.5rem 0}
+        .summary-box h2{font-family:'Manrope',sans-serif;margin-top:0!important;padding-top:0!important;letter-spacing:0.05em;text-transform:uppercase;font-size:0.82rem;color:var(--accent);margin-bottom:1rem!important}
+        .summary-box ol{margin-left:1.25rem;margin-bottom:0}
+        .summary-box li{margin-bottom:0.6rem;font-size:0.95rem}
+        .art-sources{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border)}
+        .art-sources h4{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-3);margin-bottom:0.75rem}
+        .art-sources ul{list-style:none;margin:0}
+        .art-sources li{font-size:0.82rem;color:var(--text-3);margin-bottom:0.35rem}
+        .art-sources a{color:var(--text-3);text-decoration:underline;text-underline-offset:3px}
+        .art-sources a:hover{color:var(--accent)}
+        .back-link{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.85rem;color:var(--text-3);text-decoration:none;margin-bottom:2rem;transition:color .2s}
+        .back-link:hover{color:var(--accent)}
+        @media(max-width:640px){.art-page{padding:5rem 1.25rem 3rem}.stat-row{grid-template-columns:repeat(2,1fr)}}
+    </style>
+</head>
+<body>
+    <nav class="nav" role="navigation" aria-label="Navegação principal">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-logo" aria-label="Yarivi — página inicial">Yarivi</a>
+            <div class="nav-links" style="display:flex;align-items:center;gap:1.5rem;">
+                <a href="../index.html#em-destaque" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Destaques</a>
+                <a href="../index.html#ultimas" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Notícias</a>
+                <button id="theme-toggle" aria-label="Alternar tema" style="background:none;border:none;cursor:pointer;font-size:1.1rem;color:var(--text-2);padding:0.25rem;">🌙</button>
+            </div>
+        </div>
+    </nav>
+    <div id="progress-bar" role="progressbar" aria-hidden="true"></div>
+    <main class="art-page">
+        <a href="../index.html" class="back-link">← Voltar para o Yarivi</a>
+        <header class="art-header">
+            <div class="tags">
+                <span class="tag tag-sec">Segurança</span>
+                <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+            </div>
+            <h1 class="art-headline">Você vai receber um vídeo do seu candidato que ele nunca gravou</h1>
+            <p class="art-lead">Com as eleições de outubro de 2026 se aproximando, <strong>deepfakes de candidatos</strong> já circulam no WhatsApp. O TSE aprovou regras, mas a tecnologia avança mais rápido que a fiscalização. Saiba como identificar um vídeo falso — antes de compartilhar.</p>
+            <div class="art-byline">
+                <span><strong>Yarivi</strong> Redação</span>
+                <span class="sep">17 ago 2026</span>
+                <span class="sep">8 min de leitura</span>
+            </div>
+        </header>
+        <article class="art-body">
+
+<p>Um vídeo chega no grupo da família. O candidato X admite uma corrupção. Ou faz uma proposta absurda. Ou ofende uma comunidade. Parece real — a voz bate, a boca move, a expressão convence.</p>
+
+<p>O vídeo é falso. Foi gerado por IA em menos de 10 minutos, com um computador comum e uma ferramenta gratuita. E antes que alguém verifique, já foi compartilhado por milhares de pessoas.</p>
+
+<p>Esse é o cenário das eleições de 2026: a <em>IA nas eleições</em> como arma de desinformação mais sofisticada que o Brasil já enfrentou.</p>
+
+<h2>O que é um deepfake político e por que é diferente de uma montagem</h2>
+
+<p>Uma montagem é como um recorte de jornal colado num papel. Dá para ver as bordas. Um deepfake usa redes neurais para recriar o rosto, a voz e os movimentos de uma pessoa em situações que nunca aconteceram.</p>
+
+<p>O resultado é convincente porque a IA aprende os padrões únicos de como aquela pessoa pisca, fala, sorri. Ela não cola — ela recria.</p>
+
+<div class="data-callout">
+    <p>O Tribunal Superior Eleitoral aprovou resolução específica sobre IA nas eleições 2026 (Resolução TSE nº 23.760), proibindo o uso de deepfakes para criar falas, posições ou imagens falsas de candidatos. Campanhas que usarem IA para produzir conteúdo legítimo devem identificar o uso com aviso visível. <strong>Fonte: Fast Company Brasil / Migalhas, 2026.</strong></p>
+</div>
+
+<h2>Por que as eleições de 2026 são o maior risco até agora</h2>
+
+<p>Três fatores se combinaram para tornar 2026 o ano de maior risco eleitoral por desinformação com IA:</p>
+
+<div class="stat-row">
+    <div class="stat-box">
+        <div class="stat-num">&lt;10min</div>
+        <div class="stat-label">tempo para gerar um deepfake convincente com ferramentas de IA acessíveis ao público</div>
+    </div>
+    <div class="stat-box">
+        <div class="stat-num">#1</div>
+        <div class="stat-label">o WhatsApp é o principal canal de informação política no Brasil — e criptografado, impossível de monitorar em massa</div>
+    </div>
+    <div class="stat-box">
+        <div class="stat-num">24h</div>
+        <div class="stat-label">prazo máximo que plataformas se comprometeram a remover deepfakes eleitorais manifestamente falsos</div>
+    </div>
+</div>
+
+<p>A combinação é explosiva: ferramentas de deepfake ficaram baratas e acessíveis ao mesmo tempo em que o WhatsApp — criptografado e impossível de monitorar em massa — é o principal canal de informação política de boa parte dos eleitores brasileiros.</p>
+
+<div class="paradox-box">
+    <h3>⚠️ O problema do WhatsApp: criptografia protege e prejudica ao mesmo tempo</h3>
+    <p>A criptografia ponta a ponta do WhatsApp impede que governos, empresas e hackers leiam suas mensagens. Isso é bom para sua privacidade.</p>
+    <p>Mas também impede que o TSE, o governo ou a própria Meta monitore a disseminação de deepfakes em grupos privados. Um vídeo falso pode viralizar em grupos de família por dias antes de alguém denunciar. E quando a remoção acontece, a maioria já viu.</p>
+</div>
+
+<h2>Como identificar um deepfake de candidato em 2026</h2>
+
+<p>A IA melhorou muito — mas ainda deixa pistas. Preste atenção a estes sinais:</p>
+
+<h3>Pistas visuais</h3>
+<ul>
+    <li><strong>Piscadas:</strong> deepfakes antigos não piscavam; os novos piscam de forma irregular ou muito rítmica.</li>
+    <li><strong>Bordas do rosto:</strong> olhe para o limite entre o rosto e o cabelo, ou entre o rosto e o pescoço. Textura diferente ou "halo" levemente borroso é sinal de alerta.</li>
+    <li><strong>Iluminação inconsistente:</strong> o rosto parece mais claro ou escuro que o ambiente ao redor.</li>
+    <li><strong>Dentes e orelhas:</strong> são difíceis de reconstruir com IA — procure irregularidades.</li>
+</ul>
+
+<h3>Pistas de áudio</h3>
+<ul>
+    <li><strong>Sincronia labial:</strong> os lábios chegam um pouco atrasados ou adiantados em relação à fala.</li>
+    <li><strong>Respiração artificial:</strong> a voz clonada raramente reproduz a respiração natural — parece "limpa" demais.</li>
+    <li><strong>Tom uniforme:</strong> pessoas reais variam o tom ao falar; clones de voz tendem a ser mais monótonos.</li>
+</ul>
+
+<h3>Ferramentas gratuitas para verificar</h3>
+<ul>
+    <li><strong>InVID / WeVerify:</strong> extensão gratuita para Chrome que analisa vídeos e imagens em busca de manipulação.</li>
+    <li><strong>Agência Lupa, Aos Fatos, Comprova:</strong> agências de checagem brasileiras que atuam durante o período eleitoral.</li>
+    <li><strong>Reverse Image Search:</strong> no Google Imagens, pesquise frames do vídeo para ver se a imagem aparece em outro contexto.</li>
+</ul>
+
+<p>Para entender como a IA clona vozes e é usada em outros golpes, veja <a href="/artigos/deepfake-voz-golpe-whatsapp-2026">como deepfakes de voz enganam famílias no WhatsApp</a>. E para saber como funciona o agente de IA que produz esses conteúdos, leia <a href="/artigos/agente-de-ia-o-que-e-2026">o que é um agente de IA e como ele age sozinho</a>.</p>
+
+<h2>O que o TSE pode e não pode fazer</h2>
+
+<p>O TSE tem poderes reais, mas limitados. Pode determinar remoção de conteúdo em plataformas abertas (Instagram, YouTube, TikTok, X). Pode investigar campanhas que usam deepfakes ilegalmente. Pode aplicar multas e até cassar candidaturas em casos graves.</p>
+
+<p>O que o TSE não consegue fazer: monitorar grupos de WhatsApp, rastrear o criador de um deepfake anônimo ou impedir que o conteúdo se espalhe antes de ser derrubado.</p>
+
+<h2>Perguntas frequentes sobre IA e eleições 2026</h2>
+
+<h3>Deepfake político é crime no Brasil?</h3>
+<p>Sim. A Resolução TSE nº 23.760 proíbe o uso de deepfakes para criar conteúdo falso atribuído a candidatos. O criador e o distribuidor podem responder por desinformação eleitoral e uso indevido de imagem, com sanções que vão de multas à cassação de candidatura.</p>
+
+<h3>Como saber se um vídeo de candidato é deepfake?</h3>
+<p>Observe piscadas irregulares, bordas do rosto com textura diferente, lábios desincronizados com o áudio e iluminação inconsistente. Use a extensão InVID no Chrome ou consulte agências de checagem como Lupa e Aos Fatos.</p>
+
+<h3>O TSE consegue derrubar deepfakes rapidamente?</h3>
+<p>Em plataformas abertas, sim — há compromisso de remoção em até 24h para conteúdos manifestamente falsos. No WhatsApp, o desafio é maior: a criptografia impede monitoramento em massa, então o deepfake pode circular por dias antes de ser denunciado.</p>
+
+<h3>IA pode ser usada legalmente em campanhas eleitorais?</h3>
+<p>Sim, com regras claras. A resolução do TSE permite uso de IA para produção de conteúdo legítimo (edição de vídeo, imagens geradas), desde que o conteúdo seja verdadeiro e haja identificação visível de que foi produzido com IA.</p>
+
+<div class="summary-box">
+    <h2>Resumo em 5 pontos</h2>
+    <ol>
+        <li><strong>Deepfakes eleitorais são ilegais no Brasil</strong> desde a Resolução TSE nº 23.760 de 2026, com penas que vão de multa à cassação de candidatura.</li>
+        <li><strong>Ferramentas de IA tornaram o deepfake acessível a qualquer pessoa</strong> — em menos de 10 minutos, com um computador comum, é possível gerar um vídeo falso convincente.</li>
+        <li><strong>Os sinais de alerta:</strong> piscadas irregulares, bordas do rosto com textura diferente, lábios desincronizados com o áudio e iluminação inconsistente.</li>
+        <li><strong>O WhatsApp é o maior problema:</strong> criptografado e impossível de monitorar em massa, é o canal mais difícil de combater.</li>
+        <li><strong>Sua ação:</strong> antes de compartilhar qualquer vídeo polêmico de candidato, verifique no InVID ou numa agência de checagem — leva menos de 2 minutos.</li>
+    </ol>
+</div>
+
+            <div class="art-sources">
+                <h4>Fontes</h4>
+                <ul>
+                    <li><a href="https://www.migalhas.com.br/coluna/migalhas-de-protecao-de-dados/457011/proibicao-das-deepfakes-nas-eleicoes-de-2026" target="_blank" rel="noopener">Migalhas — Proibição das deepfakes nas eleições de 2026</a></li>
+                    <li><a href="https://fastcompanybrasil.com/ia/regras-ia-eleicoes-2026-chatgpt-deepfakes/" target="_blank" rel="noopener">Fast Company Brasil — ChatGPT, deepfakes e contas falsas: as novas regras da IA nas eleições</a></li>
+                    <li><a href="https://atarde.com.br/municipios/guerra-de-ias-e-deepfakes-especialistas-revelam-o-maior-desafio-das-eleicoes-2026-1396923" target="_blank" rel="noopener">A Tarde — Guerra de IAs e deepfakes: o maior desafio das Eleições 2026</a></li>
+                    <li><a href="https://sbtnews.sbt.com.br/noticia/tecnologia/eleicoes-2026-como-identificar-videos-gerados-por-inteligencia-artificial" target="_blank" rel="noopener">SBT News — Eleições 2026: como identificar vídeos gerados por IA</a></li>
+                    <li><a href="https://www.bonde.com.br/bondenews/politica/eleicoes-2026-saiba-como-identificar-deepfakes-e-desinformacao-criada-com-ia" target="_blank" rel="noopener">Bonde — Eleições 2026: como identificar deepfakes e desinformação criada com IA</a></li>
+                    <li><a href="https://www.bombeirosdf.com.br/2026/08/eleicoes-2026-inteligencia-artificial-deepfakes-regras-tse.html" target="_blank" rel="noopener">BombeirosDF — Eleições 2026: IA e deepfakes — regras do TSE, ago. 2026</a></li>
+                </ul>
+            </div>
+        </article>
+    </main>
+    <script>
+        const btn=document.getElementById('theme-toggle');
+        function applyTheme(t){document.documentElement.setAttribute('data-theme',t);btn.textContent=t==='light'?'☀️':'🌙';localStorage.setItem('yarivi-theme',t);}
+        applyTheme(localStorage.getItem('yarivi-theme')||'dark');
+        btn.addEventListener('click',()=>applyTheme(document.documentElement.getAttribute('data-theme')==='light'?'dark':'light'));
+        const bar=document.getElementById('progress-bar');
+        window.addEventListener('scroll',()=>{const d=document.documentElement;bar.style.width=Math.min((d.scrollTop/(d.scrollHeight-d.clientHeight))*100,100)+'%';});
+    </script>
+</body>
+</html>

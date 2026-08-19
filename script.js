@@ -42,6 +42,7 @@ async function loadPartials() {
     initThemeToggle();
     initCategoryFilter();
     initHamburger();
+    initCategoryCounts();
 }
 
 function initHamburger() {
@@ -147,6 +148,32 @@ function initCategoryFilter() {
             document.querySelectorAll('[data-filter=""]').forEach(c => c.classList.add('active'));
         }
     });
+}
+
+async function initCategoryCounts() {
+    try {
+        const res = await fetch('artigos/_catalog.json');
+        if (!res.ok) return;
+        const data = await res.json();
+
+        // Conta artigos por categoria
+        const counts = {};
+        data.articles.forEach(a => {
+            counts[a.categoria] = (counts[a.categoria] || 0) + 1;
+        });
+
+        // Atualiza os cards de categoria
+        document.querySelectorAll('.cat-card[data-filter]').forEach(card => {
+            const cat = card.dataset.filter;
+            if (!cat) return;
+            const countEl = card.querySelector('.cat-count');
+            if (!countEl) return;
+            const n = counts[cat] || 0;
+            countEl.textContent = n === 1 ? '1 artigo' : `${n} artigos`;
+        });
+    } catch (e) {
+        console.warn('initCategoryCounts: não foi possível carregar o catálogo', e);
+    }
 }
 
 document.addEventListener('DOMContentLoaded', loadPartials);

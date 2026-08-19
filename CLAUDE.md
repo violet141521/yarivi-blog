@@ -28,6 +28,11 @@ Dona: Mi (violet141521@gmail.com).
 1. **Pauta**: skill `signal-seo-writer` — pesquisa (via skill `pesquisa`, fallback WebSearch), 10 temas, usuária escolhe 5
 2. **Produção**: os 5 artigos viram rascunhos em `rascunhos/` com status `aguardando-revisao` na fila — **nunca publicar direto**
 2.5. **QA automático** (novo): skill `validador-text` gera `rascunhos/qa-[slug].md` com antiplágio, links quebrados e checklist SEO — rodar antes de apresentar o artigo à usuária para revisão
+2.6. **Auditoria de dados** (obrigatório): antes de entregar o rascunho para revisão, verificar **todos** os números, percentuais, datas e estatísticas no texto. Para cada dado:
+   - Se tiver fonte verificável (WebSearch confirma): manter e citar a fonte na seção `art-sources`
+   - Se não tiver fonte verificável: **remover do texto**, reescrevendo a frase para manter coerência (sem inventar ou aproximar)
+   - Reportar à usuária quais dados foram mantidos (com fonte) e quais foram removidos (sem fonte)
+   - Atenção especial a: citações diretas atribuídas a organizações, datas de leis/documentos, porcentagens de adoção/uso, contagens (alunos, usuários, mercado)
 3. **Revisão**: a usuária lê o artigo + relatório QA e aprova/pede mudanças no chat
 4. **Commit** (requer PC): skill `signal-publicador` move artigo para `artigos/`, atualiza `_catalog.json` e `fila.json`. O artigo fica acessível pela URL direta mas **invisível na home**.
 5. **Publicar na home** (qualquer dispositivo): a usuária decide quando tornar o artigo visível — via URL do celular ou dashboard Cloudflare (ver seção abaixo).
@@ -76,6 +81,7 @@ A home atualiza em até 1 minuto após a publicação (cache de 60s).
 
 - Nada vai ao ar sem aprovação humana (status `aprovado` na fila)
 - Estilo Yarivi: frases curtas, analogia antes de jargão, dados com fonte nomeada, ação concreta no final
+- **Regra de dados**: nenhum número, percentual, data ou estatística vai ao ar sem fonte verificada. Se não há fonte, remover e reescrever — nunca manter dado inventado ou aproximado sem aviso
 - SEO: `<title>` keyword-first ≤60 chars ≠ H1 (manchete com gancho); FAQ com schema FAQPage; 1-3 links internos
 - Checklist completo: `signal-seo-writer/references/seo-checklist.md`
 - Antes de publicar, a skill `signal-publicador` atualiza a data do artigo (meta `article:published_time`, JSON-LD `datePublished`/`dateModified` e o byline) para o dia real da publicação — nunca mantém a data de quando foi escrito
@@ -109,3 +115,4 @@ A home atualiza em até 1 minuto após a publicação (cache de 60s).
 12. Criar redes sociais do Yarivi (Twitter/X, Instagram, LinkedIn, YouTube) e adicionar coluna "Social" no footer (`partials/footer.html`) com links reais
 13. Versão em inglês do blog — artigos menos Brasil-específicos, maior alcance orgânico (decidir estrutura: subdomínio `en.yarivi.com` vs. pasta `/en/`)
 14. ~~Validação de plágio dos artigos~~ — skill `validador-text` criada (2026-08-12): antiplágio DIY via WebSearch + link checker + checklist SEO automático. **Pendente: instalar a skill no Claude** (abrir `validador-text/SKILL.md` no Claude → Save skill). Spec em `docs/validador-text-spec.md`.
+15. Adicionar 1 imagem por artigo — todos os artigos publicados e futuros devem ter ao menos uma imagem ilustrativa (definir padrão: gerada, stock ou captura; onde inserir no HTML; atributo `alt` descritivo para SEO).
