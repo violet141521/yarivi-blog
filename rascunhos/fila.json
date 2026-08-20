@@ -221,9 +221,11 @@
       "excerpt": "40% dos brasileiros já são monitorados por câmeras com reconhecimento facial. Aeroportos, metrô e bancos usam a tecnologia — mas a lei ainda não diz o que fazer quando ela erra.",
       "read_time": "7 min",
       "keyword": "reconhecimento facial brasil 2026",
-      "status": "aguardando-revisao",
+      "status": "publicado",
       "ordem": 15,
-      "criado_em": "2026-08-17"
+      "criado_em": "2026-08-17",
+      "aprovado_em": "2026-08-20",
+      "publicado_em": "2026-08-20"
     },
     {
       "slug": "chip-2nm-processador-2026",
