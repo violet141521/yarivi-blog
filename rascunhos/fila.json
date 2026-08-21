@@ -148,9 +148,11 @@
       "excerpt": "GitHub Copilot tem 4,7M assinantes; Cursor, Lovable e Bolt permitem criar apps sem programar. Guia prático para não-desenvolvedores sobre como a IA mudou o desenvolvimento em 2026.",
       "read_time": "9 min",
       "keyword": "cursor ai copilot programar sem codigo",
-      "status": "aguardando-revisao",
+      "status": "publicado",
       "ordem": 14,
-      "criado_em": "2026-08-08"
+      "criado_em": "2026-08-08",
+      "aprovado_em": "2026-08-21",
+      "publicado_em": "2026-08-21"
     },
     {
       "slug": "plano-brasileiro-inteligencia-artificial-pbia-2026",

@@ -52,3 +52,4 @@ Arquivos já configurados (commit e deploy atualizam automaticamente):
 ## Em andamento
 
 - [ ] 5 rascunhos aguardando revisão (agente-de-ia, robô humanoide, RTX Spark, dobráveis, bateria sólida)
+- [ ] **Seção "Leia também"** — adicionar bloco com links para artigos relacionados do Yarivi ao final de cada artigo (melhora retenção e reduz bounce rate)
