@@ -238,9 +238,11 @@
       "excerpt": "Os chips de 2nm da TSMC chegam em 2025-2026 com +15% de desempenho e -30% de consumo em relação ao 3nm. Entenda o que isso significa para o seu próximo celular ou notebook.",
       "read_time": "7 min",
       "keyword": "chip 2nm processador 2026",
-      "status": "aguardando-revisao",
+      "status": "publicado",
       "ordem": 16,
-      "criado_em": "2026-08-17"
+      "criado_em": "2026-08-17",
+      "aprovado_em": "2026-08-23",
+      "publicado_em": "2026-08-24"
     },
     {
       "slug": "ia-eleicoes-2026-deepfake",
@@ -251,9 +253,10 @@
       "excerpt": "Deepfakes custam US$ 5 e chegam pelo WhatsApp antes de qualquer checagem. Com eleições municipais de 2026, o TSE regulamentou o uso de IA — mas identificar o falso ainda é seu trabalho.",
       "read_time": "8 min",
       "keyword": "ia eleições 2026 deepfake",
-      "status": "aguardando-revisao",
+      "status": "aprovado",
       "ordem": 17,
-      "criado_em": "2026-08-17"
+      "criado_em": "2026-08-17",
+      "aprovado_em": "2026-08-23"
     },
     {
       "slug": "esim-como-funciona-brasil-2026",
@@ -264,9 +267,10 @@
       "excerpt": "O eSIM já está em 90% dos iPhones e nos Galaxy S25. No Brasil, Vivo, Claro, TIM e Oi ativam em minutos pelo app. Veja como funciona, quais celulares têm e como trocar de operadora sem sair de casa.",
       "read_time": "6 min",
       "keyword": "esim como funciona brasil",
-      "status": "aguardando-revisao",
+      "status": "aprovado",
       "ordem": 18,
-      "criado_em": "2026-08-17"
+      "criado_em": "2026-08-17",
+      "aprovado_em": "2026-08-23"
     },
     {
       "slug": "anel-inteligente-wearable-saude-2026",
@@ -277,9 +281,10 @@
       "excerpt": "Oura Ring Gen 4 e Samsung Galaxy Ring monitoram sono, frequência cardíaca e temperatura sem tela e com até 7 dias de bateria. O mercado de wearables de saúde vale US$ 2 bi e cresce 30% ao ano.",
       "read_time": "7 min",
       "keyword": "anel inteligente wearable saude 2026",
-      "status": "aguardando-revisao",
+      "status": "aprovado",
       "ordem": 19,
-      "criado_em": "2026-08-17"
+      "criado_em": "2026-08-17",
+      "aprovado_em": "2026-08-23"
     },
     {
       "slug": "windows-copilot-plus-recall-2026",
@@ -290,9 +295,10 @@
       "excerpt": "O Windows Recall captura tudo que você faz no PC para uma busca futura por IA — tudo local, nada vai para a nuvem. Entenda o que é Copilot+, por que gera polêmica e como desativar.",
       "read_time": "7 min",
       "keyword": "windows copilot plus recall 2026",
-      "status": "aguardando-revisao",
+      "status": "aprovado",
       "ordem": 20,
-      "criado_em": "2026-08-17"
+      "criado_em": "2026-08-17",
+      "aprovado_em": "2026-08-23"
     },
     {
       "slug": "ia-educacao-escola-brasil-2026",
