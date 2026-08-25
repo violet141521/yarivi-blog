@@ -2,6 +2,16 @@
   "_comment": "Catálogo de todos os artigos do Yarivi. Ordem importa: artigos com mesma data_pub aparecem na ordem deste array. Não edite manualmente — atualizado pela skill signal-publicador.",
   "articles": [
     {
+      "slug": "ia-eleicoes-2026-deepfake",
+      "manchete": "Você vai receber um vídeo do seu candidato que ele nunca gravou",
+      "categoria": "sec",
+      "emoji": "🗳️",
+      "grad": "g3",
+      "excerpt": "Deepfakes custam US$ 5 e chegam pelo WhatsApp antes de qualquer checagem. Com eleições municipais de 2026, o TSE regulamentou o uso de IA — mas identificar o falso ainda é seu trabalho.",
+      "read_time": "8 min",
+      "data_pub": "2026-08-25"
+    },
+    {
       "slug": "chip-2nm-processador-2026",
       "manchete": "A TSMC está colocando 100 bilhões de transistores em algo menor que uma unha — e isso muda seu próximo celular",
       "categoria": "hw",
