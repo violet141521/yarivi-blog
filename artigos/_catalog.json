@@ -2,6 +2,16 @@
   "_comment": "Catálogo de todos os artigos do Yarivi. Ordem importa: artigos com mesma data_pub aparecem na ordem deste array. Não edite manualmente — atualizado pela skill signal-publicador.",
   "articles": [
     {
+      "slug": "esim-como-funciona-brasil-2026",
+      "manchete": "Você pode ter dois números no mesmo celular — sem usar dois chips",
+      "categoria": "mob",
+      "emoji": "📶",
+      "grad": "g5",
+      "excerpt": "O eSIM já está em 90% dos iPhones e nos Galaxy S25. No Brasil, Vivo, Claro, TIM e Oi ativam em minutos pelo app. Veja como funciona, quais celulares têm e como trocar de operadora sem sair de casa.",
+      "read_time": "6 min",
+      "data_pub": "2026-08-26"
+    },
+    {
       "slug": "ia-eleicoes-2026-deepfake",
       "manchete": "Você vai receber um vídeo do seu candidato que ele nunca gravou",
       "categoria": "sec",
