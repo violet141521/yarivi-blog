@@ -31,6 +31,9 @@
     --text-2:       #44445A;
     --text-3:       #777788;
     --teal:         #059669;
+    --accent:       #A05800;
+    --accent-dim:   rgba(160,88,0,0.10);
+    --accent-glow:  rgba(160,88,0,0.20);
 }
 
 [data-theme="light"] .nav {
