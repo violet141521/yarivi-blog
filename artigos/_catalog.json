@@ -2,6 +2,36 @@
   "_comment": "Catálogo de todos os artigos do Yarivi. Ordem importa: artigos com mesma data_pub aparecem na ordem deste array. Não edite manualmente — atualizado pela skill signal-publicador.",
   "articles": [
     {
+      "slug": "vpn-o-que-e-como-funciona-2026",
+      "manchete": "Seu Wi-Fi do café entrega tudo que você digita — VPN pode mudar isso",
+      "categoria": "sec",
+      "emoji": "🔐",
+      "grad": "g3",
+      "excerpt": "VPN cria um túnel criptografado entre seu dispositivo e a internet. Mas nem toda VPN faz o que promete — e a gratuita pode ser o maior risco de todos. Guia prático.",
+      "read_time": "7 min",
+      "data_pub": "2026-09-01"
+    },
+    {
+      "slug": "gerenciador-de-senhas-como-funciona-2026",
+      "manchete": "Você tem dezenas de senhas. Quantas reutiliza?",
+      "categoria": "sec",
+      "emoji": "🔐",
+      "grad": "g3",
+      "excerpt": "Senhas repetidas são a porta de entrada de 80% dos ataques. Gerenciadores criam e guardam senhas únicas para cada conta — entenda como funcionam, quais são seguros e por que vale usar.",
+      "read_time": "6 min",
+      "data_pub": "2026-09-01"
+    },
+    {
+      "slug": "windows-copilot-plus-recall-2026",
+      "manchete": "Seu PC tira print da sua tela a cada 5 segundos — e você provavelmente não sabe",
+      "categoria": "sw",
+      "emoji": "🖥️",
+      "grad": "g4",
+      "excerpt": "O Windows Recall captura tudo que você faz no PC para uma busca futura por IA — tudo local, nada vai para a nuvem. Entenda o que é Copilot+, por que gera polêmica e como desativar.",
+      "read_time": "7 min",
+      "data_pub": "2026-08-28"
+    },
+    {
       "slug": "anel-inteligente-wearable-saude-2026",
       "manchete": "Esse anel pesa 3 gramas e sabe mais sobre o seu sono do que você",
       "categoria": "fut",
@@ -9,7 +39,7 @@
       "grad": "g6",
       "excerpt": "Oura Ring Gen 4 e Samsung Galaxy Ring monitoram sono, frequência cardíaca e temperatura sem tela e com até 7 dias de bateria. O mercado de wearables de saúde vale US$ 2 bi e cresce 30% ao ano.",
       "read_time": "7 min",
-      "data_pub": "2026-08-26"
+      "data_pub": "2026-08-27"
     },
     {
       "slug": "esim-como-funciona-brasil-2026",

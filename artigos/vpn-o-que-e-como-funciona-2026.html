@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN: o que é, como funciona e quando usar | Yarivi</title>
+    <meta name="description" content="Entenda o que é VPN, como funciona e quando usar — e por que VPN gratuita pode ser um sinal de alerta. Guia prático sem jargão técnico.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yarivi.com/artigos/vpn-o-que-e-como-funciona-2026">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Yarivi">
+    <meta property="og:title" content="VPN: o que é, como funciona e quando usar | Yarivi">
+    <meta property="og:description" content="Entenda o que é VPN, como funciona e quando usar — e por que VPN gratuita pode ser um sinal de alerta. Guia prático sem jargão técnico.">
+    <meta property="og:url" content="https://yarivi.com/artigos/vpn-o-que-e-como-funciona-2026">
+    <meta property="og:image" content="https://yarivi.com/og-cover.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="article:published_time" content="2026-09-01">
+    <meta property="article:section" content="Segurança">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@signal_tech">
+    <meta name="twitter:title" content="VPN: o que é, como funciona e quando usar | Yarivi">
+    <meta name="twitter:description" content="Entenda o que é VPN, como funciona e quando usar — e por que VPN gratuita pode ser um sinal de alerta.">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Seu Wi-Fi do café entrega tudo que você digita — VPN pode mudar isso",
+      "description": "Entenda o que é VPN, como funciona e quando usar — e por que VPN gratuita pode ser um sinal de alerta. Guia prático sem jargão técnico.",
+      "datePublished": "2026-09-01",
+      "dateModified": "2026-09-01",
+      "inLanguage": "pt-BR",
+      "url": "https://yarivi.com/artigos/vpn-o-que-e-como-funciona-2026",
+      "publisher": { "@type": "NewsMediaOrganization", "name": "Yarivi", "url": "https://yarivi.com" },
+      "articleSection": "Segurança",
+      "keywords": ["vpn o que e", "como funciona vpn", "vpn gratuita segura", "vpn brasil", "privacidade internet"]
+    }
+    </script>
+    <script>const t=localStorage.getItem("yarivi-theme");if(t)document.documentElement.setAttribute("data-theme",t);</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        #progress-bar{position:fixed;top:64px;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),var(--teal));z-index:199;transition:width .1s linear}
+        .art-page{max-width:720px;margin:0 auto;padding:6rem 2rem 4rem}
+        .art-header{margin-bottom:2.5rem}
+        .art-header .tags{margin-bottom:1rem}
+        .art-headline{font-family:"Fraunces",serif;font-weight:800;font-size:clamp(1.75rem,5vw,2.75rem);line-height:1.15;letter-spacing:-0.02em;color:var(--text-1);margin-bottom:1.25rem}
+        .art-lead{font-size:1.125rem;line-height:1.7;color:var(--text-2);border-left:3px solid var(--accent);padding-left:1.25rem;margin-bottom:1.5rem}
+        .art-byline{display:flex;align-items:center;gap:1rem;font-size:0.85rem;color:var(--text-3);padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+        .art-byline strong{color:var(--text-2)}
+        .art-byline .sep::before{content:"·";margin-right:1rem}
+        .art-body{line-height:1.8;font-size:1.0625rem}
+        .art-body p{margin-bottom:1.5rem;color:var(--text-1)}
+        .art-body h2{font-family:"Fraunces",serif;font-weight:700;font-size:1.5rem;letter-spacing:-0.015em;color:var(--text-1);margin:2.5rem 0 1rem;padding-top:0.5rem}
+        .art-body h3{font-weight:700;font-size:1.1rem;color:var(--text-1);margin:2rem 0 0.75rem}
+        .art-body ul,.art-body ol{margin:0 0 1.5rem 1.5rem;color:var(--text-1)}
+        .art-body li{margin-bottom:0.5rem;line-height:1.7}
+        .art-body strong{color:var(--text-1);font-weight:700}
+        .art-body em{color:var(--accent);font-style:normal;font-weight:600}
+        .data-callout{background:var(--bg-card);border:1px solid var(--border);border-left:4px solid var(--teal);border-radius:var(--radius);padding:1.25rem 1.5rem;margin:2rem 0}
+        .data-callout p{margin-bottom:0;font-size:0.95rem}
+        .art-table-wrap{overflow-x:auto;margin:2rem 0;border-radius:var(--radius);border:1px solid var(--border)}
+        .art-table{width:100%;border-collapse:collapse;font-size:0.9rem}
+        .art-table th{background:var(--bg-elevated);color:var(--text-2);font-weight:600;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.06em;padding:0.75rem 1rem;text-align:left;border-bottom:1px solid var(--border)}
+        .art-table td{padding:0.75rem 1rem;border-bottom:1px solid var(--border);color:var(--text-1);vertical-align:top}
+        .art-table tr:last-child td{border-bottom:none}
+        .art-table tr:hover td{background:var(--bg-elevated)}
+        .paradox-box{background:linear-gradient(135deg,rgba(162,89,255,0.08),rgba(245,166,35,0.06));border:1px solid rgba(162,89,255,0.3);border-radius:var(--radius-lg);padding:1.75rem 2rem;margin:2.5rem 0}
+        .paradox-box h3{color:var(--violet);margin-top:0;margin-bottom:0.75rem}
+        .paradox-box p{margin-bottom:0.75rem}
+        .paradox-box p:last-child{margin-bottom:0}
+        .summary-box{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem 2rem;margin:2.5rem 0}
+        .summary-box h2{font-family:"Manrope",sans-serif;margin-top:0!important;padding-top:0!important;letter-spacing:0.05em;text-transform:uppercase;font-size:0.82rem;color:var(--accent);margin-bottom:1rem!important}
+        .summary-box ol{margin-left:1.25rem;margin-bottom:0}
+        .summary-box li{margin-bottom:0.6rem;font-size:0.95rem}
+        .art-sources{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border)}
+        .art-sources h4{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-3);margin-bottom:0.75rem}
+        .art-sources ul{list-style:none;margin:0}
+        .art-sources li{font-size:0.82rem;color:var(--text-3);margin-bottom:0.35rem}
+        .art-sources a{color:var(--text-3);text-decoration:underline;text-underline-offset:3px}
+        .art-sources a:hover{color:var(--accent)}
+        .back-link{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.85rem;color:var(--text-3);text-decoration:none;margin-bottom:2rem;transition:color .2s}
+        .back-link:hover{color:var(--accent)}
+        @media(max-width:640px){.art-page{padding:5rem 1.25rem 3rem}}
+    </style>
+</head>
+<body>
+    <nav class="nav" role="navigation" aria-label="Navegação principal">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-logo" aria-label="Yarivi — página inicial">Yarivi</a>
+            <div class="nav-links" style="display:flex;align-items:center;gap:1.5rem;">
+                <a href="../index.html#em-destaque" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Destaques</a>
+                <a href="../index.html#ultimas" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Notícias</a>
+                <button id="theme-toggle" aria-label="Alternar tema" style="background:none;border:none;cursor:pointer;font-size:1.1rem;color:var(--text-2);padding:0.25rem;">🌙</button>
+            </div>
+        </div>
+    </nav>
+    <div id="progress-bar" role="progressbar" aria-hidden="true"></div>
+    <main class="art-page">
+        <a href="../index.html" class="back-link">← Voltar para o Yarivi</a>
+        <header class="art-header">
+            <div class="tags">
+                <span class="tag tag-sec">Segurança</span>
+                <span class="tag tag-dest" style="margin-left:.25rem;">Guia</span>
+            </div>
+            <h1 class="art-headline">Seu Wi-Fi do café entrega tudo que você digita — VPN pode mudar isso</h1>
+            <p class="art-lead">VPN cria uma espécie de túnel criptografado entre seu dispositivo e a internet. Tudo que entra e sai passa por dentro desse túnel — invisível para quem está ao redor. O problema é que nem toda VPN faz o que promete, e a versão gratuita pode ser a pior escolha para privacidade.</p>
+            <div class="art-byline">
+                <span><strong>Yarivi</strong> Redação</span>
+                <span class="sep">1 set 2026</span>
+                <span class="sep">7 min de leitura</span>
+            </div>
+        </header>
+<img src="../img/vpn-o-que-e-como-funciona-2026.webp" alt="Túnel criptografado teal conectando laptop ao globo com cadeados — ilustração de VPN bloqueando vigilância" width="1536" height="1024" style="width:100%;border-radius:8px;margin-bottom:2rem;display:block;" loading="eager">
+        <article class="art-body">
+
+<h2>O que é VPN? Uma analogia que faz sentido</h2>
+<p>Imagine que você está enviando uma carta pelo correio. Sem VPN, qualquer pessoa que intercepte a mala postal pode ler o conteúdo. Com VPN, você coloca a carta dentro de um envelope lacrado e opaco, endereçado a um intermediário — que então reenvia ao destinatório final. Quem está na fila do correio só vê o envelope externo.</p>
+<p>VPN significa <strong>Rede Privada Virtual</strong> (Virtual Private Network). Em termos práticos: ela cria uma conexão criptografada entre seu dispositivo e um servidor remoto, e todo o seu tráfego de internet passa por ali antes de chegar aos sites que você acessa.</p>
+<p>Para o seu provedor de internet, para a rede Wi-Fi do hotel ou do café, e para os sites que você visita, você aparece como se estivesse navegando de onde o servidor VPN está — não da sua localização real.</p>
+
+<div class="data-callout">
+<p>⚠️ <strong>Wi-Fi público sem senha = conexão aberta.</strong> Em uma rede não criptografada, alguém na mesma rede pode usar ferramentas de captura de tráfego para monitorar quais sites você acessa e interceptar dados transmitidos sem HTTPS. VPN é a proteção mais prática nesses cenários.</p>
+</div>
+
+<h2>Como a VPN funciona por dentro (sem fórmulas)</h2>
+<p>Quando você ativa uma VPN, três coisas acontecem em sequência:</p>
+<p><strong>1. Seu dispositivo conecta ao servidor VPN.</strong> Antes de ir a qualquer site, sua conexão vai primeiro até um servidor controlado pela empresa de VPN — que pode estar em São Paulo, Nova York ou Amsterdã.</p>
+<p><strong>2. Todo o tráfego é criptografado.</strong> A VPN usa protocolos de criptografia (o mais comum hoje é o WireGuard ou OpenVPN) para embaralhar os dados antes de enviá-los. Mesmo que alguém intercepte o pacote, só vê ruído.</p>
+<p><strong>3. Você navega com o IP do servidor, não o seu.</strong> Os sites que você visita enxergam o endereço IP do servidor VPN. Seu IP real fica escondido.</p>
+<p>O resultado: sua atividade online se torna muito mais difícil de monitorar — tanto para terceiros na mesma rede quanto para o próprio provedor de internet.</p>
+
+<h2>Quando usar VPN faz diferença de verdade</h2>
+<p>VPN não é uma solução para tudo, mas há cenários onde ela muda o jogo:</p>
+<ul>
+<li><strong>Wi-Fi público</strong> — aeroportos, cafés, hotéis. Redes abertas são o ambiente favorito de ataques do tipo "man-in-the-middle", onde alguém se coloca entre você e o roteador para interceptar tráfego.</li>
+<li><strong>Privacidade do provedor de internet.</strong> No Brasil, provedores podem registrar sua navegação. VPN impede que o seu ISP veja quais sites você acessa.</li>
+<li><strong>Acesso a conteúdo com restrição geográfica.</strong> Alguns serviços de streaming têm catálogos diferentes por país. VPN permite trocar o país aparente.</li>
+<li><strong>Redes corporativas ou escolares.</strong> Quando a rede bloqueia certos sites e você precisa acessá-los com segurança via túnel criptografado.</li>
+</ul>
+<p>O que VPN <em>não</em> resolve: vírus no seu dispositivo, ataques de phishing (porque você clica no link antes da VPN barrar algo) e rastreamento por cookies ou fingerprint do navegador. Para isso, veja nosso guia sobre <a href="../artigos/phishing-whatsapp-email-2026">como identificar phishing no WhatsApp e e-mail</a>.</p>
+
+<div class="paradox-box">
+<h3>O paradoxo da VPN gratuita</h3>
+<p>Toda VPN precisa de servidores, largura de banda e equipe para funcionar. Isso tem custo real.</p>
+<p>Se você não está pagando pela VPN, como a empresa se sustenta? A resposta mais comum: <strong>vendendo dados dos usuários</strong> — histórico de navegação, localização, padrões de uso — para anunciantes e corretoras de dados.</p>
+<p>Uma análise publicada por pesquisadores do CSIRO (Commonwealth Scientific and Industrial Research Organisation, Austrália) examinou centenas de aplicativos de VPN gratuitos e encontrou que muitos solicitavam permissões desnecessárias, continham rastreadores embutidos e alguns transmitiam tráfego com criptografia inadequada.</p>
+<p>A ironia: você instala uma VPN para ter mais privacidade e acaba com menos.</p>
+</div>
+
+<h2>Como escolher uma VPN: o que realmente importa</h2>
+<p>Antes de instalar qualquer VPN, verifique quatro pontos:</p>
+<p><strong>Política de logs auditada.</strong> A empresa registra sua atividade? As melhores VPNs têm política de "zero logs" verificada por auditores independentes — não apenas declarada no site. Declaração sem auditoria vale pouco.</p>
+<p><strong>Protocolo usado.</strong> WireGuard e OpenVPN são os mais seguros e rápidos hoje. Evite VPNs que usam protocolos proprietários não auditados ou versões antigas como PPTP, que tem vulnerabilidades conhecidas.</p>
+<p><strong>Jurisdição.</strong> Em qual país a empresa opera? Isso define a quais leis ela está sujeita. Países do "Five Eyes" (EUA, Reino Unido, Austrália, Canadá, Nova Zelândia) têm acordos de compartilhamento de dados entre governos.</p>
+<p><strong>Transparência.</strong> A empresa publica relatórios de transparência? Teve auditorias externas dos servidores? A frequência das auditorias importa tanto quanto a existência delas.</p>
+
+<div class="art-table-wrap">
+<table class="art-table">
+<thead><tr><th>VPN</th><th>Plano gratuito</th><th>Auditoria independente</th><th>Protocolo</th></tr></thead>
+<tbody>
+<tr><td><strong>ProtonVPN</strong></td><td>✅ Sem limite de dados</td><td>✅ Securitum (2022)</td><td>WireGuard / OpenVPN</td></tr>
+<tr><td><strong>Mullvad</strong></td><td>❌ Não</td><td>✅ Cure53 (2022)</td><td>WireGuard / OpenVPN</td></tr>
+<tr><td><strong>NordVPN</strong></td><td>❌ Não</td><td>✅ Deloitte (2023)</td><td>NordLynx (WireGuard)</td></tr>
+<tr><td><strong>ExpressVPN</strong></td><td>❌ Não</td><td>✅ KPMG (2022)</td><td>Lightway (proprietário)</td></tr>
+<tr><td><strong>VPN gratuita genérica</strong></td><td>✅ Sem custo</td><td>❌ Raramente</td><td>Varia — verificar</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Para quem quer começar sem gastar nada: o plano gratuito do <strong>ProtonVPN</strong> é o único amplamente recomendado por especialistas em segurança — auditoria independente verificada, política zero-log, sem limite de dados. A velocidade é menor e há menos servidores, mas é uma entrada segura.</p>
+<p>Se você já pensa na próxima camada de proteção digital, veja nosso artigo sobre <a href="../artigos/perigo-quantico-criptografia-2026">o risco da computação quântica para suas senhas e criptografia</a>.</p>
+
+<div class="summary-box">
+<h2>📋 Resumo</h2>
+<ol>
+<li>VPN cria um túnel criptografado entre seu dispositivo e a internet — seu IP real fica oculto para sites, provedores e pessoas na mesma rede.</li>
+<li>Mais útil em Wi-Fi público (aeroportos, cafés), onde o risco de interceptação é real e imediato.</li>
+<li>VPN gratuita costuma se pagar coletando e vendendo seus dados — o oposto da privacidade que você busca.</li>
+<li>Ao escolher: priorize política zero-log auditada por terceiros, WireGuard ou OpenVPN, e jurisdição favorável.</li>
+<li>ProtonVPN gratuito é a única opção auditada sem limite de dados — adequada para uso moderado.</li>
+</ol>
+</div>
+
+<h2>Perguntas frequentes sobre VPN</h2>
+
+<h3>VPN deixa a internet mais lenta?</h3>
+<p>Sim, em alguma medida. Seu tráfego percorre um caminho extra — até o servidor VPN antes de chegar ao destino final. Com protocolos modernos como WireGuard, a perda de velocidade costuma ser de 10 a 20%, imperceptível no uso cotidiano. VPNs lentas geralmente usam protocolos antigos ou têm servidores sobrecarregados.</p>
+
+<h3>VPN é legal no Brasil?</h3>
+<p>Sim. Usar VPN para proteger sua privacidade online é completamente legal no Brasil. O que pode ser ilegal é a atividade realizada por trás da VPN — a ferramenta em si não muda a legalidade do que você faz.</p>
+
+<h3>Preciso de VPN no celular também?</h3>
+<p>Depende do uso. Em redes móveis (4G/5G), a operadora já criptografa o sinal no ar, então o risco é menor. Em Wi-Fi público pelo celular, sim — o risco é exatamente o mesmo que no notebook. A maioria dos apps de VPN funciona tanto em Android quanto iOS.</p>
+
+<h3>VPN esconde minha atividade do Google?</h3>
+<p>Parcialmente. Ela esconde seu endereço IP real. Mas se você está logado no Gmail ou usa o Chrome com conta Google, eles identificam você pelo login — não pelo IP. VPN não substitui boas práticas de privacidade no navegador, como usar modo de navegação anônima ou trocar de conta.</p>
+
+<h3>Qual VPN gratuita é segura para usar?</h3>
+<p>Entre as opções auditadas, o ProtonVPN gratuito é o mais confiável — sem limite de dados e com auditoria de segurança publicada. O Windscribe tem plano gratuito com limite de 10 GB/mês e reputação razoável. Evite qualquer VPN que não publique auditorias independentes ou que peça permissões excessivas no celular.</p>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "VPN deixa a internet mais lenta?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, em alguma medida. Com protocolos modernos como WireGuard, a perda de velocidade costuma ser de 10 a 20%, imperceptível no uso cotidiano."}},
+    {"@type": "Question", "name": "VPN é legal no Brasil?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Usar VPN para proteger sua privacidade online é completamente legal no Brasil."}},
+    {"@type": "Question", "name": "Preciso de VPN no celular também?", "acceptedAnswer": {"@type": "Answer", "text": "Em redes móveis (4G/5G) o risco é menor. Em Wi-Fi público pelo celular, sim — o risco é o mesmo que no notebook."}},
+    {"@type": "Question", "name": "VPN esconde minha atividade do Google?", "acceptedAnswer": {"@type": "Answer", "text": "Parcialmente. Ela esconde seu IP real, mas se você está logado em serviços Google eles identificam você pelo login."}},
+    {"@type": "Question", "name": "Qual VPN gratuita é segura para usar?", "acceptedAnswer": {"@type": "Answer", "text": "O ProtonVPN gratuito é o mais confiável entre as opções auditadas, sem limite de dados e com auditoria de segurança publicada."}}
+  ]
+}
+</script>
+
+            <div class="art-sources">
+                <h4>Fontes</h4>
+                <ul>
+                    <li>Ikram, M. et al. (CSIRO) — <a href="https://dl.acm.org/doi/10.1145/2987443.2987471" target="_blank" rel="noopener">An Analysis of the Privacy and Security Risks of Android VPN Permission-enabled Apps</a> (CSIRO, 2016)</li>
+                    <li>ProtonVPN — <a href="https://protonvpn.com/blog/no-log-audit/" target="_blank" rel="noopener">Relatório de auditoria independente, Securitum (2022)</a></li>
+                    <li>Mullvad VPN — <a href="https://mullvad.net/en/blog/2022/6/22/vpn-server-audit-found-no-information-leakage-or-logging-of-customer-data" target="_blank" rel="noopener">Server security audit, Cure53 (2022)</a></li>
+                    <li>NordVPN — Relatório de auditoria Deloitte (2023)</li>
+                    <li>ExpressVPN — Relatório de auditoria KPMG (2022)</li>
+                </ul>
+            </div>
+        </article>
+    </main>
+    <script>
+        const btn=document.getElementById("theme-toggle");
+        function applyTheme(t){document.documentElement.setAttribute("data-theme",t);btn.textContent=t==="light"?"☀️":"🌙";localStorage.setItem("yarivi-theme",t);}
+        applyTheme(localStorage.getItem("yarivi-theme")||"dark");
+        btn.addEventListener("click",()=>applyTheme(document.documentElement.getAttribute("data-theme")==="light"?"dark":"light"));
+        const bar=document.getElementById("progress-bar");
+        window.addEventListener("scroll",()=>{const d=document.documentElement;bar.style.width=Math.min((d.scrollTop/(d.scrollHeight-d.clientHeight))*100,100)+"%";});
+    </script>
+</body>
+</html>

@@ -287,7 +287,7 @@
       "ordem": 19,
       "criado_em": "2026-08-17",
       "aprovado_em": "2026-08-23",
-      "publicado_em": "2026-08-26"
+      "publicado_em": "2026-08-27"
     },
     {
       "slug": "windows-copilot-plus-recall-2026",
@@ -298,10 +298,11 @@
       "excerpt": "O Windows Recall captura tudo que você faz no PC para uma busca futura por IA — tudo local, nada vai para a nuvem. Entenda o que é Copilot+, por que gera polêmica e como desativar.",
       "read_time": "7 min",
       "keyword": "windows copilot plus recall 2026",
-      "status": "aprovado",
+      "status": "publicado",
       "ordem": 20,
       "criado_em": "2026-08-17",
-      "aprovado_em": "2026-08-23"
+      "aprovado_em": "2026-08-23",
+      "publicado_em": "2026-08-28"
     },
     {
       "slug": "ia-educacao-escola-brasil-2026",
@@ -317,6 +318,88 @@
       "criado_em": "2026-08-17",
       "aprovado_em": "2026-08-19",
       "publicado_em": "2026-08-19"
+    },
+    {
+      "slug": "gerenciador-de-senhas-como-funciona-2026",
+      "titulo_seo": "Gerenciador de senhas: o que é e como funciona | Yarivi",
+      "manchete_h1": "Você tem dezenas de senhas. Quantas reutiliza?",
+      "categoria": "sec",
+      "emoji": "🔐",
+      "excerpt": "Senhas repetidas são a porta de entrada de 80% dos ataques. Gerenciadores criam e guardam senhas únicas para cada conta — entenda como funcionam, quais são seguros e por que vale usar.",
+      "read_time": "6 min",
+      "keyword": "gerenciador de senhas como funciona",
+      "status": "publicado",
+      "ordem": 22,
+      "criado_em": "2026-08-31",
+      "aprovado_em": "2026-09-01",
+      "publicado_em": "2026-09-01"
+    },
+    {
+      "slug": "golpes-app-banco-pix-como-se-proteger-2026",
+      "titulo_seo": "Golpes em apps de banco e Pix: como se proteger | Yarivi",
+      "manchete_h1": "24 milhões de brasileiros já caíram em golpes pelo Pix",
+      "categoria": "sec",
+      "emoji": "🔐",
+      "excerpt": "Golpe do falso suporte, Pix agendado, engenharia social com IA: os ataques a apps bancários evoluíram em 2026. Entenda como cada golpe funciona e o que fazer para não cair.",
+      "read_time": "7 min",
+      "keyword": "golpes app banco pix como se proteger",
+      "status": "aguardando-revisao",
+      "ordem": 23,
+      "criado_em": "2026-08-31"
+    },
+    {
+      "slug": "vpn-o-que-e-como-funciona-2026",
+      "titulo_seo": "VPN: o que é, como funciona e quando usar | Yarivi",
+      "manchete_h1": "Seu Wi-Fi do café entrega tudo que você digita — VPN pode mudar isso",
+      "categoria": "sec",
+      "emoji": "🔐",
+      "excerpt": "VPN cria um túnel criptografado entre seu dispositivo e a internet. Mas nem toda VPN faz o que promete — e a gratuita pode ser o maior risco de todos. Guia prático.",
+      "read_time": "7 min",
+      "keyword": "vpn o que e como funciona",
+      "status": "publicado",
+      "ordem": 24,
+      "criado_em": "2026-08-31",
+      "aprovado_em": "2026-09-01",
+      "publicado_em": "2026-09-01"
+    },
+    {
+      "slug": "ia-consumo-energia-impacto-ambiental-2026",
+      "titulo_seo": "IA consome quanta energia? O custo oculto do ChatGPT | Yarivi",
+      "manchete_h1": "Cada resposta do ChatGPT consome cerca de 10 vezes mais energia que uma busca no Google",
+      "categoria": "ai",
+      "emoji": "🤖",
+      "excerpt": "A IA generativa não é só uma revolução de produtividade — é uma revolução de consumo de energia. Data centers crescem em ritmo acelerado e o custo ambiental começa a aparecer.",
+      "read_time": "7 min",
+      "keyword": "ia consumo energia impacto ambiental",
+      "status": "aguardando-revisao",
+      "ordem": 25,
+      "criado_em": "2026-08-31"
+    },
+    {
+      "slug": "carro-eletrico-brasil-2026-vale-a-pena",
+      "titulo_seo": "Carro elétrico no Brasil em 2026: vale a pena comprar? | Yarivi",
+      "manchete_h1": "Carro elétrico ficou mais caro em 2026 — mas o custo de rodar caiu",
+      "categoria": "fut",
+      "emoji": "🔮",
+      "excerpt": "Impostos de importação subiram progressivamente, mas o custo por km rodado caiu e a infraestrutura cresceu. Análise completa para decidir se vale a pena comprar elétrico no Brasil agora.",
+      "read_time": "7 min",
+      "keyword": "carro eletrico brasil 2026 vale a pena",
+      "status": "aguardando-revisao",
+      "ordem": 26,
+      "criado_em": "2026-08-31"
+    },
+    {
+      "slug": "o-que-fazer-celular-velho-descarte-2026",
+      "titulo_seo": "O que fazer com celular velho: opções práticas e seguras | Yarivi",
+      "manchete_h1": "Tem um celular na gaveta há dois anos? Você não está sozinho",
+      "categoria": "mob",
+      "emoji": "📱",
+      "excerpt": "O Brasil é o 5º maior gerador de lixo eletrônico do mundo e descarta menos de 5% corretamente. Saiba como vender, reutilizar ou descartar seu celular velho de forma segura.",
+      "read_time": "6 min",
+      "keyword": "o que fazer com celular velho",
+      "status": "aguardando-revisao",
+      "ordem": 27,
+      "criado_em": "2026-08-31"
     }
   ]
 }
