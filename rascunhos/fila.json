@@ -371,10 +371,11 @@
       "excerpt": "A IA generativa não é só uma revolução de produtividade — é uma revolução de consumo de energia. Data centers crescem em ritmo acelerado e o custo ambiental começa a aparecer.",
       "read_time": "7 min",
       "keyword": "ia consumo energia impacto ambiental",
-      "status": "aprovado",
+      "status": "publicado",
       "ordem": 25,
       "criado_em": "2026-08-31",
-      "aprovado_em": "2026-09-03"
+      "aprovado_em": "2026-09-03",
+      "publicado_em": "2026-09-02"
     },
     {
       "slug": "carro-eletrico-brasil-2026-vale-a-pena",
