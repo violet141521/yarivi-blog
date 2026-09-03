@@ -371,9 +371,10 @@
       "excerpt": "A IA generativa não é só uma revolução de produtividade — é uma revolução de consumo de energia. Data centers crescem em ritmo acelerado e o custo ambiental começa a aparecer.",
       "read_time": "7 min",
       "keyword": "ia consumo energia impacto ambiental",
-      "status": "aguardando-revisao",
+      "status": "aprovado",
       "ordem": 25,
-      "criado_em": "2026-08-31"
+      "criado_em": "2026-08-31",
+      "aprovado_em": "2026-09-03"
     },
     {
       "slug": "carro-eletrico-brasil-2026-vale-a-pena",
@@ -384,9 +385,10 @@
       "excerpt": "Impostos de importação subiram progressivamente, mas o custo por km rodado caiu e a infraestrutura cresceu. Análise completa para decidir se vale a pena comprar elétrico no Brasil agora.",
       "read_time": "7 min",
       "keyword": "carro eletrico brasil 2026 vale a pena",
-      "status": "aguardando-revisao",
+      "status": "aprovado",
       "ordem": 26,
-      "criado_em": "2026-08-31"
+      "criado_em": "2026-08-31",
+      "aprovado_em": "2026-09-02"
     },
     {
       "slug": "o-que-fazer-celular-velho-descarte-2026",

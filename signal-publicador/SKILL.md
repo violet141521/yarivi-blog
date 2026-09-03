@@ -58,6 +58,9 @@ Quando o usuário pedir para agendar:
    — a visibilidade agora é controlada pelo Cloudflare KV `YARIVI_PUBLISHED`.**
    O artigo ficará invisível na home até a usuária publicar via URL ou dashboard Cloudflare.
 5. Atualizar a fila: `status` → `"publicado"`, adicionar `"publicado_em"` (ISO).
+5.5. **Imagem do artigo:** verificar se existe `img/{slug}.webp` (ou `.jpg`/`.png`) no
+   diretório raiz do blog. Se existir, incluí-la no commit junto com os demais arquivos —
+   nunca publicar sem a imagem quando ela estiver disponível.
 6. **Deploy (quando o blog estiver no Cloudflare Pages):** rodar o deploy conforme
    `references/deploy.md`. Enquanto o arquivo indicar "DEPLOY AINDA NÃO CONFIGURADO",
    pule esta etapa sem erro.
