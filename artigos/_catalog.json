@@ -2,6 +2,16 @@
   "_comment": "Catálogo de todos os artigos do Yarivi. Ordem importa: artigos com mesma data_pub aparecem na ordem deste array. Não edite manualmente — atualizado pela skill signal-publicador.",
   "articles": [
     {
+      "slug": "carro-eletrico-brasil-2026-vale-a-pena",
+      "manchete": "Carro elétrico ficou mais caro em 2026 — mas o custo de rodar caiu",
+      "categoria": "fut",
+      "emoji": "🔮",
+      "grad": "g6",
+      "excerpt": "Impostos de importação subiram progressivamente, mas o custo por km rodado caiu e a infraestrutura cresceu. Análise completa para decidir se vale a pena comprar elétrico no Brasil agora.",
+      "read_time": "7 min",
+      "data_pub": "2026-09-03"
+    },
+    {
       "slug": "ia-consumo-energia-impacto-ambiental-2026",
       "manchete": "Cada resposta do ChatGPT consome cerca de 10 vezes mais energia que uma busca no Google",
       "categoria": "ai",
