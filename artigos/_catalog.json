@@ -2,6 +2,16 @@
   "_comment": "Catálogo de todos os artigos do Yarivi. Ordem importa: artigos com mesma data_pub aparecem na ordem deste array. Não edite manualmente — atualizado pela skill signal-publicador.",
   "articles": [
     {
+      "slug": "o-que-fazer-celular-velho-descarte-2026",
+      "manchete": "Tem um celular na gaveta há dois anos? Você não está sozinho",
+      "categoria": "mob",
+      "emoji": "📱",
+      "grad": "g5",
+      "excerpt": "O Brasil é o 5º maior gerador de lixo eletrônico do mundo e descarta menos de 5% corretamente. Saiba como vender, reutilizar ou descartar seu celular velho de forma segura.",
+      "read_time": "6 min",
+      "data_pub": "2026-09-07"
+    },
+    {
       "slug": "golpes-app-banco-pix-como-se-proteger-2026",
       "manchete": "24 milhões de brasileiros já caíram em golpes pelo Pix",
       "categoria": "sec",

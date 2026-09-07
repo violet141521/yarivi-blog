@@ -403,10 +403,11 @@
       "excerpt": "O Brasil é o 5º maior gerador de lixo eletrônico do mundo e descarta menos de 5% corretamente. Saiba como vender, reutilizar ou descartar seu celular velho de forma segura.",
       "read_time": "6 min",
       "keyword": "o que fazer com celular velho",
-      "status": "aprovado",
+      "status": "publicado",
       "ordem": 27,
       "criado_em": "2026-08-31",
-      "aprovado_em": "2026-09-03"
+      "aprovado_em": "2026-09-03",
+      "publicado_em": "2026-09-07"
     }
   ]
 }
