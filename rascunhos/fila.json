@@ -343,9 +343,11 @@
       "excerpt": "Golpe do falso suporte, Pix agendado, engenharia social com IA: os ataques a apps bancários evoluíram em 2026. Entenda como cada golpe funciona e o que fazer para não cair.",
       "read_time": "7 min",
       "keyword": "golpes app banco pix como se proteger",
-      "status": "aguardando-revisao",
+      "status": "publicado",
       "ordem": 23,
-      "criado_em": "2026-08-31"
+      "criado_em": "2026-08-31",
+      "aprovado_em": "2026-09-03",
+      "publicado_em": "2026-09-07"
     },
     {
       "slug": "vpn-o-que-e-como-funciona-2026",
@@ -401,9 +403,10 @@
       "excerpt": "O Brasil é o 5º maior gerador de lixo eletrônico do mundo e descarta menos de 5% corretamente. Saiba como vender, reutilizar ou descartar seu celular velho de forma segura.",
       "read_time": "6 min",
       "keyword": "o que fazer com celular velho",
-      "status": "aguardando-revisao",
+      "status": "aprovado",
       "ordem": 27,
-      "criado_em": "2026-08-31"
+      "criado_em": "2026-08-31",
+      "aprovado_em": "2026-09-03"
     }
   ]
 }
