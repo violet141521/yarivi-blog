@@ -57,15 +57,59 @@ Quando o usuário pedir para agendar:
    recente primeiro). **Não atualizar `partials/featured.html` nem `partials/latest.html`
    — a visibilidade agora é controlada pelo Cloudflare KV `YARIVI_PUBLISHED`.**
    O artigo ficará invisível na home até a usuária publicar via URL ou dashboard Cloudflare.
+4.5. **Regenerar `sitemap.xml`** (obrigatório — executar após atualizar `_catalog.json`):
+   - Ler o `artigos/_catalog.json` atualizado (com o artigo recém-adicionado já incluso).
+   - Gerar o arquivo `sitemap.xml` na raiz do blog com **todos** os artigos do catalog,
+     seguindo exatamente esta estrutura:
+
+     ```xml
+     <?xml version="1.0" encoding="UTF-8"?>
+     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+       <url>
+         <loc>https://yarivi.com/</loc>
+         <lastmod>DATA-DE-HOJE</lastmod>
+         <changefreq>daily</changefreq>
+         <priority>1.0</priority>
+       </url>
+       <!-- um bloco <url> por artigo: -->
+       <url>
+         <loc>https://yarivi.com/artigos/{slug}</loc>
+         <lastmod>{data_pub do catalog}</lastmod>
+         <changefreq>monthly</changefreq>
+         <priority>0.8</priority>
+       </url>
+       <!-- ... todos os artigos ... -->
+       <url>
+         <loc>https://yarivi.com/contato</loc>
+         <lastmod>DATA-DE-HOJE</lastmod>
+         <changefreq>yearly</changefreq>
+         <priority>0.5</priority>
+       </url>
+       <url>
+         <loc>https://yarivi.com/privacidade</loc>
+         <lastmod>DATA-DE-HOJE</lastmod>
+         <changefreq>yearly</changefreq>
+         <priority>0.5</priority>
+       </url>
+     </urlset>
+     ```
+
+   - A ordem dos artigos no sitemap deve seguir a ordem do array no `_catalog.json`
+     (mais recente primeiro). O bloco da homepage vem sempre primeiro; contato e
+     privacidade sempre por último.
+   - **Nunca adicionar só o artigo novo ao sitemap existente** — sempre regerar do zero
+     a partir do `_catalog.json`, para evitar acúmulo de entradas órfãs ou desatualizadas.
+   - Verificar: o número de entradas `<url>` no sitemap deve ser igual a
+     `(artigos em _catalog.json) + 3` (homepage + contato + privacidade).
 5. Atualizar a fila: `status` → `"publicado"`, adicionar `"publicado_em"` (ISO).
 5.5. **Imagem do artigo:** verificar se existe `img/{slug}.webp` (ou `.jpg`/`.png`) no
    diretório raiz do blog. Se existir, incluí-la no commit junto com os demais arquivos —
    nunca publicar sem a imagem quando ela estiver disponível.
-6. **Deploy (quando o blog estiver no Cloudflare Pages):** rodar o deploy conforme
-   `references/deploy.md`. Enquanto o arquivo indicar "DEPLOY AINDA NÃO CONFIGURADO",
-   pule esta etapa sem erro.
-7. Reportar: artigo publicado (slug + manchete), quantos aprovados restam na fila e a
-   data prevista do próximo (próximo dia útil).
+6. **Deploy:** rodar o deploy conforme `references/deploy.md`. Incluir `sitemap.xml` no
+   `git add` (ver comando atualizado em deploy.md).
+7. Reportar: artigo publicado (slug + manchete), quantos aprovados restam na fila, a
+   data prevista do próximo (próximo dia útil) e confirmação de que o sitemap foi
+   atualizado (total de URLs).
 
 ## Operação 4 — Status da fila
 
