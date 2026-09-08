@@ -1,3 +1,6 @@
+# Canonicaliza www → sem www
+https://www.yarivi.com/* https://yarivi.com/:splat 301
+
 # Rascunhos — redireciona para home (arquivos não publicados)
 /rascunhos/* /index.html 302
 
