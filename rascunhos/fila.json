@@ -408,6 +408,73 @@
       "criado_em": "2026-08-31",
       "aprovado_em": "2026-09-03",
       "publicado_em": "2026-09-07"
+    },
+    {
+      "slug": "banco-digital-vs-tradicional-2026",
+      "titulo_seo": "Banco Digital vs Banco Tradicional: qual é seguro? | Yarivi",
+      "manchete_h1": "Seu banco digital guarda dinheiro melhor que o do seu avô",
+      "categoria": "sec",
+      "emoji": "🏦",
+      "excerpt": "FGC garante até R$ 250 mil por CPF, igual em banco digital e tradicional. Veja como o caso Banco Master provou isso na prática — e por que golpe, não quebra de banco, é o risco que mais importa hoje.",
+      "read_time": "8 min",
+      "keyword": "banco digital seguro brasil",
+      "status": "aguardando-revisao",
+      "criado_em": "2026-09-09",
+      "ordem": 28
+    },
+    {
+      "slug": "vicio-redes-sociais-algoritmo-dopamina-2026",
+      "titulo_seo": "Por que TikTok vicia: a química do algoritmo | Yarivi",
+      "manchete_h1": "Seu cérebro não é fraco — o TikTok é que foi feito pra viciar",
+      "categoria": "sec",
+      "emoji": "🧠",
+      "excerpt": "Vício em redes sociais não é falta de força de vontade — é recompensa variável e dopamina por design. Entenda como o algoritmo funciona e como reduzir o efeito.",
+      "read_time": "7 min",
+      "keyword": "vício em redes sociais algoritmo dopamina",
+      "status": "publicado",
+      "criado_em": "2026-09-09",
+      "aprovado_em": "2026-09-16",
+      "ordem": 29,
+      "publicado_em": "2026-09-16"
+    },
+    {
+      "slug": "lgpd-ia-regulacao-brasil-2026",
+      "titulo_seo": "LGPD e IA: o que muda pro seu negócio | Yarivi",
+      "manchete_h1": "Desde 2021, a LGPD só multou uma empresa — isso está prestes a mudar",
+      "categoria": "ai",
+      "emoji": "⚖️",
+      "excerpt": "A LGPD já regula o uso de IA com dados pessoais no Brasil, mesmo sem o Marco Legal da IA aprovado — e a ANPD só multou uma empresa desde 2021. Veja o que muda para o seu negócio.",
+      "read_time": "7 min",
+      "keyword": "lgpd ia brasil regulação privacidade dados",
+      "status": "aguardando-revisao",
+      "criado_em": "2026-09-09",
+      "ordem": 30
+    },
+    {
+      "slug": "ia-open-source-llama-mistral-2026",
+      "titulo_seo": "Rodar IA grátis no seu PC: Llama e Mistral | Yarivi",
+      "manchete_h1": "ChatGPT custa caro — mas você pode ter a sua IA de graça",
+      "categoria": "ai",
+      "emoji": "🦙",
+      "excerpt": "ChatGPT cobra assinatura todo mês. Llama, Mistral e Qwen são gratuitos e rodam no seu próprio PC — veja como instalar e se vale a troca.",
+      "read_time": "8 min",
+      "keyword": "ia open source llama mistral alternativa chatgpt",
+      "status": "aguardando-revisao",
+      "criado_em": "2026-09-09",
+      "ordem": 31
+    },
+    {
+      "slug": "tutor-ia-homeschooling-vs-reforco-2026",
+      "titulo_seo": "Tutor de IA vs reforço particular: custo-benefício | Yarivi",
+      "manchete_h1": "Tutor de IA sai de graça. O professor particular custa R$ 47 a hora",
+      "categoria": "ai",
+      "emoji": "🎓",
+      "excerpt": "Tutor de IA custa de graça a poucos dólares por mês; reforço particular presencial sai por cerca de R$ 47 a hora no Brasil. Compare o que cada opção entrega — e quando vale combinar as duas.",
+      "read_time": "7 min",
+      "keyword": "tutor ia homeschooling educação casa preço",
+      "status": "aguardando-revisao",
+      "criado_em": "2026-09-09",
+      "ordem": 32
     }
   ]
 }
