@@ -461,9 +461,10 @@
       "excerpt": "ChatGPT cobra assinatura todo mês. Llama, Mistral e Qwen são gratuitos e rodam no seu próprio PC — veja como instalar e se vale a troca.",
       "read_time": "8 min",
       "keyword": "ia open source llama mistral alternativa chatgpt",
-      "status": "aguardando-revisao",
+      "status": "aprovado",
       "criado_em": "2026-09-09",
-      "ordem": 31
+      "ordem": 31,
+      "aprovado_em": "2026-09-22"
     },
     {
       "slug": "tutor-ia-homeschooling-vs-reforco-2026",
@@ -479,6 +480,73 @@
       "ordem": 32,
       "aprovado_em": "2026-09-17",
       "publicado_em": "2026-09-17"
+    },
+    {
+      "slug": "ram-cara-2026-por-que-notebook-pc",
+      "titulo_seo": "RAM cara em 2026: por que subiu e o que fazer | Yarivi",
+      "manchete_h1": "Um kit de 32 GB de memória RAM que custava US$ 80 agora custa US$ 439",
+      "categoria": "hw",
+      "emoji": "💾",
+      "excerpt": "A memória RAM ficou até 5x mais cara em 2026 pela demanda de data centers de IA. Entenda por que isso aconteceu e se vale comprar PC agora.",
+      "read_time": "5 min",
+      "keyword": "ram cara 2026 por que",
+      "status": "aguardando-revisao",
+      "ordem": 33,
+      "criado_em": "2026-09-21"
+    },
+    {
+      "slug": "ios-27-novidades-quais-iphones-2026",
+      "titulo_seo": "iOS 27: veja se seu iPhone recebe e o que muda | Yarivi",
+      "manchete_h1": "Seu iPhone de 2019 ainda vai rodar o iOS 27 — mas o SE de 2016 não",
+      "categoria": "mob",
+      "emoji": "🍏",
+      "excerpt": "O iOS 27 chegou em setembro de 2026 com Siri renovada e Apple Intelligence expandida. Veja se seu iPhone recebe a atualização e quais são as novidades.",
+      "read_time": "5 min",
+      "keyword": "ios 27 quais iphones",
+      "status": "aguardando-revisao",
+      "ordem": 34,
+      "criado_em": "2026-09-21"
+    },
+    {
+      "slug": "atualizacao-ia-android-setembro-2026",
+      "titulo_seo": "Atualização de IA do Android: o que mudou | Yarivi",
+      "manchete_h1": "O Android ganhou 5 poderes novos em setembro — mas o mais ambicioso pede 12 GB de RAM pra funcionar",
+      "categoria": "mob",
+      "emoji": "🤖",
+      "excerpt": "O Android ganhou 5 recursos novos de IA em setembro de 2026 — mas o mais avançado, o Gemini Intelligence, exige pelo menos 12 GB de RAM. Veja o que muda.",
+      "read_time": "5 min",
+      "keyword": "atualização ia android setembro 2026",
+      "status": "publicado",
+      "ordem": 35,
+      "criado_em": "2026-09-21",
+      "aprovado_em": "2026-09-22",
+      "publicado_em": "2026-09-22"
+    },
+    {
+      "slug": "navegador-com-ia-vale-a-pena-2026",
+      "titulo_seo": "Navegador com IA vale a pena trocar o Chrome? | Yarivi",
+      "manchete_h1": "A Perplexity liberou de graça um navegador que faz compras e preenche formulários sozinho",
+      "categoria": "sw",
+      "emoji": "🧭",
+      "excerpt": "Comet, Atlas e Copilot prometem navegar, comprar e preencher formulários por você. Veja se vale trocar o Chrome em 2026 e os riscos envolvidos.",
+      "read_time": "5 min",
+      "keyword": "navegador com ia vale a pena",
+      "status": "aguardando-revisao",
+      "ordem": 36,
+      "criado_em": "2026-09-21"
+    },
+    {
+      "slug": "tecnologia-2027-o-que-muda-brasil",
+      "titulo_seo": "Tecnologia em 2027: o que muda para você | Yarivi",
+      "manchete_h1": "50 milhões de brasileiros já usam IA no dia a dia — mas só 16% dos mais pobres chegaram lá",
+      "categoria": "fut",
+      "emoji": "🔮",
+      "excerpt": "50 milhões de brasileiros já usam IA, o 5G chega às cidades menores e o Pix cresce ainda mais. Veja o que deve mudar na tecnologia do brasileiro até 2027.",
+      "read_time": "5 min",
+      "keyword": "tecnologia 2027 o que muda no brasil",
+      "status": "aguardando-revisao",
+      "ordem": 37,
+      "criado_em": "2026-09-21"
     }
   ]
 }
