@@ -461,10 +461,11 @@
       "excerpt": "ChatGPT cobra assinatura todo mês. Llama, Mistral e Qwen são gratuitos e rodam no seu próprio PC — veja como instalar e se vale a troca.",
       "read_time": "8 min",
       "keyword": "ia open source llama mistral alternativa chatgpt",
-      "status": "aprovado",
+      "status": "publicado",
       "criado_em": "2026-09-09",
       "ordem": 31,
-      "aprovado_em": "2026-09-22"
+      "aprovado_em": "2026-09-22",
+      "publicado_em": "2026-09-23"
     },
     {
       "slug": "tutor-ia-homeschooling-vs-reforco-2026",
@@ -503,7 +504,7 @@
       "excerpt": "O iOS 27 chegou em setembro de 2026 com Siri renovada e Apple Intelligence expandida. Veja se seu iPhone recebe a atualização e quais são as novidades.",
       "read_time": "5 min",
       "keyword": "ios 27 quais iphones",
-      "status": "aguardando-revisao",
+      "status": "aprovado",
       "ordem": 34,
       "criado_em": "2026-09-21"
     },
@@ -544,9 +545,10 @@
       "excerpt": "50 milhões de brasileiros já usam IA, o 5G chega às cidades menores e o Pix cresce ainda mais. Veja o que deve mudar na tecnologia do brasileiro até 2027.",
       "read_time": "5 min",
       "keyword": "tecnologia 2027 o que muda no brasil",
-      "status": "aguardando-revisao",
+      "status": "aprovado",
       "ordem": 37,
-      "criado_em": "2026-09-21"
+      "criado_em": "2026-09-21",
+      "aprovado_em": "2026-09-22"
     }
   ]
 }

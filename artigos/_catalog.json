@@ -2,6 +2,16 @@
   "_comment": "Catálogo de todos os artigos do Yarivi. Ordem importa: artigos com mesma data_pub aparecem na ordem deste array. Não edite manualmente — atualizado pela skill signal-publicador.",
   "articles": [
     {
+      "slug": "ia-open-source-llama-mistral-2026",
+      "manchete": "ChatGPT custa caro — mas você pode ter a sua IA de graça",
+      "categoria": "ai",
+      "emoji": "🦙",
+      "grad": "g1",
+      "excerpt": "ChatGPT custa caro. Veja como rodar Llama, Mistral ou Qwen de graça no seu PC — passo a passo sem programar, com dados reais de custo e hardware.",
+      "read_time": "8 min",
+      "data_pub": "2026-09-23"
+    },
+    {
       "slug": "atualizacao-ia-android-setembro-2026",
       "manchete": "O Android ganhou 5 poderes novos em setembro — mas o mais ambicioso pede 12 GB de RAM pra funcionar",
       "categoria": "mob",
