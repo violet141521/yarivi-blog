@@ -603,6 +603,8 @@ body {
     .footer-grid   { grid-template-columns: 1fr 1fr; }
 }
 @media(max-width:680px){
+    .ticker { display: none; }
+    .hero { padding: 6rem 1.5rem 3rem; }
     .hamburger { display: flex; }
     .nav-links {
         display: none;
