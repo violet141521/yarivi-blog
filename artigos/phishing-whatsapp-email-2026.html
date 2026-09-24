@@ -95,10 +95,10 @@
         .back-link:hover{color:var(--accent)}
         @media(max-width:640px){.art-page{padding:5rem 1.25rem 3rem}.art-nl-form{flex-direction:column}.stat-row{grid-template-columns:repeat(2,1fr)}}
 
-        /* Overrides nav simplificada do artigo */
-        .nav-links{flex:0 0 auto;justify-content:flex-end;gap:1.5rem}
-        .nav-link{font-size:.875rem;text-transform:none;letter-spacing:0;padding:.25rem 0}
-        .theme-toggle{background:none;border:none;width:auto;height:auto;padding:.25rem;font-size:1.1rem;color:var(--text-2)}
+        @media(min-width:681px){
+            .nav-links{flex:0 0 auto;justify-content:flex-end;gap:1.5rem}
+            .nav-link{font-size:.875rem;text-transform:none;letter-spacing:0;padding:.25rem 0}
+        }
     </style>
 </head>
 <body>
@@ -108,8 +108,11 @@
             <div class="nav-links">
                 <a href="../index.html#em-destaque" class="nav-link">Destaques</a>
                 <a href="../index.html#ultimas" class="nav-link">Notícias</a>
-                <button id="theme-toggle" aria-label="Alternar tema">🌙</button>
             </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <button id="theme-toggle" aria-label="Alternar tema">🌙</button>
         </div>
     </nav>
     <div id="progress-bar" role="progressbar" aria-hidden="true"></div>
@@ -276,6 +279,18 @@
         function applyTheme(t){document.documentElement.setAttribute('data-theme',t);btn.textContent=t==='light'?'☀️':'🌙';localStorage.setItem('yarivi-theme',t);}
         applyTheme(localStorage.getItem('yarivi-theme')||'dark');
         btn.addEventListener('click',()=>applyTheme(document.documentElement.getAttribute('data-theme')==='light'?'dark':'light'));
+        const hbtn=document.getElementById('hamburger');
+        const nlinks=document.querySelector('.nav-links');
+        if(hbtn&&nlinks){
+            hbtn.addEventListener('click',()=>{
+                const open=nlinks.classList.toggle('open');
+                hbtn.setAttribute('aria-expanded',String(open));
+            });
+            nlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+                nlinks.classList.remove('open');
+                hbtn.setAttribute('aria-expanded','false');
+            }));
+        }
         const bar=document.getElementById('progress-bar');
         window.addEventListener('scroll',()=>{const d=document.documentElement;bar.style.width=Math.min((d.scrollTop/(d.scrollHeight-d.clientHeight))*100,100)+'%';});
         const nlForm=document.getElementById('art-nl-form'),nlBtn=document.getElementById('art-nl-btn');
