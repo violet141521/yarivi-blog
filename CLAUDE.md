@@ -34,6 +34,11 @@ Dona: Mi (violet141521@gmail.com).
    - **As correções são aplicadas no próprio arquivo do rascunho** — a Mi recebe sempre a versão já corrigida, nunca o rascunho bruto
    - Ao apresentar o rascunho, incluir um resumo compacto: dados mantidos (fonte citada) e dados removidos (como a frase foi reescrita)
    - Atenção especial a: citações diretas atribuídas a organizações, datas de leis/documentos, porcentagens de adoção/uso, contagens (alunos, usuários, mercado)
+2.7. **Prompt de imagem** (executar logo após escrever cada artigo, junto com QA/auditoria):
+   skill `signal-seo-writer` gera `rascunhos/img-[slug].md` com metáfora central, prompt de
+   geração (inglês) e alt-text (português), seguindo o padrão visual em
+   `signal-seo-writer/references/imagem-prompt.md` (render cinematográfico escuro, teal neon
+   `#34D399` como cor primária, uma metáfora literal central por imagem, sem texto/logos/rostos)
 3. **Revisão**: a usuária lê o artigo **já auditado e corrigido** + relatório QA e aprova/pede mudanças no chat
 4. **Commit** (requer PC): skill `signal-publicador` move artigo para `artigos/`, atualiza `_catalog.json` e `fila.json`. O artigo fica acessível pela URL direta mas **invisível na home**.
 5. **Publicar na home** (qualquer dispositivo): a usuária decide quando tornar o artigo visível — via URL do celular ou dashboard Cloudflare (ver seção abaixo).
@@ -116,4 +121,4 @@ A home atualiza em até 1 minuto após a publicação (cache de 60s).
 12. Criar redes sociais do Yarivi (Twitter/X, Instagram, LinkedIn, YouTube) e adicionar coluna "Social" no footer (`partials/footer.html`) com links reais
 13. Versão em inglês do blog — artigos menos Brasil-específicos, maior alcance orgânico (decidir estrutura: subdomínio `en.yarivi.com` vs. pasta `/en/`)
 14. ~~Validação de plágio dos artigos~~ — skill `validador-text` criada (2026-08-12): antiplágio DIY via WebSearch + link checker + checklist SEO automático. **Pendente: instalar a skill no Claude** (abrir `validador-text/SKILL.md` no Claude → Save skill). Spec em `docs/validador-text-spec.md`.
-15. Adicionar 1 imagem por artigo — todos os artigos publicados e futuros devem ter ao menos uma imagem ilustrativa (definir padrão: gerada, stock ou captura; onde inserir no HTML; atributo `alt` descritivo para SEO).
+15. ~~Definir padrão de imagem por artigo~~ — concluído (2026-09-08): padrão visual e prompt documentados em `signal-seo-writer/references/imagem-prompt.md`; geração automática do prompt incluída no fluxo editorial (passo 2.7). Pendente: gerar e inserir a imagem nos artigos já publicados que ainda não têm (`img/` hoje só cobre 6 dos artigos).

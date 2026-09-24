@@ -164,7 +164,7 @@ def check_seo(html, title, h1, meta_desc, body_text, internal_links):
     checks["faq_schema"] = {"pass": check_faq_schema(html), "detail": ""}
 
     # R5.6 sem placeholders
-    placeholders = re.findall(r'\[\.\.\.\]|TODO|PLACEHOLDER|\[inserir\]', body_text, re.IGNORECASE)
+    placeholders = re.findall(r'\[\.\.\.\]|\bTODO\b|\bPLACEHOLDER\b|\[inserir\]', body_text)
     checks["no_placeholders"] = {"pass": len(placeholders) == 0, "detail": f"Encontrados: {placeholders}" if placeholders else ""}
 
     # R5.7 ao menos 1 link interno

@@ -138,6 +138,23 @@ Regras SEO na escrita — cada uma existe por um motivo:
 
 Depois de escrever, passe o artigo pelo `references/seo-checklist.md` e corrija o que faltar.
 
+## PASSO 4.5 — Gerar prompt de imagem de capa (sempre, logo após escrever)
+
+Todo artigo publicado ou futuro precisa de ao menos uma imagem ilustrativa (ver
+`references/imagem-prompt.md` para o padrão visual completo — render cinematográfico escuro,
+teal neon `#34D399` como cor primária, uma metáfora literal central, sem texto/logos/rostos).
+
+Assim que o artigo do Passo 4 estiver pronto (antes de salvar a fila no Passo 5):
+
+1. Leia `references/imagem-prompt.md`
+2. Com base no título, H1, lead e tom do artigo, gere as 3 partes: metáfora central, prompt
+   de geração em inglês, e alt-text em português
+3. Salve em `rascunhos/img-{{SLUG}}.md`, incluindo o snippet `<img>` pronto (com o `alt`
+   preenchido, apontando para `../img/{{SLUG}}.webp`)
+
+Isso roda para cada artigo da leva, sem esperar pedido — a Mi recebe o prompt de imagem
+junto com o rascunho para revisão, já pronto para colar num gerador de imagem.
+
 ## PASSO 5 — Salvar como rascunho na fila (NÃO publicar)
 
 1. Salvar o artigo em `C:\Repositorio\ClaudeProject\Aula1\BlogTI\rascunhos\{{SLUG}}.html`
@@ -163,9 +180,11 @@ Depois de escrever, passe o artigo pelo `references/seo-checklist.md` e corrija 
 3. NÃO tocar em `artigos/`, `partials/featured.html` nem `partials/latest.html` — isso é
    trabalho da skill `signal-publicador`, após aprovação do usuário.
 
-Ao final de todos os artigos, apresente a lista: slug, título, manchete e keyword de cada
-um, e oriente: "Revise os rascunhos (abra os arquivos de `rascunhos/` no navegador). Diga
-quais aprova — aí a signal-publicador agenda a publicação."
+Ao final de todos os artigos, apresente a lista: slug, título, manchete, keyword e o
+prompt de imagem (`rascunhos/img-{{SLUG}}.md`) de cada um, e oriente: "Revise os rascunhos
+(abra os arquivos de `rascunhos/` no navegador). Diga quais aprova — aí a signal-publicador
+agenda a publicação. Os prompts de imagem estão em `rascunhos/img-*.md`, prontos para colar
+num gerador de imagem."
 
 ---
 

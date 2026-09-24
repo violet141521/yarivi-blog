@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodar IA grátis no seu PC: Llama e Mistral | Yarivi</title>
+    <meta name="description" content="ChatGPT custa caro. Veja como rodar Llama, Mistral ou Qwen de graça no seu PC — passo a passo sem programar, com dados reais de custo e hardware.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yarivi.com/artigos/ia-open-source-llama-mistral-2026">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Yarivi">
+    <meta property="og:title" content="Rodar IA grátis no seu PC: Llama e Mistral | Yarivi">
+    <meta property="og:description" content="ChatGPT custa caro. Veja como rodar Llama, Mistral ou Qwen de graça no seu PC — passo a passo sem programar, com dados reais de custo e hardware.">
+    <meta property="og:url" content="https://yarivi.com/artigos/ia-open-source-llama-mistral-2026">
+    <meta property="og:image" content="https://yarivi.com/og-cover.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="article:published_time" content="2026-09-09">
+    <meta property="article:section" content="IA & ML">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@signal_tech">
+    <meta name="twitter:title" content="Rodar IA grátis no seu PC: Llama e Mistral | Yarivi">
+    <meta name="twitter:description" content="ChatGPT custa caro. Veja como rodar Llama, Mistral ou Qwen de graça no seu PC — passo a passo sem programar.">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "ChatGPT custa caro — mas você pode ter a sua IA de graça",
+      "description": "ChatGPT custa caro. Veja como rodar Llama, Mistral ou Qwen de graça no seu PC — passo a passo sem programar, com dados reais de custo e hardware.",
+      "datePublished": "2026-09-09",
+      "dateModified": "2026-09-09",
+      "inLanguage": "pt-BR",
+      "url": "https://yarivi.com/artigos/ia-open-source-llama-mistral-2026",
+      "publisher": { "@type": "NewsMediaOrganization", "name": "Yarivi", "url": "https://yarivi.com" },
+      "articleSection": "IA & ML",
+      "keywords": ["ia open source", "llama mistral alternativa chatgpt", "rodar ia local pc", "ollama lm studio", "ia gratuita pc 2026"]
+    }
+    </script>
+    <script>const t=localStorage.getItem("yarivi-theme");if(t)document.documentElement.setAttribute("data-theme",t);</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        #progress-bar{position:fixed;top:64px;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),var(--teal));z-index:199;transition:width .1s linear}
+        .art-page{max-width:720px;margin:0 auto;padding:6rem 2rem 4rem}
+        .art-header{margin-bottom:2.5rem}
+        .art-header .tags{margin-bottom:1rem}
+        .art-headline{font-family:"Fraunces",serif;font-weight:800;font-size:clamp(1.75rem,5vw,2.75rem);line-height:1.15;letter-spacing:-0.02em;color:var(--text-1);margin-bottom:1.25rem}
+        .art-lead{font-size:1.125rem;line-height:1.7;color:var(--text-2);border-left:3px solid var(--accent);padding-left:1.25rem;margin-bottom:1.5rem}
+        .art-byline{display:flex;align-items:center;gap:1rem;font-size:0.85rem;color:var(--text-3);padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+        .art-byline strong{color:var(--text-2)}
+        .art-byline .sep::before{content:"·";margin-right:1rem}
+        .art-body{line-height:1.8;font-size:1.0625rem}
+        .art-body p{margin-bottom:1.5rem;color:var(--text-1)}
+        .art-body h2{font-family:"Fraunces",serif;font-weight:700;font-size:1.5rem;letter-spacing:-0.015em;color:var(--text-1);margin:2.5rem 0 1rem;padding-top:0.5rem}
+        .art-body h3{font-weight:700;font-size:1.1rem;color:var(--text-1);margin:2rem 0 0.75rem}
+        .art-body ul,.art-body ol{margin:0 0 1.5rem 1.5rem;color:var(--text-1)}
+        .art-body li{margin-bottom:0.5rem;line-height:1.7}
+        .art-body strong{color:var(--text-1);font-weight:700}
+        .art-body em{color:var(--accent);font-style:normal;font-weight:600}
+        .data-callout{background:var(--bg-card);border:1px solid var(--border);border-left:4px solid var(--teal);border-radius:var(--radius);padding:1.25rem 1.5rem;margin:2rem 0}
+        .data-callout p{margin-bottom:0;font-size:0.95rem}
+        .stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin:2rem 0}
+        .stat-box{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;text-align:center}
+        .stat-num{font-family:"Fraunces",serif;font-size:1.9rem;font-weight:800;color:var(--teal);line-height:1;margin-bottom:0.4rem}
+        .stat-label{font-size:0.78rem;color:var(--text-2);line-height:1.4}
+        .art-table-wrap{overflow-x:auto;margin:2rem 0;border-radius:var(--radius);border:1px solid var(--border)}
+        .art-table{width:100%;border-collapse:collapse;font-size:0.9rem}
+        .art-table th{background:var(--bg-elevated);color:var(--text-2);font-weight:600;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.06em;padding:0.75rem 1rem;text-align:left;border-bottom:1px solid var(--border)}
+        .art-table td{padding:0.75rem 1rem;border-bottom:1px solid var(--border);color:var(--text-1);vertical-align:top}
+        .art-table tr:last-child td{border-bottom:none}
+        .art-table tr:hover td{background:var(--bg-elevated)}
+        .paradox-box{background:linear-gradient(135deg,rgba(162,89,255,0.08),rgba(245,166,35,0.06));border:1px solid rgba(162,89,255,0.3);border-radius:var(--radius-lg);padding:1.75rem 2rem;margin:2.5rem 0}
+        .paradox-box h3{color:var(--violet);margin-top:0;margin-bottom:0.75rem}
+        .paradox-box p{margin-bottom:0.75rem}
+        .paradox-box p:last-child{margin-bottom:0}
+        .summary-box{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem 2rem;margin:2.5rem 0}
+        .summary-box h2{font-family:"Manrope",sans-serif;margin-top:0!important;padding-top:0!important;letter-spacing:0.05em;text-transform:uppercase;font-size:0.82rem;color:var(--accent);margin-bottom:1rem!important}
+        .summary-box ol{margin-left:1.25rem;margin-bottom:0}
+        .summary-box li{margin-bottom:0.6rem;font-size:0.95rem}
+        .art-sources{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border)}
+        .art-sources h4{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-3);margin-bottom:0.75rem}
+        .art-sources ul{list-style:none;margin:0}
+        .art-sources li{font-size:0.82rem;color:var(--text-3);margin-bottom:0.35rem}
+        .art-sources a{color:var(--text-3);text-decoration:underline;text-underline-offset:3px}
+        .art-sources a:hover{color:var(--accent)}
+        .back-link{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.85rem;color:var(--text-3);text-decoration:none;margin-bottom:2rem;transition:color .2s}
+        .back-link:hover{color:var(--accent)}
+        @media(max-width:640px){.art-page{padding:5rem 1.25rem 3rem}.stat-row{grid-template-columns:repeat(2,1fr)}}
+    </style>
+</head>
+<body>
+    <nav class="nav" role="navigation" aria-label="Navegação principal">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-logo" aria-label="Yarivi — página inicial">Yarivi</a>
+            <div class="nav-links" style="display:flex;align-items:center;gap:1.5rem;">
+                <a href="../index.html#em-destaque" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Destaques</a>
+                <a href="../index.html#ultimas" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Notícias</a>
+                <button id="theme-toggle" aria-label="Alternar tema" style="background:none;border:none;cursor:pointer;font-size:1.1rem;color:var(--text-2);padding:0.25rem;">🌙</button>
+            </div>
+        </div>
+    </nav>
+    <div id="progress-bar" role="progressbar" aria-hidden="true"></div>
+    <main class="art-page">
+        <a href="../index.html" class="back-link">← Voltar para o Yarivi</a>
+        <header class="art-header">
+            <div class="tags">
+                <span class="tag tag-ai">IA & ML</span>
+                <span class="tag tag-dest" style="margin-left:.25rem;">Guia</span>
+            </div>
+            <h1 class="art-headline">ChatGPT custa caro — mas você pode ter a sua IA de graça</h1>
+            <p class="art-lead">Existe uma alternativa gratuita ao ChatGPT: os modelos de <strong>IA open source</strong>, como Llama e Mistral, que rodam direto no seu computador. Sem assinatura, sem limite de mensagens por dia, sem enviar o que você digita para servidor de terceiros. Neste guia, você entende as diferenças e instala um desses modelos hoje mesmo.</p>
+            <div class="art-byline">
+                <span><strong>Yarivi</strong> Redação</span>
+                <span class="sep">9 set 2026</span>
+                <span class="sep">8 min de leitura</span>
+            </div>
+        </header>
+<img src="../img/ia-open-source-llama-mistral-2026.webp" alt="Núcleo de rede neural translúcido com luz teal se espalhando livremente para fora de um notebook — ilustração de IA open source gratuita" width="1536" height="1024" style="width:100%;height:auto;border-radius:8px;margin-bottom:2rem;display:block;" loading="eager">
+        <article class="art-body">
+
+<h2>O que é uma IA "open source" e por que isso importa?</h2>
+<p>Pense em duas formas de ter um carro. Uma é alugar: você paga todo mês, usa o carro da locadora e, se a empresa mudar as regras, você não tem escolha. A outra é ter o carro montado na sua garagem — o trabalho de manutenção é seu, mas o carro é seu, e ninguém cobra mensalidade para você ligá-lo.</p>
+<p>IA open source funciona como a segunda opção. Em vez de pagar uma assinatura para conversar com um modelo hospedado em um servidor da OpenAI, você baixa o "motor" da inteligência artificial — chamado de <strong>modelo</strong> — e roda ele dentro do seu próprio computador.</p>
+<p>"Open source" aqui significa que os pesos do modelo (os números que definem como ele responde) ficam disponíveis para qualquer pessoa baixar, estudar e usar. Ninguém precisa aprovar seu acesso, e depois de baixado, o modelo funciona sem depender da internet.</p>
+
+<div class="data-callout">
+<p>⚠️ <strong>"Open source" nem sempre é 100% aberto.</strong> O Llama, da Meta, é distribuído sob uma licença própria — diferente da definição clássica de código aberto usada por organizações como a Open Source Initiative. Empresas com mais de <strong>700 milhões de usuários mensais ativos</strong> precisam pedir autorização direta da Meta para usar o modelo. Para uso pessoal no seu PC, essa regra não te afeta.</p>
+</div>
+
+<h2>Llama, Mistral ou Qwen — qual IA open source alternativa ao ChatGPT escolher?</h2>
+<p>Três famílias dominam esse espaço hoje, e cada uma tem uma origem diferente.</p>
+<p><strong>Llama</strong>, da Meta (EUA), é a mais conhecida. A geração Llama 4 trouxe dois modelos principais: o <strong>Scout</strong>, mais leve, e o <strong>Maverick</strong>, mais robusto — ambos descritos pela Meta como "nativamente multimodais", ou seja, entendem texto e imagem ao mesmo tempo, como já mostramos no nosso guia sobre <a href="../artigos/ia-multimodal-o-que-e-como-funciona-2026">IA multimodal</a>.</p>
+<p><strong>Mistral</strong>, empresa francesa, lançou em dezembro de 2025 a família Mistral 3: um modelo principal (Large 3) e três modelos menores da linha Ministral, feitos para rodar em máquinas mais simples. Todos sob licença <strong>Apache 2.0</strong> — a licença de código aberto mais permissiva que existe, sem as restrições que o Llama impõe a empresas grandes.</p>
+<p><strong>Qwen</strong>, da chinesa Alibaba, é a mais recente das três a virar opção popular no Ocidente. Em agosto de 2026, a empresa lançou a versão 3.8, também sob Apache 2.0, com foco declarado em tarefas de programação e escritório.</p>
+<p>Não existe resposta única sobre qual é "a melhor". A recomendação prática: comece pelo Llama ou pelo Mistral — são os mais documentados e com mais ferramentas prontas — e teste o Qwen depois, se o seu uso for muito voltado a código.</p>
+
+<h2>Meu PC roda uma IA local? O que realmente importa</h2>
+<p>Baixar um modelo de IA é como baixar um jogo pesado: quanto maior o "tamanho" do modelo — medido em bilhões de parâmetros, a quantidade de conexões que ele usa para pensar — mais memória seu computador precisa ter livre para rodá-lo sem travar.</p>
+<p>Não existe um número mágico universal, porque depende da versão exata do modelo e de como ele é comprimido para download. Mas há uma regra prática: modelos na faixa de 7 a 8 bilhões de parâmetros — como o Llama 3.1 de 8B — são os mais leves e os primeiros que vale testar em um notebook comum, sem placa de vídeo dedicada. Modelos com centenas de bilhões de parâmetros, como o Llama 4 Maverick, exigem hardware de servidor e não são o ponto de partida para quem está testando em casa.</p>
+<p>Se o seu computador tem alguns anos e memória limitada, comece pelo modelo mais leve disponível na ferramenta que for usar. Se travar ou ficar muito lento, é sinal de subir para uma versão "leve"/"mini" antes de desistir da ideia.</p>
+<p>Dica prática: deixe o Gerenciador de Tarefas (Windows) ou o Monitor de Atividade (Mac) aberto enquanto testa o primeiro modelo. Se a memória RAM chegar perto do limite e o computador travar, feche programas pesados — como o navegador com muitas abas abertas — ou troque para um modelo mais leve antes de desistir da ideia.</p>
+
+<div class="stat-row">
+<div class="stat-box"><div class="stat-num">US$ 20</div><div class="stat-label">mensalidade do ChatGPT Plus — fonte: OpenAI</div></div>
+<div class="stat-box"><div class="stat-num">4,9 GB</div><div class="stat-label">tamanho de download do Llama 3.1 8B via Ollama</div></div>
+<div class="stat-box"><div class="stat-num">Apache 2.0</div><div class="stat-label">licença aberta usada por Mistral 3 e Qwen 3.8</div></div>
+</div>
+
+<h2>Como instalar e rodar uma IA open source no PC (passo a passo)</h2>
+<p>O caminho mais simples chama-se <strong>Ollama</strong> — um programa gratuito que cuida de baixar e rodar o modelo por você, sem exigir nada de programação.</p>
+<ol>
+<li><strong>Baixe o Ollama</strong> em ollama.com. Está disponível para Windows, Mac e Linux, e a instalação é igual à de qualquer outro programa — próximo, próximo, concluir.</li>
+<li><strong>Abra o terminal</strong> do seu computador (Prompt de Comando ou PowerShell no Windows, Terminal no Mac).</li>
+<li><strong>Digite o comando</strong> <code>ollama run llama3.1</code> e aperte Enter. Para testar o Mistral no lugar, troque por <code>ollama run mistral</code>.</li>
+<li><strong>Espere o download.</strong> É a única etapa em que você precisa de internet — depois disso, o modelo roda 100% offline, mesmo sem sinal.</li>
+<li><strong>Converse.</strong> Quando o download terminar, aparece uma linha para digitar. Faça a mesma pergunta que faria ao ChatGPT.</li>
+</ol>
+<p>Se o comando não for reconhecido na primeira tentativa, feche e abra o terminal de novo — em alguns casos o Windows só reconhece o programa recém-instalado depois disso. Se o download travar na metade, rode o mesmo comando outra vez: o Ollama retoma de onde parou, não começa do zero.</p>
+<p>Quem prefere não usar terminal tem a opção do <strong>LM Studio</strong>: interface gráfica, com uma lista de modelos para escolher e baixar com um clique, parecida com uma loja de aplicativos.</p>
+<p>Se o seu interesse principal é usar IA para programar, vale conferir também o nosso guia sobre <a href="../artigos/cursor-ai-copilot-programar-sem-codigo-2026">Cursor, Copilot e IA para programar sem escrever código</a> — algumas dessas ferramentas já aceitam modelos open source como motor por trás.</p>
+
+<h2>Vale a pena trocar o ChatGPT por uma IA local? Custo e qualidade na prática</h2>
+<p>No custo, a conta é direta: o plano ChatGPT Plus custa US$ 20 por mês, cobrado todo mês, para sempre. Uma IA open source rodando no seu próprio PC não tem mensalidade — o único custo é o consumo de energia elétrica do computador enquanto ele processa a resposta.</p>
+<p>Na qualidade, a resposta é "depende da tarefa". Para conversas do dia a dia, resumir textos e tirar dúvidas gerais, a diferença entre um modelo aberto bem escolhido e o ChatGPT costuma ser pequena. Em tarefas de raciocínio mais complexo ou programação avançada, os modelos fechados mais caros ainda tendem a levar vantagem — mas essa distância vem encurtando a cada nova geração dos modelos abertos.</p>
+<p>Há ainda um ganho que nenhuma tabela de preço mostra: privacidade. Como o modelo roda dentro do seu computador, o que você digita não sai da sua máquina, nem passa por servidor de terceiros. Para quem lida com informação sensível — contratos, dados de clientes, anotações pessoais — isso pesa tanto quanto o valor da mensalidade.</p>
+<p>Vale lembrar da manutenção também. Modelos abertos recebem novas versões com frequência, e trocar de um para outro no Ollama é só rodar outro comando, sem reinstalar nada. Numa assinatura como o ChatGPT Plus, a troca de versão do modelo por trás acontece automaticamente — você não escolhe quando nem qual versão usar.</p>
+<p>Se você tem dez minutos livres agora, o teste mais rápido é este: instale o Ollama, rode <code>ollama run llama3.1</code> e faça a mesma pergunta que você fez ao ChatGPT essa semana. Compare a resposta com as próprias mãos, no seu próprio computador.</p>
+
+<div class="summary-box">
+<h2>📋 Resumo</h2>
+<ol>
+<li>IA open source (Llama, Mistral, Qwen) roda no seu PC de graça, sem assinatura e sem limite diário de mensagens.</li>
+<li>"Open source" nem sempre é 100% livre — o Llama tem restrição de licença para empresas gigantes; Mistral e Qwen usam Apache 2.0, mais permissiva.</li>
+<li>Modelos menores, na faixa de 7 a 8 bilhões de parâmetros, são o ponto de partida realista em notebook comum; modelos gigantes exigem hardware de servidor.</li>
+<li>Ollama é o caminho mais simples para instalar: baixe o programa, digite um comando no terminal, pronto.</li>
+<li>Para o dia a dia, a diferença de qualidade para o ChatGPT é pequena; em raciocínio complexo, os modelos fechados ainda levam vantagem — por enquanto.</li>
+</ol>
+</div>
+
+<h2>Perguntas frequentes sobre IA open source</h2>
+
+<h3>IA open source é de graça mesmo, sem pegadinha?</h3>
+<p>Sim. O download e o uso pessoal de modelos como Llama, Mistral e Qwen são gratuitos. Você só "paga" indiretamente com a energia elétrica do seu computador enquanto ele processa a resposta. Não há assinatura nem limite de mensagens por dia.</p>
+
+<h3>Preciso saber programar para rodar uma IA local?</h3>
+<p>Não. Ferramentas como Ollama e LM Studio foram feitas para eliminar essa barreira. O Ollama usa um único comando no terminal; o LM Studio tem interface totalmente visual, como instalar qualquer outro programa no computador.</p>
+
+<h3>Llama e Mistral são tão bons quanto o ChatGPT?</h3>
+<p>Depende da tarefa. Para conversas do dia a dia, resumir textos e tirar dúvidas gerais, a diferença costuma ser pequena. Em raciocínio complexo ou programação avançada, os modelos fechados mais caros ainda tendem a ter vantagem, mas essa distância vem diminuindo a cada versão nova dos modelos abertos.</p>
+
+<h3>Rodar IA local no PC é seguro para os meus dados?</h3>
+<p>Essa é a maior vantagem. Como o modelo roda direto no seu computador, o que você digita não sai da sua máquina, nem é enviado a servidor nenhum. Para quem lida com informação sensível, isso pesa tanto quanto o custo.</p>
+
+<h3>Qual a diferença entre Llama, Mistral e Qwen?</h3>
+<p>Llama é da Meta (EUA), Mistral é da empresa francesa Mistral AI, e Qwen é da Alibaba (China). Os três têm versões gratuitas e leves o suficiente para notebook comum, mas cada um tem pontos fortes diferentes — vale testar mais de um antes de escolher qual instalar de forma fixa.</p>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "IA open source é de graça mesmo, sem pegadinha?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. O download e o uso pessoal de modelos como Llama, Mistral e Qwen são gratuitos, sem assinatura nem limite de mensagens por dia."}},
+    {"@type": "Question", "name": "Preciso saber programar para rodar uma IA local?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Ferramentas como Ollama e LM Studio foram feitas para eliminar essa barreira, com instalação simples e comandos mínimos."}},
+    {"@type": "Question", "name": "Llama e Mistral são tão bons quanto o ChatGPT?", "acceptedAnswer": {"@type": "Answer", "text": "Depende da tarefa. No dia a dia a diferença é pequena; em raciocínio complexo os modelos fechados ainda tendem a ter vantagem."}},
+    {"@type": "Question", "name": "Rodar IA local no PC é seguro para os meus dados?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Como o modelo roda no seu computador, o que você digita não sai da máquina nem é enviado a servidor nenhum."}},
+    {"@type": "Question", "name": "Qual a diferença entre Llama, Mistral e Qwen?", "acceptedAnswer": {"@type": "Answer", "text": "Llama é da Meta, Mistral é da empresa francesa Mistral AI, e Qwen é da Alibaba. Todos têm versões gratuitas e leves para notebook comum."}}
+  ]
+}
+</script>
+
+            <div class="art-sources">
+                <h4>Fontes</h4>
+                <ul>
+                    <li>Meta AI — <a href="https://ai.meta.com/blog/llama-4-multimodal-intelligence/" target="_blank" rel="noopener">The Llama 4 herd: multimodal intelligence</a> (abr. 2025)</li>
+                    <li>Meta / Hugging Face — <a href="https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct" target="_blank" rel="noopener">Llama 3.1 Community License</a></li>
+                    <li>Mistral AI — <a href="https://mistral.ai/news/mistral-3/" target="_blank" rel="noopener">Introducing Mistral 3</a> (dez. 2025)</li>
+                    <li>Ollama — <a href="https://ollama.com/library/llama3.1" target="_blank" rel="noopener">biblioteca oficial, modelo llama3.1</a></li>
+                    <li>OpenAI Help Center — <a href="https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus" target="_blank" rel="noopener">What is ChatGPT Plus?</a></li>
+                    <li>The Decoder — <a href="https://the-decoder.com/alibabas-qwen-team-releases-qwen-3-8-models-with-open-weights-under-the-apache-2-0-license/" target="_blank" rel="noopener">Qwen 3.8 open weights, Apache 2.0</a> (ago. 2026)</li>
+                </ul>
+            </div>
+        </article>
+    </main>
+    <script>
+        const btn=document.getElementById("theme-toggle");
+        function applyTheme(t){document.documentElement.setAttribute("data-theme",t);btn.textContent=t==="light"?"☀️":"🌙";localStorage.setItem("yarivi-theme",t);}
+        applyTheme(localStorage.getItem("yarivi-theme")||"dark");
+        btn.addEventListener("click",()=>applyTheme(document.documentElement.getAttribute("data-theme")==="light"?"dark":"light"));
+        const bar=document.getElementById("progress-bar");
+        window.addEventListener("scroll",()=>{const d=document.documentElement;bar.style.width=Math.min((d.scrollTop/(d.scrollHeight-d.clientHeight))*100,100)+"%";});
+    </script>
+</body>
+</html>

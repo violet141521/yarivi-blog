@@ -1,0 +1,93 @@
+{
+  "gerado_em": "2026-09-08T22:15:21.308343",
+  "total_artigos": 5,
+  "especificacoes": {
+    "formato": "PNG",
+    "largura": 1200,
+    "altura": 630,
+    "dpi": 72,
+    "tamanho_maximo": "200KB",
+    "notas": "Otimizado para redes sociais (OG image) e blog"
+  },
+  "artigos": {
+    "banco-digital-vs-tradicional-2026": {
+      "titulo": "Banco Digital vs Banco Tradicional",
+      "categoria": "Fintech",
+      "arquivo": "banco-digital-vs-tradicional-2026.png",
+      "url_publica": "https://yarivi.com/imagens/banco-digital-vs-tradicional-2026.png",
+      "alt_text": "Comparação visual entre banco digital e banco tradicional - segurança e tecnologia",
+      "cor_primaria": "#34D399",
+      "emoji": "🏦",
+      "palavras_chave": [
+        "banco",
+        "segurança",
+        "pix",
+        "digital",
+        "fintech"
+      ]
+    },
+    "vicio-redes-sociais-algoritmo-dopamina-2026": {
+      "titulo": "Por que TikTok vicia",
+      "categoria": "Bem-estar Digital",
+      "arquivo": "vicio-redes-sociais-algoritmo-dopamina-2026.png",
+      "url_publica": "https://yarivi.com/imagens/vicio-redes-sociais-algoritmo-dopamina-2026.png",
+      "alt_text": "Visualização do ciclo de vício em redes sociais - dopamina e algoritmos",
+      "cor_primaria": "#F59E0B",
+      "emoji": "🧠",
+      "palavras_chave": [
+        "tiktok",
+        "dopamina",
+        "redes sociais",
+        "vício",
+        "psicologia"
+      ]
+    },
+    "lgpd-ia-regulacao-brasil-2026": {
+      "titulo": "LGPD e IA: Regulação Brasil",
+      "categoria": "IA & Privacidade",
+      "arquivo": "lgpd-ia-regulacao-brasil-2026.png",
+      "url_publica": "https://yarivi.com/imagens/lgpd-ia-regulacao-brasil-2026.png",
+      "alt_text": "Símbolo de regulação e privacidade em IA - compliance e segurança de dados",
+      "cor_primaria": "#8B5CF6",
+      "emoji": "⚖️",
+      "palavras_chave": [
+        "lgpd",
+        "ia",
+        "regulação",
+        "privacidade",
+        "brasil"
+      ]
+    },
+    "ia-open-source-llama-mistral-2026": {
+      "titulo": "Open Source IA: Llama e Mistral",
+      "categoria": "Software",
+      "arquivo": "ia-open-source-llama-mistral-2026.png",
+      "url_publica": "https://yarivi.com/imagens/ia-open-source-llama-mistral-2026.png",
+      "alt_text": "Logo representando IA open source - Llama, Mistral, DeepSeek",
+      "cor_primaria": "#10B981",
+      "emoji": "🤖",
+      "palavras_chave": [
+        "llama",
+        "mistral",
+        "open source",
+        "ia",
+        "grátis"
+      ]
+    },
+    "tutor-ia-homeschooling-vs-reforco-2026": {
+      "titulo": "Tutor IA vs Reforço",
+      "categoria": "Educação",
+      "arquivo": "tutor-ia-homeschooling-vs-reforco-2026.png",
+      "url_publica": "https://yarivi.com/imagens/tutor-ia-homeschooling-vs-reforco-2026.png",
+      "alt_text": "Tutor de IA auxiliando em educação - homeschooling e aprendizado personalizado",
+      "cor_primaria": "#EC4899",
+      "emoji": "📚",
+      "palavras_chave": [
+        "educação",
+        "homeschooling",
+        "tutor ia",
+        "aprendizado"
+      ]
+    }
+  }
+}

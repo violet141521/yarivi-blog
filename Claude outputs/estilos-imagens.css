@@ -1,0 +1,81 @@
+/* =========================================================================
+   ESTILOS PARA IMAGENS NOS ARTIGOS
+   ========================================================================= */
+
+/* Imagem Hero (topo do artigo) */
+.art-hero {
+    margin: 0 0 2.5rem 0;
+    padding: 0;
+    text-align: center;
+}
+
+.art-hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin: 0 auto;
+}
+
+/* Imagem inline (dentro do artigo) */
+.art-inline-img {
+    margin: 2rem 0;
+    padding: 0;
+    text-align: center;
+}
+
+.art-inline-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Legenda de figura */
+.art-inline-img figcaption,
+.art-hero figcaption {
+    font-size: 0.8rem;
+    color: var(--text-3);
+    margin-top: 0.75rem;
+    line-height: 1.5;
+}
+
+/* Galeria de imagens (para múltiplas imagens) */
+.art-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.art-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsivo: mobile */
+@media (max-width: 640px) {
+    .art-hero {
+        margin: 0 0 1.5rem 0;
+    }
+
+    .art-inline-img {
+        margin: 1.5rem 0;
+    }
+
+    .art-gallery {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Dark mode: ajustes sutis */
+@media (prefers-color-scheme: dark) {
+    .art-hero img,
+    .art-inline-img img {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+}
