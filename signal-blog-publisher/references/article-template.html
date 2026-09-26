@@ -15,6 +15,7 @@
      {{READ_TIME}}       — Ex: 7 min
      {{ARTICLE_BODY}}    — Corpo completo em HTML (h2, p, componentes especiais)
      {{SOURCES_ITEMS}}   — Itens <li> das fontes
+     {{RELATED_ITEMS}}   — Itens <li><a href="../artigos/{slug}">{manchete}</a></li> dos 3 relacionados
 -->
 <html lang="pt-BR" data-theme="dark">
 <head>
@@ -114,18 +115,31 @@
         .back-link{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.85rem;color:var(--text-3);text-decoration:none;margin-bottom:2rem;transition:color .2s}
         .back-link:hover{color:var(--accent)}
         @media(max-width:640px){.art-page{padding:5rem 1.25rem 3rem}.art-nl-form{flex-direction:column}.stat-row{grid-template-columns:repeat(2,1fr)}}
+
+        @media(min-width:681px){
+            .nav-links{flex:0 0 auto;justify-content:flex-end;gap:1.5rem}
+            .nav-link{font-size:.875rem;text-transform:none;letter-spacing:0;padding:.25rem 0}
+        }
+        .art-related{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border)}
+        .art-related h4{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-3);margin-bottom:1rem}
+        .art-related ul{list-style:none;margin:0;display:flex;flex-direction:column;gap:0.75rem}
+        .art-related a{display:block;font-family:"Fraunces",serif;font-weight:700;font-size:1rem;color:var(--text-1);text-decoration:none;line-height:1.4;transition:color .2s}
+        .art-related a:hover{color:var(--accent)}
     </style>
 </head>
 <body>
     <nav class="nav" role="navigation" aria-label="Navegação principal">
         <div class="nav-inner">
             <a href="../index.html" class="nav-logo" aria-label="Signal. — página inicial">Signal.</a>
-            <div class="nav-links" style="display:flex;align-items:center;gap:1.5rem;">
-                <a href="../index.html#em-destaque" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Destaques</a>
-                <a href="../index.html#ultimas" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Notícias</a>
+            <div class="nav-links">
+                <a href="../index.html#em-destaque" class="nav-link">Destaques</a>
+                <a href="../index.html#ultimas" class="nav-link">Notícias</a>
                 <a href="../index.html#newsletter" class="btn-nav" style="background:var(--accent);color:#08080F;font-weight:700;font-size:.8rem;padding:.45rem 1rem;border-radius:8px;text-decoration:none;">Assinar grátis</a>
-                <button id="theme-toggle" aria-label="Alternar tema" style="background:none;border:none;cursor:pointer;font-size:1.1rem;color:var(--text-2);padding:0.25rem;">🌙</button>
             </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <button id="theme-toggle" aria-label="Alternar tema">🌙</button>
         </div>
     </nav>
     <div id="progress-bar" role="progressbar" aria-hidden="true"></div>
@@ -150,6 +164,10 @@
                 <h4>Fontes</h4>
                 <ul>{{SOURCES_ITEMS}}</ul>
             </div>
+            <div class="art-related">
+                <h4>Leia também</h4>
+                <ul>{{RELATED_ITEMS}}</ul>
+            </div>
         </article>
         <div class="art-nl-cta">
             <h3>Gostou? Tem mais toda semana.</h3>
@@ -165,6 +183,18 @@
         function applyTheme(t){document.documentElement.setAttribute('data-theme',t);btn.textContent=t==='light'?'☀️':'🌙';localStorage.setItem('signal-theme',t);}
         applyTheme(localStorage.getItem('signal-theme')||'dark');
         btn.addEventListener('click',()=>applyTheme(document.documentElement.getAttribute('data-theme')==='light'?'dark':'light'));
+        const hbtn=document.getElementById('hamburger');
+        const nlinks=document.querySelector('.nav-links');
+        if(hbtn&&nlinks){
+            hbtn.addEventListener('click',()=>{
+                const open=nlinks.classList.toggle('open');
+                hbtn.setAttribute('aria-expanded',String(open));
+            });
+            nlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+                nlinks.classList.remove('open');
+                hbtn.setAttribute('aria-expanded','false');
+            }));
+        }
         const bar=document.getElementById('progress-bar');
         window.addEventListener('scroll',()=>{const d=document.documentElement;bar.style.width=Math.min((d.scrollTop/(d.scrollHeight-d.clientHeight))*100,100)+'%';});
         const nlForm=document.getElementById('art-nl-form'),nlBtn=document.getElementById('art-nl-btn');

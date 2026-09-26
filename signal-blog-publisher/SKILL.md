@@ -66,6 +66,10 @@ componentes certos (data-callout, stat-row, paradox-box, etc.).
 - [ ] Ao menos 1 **stat-row** com 3-4 números de impacto (se o tema tiver dados)
 - [ ] **summary-box** ao final com "Resumo em N pontos"
 - [ ] **art-sources** com fontes reais da pesquisa (Tier A/B em destaque)
+- [ ] **Seção "Leia também"** (`{{RELATED_ITEMS}}`) preenchida com até 3 artigos
+  relacionados lidos de `artigos/_catalog.json` — mesma `categoria` por recência
+  (`data_pub` mais recente primeiro), completando com outras categorias por recência se
+  faltar. Formato: `<li><a href="../artigos/{slug}">{manchete}</a></li>` (sem `.html`).
 - [ ] Tempo de leitura estimado (palavras ÷ 200 = minutos, arredondar)
 - [ ] Slug limpo: `tema-principal-ano` (ex: `perigo-quantico-criptografia-2026`)
 

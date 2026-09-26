@@ -132,6 +132,12 @@ Regras SEO na escrita — cada uma existe por um motivo:
 - **1-3 links internos** para outros artigos do blog em `artigos/` quando houver relação
   real de tema (âncora descritiva, não "clique aqui"). Links internos distribuem autoridade
   e mantêm o leitor no site.
+- **Seção "Leia também" (`{{RELATED_ITEMS}}`)**: preencha sempre com até 3 artigos
+  relacionados, lidos de `artigos/_catalog.json`. Prioridade: mesma `categoria` do artigo
+  novo, ordenados por `data_pub` mais recente primeiro; se sobrar menos de 3 na mesma
+  categoria, complete com os mais recentes de outras categorias. Formato de cada item:
+  `<li><a href="../artigos/{slug}">{manchete}</a></li>` (sem `.html` no link). Nunca deixe
+  `{{RELATED_ITEMS}}` sem substituir — ajuda retenção e faz parte do padrão de layout do site.
 - **Schema.org**: além do `NewsArticle` do template, adicione um bloco `FAQPage` com as
   perguntas da seção FAQ.
 - **Meta description** definida no Passo 2 vai no `<meta name="description">`.
