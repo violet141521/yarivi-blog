@@ -50,7 +50,9 @@
     <script>const t=localStorage.getItem('yarivi-theme');if(t)document.documentElement.setAttribute('data-theme',t);</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap"></noscript>
     <link rel="stylesheet" href="../style.css">
     <style>
         #progress-bar{position:fixed;top:64px;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),var(--teal));z-index:199;transition:width .1s linear}
@@ -99,17 +101,30 @@
         .back-link{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.85rem;color:var(--text-3);text-decoration:none;margin-bottom:2rem;transition:color .2s}
         .back-link:hover{color:var(--accent)}
         @media(max-width:640px){.art-page{padding:5rem 1.25rem 3rem}.stat-row{grid-template-columns:repeat(2,1fr)}}
+
+        @media(min-width:681px){
+            .nav-links{flex:0 0 auto;justify-content:flex-end;gap:1.5rem}
+            .nav-link{font-size:.875rem;text-transform:none;letter-spacing:0;padding:.25rem 0}
+        }
+        .art-related{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border)}
+        .art-related h4{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-3);margin-bottom:1rem}
+        .art-related ul{list-style:none;margin:0;display:flex;flex-direction:column;gap:0.75rem}
+        .art-related a{display:block;font-family:"Fraunces",serif;font-weight:700;font-size:1rem;color:var(--text-1);text-decoration:none;line-height:1.4;transition:color .2s}
+        .art-related a:hover{color:var(--accent)}
     </style>
 </head>
 <body>
     <nav class="nav" role="navigation" aria-label="Navegação principal">
         <div class="nav-inner">
             <a href="../index.html" class="nav-logo" aria-label="Yarivi — página inicial">Yarivi</a>
-            <div class="nav-links" style="display:flex;align-items:center;gap:1.5rem;">
-                <a href="../index.html#em-destaque" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Destaques</a>
-                <a href="../index.html#ultimas" class="nav-link" style="font-size:.875rem;color:var(--text-2);text-decoration:none;">Notícias</a>
-                <button id="theme-toggle" aria-label="Alternar tema" style="background:none;border:none;cursor:pointer;font-size:1.1rem;color:var(--text-2);padding:0.25rem;">🌙</button>
+            <div class="nav-links">
+                <a href="../index.html#em-destaque" class="nav-link">Destaques</a>
+                <a href="../index.html#ultimas" class="nav-link">Notícias</a>
             </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <button id="theme-toggle" aria-label="Alternar tema">🌙</button>
         </div>
     </nav>
     <div id="progress-bar" role="progressbar" aria-hidden="true"></div>
@@ -227,6 +242,14 @@
                     <li><a href="https://itforum.com.br/noticias/10-tendencias-estrategicas-2026/" target="_blank" rel="noopener">IT Forum — 10 tendências tecnológicas estratégicas para 2026 (Gartner)</a></li>
                 </ul>
             </div>
+            <div class="art-related">
+                <h4>Leia também</h4>
+                <ul>
+                    <li><a href="../artigos/carro-eletrico-brasil-2026-vale-a-pena">Carro elétrico ficou mais caro em 2026 — mas o custo de rodar caiu</a></li>
+                    <li><a href="../artigos/anel-inteligente-wearable-saude-2026">Esse anel pesa 3 gramas e sabe mais sobre o seu sono do que você</a></li>
+                    <li><a href="../artigos/oculos-inteligentes-2026-guia">Você vai usar óculos para checar mensagens — e o momento chegou antes do esperado</a></li>
+                </ul>
+            </div>
         </article>
     </main>
     <script>
@@ -234,6 +257,18 @@
         function applyTheme(t){document.documentElement.setAttribute('data-theme',t);btn.textContent=t==='light'?'☀️':'🌙';localStorage.setItem('yarivi-theme',t);}
         applyTheme(localStorage.getItem('yarivi-theme')||'dark');
         btn.addEventListener('click',()=>applyTheme(document.documentElement.getAttribute('data-theme')==='light'?'dark':'light'));
+        const hbtn=document.getElementById('hamburger');
+        const nlinks=document.querySelector('.nav-links');
+        if(hbtn&&nlinks){
+            hbtn.addEventListener('click',()=>{
+                const open=nlinks.classList.toggle('open');
+                hbtn.setAttribute('aria-expanded',String(open));
+            });
+            nlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+                nlinks.classList.remove('open');
+                hbtn.setAttribute('aria-expanded','false');
+            }));
+        }
         const bar=document.getElementById('progress-bar');
         window.addEventListener('scroll',()=>{const d=document.documentElement;bar.style.width=Math.min((d.scrollTop/(d.scrollHeight-d.clientHeight))*100,100)+'%';});
     </script>
