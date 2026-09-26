@@ -551,6 +551,75 @@
       "criado_em": "2026-09-21",
       "aprovado_em": "2026-09-22",
       "publicado_em": "2026-09-25"
+    },
+    {
+      "slug": "bolha-da-inteligencia-artificial-2026",
+      "titulo_seo": "Bolha da IA: o que é e o que pode acontecer | Yarivi",
+      "manchete_h1": "A empresa mais valiosa do mundo multiplicou por 13 em três anos. Isso é bolha?",
+      "categoria": "fut",
+      "emoji": "🔮",
+      "excerpt": "Nvidia saltou de US$ 300 bi para US$ 4 tri em 3 anos e 54% dos gestores globais já falam em bolha. Entenda os sinais e o que muda pra você.",
+      "read_time": "6 min",
+      "keyword": "bolha da inteligencia artificial",
+      "status": "aguardando-revisao",
+      "ordem": 38,
+      "criado_em": "2026-09-25"
+    },
+    {
+      "slug": "trump-superinteligencia-ia-czar-2026",
+      "titulo_seo": "Trump quer chamar IA de “superinteligência” | Yarivi",
+      "manchete_h1": "Trump decidiu que “inteligência artificial” já não é grande o suficiente",
+      "categoria": "fut",
+      "emoji": "🔮",
+      "excerpt": "Trump anunciou uma 'Força de IA', promete nomear um 'czar' e convenceu Xi Jinping a trocar 'IA' por 'superinteligência'. Entenda o que está por trás disso.",
+      "read_time": "6 min",
+      "keyword": "trump superinteligencia ia",
+      "status": "publicado",
+      "ordem": 39,
+      "criado_em": "2026-09-25",
+      "aprovado_em": "2026-09-26",
+      "publicado_em": "2026-09-26"
+    },
+    {
+      "slug": "starlink-direto-no-celular-brasil-2026",
+      "titulo_seo": "Starlink direto no celular: como funciona no Brasil | Yarivi",
+      "manchete_h1": "Seu celular pode virar uma antena de satélite — sem chip, sem torre",
+      "categoria": "mob",
+      "emoji": "📶",
+      "excerpt": "A Anatel liberou o Starlink pra funcionar direto no celular, sem chip especial. Entenda como funciona, quando chega e quais aparelhos vão aceitar.",
+      "read_time": "5 min",
+      "keyword": "starlink direto no celular brasil",
+      "status": "aguardando-revisao",
+      "ordem": 40,
+      "criado_em": "2026-09-25"
+    },
+    {
+      "slug": "direito-ao-reparo-brasil-2026",
+      "titulo_seo": "Direito ao reparo no Brasil: o que já vale | Yarivi",
+      "manchete_h1": "A lei contra a “obsolescência programada” já tem dois projetos andando no Congresso",
+      "categoria": "hw",
+      "emoji": "🔧",
+      "excerpt": "Dois projetos de lei avançam no Congresso: um pra celular e notebook, outro pro seu carro. Veja o que já vale hoje e quando compensa consertar ou trocar.",
+      "read_time": "5 min",
+      "keyword": "direito ao reparo brasil",
+      "status": "aguardando-revisao",
+      "ordem": 41,
+      "criado_em": "2026-09-25"
+    },
+    {
+      "slug": "carro-autonomo-brasil-2026",
+      "titulo_seo": "Carro autônomo no Brasil: o que já pode e o que não | Yarivi",
+      "manchete_h1": "Seu carro já dirige quase sozinho — mas a lei ainda proíbe soltar o volante no Brasil",
+      "categoria": "fut",
+      "emoji": "🔮",
+      "excerpt": "Comissão da Câmara aprovou as primeiras regras pra carros autônomos no Brasil. Entenda os níveis de autonomia e quem paga a conta em caso de acidente.",
+      "read_time": "6 min",
+      "keyword": "carro autonomo brasil",
+      "status": "publicado",
+      "ordem": 42,
+      "criado_em": "2026-09-25",
+      "aprovado_em": "2026-09-26",
+      "publicado_em": "2026-09-26"
     }
   ]
 }

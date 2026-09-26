@@ -2,9 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://yarivi.com/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://yarivi.com/artigos/carro-autonomo-brasil-2026</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yarivi.com/artigos/trump-superinteligencia-ia-czar-2026</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://yarivi.com/artigos/tecnologia-2027-o-que-muda-brasil</loc>
@@ -254,13 +266,13 @@
   </url>
   <url>
     <loc>https://yarivi.com/contato</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://yarivi.com/privacidade</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
