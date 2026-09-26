@@ -448,9 +448,10 @@
       "excerpt": "A LGPD já regula o uso de IA com dados pessoais no Brasil, mesmo sem o Marco Legal da IA aprovado — e a ANPD só multou uma empresa desde 2021. Veja o que muda para o seu negócio.",
       "read_time": "7 min",
       "keyword": "lgpd ia brasil regulação privacidade dados",
-      "status": "aguardando-revisao",
+      "status": "aprovado",
       "criado_em": "2026-09-09",
-      "ordem": 30
+      "ordem": 30,
+      "aprovado_em": "2026-09-26"
     },
     {
       "slug": "ia-open-source-llama-mistral-2026",
