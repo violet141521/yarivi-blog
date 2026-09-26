@@ -74,3 +74,24 @@
 # Artigos publicados — estáticos após publicação
 /artigos/*
   Cache-Control: public, max-age=14400, s-maxage=14400
+
+# Ícones e imagens estáticas — praticamente nunca mudam (achado do PageSpeed:
+# ~4 KiB sem Cache-Control de longo prazo eram exatamente favicon.ico +
+# favicon.svg + apple-touch-icon.png, carregados em toda página via <link
+# rel="icon">/<link rel="apple-touch-icon"> no <head>). 30 dias de cache;
+# se o ícone ou a imagem de capa mudar, renomeie o arquivo para invalidar o cache.
+/favicon.ico
+  Cache-Control: public, max-age=2592000, s-maxage=2592000
+
+/favicon.svg
+  Cache-Control: public, max-age=2592000, s-maxage=2592000
+
+/apple-touch-icon.png
+  Cache-Control: public, max-age=2592000, s-maxage=2592000
+
+/og-cover.jpg
+  Cache-Control: public, max-age=2592000, s-maxage=2592000
+
+# Imagens de capa dos artigos — mesma lógica: estáticas após publicação
+/img/*
+  Cache-Control: public, max-age=2592000, s-maxage=2592000
