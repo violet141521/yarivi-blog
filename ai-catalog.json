@@ -1,0 +1,446 @@
+{
+  "name": "Yarivi",
+  "url": "https://yarivi.com",
+  "description": "Veículo de jornalismo tecnológico em português brasileiro — IA, celulares, segurança digital, hardware, software e tendências de tecnologia.",
+  "language": "pt-BR",
+  "lastUpdated": "2026-09-25",
+  "itemCount": 41,
+  "categories": [
+    {
+      "code": "ai",
+      "label": "Inteligência Artificial"
+    },
+    {
+      "code": "sec",
+      "label": "Segurança digital"
+    },
+    {
+      "code": "mob",
+      "label": "Celulares e mobile"
+    },
+    {
+      "code": "fut",
+      "label": "Futuro e tendências"
+    },
+    {
+      "code": "sw",
+      "label": "Software"
+    },
+    {
+      "code": "hw",
+      "label": "Hardware"
+    }
+  ],
+  "items": [
+    {
+      "title": "50 milhões de brasileiros já usam IA no dia a dia — mas só 16% dos mais pobres chegaram lá",
+      "url": "https://yarivi.com/artigos/tecnologia-2027-o-que-muda-brasil",
+      "description": "50 milhões de brasileiros já usam IA, o 5G chega às cidades menores e o Pix cresce ainda mais. Veja o que deve mudar na tecnologia do brasileiro até 2027.",
+      "category": "Futuro e tendências",
+      "categoryCode": "fut",
+      "datePublished": "2026-09-25",
+      "readingTime": "5 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Seu iPhone de 2019 ainda vai rodar o iOS 27 — mas o SE de 2016 não",
+      "url": "https://yarivi.com/artigos/ios-27-novidades-quais-iphones-2026",
+      "description": "O iOS 27 chegou em setembro de 2026 com Siri renovada e Apple Intelligence expandida. Veja se seu iPhone recebe a atualização e quais são as novidades.",
+      "category": "Celulares e mobile",
+      "categoryCode": "mob",
+      "datePublished": "2026-09-24",
+      "readingTime": "5 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "ChatGPT custa caro — mas você pode ter a sua IA de graça",
+      "url": "https://yarivi.com/artigos/ia-open-source-llama-mistral-2026",
+      "description": "ChatGPT custa caro. Veja como rodar Llama, Mistral ou Qwen de graça no seu PC — passo a passo sem programar, com dados reais de custo e hardware.",
+      "category": "Inteligência Artificial",
+      "categoryCode": "ai",
+      "datePublished": "2026-09-23",
+      "readingTime": "8 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "O Android ganhou 5 poderes novos em setembro — mas o mais ambicioso pede 12 GB de RAM pra funcionar",
+      "url": "https://yarivi.com/artigos/atualizacao-ia-android-setembro-2026",
+      "description": "O Android ganhou 5 recursos novos de IA em setembro de 2026 — mas o mais avançado, o Gemini Intelligence, exige pelo menos 12 GB de RAM. Veja o que muda.",
+      "category": "Celulares e mobile",
+      "categoryCode": "mob",
+      "datePublished": "2026-09-22",
+      "readingTime": "5 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Seu banco digital guarda dinheiro melhor que o do seu avô",
+      "url": "https://yarivi.com/artigos/banco-digital-vs-tradicional-2026",
+      "description": "FGC garante até R$ 250 mil por CPF, igual em banco digital e tradicional. Veja como o caso Banco Master provou isso na prática — e por que golpe, não quebra de banco, é o risco que mais importa hoje.",
+      "category": "Segurança digital",
+      "categoryCode": "sec",
+      "datePublished": "2026-09-21",
+      "readingTime": "8 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Tutor de IA sai de graça. O professor particular custa R$ 47 a hora",
+      "url": "https://yarivi.com/artigos/tutor-ia-homeschooling-vs-reforco-2026",
+      "description": "Tutor de IA custa de graça a poucos dólares por mês; reforço particular presencial sai por cerca de R$ 47 a hora no Brasil. Compare o que cada opção entrega — e quando vale combinar as duas.",
+      "category": "Inteligência Artificial",
+      "categoryCode": "ai",
+      "datePublished": "2026-09-17",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Seu cérebro não é fraco — o TikTok é que foi feito pra viciar",
+      "url": "https://yarivi.com/artigos/vicio-redes-sociais-algoritmo-dopamina-2026",
+      "description": "Vício em redes sociais não é falta de força de vontade — é recompensa variável e dopamina por design. Entenda como o algoritmo funciona e como reduzir o efeito.",
+      "category": "Segurança digital",
+      "categoryCode": "sec",
+      "datePublished": "2026-09-16",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Tem um celular na gaveta há dois anos? Você não está sozinho",
+      "url": "https://yarivi.com/artigos/o-que-fazer-celular-velho-descarte-2026",
+      "description": "O Brasil é o 5º maior gerador de lixo eletrônico do mundo e descarta menos de 5% corretamente. Saiba como vender, reutilizar ou descartar seu celular velho de forma segura.",
+      "category": "Celulares e mobile",
+      "categoryCode": "mob",
+      "datePublished": "2026-09-07",
+      "readingTime": "6 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "24 milhões de brasileiros já caíram em golpes pelo Pix",
+      "url": "https://yarivi.com/artigos/golpes-app-banco-pix-como-se-proteger-2026",
+      "description": "Golpe do falso suporte, Pix agendado, engenharia social com IA: os ataques a apps bancários evoluíram em 2026. Entenda como cada golpe funciona e o que fazer para não cair.",
+      "category": "Segurança digital",
+      "categoryCode": "sec",
+      "datePublished": "2026-09-07",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Carro elétrico ficou mais caro em 2026 — mas o custo de rodar caiu",
+      "url": "https://yarivi.com/artigos/carro-eletrico-brasil-2026-vale-a-pena",
+      "description": "Impostos de importação subiram progressivamente, mas o custo por km rodado caiu e a infraestrutura cresceu. Análise completa para decidir se vale a pena comprar elétrico no Brasil agora.",
+      "category": "Futuro e tendências",
+      "categoryCode": "fut",
+      "datePublished": "2026-09-03",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Cada resposta do ChatGPT consome cerca de 10 vezes mais energia que uma busca no Google",
+      "url": "https://yarivi.com/artigos/ia-consumo-energia-impacto-ambiental-2026",
+      "description": "A IA generativa não é só uma revolução de produtividade — é uma revolução de consumo de energia. Data centers crescem em ritmo acelerado e o custo ambiental começa a aparecer.",
+      "category": "Inteligência Artificial",
+      "categoryCode": "ai",
+      "datePublished": "2026-09-02",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Seu Wi-Fi do café entrega tudo que você digita — VPN pode mudar isso",
+      "url": "https://yarivi.com/artigos/vpn-o-que-e-como-funciona-2026",
+      "description": "VPN cria um túnel criptografado entre seu dispositivo e a internet. Mas nem toda VPN faz o que promete — e a gratuita pode ser o maior risco de todos. Guia prático.",
+      "category": "Segurança digital",
+      "categoryCode": "sec",
+      "datePublished": "2026-09-01",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Você tem dezenas de senhas. Quantas reutiliza?",
+      "url": "https://yarivi.com/artigos/gerenciador-de-senhas-como-funciona-2026",
+      "description": "Senhas repetidas são a porta de entrada de 80% dos ataques. Gerenciadores criam e guardam senhas únicas para cada conta — entenda como funcionam, quais são seguros e por que vale usar.",
+      "category": "Segurança digital",
+      "categoryCode": "sec",
+      "datePublished": "2026-09-01",
+      "readingTime": "6 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Seu PC tira print da sua tela a cada 5 segundos — e você provavelmente não sabe",
+      "url": "https://yarivi.com/artigos/windows-copilot-plus-recall-2026",
+      "description": "O Windows Recall captura tudo que você faz no PC para uma busca futura por IA — tudo local, nada vai para a nuvem. Entenda o que é Copilot+, por que gera polêmica e como desativar.",
+      "category": "Software",
+      "categoryCode": "sw",
+      "datePublished": "2026-08-28",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Esse anel pesa 3 gramas e sabe mais sobre o seu sono do que você",
+      "url": "https://yarivi.com/artigos/anel-inteligente-wearable-saude-2026",
+      "description": "Oura Ring Gen 4 e Samsung Galaxy Ring monitoram sono, frequência cardíaca e temperatura sem tela e com até 7 dias de bateria. O mercado de wearables de saúde vale US$ 2 bi e cresce 30% ao ano.",
+      "category": "Futuro e tendências",
+      "categoryCode": "fut",
+      "datePublished": "2026-08-27",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Você pode ter dois números no mesmo celular — sem usar dois chips",
+      "url": "https://yarivi.com/artigos/esim-como-funciona-brasil-2026",
+      "description": "O eSIM já está em 90% dos iPhones e nos Galaxy S25. No Brasil, Vivo, Claro, TIM e Oi ativam em minutos pelo app. Veja como funciona, quais celulares têm e como trocar de operadora sem sair de casa.",
+      "category": "Celulares e mobile",
+      "categoryCode": "mob",
+      "datePublished": "2026-08-26",
+      "readingTime": "6 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Você vai receber um vídeo do seu candidato que ele nunca gravou",
+      "url": "https://yarivi.com/artigos/ia-eleicoes-2026-deepfake",
+      "description": "Deepfakes custam US$ 5 e chegam pelo WhatsApp antes de qualquer checagem. Com eleições municipais de 2026, o TSE regulamentou o uso de IA — mas identificar o falso ainda é seu trabalho.",
+      "category": "Segurança digital",
+      "categoryCode": "sec",
+      "datePublished": "2026-08-25",
+      "readingTime": "8 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "A TSMC está colocando 100 bilhões de transistores em algo menor que uma unha — e isso muda seu próximo celular",
+      "url": "https://yarivi.com/artigos/chip-2nm-processador-2026",
+      "description": "Os chips de 2nm da TSMC estão em produção em massa em 2026. AMD, Apple e Nvidia já estão na fila. Entenda o que +15% de desempenho e -30% de consumo significam para o seu próximo celular ou notebook.",
+      "category": "Hardware",
+      "categoryCode": "hw",
+      "datePublished": "2026-08-24",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Um vice-diretor de escola criou um app em dois dias — sem escrever uma linha de código",
+      "url": "https://yarivi.com/artigos/cursor-ai-copilot-programar-sem-codigo-2026",
+      "description": "GitHub Copilot tem 4,7M assinantes; Cursor, Lovable e Bolt permitem criar apps sem programar. Guia prático para não-desenvolvedores sobre como a IA mudou o desenvolvimento em 2026.",
+      "category": "Software",
+      "categoryCode": "sw",
+      "datePublished": "2026-08-21",
+      "readingTime": "9 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Seu rosto é escaneado ao embarcar no avião — e você concordou com isso?",
+      "url": "https://yarivi.com/artigos/reconhecimento-facial-brasil-2026",
+      "description": "40% dos brasileiros já são monitorados por câmeras com reconhecimento facial. Aeroportos, metrô e bancos usam a tecnologia — mas a lei ainda não diz o que fazer quando ela erra.",
+      "category": "Segurança digital",
+      "categoryCode": "sec",
+      "datePublished": "2026-08-20",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "O professor mandou usar o ChatGPT — mas a escola ainda não sabe o que fazer com isso",
+      "url": "https://yarivi.com/artigos/ia-educacao-escola-brasil-2026",
+      "description": "O MEC publicou o primeiro guia nacional de IA para escolas em abril de 2026. Saiba o que muda para alunos e professores, quais ferramentas usar e os riscos reais do uso sem orientação.",
+      "category": "Inteligência Artificial",
+      "categoryCode": "ai",
+      "datePublished": "2026-08-19",
+      "readingTime": "8 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Você pagou caro por IA no celular — mas a IA da concorrente pode fazer mais",
+      "url": "https://yarivi.com/artigos/galaxy-ai-vs-apple-intelligence-2026",
+      "description": "Samsung tem mais recursos e suporte ao português; Apple tem mais privacidade e polimento. Comparativo completo com o que cada IA faz de verdade no seu celular em 2026.",
+      "category": "Celulares e mobile",
+      "categoryCode": "mob",
+      "datePublished": "2026-08-18",
+      "readingTime": "8 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Seu pacote de açúcar foi colhido por um drone que viu a praga antes do produtor",
+      "url": "https://yarivi.com/artigos/ia-agronegocio-brasil-2026",
+      "description": "Drones com visão computacional reduziram o uso de defensivos em até 90% e robôs autônomos já operam no Cerrado. Como a IA está transformando o campo brasileiro em 2026.",
+      "category": "Inteligência Artificial",
+      "categoryCode": "ai",
+      "datePublished": "2026-08-17",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Os custos de produção de vídeo caíram 97% — e qualquer um pode usar agora",
+      "url": "https://yarivi.com/artigos/ia-gerar-video-como-usar-2026",
+      "description": "Kling, Runway Gen-4 e Google Veo 3.1: como funciona a IA que gera vídeos, qual escolher e quanto custa. O Sora foi descontinuado em abril — veja o que veio no lugar.",
+      "category": "Inteligência Artificial",
+      "categoryCode": "ai",
+      "datePublished": "2026-08-15",
+      "readingTime": "8 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Você vai usar óculos para checar mensagens — e o momento chegou antes do esperado",
+      "url": "https://yarivi.com/artigos/oculos-inteligentes-2026-guia",
+      "description": "Ray-Ban Meta vendeu 2 milhões de pares, Samsung XR chega no 2º semestre e Xreal abre reservas com display abaixo de US$ 1.500. Guia completo com preços no Brasil e quando vale comprar.",
+      "category": "Futuro e tendências",
+      "categoryCode": "fut",
+      "datePublished": "2026-08-14",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Você tirou foto da sua planta doente e a IA receitou o remédio — isso tem nome e está em todo lugar",
+      "url": "https://yarivi.com/artigos/ia-multimodal-o-que-e-como-funciona-2026",
+      "description": "IA multimodal entende texto, imagem, áudio e vídeo ao mesmo tempo. O Gartner prevê 40% dos apps de IA como multimodais até 2027. Veja o que isso muda na prática.",
+      "category": "Inteligência Artificial",
+      "categoryCode": "ai",
+      "datePublished": "2026-08-13",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "A Apple paga US$ 1 bilhão por ano para o Google virar seu assistente — e os apps nunca mais serão os mesmos",
+      "url": "https://yarivi.com/artigos/agente-ia-substituindo-aplicativos-2026",
+      "description": "Carl Pei (Nothing) disse que os apps vão acabar. A Apple paga US$ 1 bi/ano ao Google pelo Gemini. Entenda como o agente de IA está substituindo aplicativos em 2026.",
+      "category": "Software",
+      "categoryCode": "sw",
+      "datePublished": "2026-08-12",
+      "readingTime": "8 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "A IA clonou a voz do filho em 15 segundos — e a mãe fez o Pix na mesma hora",
+      "url": "https://yarivi.com/artigos/deepfake-voz-golpe-whatsapp-2026",
+      "description": "Deepfake de voz cresceu 830% no Brasil entre 2024 e 2025. Com 15 segundos de áudio, a IA clona qualquer voz. Veja como o golpe funciona no WhatsApp e como a palavra-código te protege.",
+      "category": "Segurança digital",
+      "categoryCode": "sec",
+      "datePublished": "2026-08-11",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "R$ 23 bilhões para IA: o que o governo brasileiro planeja fazer com esse dinheiro",
+      "url": "https://yarivi.com/artigos/plano-brasileiro-inteligencia-artificial-pbia-2026",
+      "description": "O PBIA investe R$ 23 bi em IA até 2028 — supercomputador, nuvem soberana e capacitação. Entenda o que muda para o brasileiro comum.",
+      "category": "Inteligência Artificial",
+      "categoryCode": "ai",
+      "datePublished": "2026-08-10",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "A guerra contra a tomada: as duas tecnologias que querem aposentar seu carregador",
+      "url": "https://yarivi.com/artigos/bateria-estado-solido-celular-2026",
+      "description": "Baterias sólidas de Toyota e Samsung dobram a autonomia; chips neuromórficos gastam até 1.000x menos energia. Entenda qual revolução chega primeiro ao seu bolso.",
+      "category": "Hardware",
+      "categoryCode": "hw",
+      "datePublished": "2026-08-07",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Até a Apple dobrou: vale a pena entrar na onda dos foldables agora?",
+      "url": "https://yarivi.com/artigos/celular-dobravel-vale-a-pena-2026",
+      "description": "iPhone dobrável chega em setembro por até US$ 2.400 e a Samsung prepara um Galaxy formato \"passaporte\". Preços no Brasil, prós e contras — e se compensa esperar.",
+      "category": "Celulares e mobile",
+      "categoryCode": "mob",
+      "datePublished": "2026-08-06",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "A Nvidia quer transformar seu próximo notebook numa máquina de IA",
+      "url": "https://yarivi.com/artigos/pc-com-ia-npu-vale-a-pena-2026",
+      "description": "O RTX Spark, chip ARM da Nvidia com 1 petaflop de IA, chega no 2º semestre e muda a conta de quem vai comprar notebook. Veja quando a NPU vale a pena — e quando esperar.",
+      "category": "Hardware",
+      "categoryCode": "hw",
+      "datePublished": "2026-08-05",
+      "readingTime": "8 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "A fila para levar um robô para casa já tem 10 mil nomes",
+      "url": "https://yarivi.com/artigos/robo-humanoide-2026",
+      "description": "Na CES 2026 os humanoides ganharam preço de prateleira: de US$ 2.899 a US$ 20 mil, com 10 mil reservas em 5 dias e mercado de US$ 38 bi projetado pela Goldman Sachs.",
+      "category": "Futuro e tendências",
+      "categoryCode": "fut",
+      "datePublished": "2026-08-04",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Enquanto você lê este texto, uma IA está terminando o trabalho de alguém",
+      "url": "https://yarivi.com/artigos/agente-de-ia-o-que-e-2026",
+      "description": "Chatbot responde, agente resolve: entenda o que é um agente de IA, como ele age sozinho, os casos reais de 2026 no Brasil — e os riscos dessa autonomia.",
+      "category": "Inteligência Artificial",
+      "categoryCode": "ai",
+      "datePublished": "2026-08-03",
+      "readingTime": "8 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Como Explicar IA pra Sua Avó (e Por Que Você Deveria)",
+      "url": "https://yarivi.com/artigos/como-explicar-ia-para-leigos-2026",
+      "description": "Do algoritmo ao agente autônomo: as 5 melhores analogias para entender — e explicar — inteligência artificial sem uma linha de jargão.",
+      "category": "Inteligência Artificial",
+      "categoryCode": "ai",
+      "datePublished": "2026-08-01",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Qualquer pessoa pode criar um app agora — e isso vai mudar tudo",
+      "url": "https://yarivi.com/artigos/qualquer-pessoa-pode-criar-um-app-2026",
+      "description": "75% das novas apps de 2026 serão feitas sem programação. Entenda o que é low-code, quem já usa e o risco que ninguém menciona na apresentação de vendas.",
+      "category": "Software",
+      "categoryCode": "sw",
+      "datePublished": "2026-08-01",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Seu Celular Está Ficando Obsoleto Mais Rápido — E Agora a Culpa É da IA",
+      "url": "https://yarivi.com/artigos/celular-obsoleto-ia-npu-2026",
+      "description": "A NPU virou o novo divisor: sem ela, seu celular fica de fora das funções de IA — e o próximo que você comprar vai custar mais por causa disso.",
+      "category": "Celulares e mobile",
+      "categoryCode": "mob",
+      "datePublished": "2026-08-01",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "2026–2030: o mapa das profissões que vão sumir — e as que vão explodir",
+      "url": "https://yarivi.com/artigos/futuro-profissoes-2026-2030",
+      "description": "Quanto mais repetitiva sua tarefa, maior o risco. Veja quais carreiras estão em colapso, quais vão explodir e o que fazer agora.",
+      "category": "Futuro e tendências",
+      "categoryCode": "fut",
+      "datePublished": "2026-08-01",
+      "readingTime": "8 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "O golpe que chega pela tela do seu celular: como o phishing dominou 2026",
+      "url": "https://yarivi.com/artigos/phishing-whatsapp-email-2026",
+      "description": "WhatsApp, e-mail, SMS — os golpistas estão em todo lugar. Entenda como o phishing funciona, por que o Brasil é o 2º mais atacado do mundo e o que fazer para não cair.",
+      "category": "Segurança digital",
+      "categoryCode": "sec",
+      "datePublished": "2026-08-01",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Seus dados bancários de hoje podem ser lidos por hackers em 2031",
+      "url": "https://yarivi.com/artigos/perigo-quantico-criptografia-2026",
+      "description": "Hackers já coletam dados criptografados para abrir depois com computadores quânticos. Entenda o Q-Day e o que já está sendo feito.",
+      "category": "Segurança digital",
+      "categoryCode": "sec",
+      "datePublished": "2026-08-01",
+      "readingTime": "7 min",
+      "language": "pt-BR"
+    },
+    {
+      "title": "Como a IA Generativa está mudando o mercado de trabalho em 2026",
+      "url": "https://yarivi.com/artigos/ia-generativa-mercado-trabalho-2026",
+      "description": "5,4% dos trabalhadores brasileiros em alta exposição. Quem perde, quem ganha e o que fazer — com dados do Brookings e PwC.",
+      "category": "Inteligência Artificial",
+      "categoryCode": "ai",
+      "datePublished": "2026-08-01",
+      "readingTime": "8 min",
+      "language": "pt-BR"
+    }
+  ]
+}

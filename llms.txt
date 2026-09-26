@@ -1,0 +1,76 @@
+# Yarivi
+
+> As principais notícias de IA, hardware, cibersegurança, software e mobile explicadas em português brasileiro — sem jargão, sem clickbait. Novo artigo todo dia útil.
+
+Yarivi é um veículo de jornalismo tecnológico em PT-BR, fundado em 2024 e com foco no público brasileiro. Cobre inteligência artificial, celulares, segurança digital, hardware, software e tendências de tecnologia, sempre com linguagem acessível.
+
+## Inteligência Artificial
+
+- [ChatGPT custa caro — mas você pode ter a sua IA de graça](https://yarivi.com/artigos/ia-open-source-llama-mistral-2026): ChatGPT custa caro. Veja como rodar Llama, Mistral ou Qwen de graça no seu PC — passo a passo sem programar, com dados reais de custo e hardware.
+- [Tutor de IA sai de graça. O professor particular custa R$ 47 a hora](https://yarivi.com/artigos/tutor-ia-homeschooling-vs-reforco-2026): Tutor de IA custa de graça a poucos dólares por mês; reforço particular presencial sai por cerca de R$ 47 a hora no Brasil. Compare o que cada opção entrega — e quando vale combinar as duas.
+- [Cada resposta do ChatGPT consome cerca de 10 vezes mais energia que uma busca no Google](https://yarivi.com/artigos/ia-consumo-energia-impacto-ambiental-2026): A IA generativa não é só uma revolução de produtividade — é uma revolução de consumo de energia. Data centers crescem em ritmo acelerado e o custo ambiental começa a aparecer.
+- [O professor mandou usar o ChatGPT — mas a escola ainda não sabe o que fazer com isso](https://yarivi.com/artigos/ia-educacao-escola-brasil-2026): O MEC publicou o primeiro guia nacional de IA para escolas em abril de 2026. Saiba o que muda para alunos e professores, quais ferramentas usar e os riscos reais do uso sem orientação.
+- [Seu pacote de açúcar foi colhido por um drone que viu a praga antes do produtor](https://yarivi.com/artigos/ia-agronegocio-brasil-2026): Drones com visão computacional reduziram o uso de defensivos em até 90% e robôs autônomos já operam no Cerrado. Como a IA está transformando o campo brasileiro em 2026.
+- [Os custos de produção de vídeo caíram 97% — e qualquer um pode usar agora](https://yarivi.com/artigos/ia-gerar-video-como-usar-2026): Kling, Runway Gen-4 e Google Veo 3.1: como funciona a IA que gera vídeos, qual escolher e quanto custa. O Sora foi descontinuado em abril — veja o que veio no lugar.
+- [Você tirou foto da sua planta doente e a IA receitou o remédio — isso tem nome e está em todo lugar](https://yarivi.com/artigos/ia-multimodal-o-que-e-como-funciona-2026): IA multimodal entende texto, imagem, áudio e vídeo ao mesmo tempo. O Gartner prevê 40% dos apps de IA como multimodais até 2027. Veja o que isso muda na prática.
+- [R$ 23 bilhões para IA: o que o governo brasileiro planeja fazer com esse dinheiro](https://yarivi.com/artigos/plano-brasileiro-inteligencia-artificial-pbia-2026): O PBIA investe R$ 23 bi em IA até 2028 — supercomputador, nuvem soberana e capacitação. Entenda o que muda para o brasileiro comum.
+- [Enquanto você lê este texto, uma IA está terminando o trabalho de alguém](https://yarivi.com/artigos/agente-de-ia-o-que-e-2026): Chatbot responde, agente resolve: entenda o que é um agente de IA, como ele age sozinho, os casos reais de 2026 no Brasil — e os riscos dessa autonomia.
+- [Como Explicar IA pra Sua Avó (e Por Que Você Deveria)](https://yarivi.com/artigos/como-explicar-ia-para-leigos-2026): Do algoritmo ao agente autônomo: as 5 melhores analogias para entender — e explicar — inteligência artificial sem uma linha de jargão.
+- [Como a IA Generativa está mudando o mercado de trabalho em 2026](https://yarivi.com/artigos/ia-generativa-mercado-trabalho-2026): 5,4% dos trabalhadores brasileiros em alta exposição. Quem perde, quem ganha e o que fazer — com dados do Brookings e PwC.
+
+## Segurança digital
+
+- [Seu banco digital guarda dinheiro melhor que o do seu avô](https://yarivi.com/artigos/banco-digital-vs-tradicional-2026): FGC garante até R$ 250 mil por CPF, igual em banco digital e tradicional. Veja como o caso Banco Master provou isso na prática — e por que golpe, não quebra de banco, é o risco que mais importa hoje.
+- [Seu cérebro não é fraco — o TikTok é que foi feito pra viciar](https://yarivi.com/artigos/vicio-redes-sociais-algoritmo-dopamina-2026): Vício em redes sociais não é falta de força de vontade — é recompensa variável e dopamina por design. Entenda como o algoritmo funciona e como reduzir o efeito.
+- [24 milhões de brasileiros já caíram em golpes pelo Pix](https://yarivi.com/artigos/golpes-app-banco-pix-como-se-proteger-2026): Golpe do falso suporte, Pix agendado, engenharia social com IA: os ataques a apps bancários evoluíram em 2026. Entenda como cada golpe funciona e o que fazer para não cair.
+- [Seu Wi-Fi do café entrega tudo que você digita — VPN pode mudar isso](https://yarivi.com/artigos/vpn-o-que-e-como-funciona-2026): VPN cria um túnel criptografado entre seu dispositivo e a internet. Mas nem toda VPN faz o que promete — e a gratuita pode ser o maior risco de todos. Guia prático.
+- [Você tem dezenas de senhas. Quantas reutiliza?](https://yarivi.com/artigos/gerenciador-de-senhas-como-funciona-2026): Senhas repetidas são a porta de entrada de 80% dos ataques. Gerenciadores criam e guardam senhas únicas para cada conta — entenda como funcionam, quais são seguros e por que vale usar.
+- [Você vai receber um vídeo do seu candidato que ele nunca gravou](https://yarivi.com/artigos/ia-eleicoes-2026-deepfake): Deepfakes custam US$ 5 e chegam pelo WhatsApp antes de qualquer checagem. Com eleições municipais de 2026, o TSE regulamentou o uso de IA — mas identificar o falso ainda é seu trabalho.
+- [Seu rosto é escaneado ao embarcar no avião — e você concordou com isso?](https://yarivi.com/artigos/reconhecimento-facial-brasil-2026): 40% dos brasileiros já são monitorados por câmeras com reconhecimento facial. Aeroportos, metrô e bancos usam a tecnologia — mas a lei ainda não diz o que fazer quando ela erra.
+- [A IA clonou a voz do filho em 15 segundos — e a mãe fez o Pix na mesma hora](https://yarivi.com/artigos/deepfake-voz-golpe-whatsapp-2026): Deepfake de voz cresceu 830% no Brasil entre 2024 e 2025. Com 15 segundos de áudio, a IA clona qualquer voz. Veja como o golpe funciona no WhatsApp e como a palavra-código te protege.
+- [O golpe que chega pela tela do seu celular: como o phishing dominou 2026](https://yarivi.com/artigos/phishing-whatsapp-email-2026): WhatsApp, e-mail, SMS — os golpistas estão em todo lugar. Entenda como o phishing funciona, por que o Brasil é o 2º mais atacado do mundo e o que fazer para não cair.
+- [Seus dados bancários de hoje podem ser lidos por hackers em 2031](https://yarivi.com/artigos/perigo-quantico-criptografia-2026): Hackers já coletam dados criptografados para abrir depois com computadores quânticos. Entenda o Q-Day e o que já está sendo feito.
+
+## Celulares e mobile
+
+- [Seu iPhone de 2019 ainda vai rodar o iOS 27 — mas o SE de 2016 não](https://yarivi.com/artigos/ios-27-novidades-quais-iphones-2026): O iOS 27 chegou em setembro de 2026 com Siri renovada e Apple Intelligence expandida. Veja se seu iPhone recebe a atualização e quais são as novidades.
+- [O Android ganhou 5 poderes novos em setembro — mas o mais ambicioso pede 12 GB de RAM pra funcionar](https://yarivi.com/artigos/atualizacao-ia-android-setembro-2026): O Android ganhou 5 recursos novos de IA em setembro de 2026 — mas o mais avançado, o Gemini Intelligence, exige pelo menos 12 GB de RAM. Veja o que muda.
+- [Tem um celular na gaveta há dois anos? Você não está sozinho](https://yarivi.com/artigos/o-que-fazer-celular-velho-descarte-2026): O Brasil é o 5º maior gerador de lixo eletrônico do mundo e descarta menos de 5% corretamente. Saiba como vender, reutilizar ou descartar seu celular velho de forma segura.
+- [Você pode ter dois números no mesmo celular — sem usar dois chips](https://yarivi.com/artigos/esim-como-funciona-brasil-2026): O eSIM já está em 90% dos iPhones e nos Galaxy S25. No Brasil, Vivo, Claro, TIM e Oi ativam em minutos pelo app. Veja como funciona, quais celulares têm e como trocar de operadora sem sair de casa.
+- [Você pagou caro por IA no celular — mas a IA da concorrente pode fazer mais](https://yarivi.com/artigos/galaxy-ai-vs-apple-intelligence-2026): Samsung tem mais recursos e suporte ao português; Apple tem mais privacidade e polimento. Comparativo completo com o que cada IA faz de verdade no seu celular em 2026.
+- [Até a Apple dobrou: vale a pena entrar na onda dos foldables agora?](https://yarivi.com/artigos/celular-dobravel-vale-a-pena-2026): iPhone dobrável chega em setembro por até US$ 2.400 e a Samsung prepara um Galaxy formato "passaporte". Preços no Brasil, prós e contras — e se compensa esperar.
+- [Seu Celular Está Ficando Obsoleto Mais Rápido — E Agora a Culpa É da IA](https://yarivi.com/artigos/celular-obsoleto-ia-npu-2026): A NPU virou o novo divisor: sem ela, seu celular fica de fora das funções de IA — e o próximo que você comprar vai custar mais por causa disso.
+
+## Futuro e tendências
+
+- [50 milhões de brasileiros já usam IA no dia a dia — mas só 16% dos mais pobres chegaram lá](https://yarivi.com/artigos/tecnologia-2027-o-que-muda-brasil): 50 milhões de brasileiros já usam IA, o 5G chega às cidades menores e o Pix cresce ainda mais. Veja o que deve mudar na tecnologia do brasileiro até 2027.
+- [Carro elétrico ficou mais caro em 2026 — mas o custo de rodar caiu](https://yarivi.com/artigos/carro-eletrico-brasil-2026-vale-a-pena): Impostos de importação subiram progressivamente, mas o custo por km rodado caiu e a infraestrutura cresceu. Análise completa para decidir se vale a pena comprar elétrico no Brasil agora.
+- [Esse anel pesa 3 gramas e sabe mais sobre o seu sono do que você](https://yarivi.com/artigos/anel-inteligente-wearable-saude-2026): Oura Ring Gen 4 e Samsung Galaxy Ring monitoram sono, frequência cardíaca e temperatura sem tela e com até 7 dias de bateria. O mercado de wearables de saúde vale US$ 2 bi e cresce 30% ao ano.
+- [Você vai usar óculos para checar mensagens — e o momento chegou antes do esperado](https://yarivi.com/artigos/oculos-inteligentes-2026-guia): Ray-Ban Meta vendeu 2 milhões de pares, Samsung XR chega no 2º semestre e Xreal abre reservas com display abaixo de US$ 1.500. Guia completo com preços no Brasil e quando vale comprar.
+- [A fila para levar um robô para casa já tem 10 mil nomes](https://yarivi.com/artigos/robo-humanoide-2026): Na CES 2026 os humanoides ganharam preço de prateleira: de US$ 2.899 a US$ 20 mil, com 10 mil reservas em 5 dias e mercado de US$ 38 bi projetado pela Goldman Sachs.
+- [2026–2030: o mapa das profissões que vão sumir — e as que vão explodir](https://yarivi.com/artigos/futuro-profissoes-2026-2030): Quanto mais repetitiva sua tarefa, maior o risco. Veja quais carreiras estão em colapso, quais vão explodir e o que fazer agora.
+
+## Software
+
+- [Seu PC tira print da sua tela a cada 5 segundos — e você provavelmente não sabe](https://yarivi.com/artigos/windows-copilot-plus-recall-2026): O Windows Recall captura tudo que você faz no PC para uma busca futura por IA — tudo local, nada vai para a nuvem. Entenda o que é Copilot+, por que gera polêmica e como desativar.
+- [Um vice-diretor de escola criou um app em dois dias — sem escrever uma linha de código](https://yarivi.com/artigos/cursor-ai-copilot-programar-sem-codigo-2026): GitHub Copilot tem 4,7M assinantes; Cursor, Lovable e Bolt permitem criar apps sem programar. Guia prático para não-desenvolvedores sobre como a IA mudou o desenvolvimento em 2026.
+- [A Apple paga US$ 1 bilhão por ano para o Google virar seu assistente — e os apps nunca mais serão os mesmos](https://yarivi.com/artigos/agente-ia-substituindo-aplicativos-2026): Carl Pei (Nothing) disse que os apps vão acabar. A Apple paga US$ 1 bi/ano ao Google pelo Gemini. Entenda como o agente de IA está substituindo aplicativos em 2026.
+- [Qualquer pessoa pode criar um app agora — e isso vai mudar tudo](https://yarivi.com/artigos/qualquer-pessoa-pode-criar-um-app-2026): 75% das novas apps de 2026 serão feitas sem programação. Entenda o que é low-code, quem já usa e o risco que ninguém menciona na apresentação de vendas.
+
+## Hardware
+
+- [A TSMC está colocando 100 bilhões de transistores em algo menor que uma unha — e isso muda seu próximo celular](https://yarivi.com/artigos/chip-2nm-processador-2026): Os chips de 2nm da TSMC estão em produção em massa em 2026. AMD, Apple e Nvidia já estão na fila. Entenda o que +15% de desempenho e -30% de consumo significam para o seu próximo celular ou notebook.
+- [A guerra contra a tomada: as duas tecnologias que querem aposentar seu carregador](https://yarivi.com/artigos/bateria-estado-solido-celular-2026): Baterias sólidas de Toyota e Samsung dobram a autonomia; chips neuromórficos gastam até 1.000x menos energia. Entenda qual revolução chega primeiro ao seu bolso.
+- [A Nvidia quer transformar seu próximo notebook numa máquina de IA](https://yarivi.com/artigos/pc-com-ia-npu-vale-a-pena-2026): O RTX Spark, chip ARM da Nvidia com 1 petaflop de IA, chega no 2º semestre e muda a conta de quem vai comprar notebook. Veja quando a NPU vale a pena — e quando esperar.
+
+## Páginas
+
+- [Início](https://yarivi.com/): página inicial, com os artigos mais recentes e em destaque
+- [Contato](https://yarivi.com/contato.html): como falar com a redação do Yarivi
+- [Política de Privacidade](https://yarivi.com/privacidade.html)
+- [Termos de Uso](https://yarivi.com/termos.html)
+
+## Optional
+
+- [Sitemap](https://yarivi.com/sitemap.xml): lista completa de URLs do site
+- [Catálogo estruturado](https://yarivi.com/ai-catalog.json): catálogo dos artigos em JSON, para agentes e ferramentas de IA
