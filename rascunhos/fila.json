@@ -448,10 +448,11 @@
       "excerpt": "A LGPD já regula o uso de IA com dados pessoais no Brasil, mesmo sem o Marco Legal da IA aprovado — e a ANPD só multou uma empresa desde 2021. Veja o que muda para o seu negócio.",
       "read_time": "7 min",
       "keyword": "lgpd ia brasil regulação privacidade dados",
-      "status": "aprovado",
+      "status": "publicado",
       "criado_em": "2026-09-09",
       "ordem": 30,
-      "aprovado_em": "2026-09-26"
+      "aprovado_em": "2026-09-26",
+      "publicado_em": "2026-09-28"
     },
     {
       "slug": "ia-open-source-llama-mistral-2026",
@@ -492,9 +493,10 @@
       "excerpt": "A memória RAM ficou até 5x mais cara em 2026 pela demanda de data centers de IA. Entenda por que isso aconteceu e se vale comprar PC agora.",
       "read_time": "5 min",
       "keyword": "ram cara 2026 por que",
-      "status": "aguardando-revisao",
+      "status": "aprovado",
       "ordem": 33,
-      "criado_em": "2026-09-21"
+      "criado_em": "2026-09-21",
+      "aprovado_em": "2026-09-26"
     },
     {
       "slug": "ios-27-novidades-quais-iphones-2026",
@@ -534,9 +536,10 @@
       "excerpt": "Comet, Atlas e Copilot prometem navegar, comprar e preencher formulários por você. Veja se vale trocar o Chrome em 2026 e os riscos envolvidos.",
       "read_time": "5 min",
       "keyword": "navegador com ia vale a pena",
-      "status": "aguardando-revisao",
-      "ordem": 36,
-      "criado_em": "2026-09-21"
+      "status": "aprovado",
+      "ordem": 46,
+      "criado_em": "2026-09-21",
+      "aprovado_em": "2026-09-27"
     },
     {
       "slug": "tecnologia-2027-o-que-muda-brasil",
@@ -590,9 +593,10 @@
       "excerpt": "A Anatel liberou o Starlink pra funcionar direto no celular, sem chip especial. Entenda como funciona, quando chega e quais aparelhos vão aceitar.",
       "read_time": "5 min",
       "keyword": "starlink direto no celular brasil",
-      "status": "aguardando-revisao",
-      "ordem": 40,
-      "criado_em": "2026-09-25"
+      "status": "aprovado",
+      "ordem": 44,
+      "criado_em": "2026-09-25",
+      "aprovado_em": "2026-09-27"
     },
     {
       "slug": "direito-ao-reparo-brasil-2026",
@@ -603,9 +607,10 @@
       "excerpt": "Dois projetos de lei avançam no Congresso: um pra celular e notebook, outro pro seu carro. Veja o que já vale hoje e quando compensa consertar ou trocar.",
       "read_time": "5 min",
       "keyword": "direito ao reparo brasil",
-      "status": "aguardando-revisao",
-      "ordem": 41,
-      "criado_em": "2026-09-25"
+      "status": "aprovado",
+      "ordem": 45,
+      "criado_em": "2026-09-25",
+      "aprovado_em": "2026-09-27"
     },
     {
       "slug": "carro-autonomo-brasil-2026",
@@ -616,9 +621,10 @@
       "excerpt": "Comissão da Câmara aprovou as primeiras regras pra carros autônomos no Brasil. Entenda os níveis de autonomia e quem paga a conta em caso de acidente.",
       "read_time": "6 min",
       "keyword": "carro autonomo brasil",
-      "status": "aguardando-revisao",
-      "ordem": 42,
-      "criado_em": "2026-09-25"
+      "status": "aprovado",
+      "ordem": 43,
+      "criado_em": "2026-09-25",
+      "aprovado_em": "2026-09-27"
     }
   ]
 }
