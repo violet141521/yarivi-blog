@@ -2,6 +2,16 @@
   "_comment": "Catálogo de todos os artigos do Yarivi. Ordem importa: artigos com mesma data_pub aparecem na ordem deste array. Não edite manualmente — atualizado pela skill signal-publicador.",
   "articles": [
     {
+      "slug": "ram-cara-2026-por-que-notebook-pc",
+      "manchete": "Um kit de 32 GB de memória RAM que custava US$ 80 agora custa US$ 439",
+      "categoria": "hw",
+      "emoji": "💾",
+      "grad": "g2",
+      "excerpt": "A memória RAM ficou até 5x mais cara em 2026 pela demanda de data centers de IA. Entenda por que isso aconteceu e se vale comprar PC agora.",
+      "read_time": "5 min",
+      "data_pub": "2026-09-29"
+    },
+    {
       "slug": "lgpd-ia-regulacao-brasil-2026",
       "manchete": "Desde 2021, a LGPD só multou uma empresa — isso está prestes a mudar",
       "categoria": "ai",
