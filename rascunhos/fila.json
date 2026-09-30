@@ -622,10 +622,76 @@
       "excerpt": "Comissão da Câmara aprovou as primeiras regras pra carros autônomos no Brasil. Entenda os níveis de autonomia e quem paga a conta em caso de acidente.",
       "read_time": "6 min",
       "keyword": "carro autonomo brasil",
-      "status": "aprovado",
+      "status": "publicado",
       "ordem": 43,
       "criado_em": "2026-09-25",
-      "aprovado_em": "2026-09-27"
+      "aprovado_em": "2026-09-27",
+      "publicado_em": "2026-09-30"
+    },
+    {
+      "slug": "programa-crackeado-infostealer-perigo-2026",
+      "titulo_seo": "Programa crackeado é perigoso? Entenda o risco | Yarivi",
+      "manchete_h1": "O Office \"de graça\" pode sair pelo preço de todas as suas senhas",
+      "categoria": "sw",
+      "emoji": "💾",
+      "excerpt": "Crack, ativador e jogo pirata são a principal porta de entrada dos infostealers, vírus que roubam senhas e sessões em segundos. Veja como se proteger.",
+      "read_time": "6 min",
+      "keyword": "programa crackeado é perigoso",
+      "status": "aguardando-revisao",
+      "ordem": 47,
+      "criado_em": "2026-09-29"
+    },
+    {
+      "slug": "one-ui-9-quais-celulares-recebem-2026",
+      "titulo_seo": "One UI 9: quais celulares recebem e o que muda | Yarivi",
+      "manchete_h1": "Seu Galaxy vai ganhar um assistente que vigia os outros assistentes",
+      "categoria": "sw",
+      "emoji": "💾",
+      "excerpt": "A One UI 9, baseada no Android 17, começou a chegar aos Galaxy no Brasil. Veja o cronograma, quem recebe e as novidades que valem testar primeiro.",
+      "read_time": "5 min",
+      "keyword": "one ui 9 quais celulares recebem",
+      "status": "aguardando-revisao",
+      "ordem": 48,
+      "criado_em": "2026-09-29"
+    },
+    {
+      "slug": "melhor-processador-para-jogos-ryzen-x3d-vs-intel-2026",
+      "titulo_seo": "Processador para jogos 2026: Ryzen X3D ou Intel? | Yarivi",
+      "manchete_h1": "O processador com menos núcleos é o que ganha nos jogos — e o motivo é uma \"bancada\" de memória",
+      "categoria": "hw",
+      "emoji": "💻",
+      "excerpt": "Ryzen X3D ou Intel Core Ultra? Entenda por que o cache 3D domina nos jogos, onde a Intel vence e qual processador faz sentido para o seu PC em 2026.",
+      "read_time": "5 min",
+      "keyword": "melhor processador para jogos 2026",
+      "status": "aguardando-revisao",
+      "ordem": 49,
+      "criado_em": "2026-09-29"
+    },
+    {
+      "slug": "placa-de-video-comprar-agora-ou-esperar-2026",
+      "titulo_seo": "Placa de vídeo: vale comprar agora ou esperar? | Yarivi",
+      "manchete_h1": "A RX 9070 XT subiu quase R$ 1.000 em poucos meses — e a culpa é da IA",
+      "categoria": "hw",
+      "emoji": "💻",
+      "excerpt": "Placas de vídeo ficaram até 24% mais caras no Brasil e a RTX 50 Super foi adiada pela crise da memória. Veja quando vale comprar e quando esperar.",
+      "read_time": "6 min",
+      "keyword": "vale a pena comprar placa de vídeo agora",
+      "status": "aguardando-revisao",
+      "ordem": 50,
+      "criado_em": "2026-09-29"
+    },
+    {
+      "slug": "carregar-celular-a-noite-estraga-bateria-2026",
+      "titulo_seo": "Carregar o celular à noite estraga a bateria? | Yarivi",
+      "manchete_h1": "Deixar o celular carregando a noite toda não é o vilão — o problema é outro",
+      "categoria": "mob",
+      "emoji": "📱",
+      "excerpt": "Deixar o celular carregando a noite toda estraga a bateria? Veja os mitos, as verdades e os ajustes de iPhone e Samsung que fazem a bateria durar mais.",
+      "read_time": "6 min",
+      "keyword": "deixar celular carregando a noite toda estraga",
+      "status": "aguardando-revisao",
+      "ordem": 51,
+      "criado_em": "2026-09-29"
     }
   ]
 }

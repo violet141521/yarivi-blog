@@ -2,6 +2,16 @@
   "_comment": "Catálogo de todos os artigos do Yarivi. Ordem importa: artigos com mesma data_pub aparecem na ordem deste array. Não edite manualmente — atualizado pela skill signal-publicador.",
   "articles": [
     {
+      "slug": "carro-autonomo-brasil-2026",
+      "manchete": "Seu carro já dirige quase sozinho — mas a lei ainda proíbe soltar o volante no Brasil",
+      "categoria": "fut",
+      "emoji": "🔮",
+      "grad": "g6",
+      "excerpt": "Comissão da Câmara aprovou as primeiras regras pra carros autônomos no Brasil. Entenda os níveis de autonomia e quem paga a conta em caso de acidente.",
+      "read_time": "6 min",
+      "data_pub": "2026-09-30"
+    },
+    {
       "slug": "ram-cara-2026-por-que-notebook-pc",
       "manchete": "Um kit de 32 GB de memória RAM que custava US$ 80 agora custa US$ 439",
       "categoria": "hw",
