@@ -609,10 +609,11 @@
       "excerpt": "Dois projetos de lei avançam no Congresso: um pra celular e notebook, outro pro seu carro. Veja o que já vale hoje e quando compensa consertar ou trocar.",
       "read_time": "5 min",
       "keyword": "direito ao reparo brasil",
-      "status": "aprovado",
+      "status": "publicado",
       "ordem": 45,
       "criado_em": "2026-09-25",
-      "aprovado_em": "2026-09-27"
+      "aprovado_em": "2026-09-27",
+      "publicado_em": "2026-10-07"
     },
     {
       "slug": "carro-autonomo-brasil-2026",

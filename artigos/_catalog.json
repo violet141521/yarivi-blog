@@ -2,6 +2,16 @@
   "_comment": "Catálogo de todos os artigos do Yarivi. Ordem importa: artigos com mesma data_pub aparecem na ordem deste array. Não edite manualmente — atualizado pela skill signal-publicador.",
   "articles": [
     {
+      "slug": "direito-ao-reparo-brasil-2026",
+      "manchete": "A lei contra a “obsolescência programada” já tem dois projetos andando no Congresso",
+      "categoria": "hw",
+      "emoji": "🔧",
+      "grad": "g2",
+      "excerpt": "Dois projetos de lei avançam no Congresso: um pra celular e notebook, outro pro seu carro. Veja o que já vale hoje e quando compensa consertar ou trocar.",
+      "read_time": "5 min",
+      "data_pub": "2026-10-07"
+    },
+    {
       "slug": "starlink-direto-no-celular-brasil-2026",
       "manchete": "Seu celular pode virar uma antena de satélite — sem chip, sem torre",
       "categoria": "mob",
