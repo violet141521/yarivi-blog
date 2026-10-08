@@ -537,10 +537,11 @@
       "excerpt": "Comet, Atlas e Copilot prometem navegar, comprar e preencher formulários por você. Veja se vale trocar o Chrome em 2026 e os riscos envolvidos.",
       "read_time": "5 min",
       "keyword": "navegador com ia vale a pena",
-      "status": "aprovado",
+      "status": "publicado",
       "ordem": 46,
       "criado_em": "2026-09-21",
-      "aprovado_em": "2026-09-27"
+      "aprovado_em": "2026-09-27",
+      "publicado_em": "2026-10-08"
     },
     {
       "slug": "tecnologia-2027-o-que-muda-brasil",
@@ -652,9 +653,10 @@
       "excerpt": "A One UI 9, baseada no Android 17, começou a chegar aos Galaxy no Brasil. Veja o cronograma, quem recebe e as novidades que valem testar primeiro.",
       "read_time": "5 min",
       "keyword": "one ui 9 quais celulares recebem",
-      "status": "aguardando-revisao",
+      "status": "aprovado",
       "ordem": 48,
-      "criado_em": "2026-09-29"
+      "criado_em": "2026-09-29",
+      "aprovado_em": "2026-10-07"
     },
     {
       "slug": "melhor-processador-para-jogos-ryzen-x3d-vs-intel-2026",
