@@ -2,6 +2,16 @@
   "_comment": "Catálogo de todos os artigos do Yarivi. Ordem importa: artigos com mesma data_pub aparecem na ordem deste array. Não edite manualmente — atualizado pela skill signal-publicador.",
   "articles": [
     {
+      "slug": "bolha-da-inteligencia-artificial-2026",
+      "manchete": "A empresa mais valiosa do mundo multiplicou por 13 em três anos. Isso é bolha?",
+      "categoria": "fut",
+      "emoji": "🔮",
+      "grad": "g6",
+      "excerpt": "Nvidia saltou de US$ 300 bi para US$ 4 tri em 3 anos e 54% dos gestores globais já falam em bolha. Entenda os sinais e o que muda pra você.",
+      "read_time": "6 min",
+      "data_pub": "2026-10-09"
+    },
+    {
       "slug": "navegador-com-ia-vale-a-pena-2026",
       "manchete": "A Perplexity liberou de graça um navegador que faz compras e preenche formulários sozinho",
       "categoria": "sw",
