@@ -642,9 +642,11 @@
       "excerpt": "Crack, ativador e jogo pirata são a principal porta de entrada dos infostealers, vírus que roubam senhas e sessões em segundos. Veja como se proteger.",
       "read_time": "6 min",
       "keyword": "programa crackeado é perigoso",
-      "status": "aguardando-revisao",
+      "status": "publicado",
       "ordem": 47,
-      "criado_em": "2026-09-29"
+      "criado_em": "2026-09-29",
+      "aprovado_em": "2026-10-12",
+      "publicado_em": "2026-10-13"
     },
     {
       "slug": "one-ui-9-quais-celulares-recebem-2026",
@@ -670,9 +672,10 @@
       "excerpt": "Ryzen X3D ou Intel Core Ultra? Entenda por que o cache 3D domina nos jogos, onde a Intel vence e qual processador faz sentido para o seu PC em 2026.",
       "read_time": "5 min",
       "keyword": "melhor processador para jogos 2026",
-      "status": "aguardando-revisao",
+      "status": "aprovado",
       "ordem": 49,
-      "criado_em": "2026-09-29"
+      "criado_em": "2026-09-29",
+      "aprovado_em": "2026-10-12"
     },
     {
       "slug": "placa-de-video-comprar-agora-ou-esperar-2026",
@@ -683,9 +686,10 @@
       "excerpt": "Placas de vídeo ficaram até 24% mais caras no Brasil e a RTX 50 Super foi adiada pela crise da memória. Veja quando vale comprar e quando esperar.",
       "read_time": "6 min",
       "keyword": "vale a pena comprar placa de vídeo agora",
-      "status": "aguardando-revisao",
+      "status": "aprovado",
       "ordem": 50,
-      "criado_em": "2026-09-29"
+      "criado_em": "2026-09-29",
+      "aprovado_em": "2026-10-12"
     },
     {
       "slug": "carregar-celular-a-noite-estraga-bateria-2026",
@@ -696,9 +700,75 @@
       "excerpt": "Deixar o celular carregando a noite toda estraga a bateria? Veja os mitos, as verdades e os ajustes de iPhone e Samsung que fazem a bateria durar mais.",
       "read_time": "6 min",
       "keyword": "deixar celular carregando a noite toda estraga",
-      "status": "aguardando-revisao",
+      "status": "aprovado",
       "ordem": 51,
-      "criado_em": "2026-09-29"
+      "criado_em": "2026-09-29",
+      "aprovado_em": "2026-10-12"
+    },
+    {
+      "slug": "gemini-4-argon-o-que-e-2026",
+      "titulo_seo": "Gemini 4 Argon: o que é e quando chega | Yarivi",
+      "manchete_h1": "O Google lançou sua IA mais poderosa — e quase ninguém pode usar",
+      "categoria": "ai",
+      "emoji": "🤖",
+      "excerpt": "O Google revelou o Gemini 4 Argon, seu modelo de IA mais avançado — mas só especialistas em segurança podem usar. O que ele faz, quanto custa e como se compara ao GPT-6 Astra e ao Claude.",
+      "read_time": "6 min",
+      "keyword": "gemini 4 argon",
+      "status": "aguardando-revisao",
+      "ordem": 52,
+      "criado_em": "2026-10-12"
+    },
+    {
+      "slug": "googlebook-o-que-e-preco-brasil-2026",
+      "titulo_seo": "Googlebook: o que é, preço e se chega ao Brasil | Yarivi",
+      "manchete_h1": "O notebook do Google agora roda os apps do seu celular — e não é mais um Chromebook barato",
+      "categoria": "hw",
+      "emoji": "💻",
+      "excerpt": "O Googlebook junta Chrome e apps de Android num notebook premium com Gemini embutido. Modelos, preços nos EUA, diferença para o Chromebook e se vale esperar no Brasil.",
+      "read_time": "6 min",
+      "keyword": "googlebook",
+      "status": "aguardando-revisao",
+      "ordem": 53,
+      "criado_em": "2026-10-12"
+    },
+    {
+      "slug": "celular-esquentando-o-que-fazer-2026",
+      "titulo_seo": "Celular esquentando: causas e o que fazer | Yarivi",
+      "manchete_h1": "Seu celular está quente demais? Nunca coloque na geladeira — faça isto",
+      "categoria": "mob",
+      "emoji": "📱",
+      "excerpt": "Celular esquentando muito? As causas mais comuns, como esfriar do jeito certo, por que a geladeira é má ideia e os sinais de que é caso de assistência técnica.",
+      "read_time": "6 min",
+      "keyword": "celular esquentando",
+      "status": "aguardando-revisao",
+      "ordem": 54,
+      "criado_em": "2026-10-12"
+    },
+    {
+      "slug": "novidades-do-pix-2026-o-que-muda",
+      "titulo_seo": "Novidades do Pix: o que muda e quando começa | Yarivi",
+      "manchete_h1": "As novas regras do Pix já foram aprovadas — mas quase tudo só chega em 2027",
+      "categoria": "sec",
+      "emoji": "🔒",
+      "excerpt": "Boleto com QR Code do Pix, Pix Automático na conta-salário e aviso obrigatório de marcação de fraude: o que a Resolução BCB 587 muda e as datas reais (spoiler: 2027).",
+      "read_time": "6 min",
+      "keyword": "novidades do pix",
+      "status": "aguardando-revisao",
+      "ordem": 55,
+      "criado_em": "2026-10-12"
+    },
+    {
+      "slug": "passkey-o-que-e-como-ativar-2026",
+      "titulo_seo": "Passkey (chave de acesso): o que é e como ativar | Yarivi",
+      "manchete_h1": "A senha que você não precisa decorar — e que nenhum site falso consegue roubar",
+      "categoria": "sec",
+      "emoji": "🔒",
+      "excerpt": "A passkey troca a senha pela digital ou rosto e deixa o phishing sem o que roubar. Como funciona e o passo a passo para ativar no Google e no WhatsApp.",
+      "read_time": "6 min",
+      "keyword": "passkey o que é",
+      "status": "aguardando-revisao",
+      "ordem": 56,
+      "criado_em": "2026-10-12"
     }
   ]
 }
