@@ -2,6 +2,16 @@
   "_comment": "Catálogo de todos os artigos do Yarivi. Ordem importa: artigos com mesma data_pub aparecem na ordem deste array. Não edite manualmente — atualizado pela skill signal-publicador.",
   "articles": [
     {
+      "slug": "melhor-processador-para-jogos-ryzen-x3d-vs-intel-2026",
+      "manchete": "O processador com menos núcleos é o que ganha nos jogos — e o motivo é uma \"bancada\" de memória",
+      "categoria": "hw",
+      "emoji": "💻",
+      "grad": "g2",
+      "excerpt": "Ryzen X3D ou Intel Core Ultra? Entenda por que o cache 3D domina nos jogos, onde a Intel vence e qual processador faz sentido para o seu PC em 2026.",
+      "read_time": "5 min",
+      "data_pub": "2026-10-14"
+    },
+    {
       "slug": "programa-crackeado-infostealer-perigo-2026",
       "manchete": "O Office \"de graça\" pode sair pelo preço de todas as suas senhas",
       "categoria": "sw",
