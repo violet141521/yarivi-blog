@@ -48,6 +48,7 @@
       "dateModified": "{{DATE_ISO}}",
       "inLanguage": "pt-BR",
       "url": "https://yarivi.com/artigos/{{SLUG}}",
+      "author": { "@type": "Organization", "name": "Yarivi", "url": "https://yarivi.com/sobre" },
       "publisher": { "@type": "NewsMediaOrganization", "name": "Yarivi", "url": "https://yarivi.com" },
       "articleSection": "{{SECTION}}",
       "keywords": {{KEYWORDS_JSON}}
@@ -145,7 +146,7 @@
             <h1 class="art-headline">{{TITLE}}</h1>
             <p class="art-lead">{{LEAD}}</p>
             <div class="art-byline">
-                <span><strong>Yarivi</strong> Redação</span>
+                <span><a href="/sobre" rel="author"><strong>Yarivi</strong> Redação</a></span>
                 <span class="sep">{{DATE_DISPLAY}}</span>
                 <span class="sep">{{READ_TIME}} de leitura</span>
             </div>
