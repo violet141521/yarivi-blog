@@ -8,6 +8,7 @@ Disallow: /signal-publicador/
 Disallow: /signal-blog-publisher/
 Disallow: /CLAUDE.md
 Disallow: /pendencias.md
+Disallow: /Claude%20outputs/
 
 # ── Agentes de IA que respondem por um usuário — liberados (decisão de 24/09/2026) ──
 # Essas IAs só abrem uma página quando alguém pede a elas, ao vivo — não são

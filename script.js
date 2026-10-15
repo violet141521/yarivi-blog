@@ -1,11 +1,16 @@
+// Partials da home. Quando o wrapper já vem preenchido no HTML (data-static),
+// o conteúdo não é buscado de novo — é o caso do index.html, que traz nav,
+// hero, manchetes, categorias e rodapé direto no HTML (bom para SEO e para
+// quem navega sem JavaScript). Páginas que só têm alguns wrappers vazios
+// (ex.: <div id="footer-root"></div> no contato.html) recebem só esses.
 const PARTIALS = [
-    { id: 'nav-root',        file: 'partials/nav.html' },
-    { id: 'hero-root',       file: 'partials/hero.html' },
-    { id: 'featured-root',   file: 'partials/featured.html' },
-    { id: 'latest-root',     file: 'partials/latest.html' },
-    { id: 'cats-root',       file: 'partials/categories.html' },
-    // { id: 'nl-root',      file: 'partials/newsletter.html' }, // desativado temporariamente — ver pendências no CLAUDE.md
-    { id: 'footer-root',     file: 'partials/footer.html' },
+    { id: 'nav-root',        file: '/partials/nav.html' },
+    { id: 'hero-root',       file: '/partials/hero.html' },
+    { id: 'featured-root',   file: '/partials/featured.html' },
+    { id: 'latest-root',     file: '/partials/latest.html' },
+    { id: 'cats-root',       file: '/partials/categories.html' },
+    // newsletter desativada até existir um serviço de e-mail real — ver pendências no CLAUDE.md
+    { id: 'footer-root',     file: '/partials/footer.html' },
 ];
 
 async function fetchPartial(partial) {
@@ -17,27 +22,30 @@ async function fetchPartial(partial) {
 async function loadPartials() {
     const root = document.getElementById('root');
 
-    // Cria os wrappers na ordem correta antes de buscar em paralelo
-    const wrappers = PARTIALS.map(partial => {
-        const wrapper = document.createElement('div');
-        wrapper.id = partial.id;
-        root.appendChild(wrapper);
-        return wrapper;
+    // Reaproveita wrappers que já existem no HTML; cria os que faltam dentro de #root
+    const jobs = [];
+    PARTIALS.forEach(partial => {
+        let wrapper = document.getElementById(partial.id);
+        if (!wrapper) {
+            if (!root) return;            // página sem #root: só preenche o que existir
+            wrapper = document.createElement('div');
+            wrapper.id = partial.id;
+            root.appendChild(wrapper);
+        }
+        if (wrapper.hasAttribute('data-static')) return; // já veio pronto no HTML
+        jobs.push({ partial, wrapper });
     });
 
-    // Busca todos os partials em paralelo
-    const results = await Promise.allSettled(PARTIALS.map(fetchPartial));
-
-    results.forEach((result, index) => {
+    const results = await Promise.allSettled(jobs.map(j => fetchPartial(j.partial)));
+    results.forEach((result, i) => {
         if (result.status === 'fulfilled') {
-            wrappers[index].innerHTML = result.value;
+            jobs[i].wrapper.innerHTML = result.value;
         } else {
-            console.error(`Failed to load ${PARTIALS[index].file}:`, result.reason);
+            console.error(`Failed to load ${jobs[i].partial.file}:`, result.reason);
         }
     });
 
     initScrollAnimation();
-    initNewsletter();
     initSmoothScroll();
     initThemeToggle();
     initCategoryFilter();
@@ -82,23 +90,6 @@ function initScrollAnimation() {
     document.querySelectorAll('.fu').forEach(el => io.observe(el));
 }
 
-function initNewsletter() {
-    const form = document.getElementById('nl-form');
-    if (!form) return;
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-        const btn = document.getElementById('nl-btn');
-        const input = e.target.querySelector('input');
-        btn.textContent = '✓ Inscrito!';
-        btn.style.background = 'var(--teal)';
-        input.value = '';
-        setTimeout(() => {
-            btn.textContent = 'Quero receber';
-            btn.style.background = '';
-        }, 3000);
-    });
-}
-
 function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(a => {
         a.addEventListener('click', e => {
@@ -110,7 +101,9 @@ function initSmoothScroll() {
 
 function initThemeToggle() {
     const btn = document.getElementById('theme-toggle');
-    if (!btn) return;
+    // Páginas com toggle próprio (contato, privacidade, termos) marcam data-bound
+    if (!btn || btn.dataset.bound) return;
+    btn.dataset.bound = '1';
 
     function applyTheme(theme) {
         document.documentElement.setAttribute('data-theme', theme);
@@ -151,8 +144,9 @@ function initCategoryFilter() {
 }
 
 async function initCategoryCounts() {
+    if (!document.querySelector('.cat-card[data-filter]')) return;
     try {
-        const res = await fetch('artigos/_catalog.json');
+        const res = await fetch('/artigos/_catalog.json');
         if (!res.ok) return;
         const data = await res.json();
 

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página não encontrada | Yarivi</title>
+    <meta name="description" content="Esta página não existe ou mudou de endereço.">
+    <meta name="robots" content="noindex, follow">
+    <script>try{const t=localStorage.getItem('yarivi-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap"></noscript>
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .pg{max-width:760px;margin:0 auto;padding:7rem 2rem 5rem}
+        .pg-label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--teal);margin-bottom:1rem;display:block}
+        .pg-title{font-family:'Fraunces',serif;font-weight:800;font-size:clamp(1.9rem,5vw,2.75rem);line-height:1.12;letter-spacing:-.02em;color:var(--text-1);margin-bottom:1rem}
+        .pg-lead{font-size:1.125rem;line-height:1.7;color:var(--text-2);border-left:3px solid var(--accent);padding-left:1.25rem;margin-bottom:2.5rem}
+        .pg h2{font-family:'Fraunces',serif;font-weight:700;font-size:1.5rem;color:var(--text-1);margin:3rem 0 1rem;scroll-margin-top:90px}
+        .pg h3{font-weight:700;font-size:1.02rem;color:var(--text-1);margin:1.75rem 0 .5rem}
+        .pg p,.pg li{line-height:1.8;font-size:1.0625rem;color:var(--text-1)}
+        .pg p{margin-bottom:1.25rem}
+        .pg ul{margin:0 0 1.25rem 1.25rem}
+        .pg li{margin-bottom:.5rem}
+        .pg a{color:var(--accent);text-underline-offset:3px}
+        .back-link{display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;color:var(--text-3)!important;text-decoration:none;margin-bottom:2.5rem;transition:color .2s}
+        .back-link:hover{color:var(--accent)!important}
+        @media(max-width:640px){.pg{padding:6rem 1.25rem 3rem}}
+        @media(min-width:681px){
+            .nav-links{flex:0 0 auto;justify-content:flex-end;gap:1.5rem}
+            .nav-link{font-size:.875rem;text-transform:none;letter-spacing:0;padding:.25rem 0}
+        }
+        .pg .e404{font-family:'Fraunces',serif;font-weight:800;font-size:clamp(4rem,14vw,7rem);line-height:1;color:var(--accent);opacity:.9;margin-bottom:.5rem}
+        .cta-row{display:flex;flex-wrap:wrap;gap:.75rem;margin:0 0 2.5rem}
+        .cta-row a{text-decoration:none}
+        .pg a.btn-main{color:#000}
+        .btn-sec{display:inline-flex;align-items:center;border:1px solid var(--border-light);border-radius:8px;padding:.7rem 1.25rem;font-weight:600;font-size:.9rem;color:var(--text-1)!important}
+        .btn-sec:hover{border-color:var(--accent)}
+        .recent{list-style:none;margin:0!important;display:flex;flex-direction:column;gap:.6rem}
+        .recent a{display:block;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;font-family:'Fraunces',serif;font-weight:700;font-size:1rem;line-height:1.4;color:var(--text-1)!important;text-decoration:none;transition:border-color .2s}
+        .recent a:hover{border-color:var(--accent)}
+    </style>
+</head>
+<body>
+    <nav class="nav" role="navigation" aria-label="Navegação principal">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo" aria-label="Yarivi — página inicial">Yarivi</a>
+            <div class="nav-links">
+                <a href="/#em-destaque" class="nav-link">Destaques</a>
+                <a href="/#ultimas" class="nav-link">Notícias</a>
+                <a href="/sobre" class="nav-link">Sobre</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">🌙</button>
+        </div>
+    </nav>
+
+    <main class="pg">
+        <p class="e404" aria-hidden="true">404</p>
+        <h1 class="pg-title">Essa página saiu do ar — ou nunca existiu</h1>
+        <p class="pg-lead">O endereço pode ter sido digitado errado ou o conteúdo mudou de lugar. Os artigos continuam aqui.</p>
+        <div class="cta-row">
+            <a href="/" class="btn-main">Ir para a página inicial</a>
+            <a href="/#ultimas" class="btn-sec">Ver todos os artigos</a>
+        </div>
+        <h2>Artigos recentes</h2>
+        <ul class="recent">
+                <li><a href="/artigos/starlink-direto-no-celular-brasil-2026"><span aria-hidden="true">📶</span> Seu celular pode virar uma antena de satélite — sem chip, sem torre</a></li>
+                <li><a href="/artigos/carro-autonomo-brasil-2026"><span aria-hidden="true">🔮</span> Seu carro já dirige quase sozinho — mas a lei ainda proíbe soltar o volante no Brasil</a></li>
+                <li><a href="/artigos/ram-cara-2026-por-que-notebook-pc"><span aria-hidden="true">💾</span> Um kit de 32 GB de memória RAM que custava US$ 80 agora custa US$ 439</a></li>
+                <li><a href="/artigos/lgpd-ia-regulacao-brasil-2026"><span aria-hidden="true">⚖️</span> Desde 2021, a LGPD só multou uma empresa — isso está prestes a mudar</a></li>
+                <li><a href="/artigos/trump-superinteligencia-ia-czar-2026"><span aria-hidden="true">🔮</span> Trump decidiu que “inteligência artificial” já não é grande o suficiente</a></li>
+                <li><a href="/artigos/tecnologia-2027-o-que-muda-brasil"><span aria-hidden="true">🔮</span> 50 milhões de brasileiros já usam IA no dia a dia — mas só 16% dos mais pobres chegaram lá</a></li>
+        </ul>
+        <p style="margin-top:2rem;font-size:.95rem;color:var(--text-2)">Chegou aqui por um link do Yarivi? Avise pela <a href="/contato">página de contato</a> para a gente corrigir.</p>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <div class="f-logo">Yarivi</div>
+                <p class="f-desc">Tecnologia explicada com clareza. Para quem quer entender o mundo digital sem decodificar jargões.</p>
+            </div>
+            <div>
+                <div class="f-col-title">Categorias</div>
+                <ul class="f-links">
+                    <li><a href="/#ultimas" data-filter="ai">IA & Machine Learning</a></li>
+                    <li><a href="/#ultimas" data-filter="hw">Hardware</a></li>
+                    <li><a href="/#ultimas" data-filter="sec">Cibersegurança</a></li>
+                    <li><a href="/#ultimas" data-filter="sw">Software</a></li>
+                    <li><a href="/#ultimas" data-filter="mob">Mobile</a></li>
+                    <li><a href="/#ultimas" data-filter="fut">Futuro da Tech</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="f-col-title">Institucional</div>
+                <ul class="f-links">
+                    <li><a href="/sobre">Sobre o Yarivi</a></li>
+                    <li><a href="/sobre#politica-editorial">Política editorial</a></li>
+                    <li><a href="/privacidade">Política de Privacidade</a></li>
+                    <li><a href="/termos">Termos de Uso</a></li>
+                    <li><a href="/contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Yarivi. Todos os direitos reservados.</span>
+            <span>Feito com cuidado para quem ama tecnologia</span>
+        </div>
+    </footer>
+    <script>
+        const btn=document.getElementById('theme-toggle');
+        function applyTheme(t){document.documentElement.setAttribute('data-theme',t);btn.textContent=t==='light'?'☀️':'🌙';try{localStorage.setItem('yarivi-theme',t);}catch(e){}}
+        let saved='dark';try{saved=localStorage.getItem('yarivi-theme')||'dark';}catch(e){}
+        applyTheme(saved);
+        btn.addEventListener('click',()=>applyTheme(document.documentElement.getAttribute('data-theme')==='light'?'dark':'light'));
+        const hbtn=document.getElementById('hamburger'),nlinks=document.querySelector('.nav-links');
+        if(hbtn&&nlinks){
+            hbtn.addEventListener('click',()=>{const open=nlinks.classList.toggle('open');hbtn.setAttribute('aria-expanded',String(open));});
+            nlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nlinks.classList.remove('open');hbtn.setAttribute('aria-expanded','false');}));
+        }
+    </script>
+</body>
+</html>

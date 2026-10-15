@@ -71,6 +71,12 @@ Quando o usuário pedir para agendar:
          <changefreq>daily</changefreq>
          <priority>1.0</priority>
        </url>
+       <url>
+         <loc>https://yarivi.com/sobre</loc>
+         <lastmod>DATA-DE-HOJE</lastmod>
+         <changefreq>monthly</changefreq>
+         <priority>0.6</priority>
+       </url>
        <!-- um bloco <url> por artigo: -->
        <url>
          <loc>https://yarivi.com/artigos/{slug}</loc>
@@ -91,16 +97,22 @@ Quando o usuário pedir para agendar:
          <changefreq>yearly</changefreq>
          <priority>0.5</priority>
        </url>
+       <url>
+         <loc>https://yarivi.com/termos</loc>
+         <lastmod>DATA-DE-HOJE</lastmod>
+         <changefreq>yearly</changefreq>
+         <priority>0.3</priority>
+       </url>
      </urlset>
      ```
 
    - A ordem dos artigos no sitemap deve seguir a ordem do array no `_catalog.json`
-     (mais recente primeiro). O bloco da homepage vem sempre primeiro; contato e
-     privacidade sempre por último.
+     (mais recente primeiro). O bloco da homepage vem sempre primeiro, seguido de sobre; contato,
+     privacidade e termos sempre por último.
    - **Nunca adicionar só o artigo novo ao sitemap existente** — sempre regerar do zero
      a partir do `_catalog.json`, para evitar acúmulo de entradas órfãs ou desatualizadas.
    - Verificar: o número de entradas `<url>` no sitemap deve ser igual a
-     `(artigos em _catalog.json) + 3` (homepage + contato + privacidade).
+     `(artigos em _catalog.json) + 5` (homepage + sobre + contato + privacidade + termos).
 5. Atualizar a fila: `status` → `"publicado"`, adicionar `"publicado_em"` (ISO).
 5.5. **Imagem do artigo:** verificar se existe `img/{slug}.webp` (ou `.jpg`/`.png`) no
    diretório raiz do blog. Se existir, incluí-la no commit junto com os demais arquivos —

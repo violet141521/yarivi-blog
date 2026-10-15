@@ -16,6 +16,8 @@ Dona: Mi (violet141521@gmail.com).
 - `artigos/` — artigos publicados + `_catalog.json` (metadata de todos os artigos)
 - `rascunhos/` — artigos aguardando revisão + `fila.json` (fila de publicação com status)
 - `partials/featured.html` e `partials/latest.html` — fallback estático (não editar mais)
+- `index.html` traz nav, hero, manchetes, categorias e rodapé **direto no HTML** (wrappers com `data-static`; o `script.js` não busca de novo). Em produção, `functions/index.js` troca as manchetes pela lista atual do KV a cada visita (cache 60s). Renderização compartilhada em `functions/_lib/home.js`. Após publicar, rodar `node scripts/gerar-home-estatica.mjs` para atualizar as manchetes fixas do `index.html` (fallback sem KV e o que robôs/leitores sem JS veem)
+- `sobre.html` (quem faz, política editorial `#politica-editorial`, correções `#correcoes`, FAQ com schema FAQPage) e `404.html` (servido pelo Pages com status 404; lista de recentes é estática)
 - `functions/partials/_middleware.js` — Pages Function que serve featured/latest dinâmico via KV
 - `functions/api/publicar.js` — endpoint para publicar artigo de qualquer dispositivo
 - `signal-seo-writer/` e `signal-publicador/` — fonte das skills (instaladas no Claude)
@@ -115,9 +117,9 @@ A home atualiza em até 1 minuto após a publicação (cache de 60s).
 6. Submeter ao Google Search Console
 7. Aplicar ao AdSense — pré-requisitos cumpridos: páginas legais criadas + 13 artigos publicados
 8. Abrir MEI para formalizar o blog como negócio — após abrir, atualizar `contato.html`, `privacidade.html` e `termos.html`: trocar "Milena" pela razão social e adicionar CNPJ como identificador do controlador de dados (LGPD)
-9. Criar páginas: Sobre nós, Anuncie, Escreva para nós, Contato — e reincluir coluna "Yarivi" no footer com links reais
+9. ~~Página Sobre~~ — criada (2026-10-05), com coluna "Institucional" no footer. Pendente: Anuncie, Escreva para nós; foto/bio da Mi na Sobre (opcional)
 10. Inserir links de afiliados nos artigos pertinentes — fazer após aprovação do AdSense (mapear quais artigos já publicados têm oportunidade e adicionar antes/durante a revisão dos novos)
-11. Reativar newsletter — reinserir `nl-root` em `script.js`, botão no nav, CTA nos artigos e coluna "Yarivi" no footer (`partials/footer.html`)
+11. Reativar newsletter **só com serviço de e-mail real** (o formulário antigo simulava inscrição e foi removido em 2026-10-05 de artigos, rascunhos, templates e `partials/newsletter.html`) — reinserir `nl-root` em `script.js`, botão no nav, CTA nos artigos e coluna "Yarivi" no footer (`partials/footer.html`)
 12. Criar redes sociais do Yarivi (Twitter/X, Instagram, LinkedIn, YouTube) e adicionar coluna "Social" no footer (`partials/footer.html`) com links reais
 13. Versão em inglês do blog — artigos menos Brasil-específicos, maior alcance orgânico (decidir estrutura: subdomínio `en.yarivi.com` vs. pasta `/en/`)
 14. ~~Validação de plágio dos artigos~~ — skill `validador-text` criada (2026-08-12): antiplágio DIY via WebSearch + link checker + checklist SEO automático. **Pendente: instalar a skill no Claude** (abrir `validador-text/SKILL.md` no Claude → Save skill). Spec em `docs/validador-text-spec.md`.

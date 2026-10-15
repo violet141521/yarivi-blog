@@ -361,11 +361,12 @@
     </main>
 
     <div id="footer-root"></div>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
     <script>
         // Theme toggle
         const toggle = document.getElementById('theme-toggle');
         if (toggle) {
+            toggle.dataset.bound = '1';
             const html = document.documentElement;
             const updateIcon = () => toggle.textContent = html.getAttribute('data-theme') === 'light' ? '🌙' : '☀️';
             updateIcon();

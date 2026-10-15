@@ -14,7 +14,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Yarivi">
     <meta property="og:title" content="Yarivi — Tecnologia sem ruído, informação com propósito">
-    <meta property="og:description" content="As principais notícias de tech toda semana, explicadas para humanos. Gratuito. Novo artigo todo dia útil.">
+    <meta property="og:description" content="As principais notícias de tecnologia explicadas em português, sem jargão. Gratuito. Novo artigo todo dia útil.">
     <meta property="og:url" content="https://yarivi.com/">
     <meta property="og:image" content="https://yarivi.com/og-cover.jpg">
     <meta property="og:image:width" content="1200">
@@ -23,108 +23,52 @@
 
     <!-- ═══ Twitter / X Card ═══ -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@yarivi_tech">
     <meta name="twitter:title" content="Yarivi — Tecnologia sem ruído">
-    <meta name="twitter:description" content="As principais notícias de tech em português, sem jargão. Grátis, 3× por semana.">
+    <meta name="twitter:description" content="As principais notícias de tecnologia em português, sem jargão. Novo artigo todo dia útil.">
     <meta name="twitter:image" content="https://yarivi.com/og-cover.jpg">
 
-    <!-- ═══ GEO: Schema Markup — NewsMediaOrganization ═══ -->
+    <!-- ═══ Schema.org — Organização + WebSite ═══
+         Só dados verdadeiros: sem perfis sociais (ainda não existem), sem busca interna
+         (não existe /busca). FAQ fica na página /sobre, onde as perguntas aparecem para o leitor. -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "NewsMediaOrganization",
-      "name": "Yarivi",
-      "description": "Veículo de jornalismo tecnológico em português brasileiro. Notícias e análises de IA, hardware, cibersegurança, software e mobile — explicadas sem jargão para quem quer entender o mundo digital.",
-      "url": "https://yarivi.com",
-      "foundingDate": "2024",
-      "inLanguage": "pt-BR",
-      "audience": {
-        "@type": "Audience",
-        "audienceType": "Profissionais, estudantes e entusiastas de tecnologia no Brasil"
-      },
-      "publishingPrinciples": "https://yarivi.com/editorial",
-      "sameAs": [
-        "https://twitter.com/yarivi_tech",
-        "https://instagram.com/yarivi_tech",
-        "https://linkedin.com/company/yarivi",
-        "https://youtube.com/@yarivi_tech"
-      ]
-    }
-    </script>
-
-    <!-- ═══ GEO: Schema Markup — WebSite com SearchAction ═══ -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Yarivi",
-      "url": "https://yarivi.com",
-      "description": "Notícias de tecnologia em português sem jargão",
-      "inLanguage": "pt-BR",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://yarivi.com/busca?q={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-      }
-    }
-    </script>
-
-    <!-- ═══ GEO: Schema Markup — FAQPage ═══ -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
+      "@graph": [
         {
-          "@type": "Question",
-          "name": "O Yarivi é gratuito?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sim, o Yarivi é 100% gratuito. Todo o conteúdo do site não tem custo algum — basta acessar e ler."
-          }
+          "@type": "NewsMediaOrganization",
+          "@id": "https://yarivi.com/#organization",
+          "name": "Yarivi",
+          "url": "https://yarivi.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://yarivi.com/apple-touch-icon.png",
+            "width": 180,
+            "height": 180
+          },
+          "description": "Blog independente de tecnologia em português do Brasil. Explica IA, hardware, cibersegurança, software e mobile sem jargão, para leitores curiosos.",
+          "foundingDate": "2026",
+          "founder": { "@type": "Person", "name": "Milena" },
+          "email": "contato@yarivi.com",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "editorial",
+            "email": "contato@yarivi.com",
+            "url": "https://yarivi.com/contato",
+            "availableLanguage": "pt-BR"
+          },
+          "publishingPrinciples": "https://yarivi.com/sobre#politica-editorial",
+          "correctionsPolicy": "https://yarivi.com/sobre#correcoes",
+          "actionableFeedbackPolicy": "https://yarivi.com/contato",
+          "inLanguage": "pt-BR"
         },
         {
-          "@type": "Question",
-          "name": "Com que frequência o Yarivi publica novos artigos?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "O Yarivi publica novos artigos sobre tecnologia de segunda a sexta, sempre com as notícias mais relevantes de IA, hardware, cibersegurança, software e mobile — explicadas em linguagem acessível."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "O que diferencia o Yarivi de outros portais de tecnologia?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "O Yarivi foi criado para quem quer entender tecnologia sem precisar de um dicionário. Não usamos jargão desnecessário, não publicamos clickbait e filtramos o ruído para entregar só o que realmente importa — cobrindo IA, hardware, cibersegurança, software e mobile."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Como entrar em contato com o Yarivi?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Você pode falar com a equipe do Yarivi pela página de contato em yarivi.com/contato. Respondemos sugestões de pauta, parcerias e dúvidas sobre o conteúdo publicado."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "O Yarivi cobre quais categorias de tecnologia?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "O Yarivi cobre 6 categorias principais: IA & Machine Learning, Hardware, Cibersegurança, Software, Mobile e Futuro da Tech. Todos os conteúdos são em português brasileiro, escritos para quem quer entender o mundo digital sem precisar de um dicionário técnico."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Posso escrever para o Yarivi?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sim! O Yarivi aceita colaborações. Para enviar uma pauta ou proposta de artigo, acesse a seção 'Escreva para nós' no rodapé do site."
-          }
+          "@type": "WebSite",
+          "@id": "https://yarivi.com/#website",
+          "name": "Yarivi",
+          "url": "https://yarivi.com/",
+          "description": "Notícias e explicações de tecnologia em português, sem jargão.",
+          "inLanguage": "pt-BR",
+          "publisher": { "@id": "https://yarivi.com/#organization" }
         }
       ]
     }
@@ -142,13 +86,944 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap">
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap"></noscript>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
 </head>
 <body>
-    <div id="root"></div>
+    <noscript><style>.fu{opacity:1;transform:none}</style></noscript>
+    <div id="root">
+        <div id="nav-root" data-static>
+            <nav class="nav">
+                <div class="nav-inner">
+                    <a href="/" class="nav-logo">
+                        <div class="live-dot"></div>
+                        Yarivi
+                    </a>
+                    <div class="nav-links">
+                        <a href="#" class="nav-link active" data-filter="">Início</a>
+                        <a href="#ultimas" class="nav-link" data-filter="ai">IA & ML</a>
+                        <a href="#ultimas" class="nav-link" data-filter="hw">Hardware</a>
+                        <a href="#ultimas" class="nav-link" data-filter="sec">Cibersegurança</a>
+                        <a href="#ultimas" class="nav-link" data-filter="sw">Software</a>
+                        <a href="#ultimas" class="nav-link" data-filter="mob">Mobile</a>
+                        <a href="/sobre" class="nav-link">Sobre</a>
+                    </div>
+                    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                        <span></span><span></span><span></span>
+                    </button>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">🌙</button>
+                </div>
+            </nav>
+
+            <div class="ticker" aria-label="Notícias em destaque">
+                <div class="ticker-tag">Agora</div>
+                <!-- Os itens são duplicados intencionalmente para criar o loop contínuo da animação CSS -->
+                <div class="ticker-track" aria-hidden="true">
+                    <div class="ticker-item">Bateria de estado sólido: as duas tecnologias que querem aposentar seu carregador</div>
+                    <div class="ticker-item">Até a Apple dobrou: vale a pena entrar na onda dos foldables agora?</div>
+                    <div class="ticker-item">A Nvidia quer transformar seu próximo notebook numa máquina de IA</div>
+                    <div class="ticker-item">Robôs humanoides têm fila de espera de 10 mil reservas e preços a partir de US$ 2.899</div>
+                    <div class="ticker-item">Agente de IA: a IA que age sozinha — e os riscos de deixar ela sem supervisão</div>
+                    <div class="ticker-item">Phishing dominou 2026: Brasil é o 2º país mais atacado do mundo</div>
+                    <div class="ticker-item">Computação quântica pode quebrar a criptografia atual até 2031 — o Q-Day se aproxima</div>
+                    <div class="ticker-item">IA generativa e mercado de trabalho: quem perde, quem ganha e o que fazer agora</div>
+                    <div class="ticker-item">Bateria de estado sólido: as duas tecnologias que querem aposentar seu carregador</div>
+                    <div class="ticker-item">Até a Apple dobrou: vale a pena entrar na onda dos foldables agora?</div>
+                    <div class="ticker-item">A Nvidia quer transformar seu próximo notebook numa máquina de IA</div>
+                    <div class="ticker-item">Robôs humanoides têm fila de espera de 10 mil reservas e preços a partir de US$ 2.899</div>
+                    <div class="ticker-item">Agente de IA: a IA que age sozinha — e os riscos de deixar ela sem supervisão</div>
+                    <div class="ticker-item">Phishing dominou 2026: Brasil é o 2º país mais atacado do mundo</div>
+                    <div class="ticker-item">Computação quântica pode quebrar a criptografia atual até 2031 — o Q-Day se aproxima</div>
+                    <div class="ticker-item">IA generativa e mercado de trabalho: quem perde, quem ganha e o que fazer agora</div>
+                </div>
+            </div>
+        </div>
+        <main>
+        <div id="hero-root" data-static>
+            <section class="hero">
+                <div class="hero-mesh" aria-hidden="true"></div>
+                <div class="hero-grid" aria-hidden="true"></div>
+
+                <div class="hero-inner">
+                    <div class="hero-text">
+                        <div class="hero-badge">
+                            <span class="live-dot"></span>
+                            Novo artigo todo dia útil
+                        </div>
+
+                        <h1 class="hero-h1">
+                            Tecnologia<br>
+                            <em>sem ruído.</em><br>
+                            Informação<br>com propósito.
+                        </h1>
+
+                        <p class="hero-sub">
+                            Tecnologia sem enrolação — IA, hardware, segurança e software para quem tem curiosidade.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a href="#ultimas" class="btn-main">Explorar os artigos</a>
+                        </div>
+
+                    </div>
+
+                    <div class="hero-card" tabindex="0" role="article">
+                        <div class="hcard-img">
+                            <svg class="hcard-circuit" viewBox="0 0 600 375" fill="none" aria-hidden="true">
+                                <style>
+                                    .hc-accent  { stroke: var(--accent); }
+                                    .hc-teal    { stroke: var(--teal); }
+                                    .hc-blue    { stroke: var(--blue); }
+                                    .hc-pink    { stroke: var(--pink); }
+                                    .hc-dot-a   { fill: var(--accent); }
+                                    .hc-dot-t   { fill: var(--teal); }
+                                    .hc-dot-b   { fill: var(--blue); }
+                                    .hc-dot-p   { fill: var(--pink); }
+                                </style>
+                                <line class="hc-accent" x1="60"  y1="60"  x2="210" y2="60"  stroke-width="1"/>
+                                <line class="hc-accent" x1="210" y1="60"  x2="210" y2="160" stroke-width="1"/>
+                                <line class="hc-accent" x1="210" y1="160" x2="370" y2="160" stroke-width="1"/>
+                                <line class="hc-teal"   x1="370" y1="160" x2="370" y2="85"  stroke-width="1"/>
+                                <line class="hc-teal"   x1="370" y1="85"  x2="520" y2="85"  stroke-width="1"/>
+                                <line class="hc-blue"   x1="100" y1="210" x2="260" y2="210" stroke-width="1"/>
+                                <line class="hc-blue"   x1="260" y1="210" x2="260" y2="295" stroke-width="1"/>
+                                <line class="hc-blue"   x1="260" y1="295" x2="460" y2="295" stroke-width="1"/>
+                                <line class="hc-pink"   x1="460" y1="295" x2="460" y2="210" stroke-width="1"/>
+                                <line class="hc-pink"   x1="460" y1="210" x2="550" y2="210" stroke-width="1"/>
+                                <line class="hc-accent" x1="155" y1="50"  x2="155" y2="330" stroke-width=".5" stroke-dasharray="4 4"/>
+                                <line class="hc-teal"   x1="420" y1="50"  x2="420" y2="330" stroke-width=".5" stroke-dasharray="4 4"/>
+                                <circle class="hc-dot-a" cx="210" cy="60"  r="5"/>
+                                <circle class="hc-dot-a" cx="210" cy="160" r="5"/>
+                                <circle class="hc-dot-t" cx="370" cy="160" r="5"/>
+                                <circle class="hc-dot-t" cx="370" cy="85"  r="5"/>
+                                <circle class="hc-dot-b" cx="260" cy="210" r="5"/>
+                                <circle class="hc-dot-p" cx="460" cy="295" r="5"/>
+                                <rect x="290" y="145" width="80" height="80" rx="4"
+                                      class="hc-accent" stroke-width="1.5" fill="var(--accent-dim)"/>
+                                <text x="330" y="191" text-anchor="middle" style="fill:var(--accent)"
+                                      font-size="10" font-family="monospace" opacity=".8">CPU</text>
+                            </svg>
+                            <span class="hcard-emoji">🤖</span>
+                        </div>
+                        <div class="hcard-body">
+                            <div class="tags">
+                                <span class="tag tag-ai">IA & ML</span>
+                                <span class="tag tag-dest">Em destaque</span>
+                            </div>
+                            <h2 class="art-title hcard-title">
+                                Como a IA Generativa está mudando o mercado de trabalho em 2026
+                            </h2>
+                            <p class="art-excerpt">
+                                Não é ficção científica. Engenheiros, designers e redatores já sentem o impacto — e as oportunidades inesperadas que surgiram junto.
+                            </p>
+                            <div class="art-meta">
+                                <span>1 ago 2026</span>
+                                <span class="sep">8 min de leitura</span>
+                            </div>
+                            <a href="artigos/ia-generativa-mercado-trabalho-2026" class="read-link">Ler artigo →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Manchetes: geradas a partir de artigos/_catalog.json. Em produção a Function
+             functions/index.js substitui o conteúdo destes dois blocos pela lista atual (KV). -->
+        <div id="featured-root" data-static><div class="wrap section" id="em-destaque">
+    <div class="sec-head fu">
+        <h2 class="sec-title"><span class="sec-bar" aria-hidden="true"></span>Em destaque</h2>
+        <a href="#ultimas" class="sec-link">Ver todos →</a>
+    </div>
+
+    <div class="featured-grid">
+        
+        <a href="/artigos/placa-de-video-comprar-agora-ou-esperar-2026" class="feat-main fu" aria-label="Ler: A RX 9070 XT subiu quase R$ 1.000 em poucos meses — e a culpa é da IA">
+            <div class="feat-img" aria-hidden="true">💻</div>
+            <div class="feat-body">
+                <div class="tags">
+                    <span class="tag tag-hw">Hardware</span>
+                    <span class="tag tag-dest">Análise</span>
+                </div>
+                <h2 class="art-title feat-title">A RX 9070 XT subiu quase R$ 1.000 em poucos meses — e a culpa é da IA</h2>
+                <p class="feat-excerpt">Placas de vídeo ficaram até 24% mais caras no Brasil e a RTX 50 Super foi adiada pela crise da memória. Veja quando vale comprar e quando esperar.</p>
+                <div class="art-meta">
+                    <span>15 out 2026</span>
+                    <span class="sep">6 min de leitura</span>
+                    <span class="sep">Novo</span>
+                </div>
+                <span class="read-link" aria-hidden="true">Ler análise completa →</span>
+            </div>
+        </a>
+
+        <div class="feat-sidebar">
+            
+            <a href="/artigos/melhor-processador-para-jogos-ryzen-x3d-vs-intel-2026" class="side-card fu">
+                <div class="side-icon">💻</div>
+                <div>
+                    <div class="tags">
+                        <span class="tag tag-hw">Hardware</span>
+                    </div>
+                    <div class="side-title">O processador com menos núcleos é o que ganha nos jogos — e o motivo é uma &quot;bancada&quot; de memória</div>
+                    <div class="side-meta">14 out 2026 · 5 min</div>
+                </div>
+            </a>
+            <a href="/artigos/programa-crackeado-infostealer-perigo-2026" class="side-card fu">
+                <div class="side-icon">💾</div>
+                <div>
+                    <div class="tags">
+                        <span class="tag tag-sw">Software</span>
+                    </div>
+                    <div class="side-title">O Office &quot;de graça&quot; pode sair pelo preço de todas as suas senhas</div>
+                    <div class="side-meta">13 out 2026 · 6 min</div>
+                </div>
+            </a>
+            <a href="/artigos/one-ui-9-quais-celulares-recebem-2026" class="side-card fu">
+                <div class="side-icon">💾</div>
+                <div>
+                    <div class="tags">
+                        <span class="tag tag-sw">Software</span>
+                    </div>
+                    <div class="side-title">Seu Galaxy vai ganhar um assistente que vigia os outros assistentes</div>
+                    <div class="side-meta">12 out 2026 · 5 min</div>
+                </div>
+            </a>
+            <a href="/artigos/bolha-da-inteligencia-artificial-2026" class="side-card fu">
+                <div class="side-icon">🔮</div>
+                <div>
+                    <div class="tags">
+                        <span class="tag tag-fut">Futuro</span>
+                    </div>
+                    <div class="side-title">A empresa mais valiosa do mundo multiplicou por 13 em três anos. Isso é bolha?</div>
+                    <div class="side-meta">9 out 2026 · 6 min</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+        </div>
+        <div id="latest-root" data-static><div class="wrap section" id="ultimas">
+    <div class="sec-head fu">
+        <h2 class="sec-title"><span class="sec-bar" aria-hidden="true"></span>Últimas notícias</h2>
+        <a href="#ultimas" class="sec-link">Ver arquivo →</a>
+    </div>
+
+    <div class="latest-grid">
+        
+        <a href="/artigos/placa-de-video-comprar-agora-ou-esperar-2026" class="art-card fu" data-category="hw">
+            <div class="card-thumb g2">💻</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-hw">Hardware</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">A RX 9070 XT subiu quase R$ 1.000 em poucos meses — e a culpa é da IA</h3>
+                <p class="art-excerpt card-excerpt">Placas de vídeo ficaram até 24% mais caras no Brasil e a RTX 50 Super foi adiada pela crise da memória. Veja quando vale comprar e quando esperar.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>15 out 2026</span><span class="sep">6 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/melhor-processador-para-jogos-ryzen-x3d-vs-intel-2026" class="art-card fu" data-category="hw">
+            <div class="card-thumb g2">💻</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-hw">Hardware</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">O processador com menos núcleos é o que ganha nos jogos — e o motivo é uma &quot;bancada&quot; de memória</h3>
+                <p class="art-excerpt card-excerpt">Ryzen X3D ou Intel Core Ultra? Entenda por que o cache 3D domina nos jogos, onde a Intel vence e qual processador faz sentido para o seu PC em 2026.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>14 out 2026</span><span class="sep">5 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/programa-crackeado-infostealer-perigo-2026" class="art-card fu" data-category="sw">
+            <div class="card-thumb g4">💾</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-sw">Software</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">O Office &quot;de graça&quot; pode sair pelo preço de todas as suas senhas</h3>
+                <p class="art-excerpt card-excerpt">Crack, ativador e jogo pirata são a principal porta de entrada dos infostealers, vírus que roubam senhas e sessões em segundos. Veja como se proteger.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>13 out 2026</span><span class="sep">6 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/one-ui-9-quais-celulares-recebem-2026" class="art-card fu" data-category="sw">
+            <div class="card-thumb g4">💾</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-sw">Software</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Seu Galaxy vai ganhar um assistente que vigia os outros assistentes</h3>
+                <p class="art-excerpt card-excerpt">A One UI 9, baseada no Android 17, começou a chegar aos Galaxy no Brasil. Veja o cronograma, quem recebe e as novidades que valem testar primeiro.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>12 out 2026</span><span class="sep">5 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/bolha-da-inteligencia-artificial-2026" class="art-card fu" data-category="fut">
+            <div class="card-thumb g6">🔮</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-fut">Futuro</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">A empresa mais valiosa do mundo multiplicou por 13 em três anos. Isso é bolha?</h3>
+                <p class="art-excerpt card-excerpt">Nvidia saltou de US$ 300 bi para US$ 4 tri em 3 anos e 54% dos gestores globais já falam em bolha. Entenda os sinais e o que muda pra você.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>9 out 2026</span><span class="sep">6 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/navegador-com-ia-vale-a-pena-2026" class="art-card fu" data-category="sw">
+            <div class="card-thumb g4">🧭</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-sw">Software</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">A Perplexity liberou de graça um navegador que faz compras e preenche formulários sozinho</h3>
+                <p class="art-excerpt card-excerpt">Comet, Atlas e Copilot prometem navegar, comprar e preencher formulários por você. Veja se vale trocar o Chrome em 2026 e os riscos envolvidos.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>8 out 2026</span><span class="sep">5 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/direito-ao-reparo-brasil-2026" class="art-card fu" data-category="hw">
+            <div class="card-thumb g2">🔧</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-hw">Hardware</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">A lei contra a “obsolescência programada” já tem dois projetos andando no Congresso</h3>
+                <p class="art-excerpt card-excerpt">Dois projetos de lei avançam no Congresso: um pra celular e notebook, outro pro seu carro. Veja o que já vale hoje e quando compensa consertar ou trocar.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>7 out 2026</span><span class="sep">5 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/starlink-direto-no-celular-brasil-2026" class="art-card fu" data-category="mob">
+            <div class="card-thumb g5">📶</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-mob">Mobile</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Seu celular pode virar uma antena de satélite — sem chip, sem torre</h3>
+                <p class="art-excerpt card-excerpt">A Anatel liberou o Starlink pra funcionar direto no celular, sem chip especial. Entenda como funciona, quando chega e quais aparelhos vão aceitar.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>5 out 2026</span><span class="sep">5 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/carro-autonomo-brasil-2026" class="art-card fu" data-category="fut">
+            <div class="card-thumb g6">🔮</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-fut">Futuro</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Seu carro já dirige quase sozinho — mas a lei ainda proíbe soltar o volante no Brasil</h3>
+                <p class="art-excerpt card-excerpt">Comissão da Câmara aprovou as primeiras regras pra carros autônomos no Brasil. Entenda os níveis de autonomia e quem paga a conta em caso de acidente.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>30 set 2026</span><span class="sep">6 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/ram-cara-2026-por-que-notebook-pc" class="art-card fu" data-category="hw">
+            <div class="card-thumb g2">💾</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-hw">Hardware</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Um kit de 32 GB de memória RAM que custava US$ 80 agora custa US$ 439</h3>
+                <p class="art-excerpt card-excerpt">A memória RAM ficou até 5x mais cara em 2026 pela demanda de data centers de IA. Entenda por que isso aconteceu e se vale comprar PC agora.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>29 set 2026</span><span class="sep">5 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/lgpd-ia-regulacao-brasil-2026" class="art-card fu" data-category="ai">
+            <div class="card-thumb g1">⚖️</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-ai">IA & ML</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Desde 2021, a LGPD só multou uma empresa — isso está prestes a mudar</h3>
+                <p class="art-excerpt card-excerpt">A LGPD já regula o uso de IA com dados pessoais no Brasil, mesmo sem o Marco Legal da IA aprovado — e a ANPD só multou uma empresa desde 2021. Veja o que muda para o seu negócio.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>28 set 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/trump-superinteligencia-ia-czar-2026" class="art-card fu" data-category="fut">
+            <div class="card-thumb g6">🔮</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-fut">Futuro</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Trump decidiu que “inteligência artificial” já não é grande o suficiente</h3>
+                <p class="art-excerpt card-excerpt">Trump anunciou uma 'Força de IA', promete nomear um 'czar' e convenceu Xi Jinping a trocar 'IA' por 'superinteligência'. Entenda o que está por trás disso.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>26 set 2026</span><span class="sep">6 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/tecnologia-2027-o-que-muda-brasil" class="art-card fu" data-category="fut">
+            <div class="card-thumb g6">🔮</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-fut">Futuro</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">50 milhões de brasileiros já usam IA no dia a dia — mas só 16% dos mais pobres chegaram lá</h3>
+                <p class="art-excerpt card-excerpt">50 milhões de brasileiros já usam IA, o 5G chega às cidades menores e o Pix cresce ainda mais. Veja o que deve mudar na tecnologia do brasileiro até 2027.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>25 set 2026</span><span class="sep">5 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/ios-27-novidades-quais-iphones-2026" class="art-card fu" data-category="mob">
+            <div class="card-thumb g5">🍏</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-mob">Mobile</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Seu iPhone de 2019 ainda vai rodar o iOS 27 — mas o SE de 2016 não</h3>
+                <p class="art-excerpt card-excerpt">O iOS 27 chegou em setembro de 2026 com Siri renovada e Apple Intelligence expandida. Veja se seu iPhone recebe a atualização e quais são as novidades.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>24 set 2026</span><span class="sep">5 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/ia-open-source-llama-mistral-2026" class="art-card fu" data-category="ai">
+            <div class="card-thumb g1">🦙</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-ai">IA & ML</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">ChatGPT custa caro — mas você pode ter a sua IA de graça</h3>
+                <p class="art-excerpt card-excerpt">ChatGPT custa caro. Veja como rodar Llama, Mistral ou Qwen de graça no seu PC — passo a passo sem programar, com dados reais de custo e hardware.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>23 set 2026</span><span class="sep">8 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/atualizacao-ia-android-setembro-2026" class="art-card fu" data-category="mob">
+            <div class="card-thumb g5">🤖</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-mob">Mobile</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">O Android ganhou 5 poderes novos em setembro — mas o mais ambicioso pede 12 GB de RAM pra funcionar</h3>
+                <p class="art-excerpt card-excerpt">O Android ganhou 5 recursos novos de IA em setembro de 2026 — mas o mais avançado, o Gemini Intelligence, exige pelo menos 12 GB de RAM. Veja o que muda.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>22 set 2026</span><span class="sep">5 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/banco-digital-vs-tradicional-2026" class="art-card fu" data-category="sec">
+            <div class="card-thumb g3">🏦</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-sec">Segurança</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Seu banco digital guarda dinheiro melhor que o do seu avô</h3>
+                <p class="art-excerpt card-excerpt">FGC garante até R$ 250 mil por CPF, igual em banco digital e tradicional. Veja como o caso Banco Master provou isso na prática — e por que golpe, não quebra de banco, é o risco que mais importa hoje.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>21 set 2026</span><span class="sep">8 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/tutor-ia-homeschooling-vs-reforco-2026" class="art-card fu" data-category="ai">
+            <div class="card-thumb g1">🎓</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-ai">IA & ML</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Tutor de IA sai de graça. O professor particular custa R$ 47 a hora</h3>
+                <p class="art-excerpt card-excerpt">Tutor de IA custa de graça a poucos dólares por mês; reforço particular presencial sai por cerca de R$ 47 a hora no Brasil. Compare o que cada opção entrega — e quando vale combinar as duas.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>17 set 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/vicio-redes-sociais-algoritmo-dopamina-2026" class="art-card fu" data-category="sec">
+            <div class="card-thumb g3">🧠</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-sec">Segurança</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Seu cérebro não é fraco — o TikTok é que foi feito pra viciar</h3>
+                <p class="art-excerpt card-excerpt">Vício em redes sociais não é falta de força de vontade — é recompensa variável e dopamina por design. Entenda como o algoritmo funciona e como reduzir o efeito.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>16 set 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/o-que-fazer-celular-velho-descarte-2026" class="art-card fu" data-category="mob">
+            <div class="card-thumb g5">📱</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-mob">Mobile</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Tem um celular na gaveta há dois anos? Você não está sozinho</h3>
+                <p class="art-excerpt card-excerpt">O Brasil é o 5º maior gerador de lixo eletrônico do mundo e descarta menos de 5% corretamente. Saiba como vender, reutilizar ou descartar seu celular velho de forma segura.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>7 set 2026</span><span class="sep">6 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/golpes-app-banco-pix-como-se-proteger-2026" class="art-card fu" data-category="sec">
+            <div class="card-thumb g3">🔐</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-sec">Segurança</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">24 milhões de brasileiros já caíram em golpes pelo Pix</h3>
+                <p class="art-excerpt card-excerpt">Golpe do falso suporte, Pix agendado, engenharia social com IA: os ataques a apps bancários evoluíram em 2026. Entenda como cada golpe funciona e o que fazer para não cair.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>7 set 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/carro-eletrico-brasil-2026-vale-a-pena" class="art-card fu" data-category="fut">
+            <div class="card-thumb g6">🔮</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-fut">Futuro</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Carro elétrico ficou mais caro em 2026 — mas o custo de rodar caiu</h3>
+                <p class="art-excerpt card-excerpt">Impostos de importação subiram progressivamente, mas o custo por km rodado caiu e a infraestrutura cresceu. Análise completa para decidir se vale a pena comprar elétrico no Brasil agora.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>3 set 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/ia-consumo-energia-impacto-ambiental-2026" class="art-card fu" data-category="ai">
+            <div class="card-thumb g1">🤖</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-ai">IA & ML</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Cada resposta do ChatGPT consome cerca de 10 vezes mais energia que uma busca no Google</h3>
+                <p class="art-excerpt card-excerpt">A IA generativa não é só uma revolução de produtividade — é uma revolução de consumo de energia. Data centers crescem em ritmo acelerado e o custo ambiental começa a aparecer.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>2 set 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/vpn-o-que-e-como-funciona-2026" class="art-card fu" data-category="sec">
+            <div class="card-thumb g3">🔐</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-sec">Segurança</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Seu Wi-Fi do café entrega tudo que você digita — VPN pode mudar isso</h3>
+                <p class="art-excerpt card-excerpt">VPN cria um túnel criptografado entre seu dispositivo e a internet. Mas nem toda VPN faz o que promete — e a gratuita pode ser o maior risco de todos. Guia prático.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>1 set 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/gerenciador-de-senhas-como-funciona-2026" class="art-card fu" data-category="sec">
+            <div class="card-thumb g3">🔐</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-sec">Segurança</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Você tem dezenas de senhas. Quantas reutiliza?</h3>
+                <p class="art-excerpt card-excerpt">Senhas repetidas são a porta de entrada de 80% dos ataques. Gerenciadores criam e guardam senhas únicas para cada conta — entenda como funcionam, quais são seguros e por que vale usar.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>1 set 2026</span><span class="sep">6 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/windows-copilot-plus-recall-2026" class="art-card fu" data-category="sw">
+            <div class="card-thumb g4">🖥️</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-sw">Software</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Seu PC tira print da sua tela a cada 5 segundos — e você provavelmente não sabe</h3>
+                <p class="art-excerpt card-excerpt">O Windows Recall captura tudo que você faz no PC para uma busca futura por IA — tudo local, nada vai para a nuvem. Entenda o que é Copilot+, por que gera polêmica e como desativar.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>28 ago 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/anel-inteligente-wearable-saude-2026" class="art-card fu" data-category="fut">
+            <div class="card-thumb g6">💍</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-fut">Futuro</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Esse anel pesa 3 gramas e sabe mais sobre o seu sono do que você</h3>
+                <p class="art-excerpt card-excerpt">Oura Ring Gen 4 e Samsung Galaxy Ring monitoram sono, frequência cardíaca e temperatura sem tela e com até 7 dias de bateria. O mercado de wearables de saúde vale US$ 2 bi e cresce 30% ao ano.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>27 ago 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/esim-como-funciona-brasil-2026" class="art-card fu" data-category="mob">
+            <div class="card-thumb g5">📶</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-mob">Mobile</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Você pode ter dois números no mesmo celular — sem usar dois chips</h3>
+                <p class="art-excerpt card-excerpt">O eSIM já está em 90% dos iPhones e nos Galaxy S25. No Brasil, Vivo, Claro, TIM e Oi ativam em minutos pelo app. Veja como funciona, quais celulares têm e como trocar de operadora sem sair de casa.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>26 ago 2026</span><span class="sep">6 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/ia-eleicoes-2026-deepfake" class="art-card fu" data-category="sec">
+            <div class="card-thumb g3">🗳️</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-sec">Segurança</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Você vai receber um vídeo do seu candidato que ele nunca gravou</h3>
+                <p class="art-excerpt card-excerpt">Deepfakes custam US$ 5 e chegam pelo WhatsApp antes de qualquer checagem. Com eleições municipais de 2026, o TSE regulamentou o uso de IA — mas identificar o falso ainda é seu trabalho.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>25 ago 2026</span><span class="sep">8 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/chip-2nm-processador-2026" class="art-card fu" data-category="hw">
+            <div class="card-thumb g2">💻</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-hw">Hardware</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">A TSMC está colocando 100 bilhões de transistores em algo menor que uma unha — e isso muda seu próximo celular</h3>
+                <p class="art-excerpt card-excerpt">Os chips de 2nm da TSMC estão em produção em massa em 2026. AMD, Apple e Nvidia já estão na fila. Entenda o que +15% de desempenho e -30% de consumo significam para o seu próximo celular ou notebook.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>24 ago 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/cursor-ai-copilot-programar-sem-codigo-2026" class="art-card fu" data-category="sw">
+            <div class="card-thumb g4">💻</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-sw">Software</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Um vice-diretor de escola criou um app em dois dias — sem escrever uma linha de código</h3>
+                <p class="art-excerpt card-excerpt">GitHub Copilot tem 4,7M assinantes; Cursor, Lovable e Bolt permitem criar apps sem programar. Guia prático para não-desenvolvedores sobre como a IA mudou o desenvolvimento em 2026.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>21 ago 2026</span><span class="sep">9 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/reconhecimento-facial-brasil-2026" class="art-card fu" data-category="sec">
+            <div class="card-thumb g3">👁️</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-sec">Segurança</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Seu rosto é escaneado ao embarcar no avião — e você concordou com isso?</h3>
+                <p class="art-excerpt card-excerpt">40% dos brasileiros já são monitorados por câmeras com reconhecimento facial. Aeroportos, metrô e bancos usam a tecnologia — mas a lei ainda não diz o que fazer quando ela erra.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>20 ago 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/ia-educacao-escola-brasil-2026" class="art-card fu" data-category="ai">
+            <div class="card-thumb g1">🎓</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-ai">IA & ML</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">O professor mandou usar o ChatGPT — mas a escola ainda não sabe o que fazer com isso</h3>
+                <p class="art-excerpt card-excerpt">O MEC publicou o primeiro guia nacional de IA para escolas em abril de 2026. Saiba o que muda para alunos e professores, quais ferramentas usar e os riscos reais do uso sem orientação.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>19 ago 2026</span><span class="sep">8 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/galaxy-ai-vs-apple-intelligence-2026" class="art-card fu" data-category="mob">
+            <div class="card-thumb g5">📱</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-mob">Mobile</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Você pagou caro por IA no celular — mas a IA da concorrente pode fazer mais</h3>
+                <p class="art-excerpt card-excerpt">Samsung tem mais recursos e suporte ao português; Apple tem mais privacidade e polimento. Comparativo completo com o que cada IA faz de verdade no seu celular em 2026.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>18 ago 2026</span><span class="sep">8 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/ia-agronegocio-brasil-2026" class="art-card fu" data-category="ai">
+            <div class="card-thumb g1">🤖</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-ai">IA & ML</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Seu pacote de açúcar foi colhido por um drone que viu a praga antes do produtor</h3>
+                <p class="art-excerpt card-excerpt">Drones com visão computacional reduziram o uso de defensivos em até 90% e robôs autônomos já operam no Cerrado. Como a IA está transformando o campo brasileiro em 2026.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>17 ago 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/ia-gerar-video-como-usar-2026" class="art-card fu" data-category="ai">
+            <div class="card-thumb g1">🎬</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-ai">IA & ML</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Os custos de produção de vídeo caíram 97% — e qualquer um pode usar agora</h3>
+                <p class="art-excerpt card-excerpt">Kling, Runway Gen-4 e Google Veo 3.1: como funciona a IA que gera vídeos, qual escolher e quanto custa. O Sora foi descontinuado em abril — veja o que veio no lugar.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>15 ago 2026</span><span class="sep">8 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/oculos-inteligentes-2026-guia" class="art-card fu" data-category="fut">
+            <div class="card-thumb g6">🕶️</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-fut">Futuro</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Você vai usar óculos para checar mensagens — e o momento chegou antes do esperado</h3>
+                <p class="art-excerpt card-excerpt">Ray-Ban Meta vendeu 2 milhões de pares, Samsung XR chega no 2º semestre e Xreal abre reservas com display abaixo de US$ 1.500. Guia completo com preços no Brasil e quando vale comprar.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>14 ago 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/ia-multimodal-o-que-e-como-funciona-2026" class="art-card fu" data-category="ai">
+            <div class="card-thumb g1">🤖</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-ai">IA & ML</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Você tirou foto da sua planta doente e a IA receitou o remédio — isso tem nome e está em todo lugar</h3>
+                <p class="art-excerpt card-excerpt">IA multimodal entende texto, imagem, áudio e vídeo ao mesmo tempo. O Gartner prevê 40% dos apps de IA como multimodais até 2027. Veja o que isso muda na prática.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>13 ago 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/agente-ia-substituindo-aplicativos-2026" class="art-card fu" data-category="sw">
+            <div class="card-thumb g4">📱</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-sw">Software</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">A Apple paga US$ 1 bilhão por ano para o Google virar seu assistente — e os apps nunca mais serão os mesmos</h3>
+                <p class="art-excerpt card-excerpt">Carl Pei (Nothing) disse que os apps vão acabar. A Apple paga US$ 1 bi/ano ao Google pelo Gemini. Entenda como o agente de IA está substituindo aplicativos em 2026.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>12 ago 2026</span><span class="sep">8 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/deepfake-voz-golpe-whatsapp-2026" class="art-card fu" data-category="sec">
+            <div class="card-thumb g3">🔐</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-sec">Segurança</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">A IA clonou a voz do filho em 15 segundos — e a mãe fez o Pix na mesma hora</h3>
+                <p class="art-excerpt card-excerpt">Deepfake de voz cresceu 830% no Brasil entre 2024 e 2025. Com 15 segundos de áudio, a IA clona qualquer voz. Veja como o golpe funciona no WhatsApp e como a palavra-código te protege.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>11 ago 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/plano-brasileiro-inteligencia-artificial-pbia-2026" class="art-card fu" data-category="ai">
+            <div class="card-thumb g1">🤖</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-ai">IA & ML</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">R$ 23 bilhões para IA: o que o governo brasileiro planeja fazer com esse dinheiro</h3>
+                <p class="art-excerpt card-excerpt">O PBIA investe R$ 23 bi em IA até 2028 — supercomputador, nuvem soberana e capacitação. Entenda o que muda para o brasileiro comum.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>10 ago 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/bateria-estado-solido-celular-2026" class="art-card fu" data-category="hw">
+            <div class="card-thumb g2">🔋</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-hw">Hardware</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">A guerra contra a tomada: as duas tecnologias que querem aposentar seu carregador</h3>
+                <p class="art-excerpt card-excerpt">Baterias sólidas de Toyota e Samsung dobram a autonomia; chips neuromórficos gastam até 1.000x menos energia. Entenda qual revolução chega primeiro ao seu bolso.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>7 ago 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/celular-dobravel-vale-a-pena-2026" class="art-card fu" data-category="mob">
+            <div class="card-thumb g5">📱</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-mob">Mobile</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Até a Apple dobrou: vale a pena entrar na onda dos foldables agora?</h3>
+                <p class="art-excerpt card-excerpt">iPhone dobrável chega em setembro por até US$ 2.400 e a Samsung prepara um Galaxy formato &quot;passaporte&quot;. Preços no Brasil, prós e contras — e se compensa esperar.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>6 ago 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/pc-com-ia-npu-vale-a-pena-2026" class="art-card fu" data-category="hw">
+            <div class="card-thumb g2">💻</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-hw">Hardware</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">A Nvidia quer transformar seu próximo notebook numa máquina de IA</h3>
+                <p class="art-excerpt card-excerpt">O RTX Spark, chip ARM da Nvidia com 1 petaflop de IA, chega no 2º semestre e muda a conta de quem vai comprar notebook. Veja quando a NPU vale a pena — e quando esperar.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>5 ago 2026</span><span class="sep">8 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/robo-humanoide-2026" class="art-card fu" data-category="fut">
+            <div class="card-thumb g2">🔮</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-fut">Futuro</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">A fila para levar um robô para casa já tem 10 mil nomes</h3>
+                <p class="art-excerpt card-excerpt">Na CES 2026 os humanoides ganharam preço de prateleira: de US$ 2.899 a US$ 20 mil, com 10 mil reservas em 5 dias e mercado de US$ 38 bi projetado pela Goldman Sachs.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>4 ago 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/agente-de-ia-o-que-e-2026" class="art-card fu" data-category="ai">
+            <div class="card-thumb g1">🤖</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-ai">IA & ML</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Enquanto você lê este texto, uma IA está terminando o trabalho de alguém</h3>
+                <p class="art-excerpt card-excerpt">Chatbot responde, agente resolve: entenda o que é um agente de IA, como ele age sozinho, os casos reais de 2026 no Brasil — e os riscos dessa autonomia.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>3 ago 2026</span><span class="sep">8 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/como-explicar-ia-para-leigos-2026" class="art-card fu" data-category="ai">
+            <div class="card-thumb g1">🤖</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-ai">IA & ML</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Como Explicar IA pra Sua Avó (e Por Que Você Deveria)</h3>
+                <p class="art-excerpt card-excerpt">Do algoritmo ao agente autônomo: as 5 melhores analogias para entender — e explicar — inteligência artificial sem uma linha de jargão.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>1 ago 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/qualquer-pessoa-pode-criar-um-app-2026" class="art-card fu" data-category="sw">
+            <div class="card-thumb g4">🧩</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-sw">Software</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Qualquer pessoa pode criar um app agora — e isso vai mudar tudo</h3>
+                <p class="art-excerpt card-excerpt">75% das novas apps de 2026 serão feitas sem programação. Entenda o que é low-code, quem já usa e o risco que ninguém menciona na apresentação de vendas.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>1 ago 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/celular-obsoleto-ia-npu-2026" class="art-card fu" data-category="mob">
+            <div class="card-thumb g5">📱</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-mob">Mobile</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Seu Celular Está Ficando Obsoleto Mais Rápido — E Agora a Culpa É da IA</h3>
+                <p class="art-excerpt card-excerpt">A NPU virou o novo divisor: sem ela, seu celular fica de fora das funções de IA — e o próximo que você comprar vai custar mais por causa disso.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>1 ago 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/futuro-profissoes-2026-2030" class="art-card fu" data-category="fut">
+            <div class="card-thumb g6">🔮</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-fut">Futuro</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">2026–2030: o mapa das profissões que vão sumir — e as que vão explodir</h3>
+                <p class="art-excerpt card-excerpt">Quanto mais repetitiva sua tarefa, maior o risco. Veja quais carreiras estão em colapso, quais vão explodir e o que fazer agora.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>1 ago 2026</span><span class="sep">8 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/phishing-whatsapp-email-2026" class="art-card fu" data-category="sec">
+            <div class="card-thumb g3">🔒</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-sec">Segurança</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">O golpe que chega pela tela do seu celular: como o phishing dominou 2026</h3>
+                <p class="art-excerpt card-excerpt">WhatsApp, e-mail, SMS — os golpistas estão em todo lugar. Entenda como o phishing funciona, por que o Brasil é o 2º mais atacado do mundo e o que fazer para não cair.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>1 ago 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/perigo-quantico-criptografia-2026" class="art-card fu" data-category="sec">
+            <div class="card-thumb g3">⚛️</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-sec">Segurança</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Seus dados bancários de hoje podem ser lidos por hackers em 2031</h3>
+                <p class="art-excerpt card-excerpt">Hackers já coletam dados criptografados para abrir depois com computadores quânticos. Entenda o Q-Day e o que já está sendo feito.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>1 ago 2026</span><span class="sep">7 min</span></div>
+            </div>
+        </a>
+        <a href="/artigos/ia-generativa-mercado-trabalho-2026" class="art-card fu" data-category="ai">
+            <div class="card-thumb g1">🤖</div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="tag tag-ai">IA & ML</span>
+                    <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+                </div>
+                <h3 class="art-title card-title">Como a IA Generativa está mudando o mercado de trabalho em 2026</h3>
+                <p class="art-excerpt card-excerpt">5,4% dos trabalhadores brasileiros em alta exposição. Quem perde, quem ganha e o que fazer — com dados do Brookings e PwC.</p>
+                <div class="art-meta" style="margin-top:.625rem;"><span>1 ago 2026</span><span class="sep">8 min</span></div>
+            </div>
+        </a>
+    </div>
+</div>
+        </div>
+        <div id="cats-root" data-static>
+            <div class="wrap section">
+                <div class="sec-head fu">
+                    <h2 class="sec-title"><span class="sec-bar" aria-hidden="true"></span>Explorar por categoria</h2>
+                </div>
+                <div class="cat-grid">
+                    <a href="#ultimas" class="cat-card c-ai fu" data-filter="ai">
+                        <span class="cat-icon">🤖</span>
+                        <span class="cat-name">IA & Machine Learning</span>
+                        <span class="cat-count">12 artigos</span>
+                    </a>
+                    <a href="#ultimas" class="cat-card c-hw fu" data-filter="hw">
+                        <span class="cat-icon">🔧</span>
+                        <span class="cat-name">Hardware</span>
+                        <span class="cat-count">4 artigos</span>
+                    </a>
+                    <a href="#ultimas" class="cat-card c-sec fu" data-filter="sec">
+                        <span class="cat-icon">🔒</span>
+                        <span class="cat-name">Cibersegurança</span>
+                        <span class="cat-count">10 artigos</span>
+                    </a>
+                    <a href="#ultimas" class="cat-card c-sw fu" data-filter="sw">
+                        <span class="cat-icon">💻</span>
+                        <span class="cat-name">Software</span>
+                        <span class="cat-count">4 artigos</span>
+                    </a>
+                    <a href="#ultimas" class="cat-card c-mob fu" data-filter="mob">
+                        <span class="cat-icon">📱</span>
+                        <span class="cat-name">Mobile</span>
+                        <span class="cat-count">8 artigos</span>
+                    </a>
+                    <a href="#ultimas" class="cat-card c-fut fu" data-filter="fut">
+                        <span class="cat-icon">🚀</span>
+                        <span class="cat-name">Futuro da Tech</span>
+                        <span class="cat-count">8 artigos</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </main>
+        <div id="footer-root" data-static>
+            <footer class="footer">
+                <div class="footer-grid">
+                    <div>
+                        <div class="f-logo">Yarivi</div>
+                        <p class="f-desc">Tecnologia explicada com clareza. Para quem quer entender o mundo digital sem decodificar jargões.</p>
+                    </div>
+                    <div>
+                        <div class="f-col-title">Categorias</div>
+                        <ul class="f-links">
+                            <li><a href="/#ultimas" data-filter="ai">IA & Machine Learning</a></li>
+                            <li><a href="/#ultimas" data-filter="hw">Hardware</a></li>
+                            <li><a href="/#ultimas" data-filter="sec">Cibersegurança</a></li>
+                            <li><a href="/#ultimas" data-filter="sw">Software</a></li>
+                            <li><a href="/#ultimas" data-filter="mob">Mobile</a></li>
+                            <li><a href="/#ultimas" data-filter="fut">Futuro da Tech</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="f-col-title">Institucional</div>
+                        <ul class="f-links">
+                            <li><a href="/sobre">Sobre o Yarivi</a></li>
+                            <li><a href="/sobre#politica-editorial">Política editorial</a></li>
+                            <li><a href="/privacidade">Política de Privacidade</a></li>
+                            <li><a href="/termos">Termos de Uso</a></li>
+                            <li><a href="/contato">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <span>© 2026 Yarivi. Todos os direitos reservados.</span>
+                    <span>Feito com cuidado para quem ama tecnologia</span>
+                </div>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
