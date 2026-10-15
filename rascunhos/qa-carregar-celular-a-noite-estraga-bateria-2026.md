@@ -59,7 +59,7 @@
 
 | URL | Status |
 |-----|--------|
-| https://www.samsung.com/br/support/mobile-devices/galaxy-battery-protection-feature-in-one-ui-6-1/ | ✅ confirmado na pesquisa (WebFetch/WebSearch em 29/09) |
+| https://www.samsung.com/africa_pt/support/mobile-devices/galaxy-battery-protection-feature-in-one-ui-6-1 | ✅ confirmado em 12/10 (substitui a página da Samsung Brasil, que estava fora do ar) |
 | https://olhardigital.com.br/curiosidades/2026/09/20/o-habito-de-carregar-o-celular-durante-a-noite-inteira-nao-estraga-mais/ | ✅ confirmado na pesquisa (WebFetch/WebSearch em 29/09) |
 | https://tecnoblog.net/noticias/a-bateria-do-iphone-15-dura-mais-do-que-se-imaginava/ | ✅ confirmado na pesquisa (WebFetch/WebSearch em 29/09) |
 | https://www.batteryuniversity.com/article/bu-808-how-to-prolong-lithium-based-batteries/ | ✅ confirmado na pesquisa (WebFetch/WebSearch em 29/09) |
@@ -88,7 +88,7 @@
 
 ## Auditoria de dados (passo 2.6)
 
-- **Mantidos: tabelas de retenção por temperatura/carga e ciclos vs profundidade (Battery University BU-808); modos Básico/Adaptativo/Máximo e limite de 85% pré-6.1 (Samsung Brasil); iPhone 15: 80% após 1.000 ciclos vs 500 antes (Apple via Tecnoblog); faixa 20–80% (Canaltech).**
+- **Mantidos: tabelas de retenção por temperatura/carga e ciclos vs profundidade (Battery University BU-808); modos Básico/Adaptativo/Máximo e limite de 85% pré-6.1 (suporte oficial Samsung, em português); iPhone 15: 80% após 1.000 ciclos vs 500 antes (Apple via Tecnoblog); faixa 20–80% (Canaltech).**
 - **Removidos: '33% de perda após 10 ciclos de carga ultrarrápida' e '20% a menos em 2 anos com carregador de 5W' (Olhar Digital, sem estudo verificável); '300–500 / 500–800 ciclos' do Canaltech (sem estudo citado). Frases reescritas sem números.**
 
 ---
