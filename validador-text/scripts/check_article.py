@@ -34,17 +34,17 @@ def extract_tag(html, tag, attr=None, attr_val=None):
     return m.group(1).strip() if m else ""
 
 def extract_meta(html, name):
-    pattern = rf'<meta[^>]*name=["\']?{re.escape(name)}["\']?[^>]*content=["\']([^"\']*)["\']'
+    pattern = rf'<meta[^>]*name=["\']?{re.escape(name)}["\']?[^>]*content=(["\'])(.*?)\1'
     m = re.search(pattern, html, re.IGNORECASE)
     if not m:
-        pattern = rf'<meta[^>]*content=["\']([^"\']*)["\'][^>]*name=["\']?{re.escape(name)}["\']?'
+        pattern = rf'<meta[^>]*content=(["\'])(.*?)\1[^>]*name=["\']?{re.escape(name)}["\']?'
         m = re.search(pattern, html, re.IGNORECASE)
-    return m.group(1).strip() if m else ""
+    return m.group(2).strip() if m else ""
 
 def extract_og(html, prop):
-    pattern = rf'<meta[^>]*property=["\']?{re.escape(prop)}["\']?[^>]*content=["\']([^"\']*)["\']'
+    pattern = rf'<meta[^>]*property=["\']?{re.escape(prop)}["\']?[^>]*content=(["\'])(.*?)\1'
     m = re.search(pattern, html, re.IGNORECASE)
-    return m.group(1).strip() if m else ""
+    return m.group(2).strip() if m else ""
 
 def strip_html(html):
     """Remove todas as tags HTML, retorna texto limpo."""
