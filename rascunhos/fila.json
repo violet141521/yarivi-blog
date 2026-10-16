@@ -76,6 +76,57 @@
       "criado_em": "2026-07-16",
       "aprovado_em": "2026-08-02",
       "publicado_em": "2026-08-07"
+    },
+    {
+      "slug": "is-cracked-software-safe-infostealer",
+      "titulo_seo": "Is Cracked Software Safe? The Infostealer Risk | Yarivi",
+      "manchete_h1": "That “free” copy of Office could cost you every password you own",
+      "categoria": "sw",
+      "emoji": "💾",
+      "excerpt": "Cracks and activators are favorite bait for infostealers, malware that steals your passwords in seconds. See the risk and what to do if you installed one.",
+      "read_time": "6 min",
+      "keyword": "is cracked software safe",
+      "status": "aguardando-revisao",
+      "ordem": 6,
+      "criado_em": "2026-10-15",
+      "idioma": "en",
+      "traducao_de": "programa-crackeado-infostealer-perigo-2026",
+      "arquivo": "rascunhos/en/is-cracked-software-safe-infostealer.html",
+      "url_final": "/en/articles/is-cracked-software-safe-infostealer"
+    },
+    {
+      "slug": "explain-ai-in-simple-terms",
+      "titulo_seo": "Explain AI in Simple Terms: 5 Analogies That Work | Yarivi",
+      "manchete_h1": "How to explain AI to your grandma (and why you should)",
+      "categoria": "ai",
+      "emoji": "🤖",
+      "excerpt": "An algorithm is a cake recipe. Machine learning is a recipe that rewrites itself. Five analogies to understand — and explain — AI in simple terms.",
+      "read_time": "7 min",
+      "keyword": "explain AI in simple terms",
+      "status": "aguardando-revisao",
+      "ordem": 7,
+      "criado_em": "2026-10-15",
+      "idioma": "en",
+      "traducao_de": "como-explicar-ia-para-leigos-2026",
+      "arquivo": "rascunhos/en/explain-ai-in-simple-terms.html",
+      "url_final": "/en/articles/explain-ai-in-simple-terms"
+    },
+    {
+      "slug": "why-social-media-is-addictive-dopamine",
+      "titulo_seo": "Why Social Media Is Addictive: The Dopamine Loop | Yarivi",
+      "manchete_h1": "Your brain isn’t weak — TikTok was built to hook you",
+      "categoria": "sec",
+      "emoji": "🔒",
+      "excerpt": "It isn't a lack of willpower: feeds use dopamine and variable rewards to keep you scrolling. Learn how the algorithm works and how to cut back today.",
+      "read_time": "6 min",
+      "keyword": "why is social media addictive",
+      "status": "aguardando-revisao",
+      "ordem": 8,
+      "criado_em": "2026-10-15",
+      "idioma": "en",
+      "traducao_de": "vicio-redes-sociais-algoritmo-dopamina-2026",
+      "arquivo": "rascunhos/en/why-social-media-is-addictive-dopamine.html",
+      "url_final": "/en/articles/why-social-media-is-addictive-dopamine"
     }
   ],
   "novos_rascunhos": [
@@ -702,10 +753,11 @@
       "excerpt": "Deixar o celular carregando a noite toda estraga a bateria? Veja os mitos, as verdades e os ajustes de iPhone e Samsung que fazem a bateria durar mais.",
       "read_time": "6 min",
       "keyword": "deixar celular carregando a noite toda estraga",
-      "status": "aprovado",
+      "status": "publicado",
       "ordem": 51,
       "criado_em": "2026-09-29",
-      "aprovado_em": "2026-10-12"
+      "aprovado_em": "2026-10-12",
+      "publicado_em": "2026-10-16"
     },
     {
       "slug": "gemini-4-argon-o-que-e-2026",
