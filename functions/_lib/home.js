@@ -6,8 +6,10 @@
  *
  * Fonte dos dados:
  *   - artigos/_catalog.json  → metadata de todos os artigos
- *   - KV YARIVI_PUBLISHED    → quais slugs estão visíveis na home
+ *   - data_pub de cada artigo → aparece sozinho quando a data chega (fuso São Paulo)
+ *   - KV YARIVI_PUBLISHED    → libera um slug antes da data (/api/publicar)
  */
+import { hojeBR, estaNoAr } from './datas.js';
 
 export const CAT = {
   ai:  { label: 'IA & ML',   cls: 'tag-ai'  },
@@ -115,16 +117,15 @@ export function latestHTML(arts) {
 }
 
 /**
- * Lista de artigos visíveis na home (catálogo ∩ KV), mais recente primeiro.
- * Guarda o resultado no cache da borda por 60s para não gastar uma operação
- * "list" do KV a cada visita (o plano grátis do KV tem 1.000 lists/dia).
- * Retorna null se o KV não estiver configurado.
+ * Lista de artigos visíveis na home, mais recente primeiro: data_pub <= hoje
+ * (São Paulo) OU slug liberado no KV. Guarda o resultado no cache da borda por
+ * 60s para não gastar uma operação "list" do KV a cada visita (o plano grátis
+ * do KV tem 1.000 lists/dia). Sem KV configurado, vale só a regra da data.
  */
 export async function getVisibleArticles(env, origin) {
-  if (!env.YARIVI_PUBLISHED) return null;
-
+  const hoje = hojeBR();
   const cache = typeof caches !== 'undefined' ? caches.default : null;
-  const cacheKey = new Request(`${origin}/__yarivi-cache/home-visible-v1`);
+  const cacheKey = new Request(`${origin}/__yarivi-cache/home-visible-v2-${hoje}`);
   if (cache) {
     const hit = await cache.match(cacheKey);
     if (hit) return hit.json();
@@ -134,12 +135,19 @@ export async function getVisibleArticles(env, origin) {
   if (!catalogRes.ok) throw new Error(`Catálogo HTTP ${catalogRes.status}`);
   const { articles } = await catalogRes.json();
 
-  const kvList = await env.YARIVI_PUBLISHED.list();
-  const published = new Set(kvList.keys.map(k => k.name));
+  let liberados = new Set();
+  if (env.YARIVI_PUBLISHED) {
+    try {
+      const kvList = await env.YARIVI_PUBLISHED.list();
+      liberados = new Set(kvList.keys.map(k => k.name));
+    } catch (err) {
+      console.error('[yarivi/home] KV indisponível, usando só a data:', err.message);
+    }
+  }
 
   // Artigos com mesma data mantêm a ordem do catálogo (sort estável)
   const visible = articles
-    .filter(a => published.has(a.slug))
+    .filter(a => estaNoAr(a, hoje, liberados))
     .sort((a, b) => new Date(b.data_pub) - new Date(a.data_pub));
 
   if (cache) {

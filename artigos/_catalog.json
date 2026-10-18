@@ -2,6 +2,56 @@
   "_comment": "Catálogo de todos os artigos do Yarivi. Ordem importa: artigos com mesma data_pub aparecem na ordem deste array. Não edite manualmente — atualizado pela skill signal-publicador.",
   "articles": [
     {
+      "slug": "googlebook-o-que-e-preco-brasil-2026",
+      "manchete": "O notebook do Google agora roda os apps do seu celular — e não é mais um Chromebook barato",
+      "categoria": "hw",
+      "emoji": "💻",
+      "grad": "g2",
+      "excerpt": "O Googlebook junta Chrome e apps de Android num notebook premium com Gemini embutido. Modelos, preços nos EUA, diferença para o Chromebook e se vale esperar no Brasil.",
+      "read_time": "6 min",
+      "data_pub": "2026-10-23"
+    },
+    {
+      "slug": "passkey-o-que-e-como-ativar-2026",
+      "manchete": "A senha que você não precisa decorar — e que nenhum site falso consegue roubar",
+      "categoria": "sec",
+      "emoji": "🔒",
+      "grad": "g3",
+      "excerpt": "A passkey troca a senha pela digital ou rosto e deixa o phishing sem o que roubar. Como funciona e o passo a passo para ativar no Google e no WhatsApp.",
+      "read_time": "6 min",
+      "data_pub": "2026-10-22"
+    },
+    {
+      "slug": "celular-esquentando-o-que-fazer-2026",
+      "manchete": "Seu celular está quente demais? Nunca coloque na geladeira — faça isto",
+      "categoria": "mob",
+      "emoji": "📱",
+      "grad": "g5",
+      "excerpt": "Celular esquentando muito? As causas mais comuns, como esfriar do jeito certo, por que a geladeira é má ideia e os sinais de que é caso de assistência técnica.",
+      "read_time": "6 min",
+      "data_pub": "2026-10-21"
+    },
+    {
+      "slug": "gemini-4-argon-o-que-e-2026",
+      "manchete": "O Google lançou sua IA mais poderosa — e quase ninguém pode usar",
+      "categoria": "ai",
+      "emoji": "🤖",
+      "grad": "g1",
+      "excerpt": "O Google revelou o Gemini 4 Argon, seu modelo de IA mais avançado — mas só especialistas em segurança podem usar. O que ele faz, quanto custa e como se compara ao GPT-6 Astra e ao Claude.",
+      "read_time": "6 min",
+      "data_pub": "2026-10-20"
+    },
+    {
+      "slug": "novidades-do-pix-2026-o-que-muda",
+      "manchete": "As novas regras do Pix já foram aprovadas — mas quase tudo só chega em 2027",
+      "categoria": "sec",
+      "emoji": "🔒",
+      "grad": "g3",
+      "excerpt": "Boleto com QR Code do Pix, Pix Automático na conta-salário e aviso obrigatório de marcação de fraude: o que a Resolução BCB 587 muda e as datas reais (spoiler: 2027).",
+      "read_time": "6 min",
+      "data_pub": "2026-10-19"
+    },
+    {
       "slug": "carregar-celular-a-noite-estraga-bateria-2026",
       "manchete": "Deixar o celular carregando a noite toda não é o vilão — o problema é outro",
       "categoria": "mob",

@@ -3,6 +3,8 @@
  * GET /api/publicar?slug=[slug]&key=[PUBLISH_KEY]
  *
  * Adiciona o slug ao KV YARIVI_PUBLISHED → artigo aparece na home imediatamente.
+ * Desde 2026-10-17 os artigos aparecem sozinhos quando a data_pub chega; este
+ * endpoint serve para liberar um artigo ANTES da data dele.
  * Funciona em qualquer navegador (celular, tablet, PC) sem precisar do Claude.
  *
  * Variáveis de ambiente necessárias (configurar no Cloudflare Pages):

@@ -1,6 +1,6 @@
 {
-  "horario_publicacao": "08:00",
-  "dias": "segunda a sexta",
+  "horario_publicacao": "00:00 (automático pela data_pub, fuso America/Sao_Paulo)",
+  "dias": "segunda a sexta — 1 por dia útil, subidos em lote semanal",
   "fila": [
     {
       "slug": "agente-de-ia-o-que-e-2026",
@@ -768,9 +768,12 @@
       "excerpt": "O Google revelou o Gemini 4 Argon, seu modelo de IA mais avançado — mas só especialistas em segurança podem usar. O que ele faz, quanto custa e como se compara ao GPT-6 Astra e ao Claude.",
       "read_time": "6 min",
       "keyword": "gemini 4 argon",
-      "status": "aguardando-revisao",
-      "ordem": 52,
-      "criado_em": "2026-10-12"
+      "status": "publicado",
+      "ordem": 55,
+      "criado_em": "2026-10-12",
+      "aprovado_em": "2026-10-16",
+      "publicado_em": "2026-10-20",
+      "subido_em": "2026-10-17"
     },
     {
       "slug": "googlebook-o-que-e-preco-brasil-2026",
@@ -781,9 +784,12 @@
       "excerpt": "O Googlebook junta Chrome e apps de Android num notebook premium com Gemini embutido. Modelos, preços nos EUA, diferença para o Chromebook e se vale esperar no Brasil.",
       "read_time": "6 min",
       "keyword": "googlebook",
-      "status": "aguardando-revisao",
-      "ordem": 53,
-      "criado_em": "2026-10-12"
+      "status": "publicado",
+      "ordem": 64,
+      "criado_em": "2026-10-12",
+      "aprovado_em": "2026-10-17",
+      "publicado_em": "2026-10-23",
+      "subido_em": "2026-10-17"
     },
     {
       "slug": "celular-esquentando-o-que-fazer-2026",
@@ -794,9 +800,12 @@
       "excerpt": "Celular esquentando muito? As causas mais comuns, como esfriar do jeito certo, por que a geladeira é má ideia e os sinais de que é caso de assistência técnica.",
       "read_time": "6 min",
       "keyword": "celular esquentando",
-      "status": "aguardando-revisao",
-      "ordem": 54,
-      "criado_em": "2026-10-12"
+      "status": "publicado",
+      "ordem": 62,
+      "criado_em": "2026-10-12",
+      "aprovado_em": "2026-10-17",
+      "publicado_em": "2026-10-21",
+      "subido_em": "2026-10-17"
     },
     {
       "slug": "novidades-do-pix-2026-o-que-muda",
@@ -807,9 +816,12 @@
       "excerpt": "Boleto com QR Code do Pix, Pix Automático na conta-salário e aviso obrigatório de marcação de fraude: o que a Resolução BCB 587 muda e as datas reais (spoiler: 2027).",
       "read_time": "6 min",
       "keyword": "novidades do pix",
-      "status": "aguardando-revisao",
-      "ordem": 55,
-      "criado_em": "2026-10-12"
+      "status": "publicado",
+      "ordem": 52,
+      "criado_em": "2026-10-12",
+      "aprovado_em": "2026-10-16",
+      "publicado_em": "2026-10-19",
+      "subido_em": "2026-10-17"
     },
     {
       "slug": "passkey-o-que-e-como-ativar-2026",
@@ -820,9 +832,82 @@
       "excerpt": "A passkey troca a senha pela digital ou rosto e deixa o phishing sem o que roubar. Como funciona e o passo a passo para ativar no Google e no WhatsApp.",
       "read_time": "6 min",
       "keyword": "passkey o que é",
-      "status": "aguardando-revisao",
-      "ordem": 56,
-      "criado_em": "2026-10-12"
+      "status": "publicado",
+      "ordem": 63,
+      "criado_em": "2026-10-12",
+      "aprovado_em": "2026-10-17",
+      "publicado_em": "2026-10-22",
+      "subido_em": "2026-10-17"
+    },
+    {
+      "slug": "heranca-digital-contas-apos-morte-2026",
+      "titulo_seo": "Herança digital: o que acontece com suas contas | Yarivi",
+      "manchete_h1": "Suas fotos vão sobreviver a você. A questão é se alguém vai conseguir abri-las",
+      "categoria": "sec",
+      "emoji": "🔒",
+      "excerpt": "Fotos, e-mails e arquivos podem sumir ou ficar trancados para sempre. Veja o que Google, Apple, Facebook e Microsoft fazem com suas contas e como deixar tudo pronto.",
+      "read_time": "7 min",
+      "keyword": "herança digital",
+      "status": "aprovado",
+      "ordem": 67,
+      "criado_em": "2026-10-17",
+      "aprovado_em": "2026-10-17"
+    },
+    {
+      "slug": "gta-6-requisitos-pc-console-2026",
+      "titulo_seo": "GTA 6: requisitos, consoles e quando chega ao PC | Yarivi",
+      "manchete_h1": "GTA 6 chega em 19 de novembro — mas quem joga no PC vai ter que esperar",
+      "categoria": "hw",
+      "emoji": "🎮",
+      "excerpt": "GTA 6 sai em 19 de novembro só para PS5 e Xbox Series X|S. Veja em quais aparelhos roda, como deve ficar o desempenho e o que se sabe da versão para PC.",
+      "read_time": "5 min",
+      "keyword": "gta 6 requisitos",
+      "status": "aprovado",
+      "ordem": 66,
+      "criado_em": "2026-10-17",
+      "aprovado_em": "2026-10-17"
+    },
+    {
+      "slug": "wi-fi-mesh-vale-a-pena-2026",
+      "titulo_seo": "Wi-Fi mesh vale a pena? Quando usar e quando não | Yarivi",
+      "manchete_h1": "O problema do seu Wi-Fi pode não ser a internet — pode ser uma parede",
+      "categoria": "hw",
+      "emoji": "📶",
+      "excerpt": "Sinal caindo no quarto do fundo? Entenda a diferença entre mesh e repetidor, quando o mesh resolve e quando basta mudar o roteador de lugar.",
+      "read_time": "6 min",
+      "keyword": "wi-fi mesh vale a pena",
+      "status": "aprovado",
+      "ordem": 69,
+      "criado_em": "2026-10-17",
+      "aprovado_em": "2026-10-17"
+    },
+    {
+      "slug": "trocar-hd-por-ssd-vale-a-pena-2026",
+      "titulo_seo": "Trocar HD por SSD vale a pena? Guia do upgrade | Yarivi",
+      "manchete_h1": "Seu notebook não está lento por causa da idade — está lento por causa de um disco que gira",
+      "categoria": "hw",
+      "emoji": "💾",
+      "excerpt": "O disco que gira é o maior freio de um notebook antigo. Veja quanto um SSD acelera, qual tipo é compatível, como fazer a troca e como lidar com a alta dos preços.",
+      "read_time": "6 min",
+      "keyword": "trocar hd por ssd vale a pena",
+      "status": "aprovado",
+      "ordem": 65,
+      "criado_em": "2026-10-17",
+      "aprovado_em": "2026-10-17"
+    },
+    {
+      "slug": "ia-desalinhada-o-que-e-2026",
+      "titulo_seo": "IA desalinhada: o que é e por que burla regras | Yarivi",
+      "manchete_h1": "A IA recebeu uma regra, entendeu a regra — e decidiu contorná-la",
+      "categoria": "ai",
+      "emoji": "🤖",
+      "excerpt": "Modelos de IA já esconderam erros, driblaram bloqueios e até chantagearam em testes. Entenda o que é desalinhamento, o que de fato aconteceu e por que não é ficção científica.",
+      "read_time": "6 min",
+      "keyword": "ia desalinhada",
+      "status": "aprovado",
+      "ordem": 68,
+      "criado_em": "2026-10-17",
+      "aprovado_em": "2026-10-17"
     }
   ]
 }
