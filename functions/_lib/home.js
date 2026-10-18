@@ -1,7 +1,7 @@
 /**
  * Yarivi — renderização das manchetes da home (compartilhado)
  * Usado por:
- *   - functions/index.js                 → injeta as manchetes direto no HTML da home ("/")
+ *   - functions/index.js                 → injeta o card do hero e as manchetes direto no HTML da home ("/")
  *   - functions/partials/_middleware.js  → serve /partials/featured.html e /partials/latest.html
  *
  * Fonte dos dados:
@@ -29,14 +29,49 @@ export function fmtDate(iso) {
   return `${d} ${meses[m - 1]} ${y}`;
 }
 
+// Capa do artigo (campos img/thumb do catálogo); sem imagem, mostra o emoji
+function cover(src, emoji, lazy = true) {
+  if (!src) return emoji;
+  return `<img src="${esc(src)}" alt="" width="1536" height="1024" decoding="async"${lazy ? ' loading="lazy"' : ''}>`;
+}
+
+// Card ao lado do título (hero): o último artigo publicado
+export function heroHTML(arts) {
+  const a = arts[0];
+  if (!a) return '';
+  const c = CAT[a.categoria] || { label: a.categoria, cls: '' };
+  const img = a.img
+    ? `<div class="hcard-img has-img" aria-hidden="true"><img src="${esc(a.img)}" alt="" width="1536" height="1024" decoding="async" fetchpriority="high"></div>`
+    : `<div class="hcard-img ${a.grad}" aria-hidden="true"><span class="hcard-emoji">${a.emoji}</span></div>`;
+  return `
+                    <a href="/artigos/${a.slug}" class="hero-card" aria-label="Ler: ${esc(a.manchete)}">
+                        ${img}
+                        <div class="hcard-body">
+                            <div class="tags">
+                                <span class="tag ${c.cls}">${c.label}</span>
+                                <span class="tag tag-dest">Mais recente</span>
+                            </div>
+                            <h2 class="art-title hcard-title">${esc(a.manchete)}</h2>
+                            <p class="art-excerpt">${esc(a.excerpt)}</p>
+                            <div class="art-meta">
+                                <span>${fmtDate(a.data_pub)}</span>
+                                <span class="sep">${a.read_time} de leitura</span>
+                            </div>
+                            <span class="read-link" aria-hidden="true">Ler artigo →</span>
+                        </div>
+                    </a>`;
+}
+
+// "Em destaque" começa no 2º artigo — o mais recente já está no card do hero
 export function featuredHTML(arts) {
+  arts = arts.slice(1);
   if (!arts.length) return '';
   const [main, ...sides] = arts.slice(0, 5);
   const mc = CAT[main.categoria] || { label: main.categoria, cls: '' };
 
   const mainCard = `
         <a href="/artigos/${main.slug}" class="feat-main fu" aria-label="Ler: ${esc(main.manchete)}">
-            <div class="feat-img" aria-hidden="true">${main.emoji}</div>
+            <div class="feat-img${main.img ? ' has-img' : ''}" aria-hidden="true">${cover(main.img, main.emoji, false)}</div>
             <div class="feat-body">
                 <div class="tags">
                     <span class="tag ${mc.cls}">${mc.label}</span>
@@ -57,7 +92,7 @@ export function featuredHTML(arts) {
     const sc = CAT[a.categoria] || { label: a.categoria, cls: '' };
     return `
             <a href="/artigos/${a.slug}" class="side-card fu">
-                <div class="side-icon">${a.emoji}</div>
+                <div class="side-icon${a.thumb ? ' has-img' : ''}" aria-hidden="true">${cover(a.thumb, a.emoji)}</div>
                 <div>
                     <div class="tags">
                         <span class="tag ${sc.cls}">${sc.label}</span>
@@ -91,7 +126,7 @@ export function latestHTML(arts) {
     const cat = CAT[a.categoria] || { label: a.categoria, cls: '' };
     return `
         <a href="/artigos/${a.slug}" class="art-card fu" data-category="${a.categoria}">
-            <div class="card-thumb ${a.grad}">${a.emoji}</div>
+            <div class="card-thumb ${a.grad}${a.thumb ? ' has-img' : ''}" aria-hidden="true">${cover(a.thumb, a.emoji)}</div>
             <div class="card-body">
                 <div class="tags">
                     <span class="tag ${cat.cls}">${cat.label}</span>

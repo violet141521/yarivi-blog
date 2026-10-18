@@ -9,17 +9,20 @@ STATUS: CONFIGURADO — deploy automático via git push para o branch main.
 - **Método:** integração Git — qualquer push para `main` dispara deploy automático
 - **Sem token necessário:** o deploy acontece via GitHub; basta `git push origin main`
 
-## Comando de deploy (executar após publicar artigo)
+## Comando de deploy (executar após subir o lote da semana)
 
 ```bash
 cd C:\Repositorio\ClaudeProject\Aula1\BlogTI
-git add artigos/{SLUG}.html artigos/_catalog.json sitemap.xml rascunhos/fila.json
-git commit -m "feat: publica {SLUG}"
+node scripts/gerar-sitemap.mjs
+node scripts/gerar-home-estatica.mjs
+git add artigos/{SLUG1}.html artigos/{SLUG2}.html ... artigos/_catalog.json sitemap.xml index.html rascunhos/fila.json img/{SLUG}.webp ...
+git add -u rascunhos/   # registra a saída dos rascunhos movidos
+git commit -m "feat: lote semanal — N artigos (DD/MM a DD/MM)"
 git push origin main
 ```
 
-> `sitemap.xml` deve estar sempre no `git add` — ele é regenerado a cada publicação
-> (passo 4.5 da Operação 3) e precisa ir ao ar junto com o artigo.
+> Um push por lote. Cada artigo aparece sozinho na home e no `/sitemap.xml` à meia-noite
+> (São Paulo) da sua `data_pub` — `functions/_lib/datas.js`. Não precisa de deploy diário.
 
 ## Como verificar
 
@@ -28,5 +31,6 @@ O painel de deployments fica em: Cloudflare Dashboard → Workers & Pages → ya
 
 ## Verificar sitemap após deploy
 
-Abrir https://yarivi.com/sitemap.xml e confirmar que o novo artigo aparece na lista.
-O número de entradas `<url>` deve ser `(total de artigos no _catalog.json) + 3`.
+Abrir https://yarivi.com/sitemap.xml: devem aparecer só os artigos com data até hoje.
+O número de entradas `<url>` deve ser `(artigos com data_pub <= hoje) + 5`. Os agendados
+entram sozinhos no dia deles.

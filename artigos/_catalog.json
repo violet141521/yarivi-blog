@@ -9,7 +9,9 @@
       "grad": "g2",
       "excerpt": "Sinal caindo no quarto do fundo? Entenda a diferença entre mesh e repetidor, quando o mesh resolve e quando basta mudar o roteador de lugar.",
       "read_time": "6 min",
-      "data_pub": "2026-10-30"
+      "data_pub": "2026-10-30",
+      "img": "/img/wi-fi-mesh-vale-a-pena-2026.webp",
+      "thumb": "/img/thumb/wi-fi-mesh-vale-a-pena-2026.webp"
     },
     {
       "slug": "ia-desalinhada-o-que-e-2026",
@@ -19,7 +21,9 @@
       "grad": "g1",
       "excerpt": "Modelos de IA já esconderam erros, driblaram bloqueios e até chantagearam em testes. Entenda o que é desalinhamento, o que de fato aconteceu e por que não é ficção científica.",
       "read_time": "6 min",
-      "data_pub": "2026-10-29"
+      "data_pub": "2026-10-29",
+      "img": "/img/ia-desalinhada-o-que-e-2026.webp",
+      "thumb": "/img/thumb/ia-desalinhada-o-que-e-2026.webp"
     },
     {
       "slug": "heranca-digital-contas-apos-morte-2026",
@@ -29,7 +33,9 @@
       "grad": "g3",
       "excerpt": "Fotos, e-mails e arquivos podem sumir ou ficar trancados para sempre. Veja o que Google, Apple, Facebook e Microsoft fazem com suas contas e como deixar tudo pronto.",
       "read_time": "7 min",
-      "data_pub": "2026-10-28"
+      "data_pub": "2026-10-28",
+      "img": "/img/heranca-digital-contas-apos-morte-2026.webp",
+      "thumb": "/img/thumb/heranca-digital-contas-apos-morte-2026.webp"
     },
     {
       "slug": "gta-6-requisitos-pc-console-2026",
@@ -39,7 +45,9 @@
       "grad": "g2",
       "excerpt": "GTA 6 sai em 19 de novembro só para PS5 e Xbox Series X|S. Veja em quais aparelhos roda, como deve ficar o desempenho e o que se sabe da versão para PC.",
       "read_time": "5 min",
-      "data_pub": "2026-10-27"
+      "data_pub": "2026-10-27",
+      "img": "/img/gta-6-requisitos-pc-console-2026.webp",
+      "thumb": "/img/thumb/gta-6-requisitos-pc-console-2026.webp"
     },
     {
       "slug": "trocar-hd-por-ssd-vale-a-pena-2026",
@@ -49,7 +57,9 @@
       "grad": "g2",
       "excerpt": "O disco que gira é o maior freio de um notebook antigo. Veja quanto um SSD acelera, qual tipo é compatível, como fazer a troca e como lidar com a alta dos preços.",
       "read_time": "6 min",
-      "data_pub": "2026-10-26"
+      "data_pub": "2026-10-26",
+      "img": "/img/trocar-hd-por-ssd-vale-a-pena-2026.webp",
+      "thumb": "/img/thumb/trocar-hd-por-ssd-vale-a-pena-2026.webp"
     },
     {
       "slug": "googlebook-o-que-e-preco-brasil-2026",
@@ -59,7 +69,9 @@
       "grad": "g2",
       "excerpt": "O Googlebook junta Chrome e apps de Android num notebook premium com Gemini embutido. Modelos, preços nos EUA, diferença para o Chromebook e se vale esperar no Brasil.",
       "read_time": "6 min",
-      "data_pub": "2026-10-23"
+      "data_pub": "2026-10-23",
+      "img": "/img/googlebook-o-que-e-preco-brasil-2026.webp",
+      "thumb": "/img/thumb/googlebook-o-que-e-preco-brasil-2026.webp"
     },
     {
       "slug": "passkey-o-que-e-como-ativar-2026",
@@ -69,7 +81,9 @@
       "grad": "g3",
       "excerpt": "A passkey troca a senha pela digital ou rosto e deixa o phishing sem o que roubar. Como funciona e o passo a passo para ativar no Google e no WhatsApp.",
       "read_time": "6 min",
-      "data_pub": "2026-10-22"
+      "data_pub": "2026-10-22",
+      "img": "/img/passkey-o-que-e-como-ativar-2026.webp",
+      "thumb": "/img/thumb/passkey-o-que-e-como-ativar-2026.webp"
     },
     {
       "slug": "celular-esquentando-o-que-fazer-2026",
@@ -79,7 +93,9 @@
       "grad": "g5",
       "excerpt": "Celular esquentando muito? As causas mais comuns, como esfriar do jeito certo, por que a geladeira é má ideia e os sinais de que é caso de assistência técnica.",
       "read_time": "6 min",
-      "data_pub": "2026-10-21"
+      "data_pub": "2026-10-21",
+      "img": "/img/celular-esquentando-o-que-fazer-2026.webp",
+      "thumb": "/img/thumb/celular-esquentando-o-que-fazer-2026.webp"
     },
     {
       "slug": "gemini-4-argon-o-que-e-2026",
@@ -89,7 +105,9 @@
       "grad": "g1",
       "excerpt": "O Google revelou o Gemini 4 Argon, seu modelo de IA mais avançado — mas só especialistas em segurança podem usar. O que ele faz, quanto custa e como se compara ao GPT-6 Astra e ao Claude.",
       "read_time": "6 min",
-      "data_pub": "2026-10-20"
+      "data_pub": "2026-10-20",
+      "img": "/img/gemini-4-argon-o-que-e-2026.webp",
+      "thumb": "/img/thumb/gemini-4-argon-o-que-e-2026.webp"
     },
     {
       "slug": "novidades-do-pix-2026-o-que-muda",
@@ -99,7 +117,9 @@
       "grad": "g3",
       "excerpt": "Boleto com QR Code do Pix, Pix Automático na conta-salário e aviso obrigatório de marcação de fraude: o que a Resolução BCB 587 muda e as datas reais (spoiler: 2027).",
       "read_time": "6 min",
-      "data_pub": "2026-10-19"
+      "data_pub": "2026-10-19",
+      "img": "/img/novidades-do-pix-2026-o-que-muda.webp",
+      "thumb": "/img/thumb/novidades-do-pix-2026-o-que-muda.webp"
     },
     {
       "slug": "carregar-celular-a-noite-estraga-bateria-2026",
@@ -109,7 +129,9 @@
       "grad": "g5",
       "excerpt": "Deixar o celular carregando a noite toda estraga a bateria? Veja os mitos, as verdades e os ajustes de iPhone e Samsung que fazem a bateria durar mais.",
       "read_time": "6 min",
-      "data_pub": "2026-10-16"
+      "data_pub": "2026-10-16",
+      "img": "/img/carregar-celular-a-noite-estraga-bateria-2026.webp",
+      "thumb": "/img/thumb/carregar-celular-a-noite-estraga-bateria-2026.webp"
     },
     {
       "slug": "placa-de-video-comprar-agora-ou-esperar-2026",
@@ -119,7 +141,9 @@
       "grad": "g2",
       "excerpt": "Placas de vídeo ficaram até 24% mais caras no Brasil e a RTX 50 Super foi adiada pela crise da memória. Veja quando vale comprar e quando esperar.",
       "read_time": "6 min",
-      "data_pub": "2026-10-15"
+      "data_pub": "2026-10-15",
+      "img": "/img/placa-de-video-comprar-agora-ou-esperar-2026.webp",
+      "thumb": "/img/thumb/placa-de-video-comprar-agora-ou-esperar-2026.webp"
     },
     {
       "slug": "melhor-processador-para-jogos-ryzen-x3d-vs-intel-2026",
@@ -129,7 +153,9 @@
       "grad": "g2",
       "excerpt": "Ryzen X3D ou Intel Core Ultra? Entenda por que o cache 3D domina nos jogos, onde a Intel vence e qual processador faz sentido para o seu PC em 2026.",
       "read_time": "5 min",
-      "data_pub": "2026-10-14"
+      "data_pub": "2026-10-14",
+      "img": "/img/melhor-processador-para-jogos-ryzen-x3d-vs-intel-2026.webp",
+      "thumb": "/img/thumb/melhor-processador-para-jogos-ryzen-x3d-vs-intel-2026.webp"
     },
     {
       "slug": "programa-crackeado-infostealer-perigo-2026",
@@ -139,7 +165,9 @@
       "grad": "g4",
       "excerpt": "Crack, ativador e jogo pirata são a principal porta de entrada dos infostealers, vírus que roubam senhas e sessões em segundos. Veja como se proteger.",
       "read_time": "6 min",
-      "data_pub": "2026-10-13"
+      "data_pub": "2026-10-13",
+      "img": "/img/programa-crackeado-infostealer-perigo-2026.webp",
+      "thumb": "/img/thumb/programa-crackeado-infostealer-perigo-2026.webp"
     },
     {
       "slug": "one-ui-9-quais-celulares-recebem-2026",
@@ -149,7 +177,9 @@
       "grad": "g4",
       "excerpt": "A One UI 9, baseada no Android 17, começou a chegar aos Galaxy no Brasil. Veja o cronograma, quem recebe e as novidades que valem testar primeiro.",
       "read_time": "5 min",
-      "data_pub": "2026-10-12"
+      "data_pub": "2026-10-12",
+      "img": "/img/one-ui-9-quais-celulares-recebem-2026.webp",
+      "thumb": "/img/thumb/one-ui-9-quais-celulares-recebem-2026.webp"
     },
     {
       "slug": "bolha-da-inteligencia-artificial-2026",
@@ -159,7 +189,9 @@
       "grad": "g6",
       "excerpt": "Nvidia saltou de US$ 300 bi para US$ 4 tri em 3 anos e 54% dos gestores globais já falam em bolha. Entenda os sinais e o que muda pra você.",
       "read_time": "6 min",
-      "data_pub": "2026-10-09"
+      "data_pub": "2026-10-09",
+      "img": "/img/bolha-da-inteligencia-artificial-2026.webp",
+      "thumb": "/img/thumb/bolha-da-inteligencia-artificial-2026.webp"
     },
     {
       "slug": "navegador-com-ia-vale-a-pena-2026",
@@ -169,7 +201,9 @@
       "grad": "g4",
       "excerpt": "Comet, Atlas e Copilot prometem navegar, comprar e preencher formulários por você. Veja se vale trocar o Chrome em 2026 e os riscos envolvidos.",
       "read_time": "5 min",
-      "data_pub": "2026-10-08"
+      "data_pub": "2026-10-08",
+      "img": "/img/navegador-com-ia-vale-a-pena-2026.webp",
+      "thumb": "/img/thumb/navegador-com-ia-vale-a-pena-2026.webp"
     },
     {
       "slug": "direito-ao-reparo-brasil-2026",
@@ -179,7 +213,9 @@
       "grad": "g2",
       "excerpt": "Dois projetos de lei avançam no Congresso: um pra celular e notebook, outro pro seu carro. Veja o que já vale hoje e quando compensa consertar ou trocar.",
       "read_time": "5 min",
-      "data_pub": "2026-10-07"
+      "data_pub": "2026-10-07",
+      "img": "/img/direito-ao-reparo-brasil-2026.webp",
+      "thumb": "/img/thumb/direito-ao-reparo-brasil-2026.webp"
     },
     {
       "slug": "starlink-direto-no-celular-brasil-2026",
@@ -189,7 +225,9 @@
       "grad": "g5",
       "excerpt": "A Anatel liberou o Starlink pra funcionar direto no celular, sem chip especial. Entenda como funciona, quando chega e quais aparelhos vão aceitar.",
       "read_time": "5 min",
-      "data_pub": "2026-10-05"
+      "data_pub": "2026-10-05",
+      "img": "/img/starlink-direto-no-celular-brasil-2026.webp",
+      "thumb": "/img/thumb/starlink-direto-no-celular-brasil-2026.webp"
     },
     {
       "slug": "carro-autonomo-brasil-2026",
@@ -199,7 +237,9 @@
       "grad": "g6",
       "excerpt": "Comissão da Câmara aprovou as primeiras regras pra carros autônomos no Brasil. Entenda os níveis de autonomia e quem paga a conta em caso de acidente.",
       "read_time": "6 min",
-      "data_pub": "2026-09-30"
+      "data_pub": "2026-09-30",
+      "img": "/img/carro-autonomo-brasil-2026.webp",
+      "thumb": "/img/thumb/carro-autonomo-brasil-2026.webp"
     },
     {
       "slug": "ram-cara-2026-por-que-notebook-pc",
@@ -209,7 +249,9 @@
       "grad": "g2",
       "excerpt": "A memória RAM ficou até 5x mais cara em 2026 pela demanda de data centers de IA. Entenda por que isso aconteceu e se vale comprar PC agora.",
       "read_time": "5 min",
-      "data_pub": "2026-09-29"
+      "data_pub": "2026-09-29",
+      "img": "/img/ram-cara-2026-por-que-notebook-pc.webp",
+      "thumb": "/img/thumb/ram-cara-2026-por-que-notebook-pc.webp"
     },
     {
       "slug": "lgpd-ia-regulacao-brasil-2026",
@@ -219,7 +261,9 @@
       "grad": "g1",
       "excerpt": "A LGPD já regula o uso de IA com dados pessoais no Brasil, mesmo sem o Marco Legal da IA aprovado — e a ANPD só multou uma empresa desde 2021. Veja o que muda para o seu negócio.",
       "read_time": "7 min",
-      "data_pub": "2026-09-28"
+      "data_pub": "2026-09-28",
+      "img": "/img/lgpd-ia-regulacao-brasil-2026.webp",
+      "thumb": "/img/thumb/lgpd-ia-regulacao-brasil-2026.webp"
     },
     {
       "slug": "trump-superinteligencia-ia-czar-2026",
@@ -229,7 +273,9 @@
       "grad": "g6",
       "excerpt": "Trump anunciou uma 'Força de IA', promete nomear um 'czar' e convenceu Xi Jinping a trocar 'IA' por 'superinteligência'. Entenda o que está por trás disso.",
       "read_time": "6 min",
-      "data_pub": "2026-09-26"
+      "data_pub": "2026-09-26",
+      "img": "/img/trump-superinteligencia-ia-czar-2026.webp",
+      "thumb": "/img/thumb/trump-superinteligencia-ia-czar-2026.webp"
     },
     {
       "slug": "tecnologia-2027-o-que-muda-brasil",
@@ -239,7 +285,9 @@
       "grad": "g6",
       "excerpt": "50 milhões de brasileiros já usam IA, o 5G chega às cidades menores e o Pix cresce ainda mais. Veja o que deve mudar na tecnologia do brasileiro até 2027.",
       "read_time": "5 min",
-      "data_pub": "2026-09-25"
+      "data_pub": "2026-09-25",
+      "img": "/img/tecnologia-2027-o-que-muda-brasil.webp",
+      "thumb": "/img/thumb/tecnologia-2027-o-que-muda-brasil.webp"
     },
     {
       "slug": "ios-27-novidades-quais-iphones-2026",
@@ -249,7 +297,9 @@
       "grad": "g5",
       "excerpt": "O iOS 27 chegou em setembro de 2026 com Siri renovada e Apple Intelligence expandida. Veja se seu iPhone recebe a atualização e quais são as novidades.",
       "read_time": "5 min",
-      "data_pub": "2026-09-24"
+      "data_pub": "2026-09-24",
+      "img": "/img/ios-27-novidades-quais-iphones-2026.webp",
+      "thumb": "/img/thumb/ios-27-novidades-quais-iphones-2026.webp"
     },
     {
       "slug": "ia-open-source-llama-mistral-2026",
@@ -259,7 +309,9 @@
       "grad": "g1",
       "excerpt": "ChatGPT custa caro. Veja como rodar Llama, Mistral ou Qwen de graça no seu PC — passo a passo sem programar, com dados reais de custo e hardware.",
       "read_time": "8 min",
-      "data_pub": "2026-09-23"
+      "data_pub": "2026-09-23",
+      "img": "/img/ia-open-source-llama-mistral-2026.webp",
+      "thumb": "/img/thumb/ia-open-source-llama-mistral-2026.webp"
     },
     {
       "slug": "atualizacao-ia-android-setembro-2026",
@@ -269,7 +321,9 @@
       "grad": "g5",
       "excerpt": "O Android ganhou 5 recursos novos de IA em setembro de 2026 — mas o mais avançado, o Gemini Intelligence, exige pelo menos 12 GB de RAM. Veja o que muda.",
       "read_time": "5 min",
-      "data_pub": "2026-09-22"
+      "data_pub": "2026-09-22",
+      "img": "/img/atualizacao-ia-android-setembro-2026.webp",
+      "thumb": "/img/thumb/atualizacao-ia-android-setembro-2026.webp"
     },
     {
       "slug": "banco-digital-vs-tradicional-2026",
@@ -279,7 +333,9 @@
       "grad": "g3",
       "excerpt": "FGC garante até R$ 250 mil por CPF, igual em banco digital e tradicional. Veja como o caso Banco Master provou isso na prática — e por que golpe, não quebra de banco, é o risco que mais importa hoje.",
       "read_time": "8 min",
-      "data_pub": "2026-09-21"
+      "data_pub": "2026-09-21",
+      "img": "/img/banco-digital-vs-tradicional-2026.webp",
+      "thumb": "/img/thumb/banco-digital-vs-tradicional-2026.webp"
     },
     {
       "slug": "tutor-ia-homeschooling-vs-reforco-2026",
@@ -289,7 +345,9 @@
       "grad": "g1",
       "excerpt": "Tutor de IA custa de graça a poucos dólares por mês; reforço particular presencial sai por cerca de R$ 47 a hora no Brasil. Compare o que cada opção entrega — e quando vale combinar as duas.",
       "read_time": "7 min",
-      "data_pub": "2026-09-17"
+      "data_pub": "2026-09-17",
+      "img": "/img/tutor-ia-homeschooling-vs-reforco-2026.webp",
+      "thumb": "/img/thumb/tutor-ia-homeschooling-vs-reforco-2026.webp"
     },
     {
       "slug": "vicio-redes-sociais-algoritmo-dopamina-2026",
@@ -299,7 +357,9 @@
       "grad": "g3",
       "excerpt": "Vício em redes sociais não é falta de força de vontade — é recompensa variável e dopamina por design. Entenda como o algoritmo funciona e como reduzir o efeito.",
       "read_time": "7 min",
-      "data_pub": "2026-09-16"
+      "data_pub": "2026-09-16",
+      "img": "/img/vicio-redes-sociais-algoritmo-dopamina-2026.webp",
+      "thumb": "/img/thumb/vicio-redes-sociais-algoritmo-dopamina-2026.webp"
     },
     {
       "slug": "o-que-fazer-celular-velho-descarte-2026",
@@ -309,7 +369,9 @@
       "grad": "g5",
       "excerpt": "O Brasil é o 5º maior gerador de lixo eletrônico do mundo e descarta menos de 5% corretamente. Saiba como vender, reutilizar ou descartar seu celular velho de forma segura.",
       "read_time": "6 min",
-      "data_pub": "2026-09-07"
+      "data_pub": "2026-09-07",
+      "img": "/img/o-que-fazer-celular-velho-descarte-2026.webp",
+      "thumb": "/img/thumb/o-que-fazer-celular-velho-descarte-2026.webp"
     },
     {
       "slug": "golpes-app-banco-pix-como-se-proteger-2026",
@@ -319,7 +381,9 @@
       "grad": "g3",
       "excerpt": "Golpe do falso suporte, Pix agendado, engenharia social com IA: os ataques a apps bancários evoluíram em 2026. Entenda como cada golpe funciona e o que fazer para não cair.",
       "read_time": "7 min",
-      "data_pub": "2026-09-07"
+      "data_pub": "2026-09-07",
+      "img": "/img/golpes-app-banco-pix-como-se-proteger-2026.webp",
+      "thumb": "/img/thumb/golpes-app-banco-pix-como-se-proteger-2026.webp"
     },
     {
       "slug": "carro-eletrico-brasil-2026-vale-a-pena",
@@ -329,7 +393,9 @@
       "grad": "g6",
       "excerpt": "Impostos de importação subiram progressivamente, mas o custo por km rodado caiu e a infraestrutura cresceu. Análise completa para decidir se vale a pena comprar elétrico no Brasil agora.",
       "read_time": "7 min",
-      "data_pub": "2026-09-03"
+      "data_pub": "2026-09-03",
+      "img": "/img/carro-eletrico-brasil-2026-vale-a-pena.webp",
+      "thumb": "/img/thumb/carro-eletrico-brasil-2026-vale-a-pena.webp"
     },
     {
       "slug": "ia-consumo-energia-impacto-ambiental-2026",
@@ -339,7 +405,9 @@
       "grad": "g1",
       "excerpt": "A IA generativa não é só uma revolução de produtividade — é uma revolução de consumo de energia. Data centers crescem em ritmo acelerado e o custo ambiental começa a aparecer.",
       "read_time": "7 min",
-      "data_pub": "2026-09-02"
+      "data_pub": "2026-09-02",
+      "img": "/img/ia-consumo-energia-impacto-ambiental-2026.webp",
+      "thumb": "/img/thumb/ia-consumo-energia-impacto-ambiental-2026.webp"
     },
     {
       "slug": "vpn-o-que-e-como-funciona-2026",
@@ -349,7 +417,9 @@
       "grad": "g3",
       "excerpt": "VPN cria um túnel criptografado entre seu dispositivo e a internet. Mas nem toda VPN faz o que promete — e a gratuita pode ser o maior risco de todos. Guia prático.",
       "read_time": "7 min",
-      "data_pub": "2026-09-01"
+      "data_pub": "2026-09-01",
+      "img": "/img/vpn-o-que-e-como-funciona-2026.webp",
+      "thumb": "/img/thumb/vpn-o-que-e-como-funciona-2026.webp"
     },
     {
       "slug": "gerenciador-de-senhas-como-funciona-2026",
@@ -359,7 +429,9 @@
       "grad": "g3",
       "excerpt": "Senhas repetidas são a porta de entrada de 80% dos ataques. Gerenciadores criam e guardam senhas únicas para cada conta — entenda como funcionam, quais são seguros e por que vale usar.",
       "read_time": "6 min",
-      "data_pub": "2026-09-01"
+      "data_pub": "2026-09-01",
+      "img": "/img/gerenciador-de-senhas-como-funciona-2026.webp",
+      "thumb": "/img/thumb/gerenciador-de-senhas-como-funciona-2026.webp"
     },
     {
       "slug": "windows-copilot-plus-recall-2026",
@@ -369,7 +441,9 @@
       "grad": "g4",
       "excerpt": "O Windows Recall captura tudo que você faz no PC para uma busca futura por IA — tudo local, nada vai para a nuvem. Entenda o que é Copilot+, por que gera polêmica e como desativar.",
       "read_time": "7 min",
-      "data_pub": "2026-08-28"
+      "data_pub": "2026-08-28",
+      "img": "/img/windows-copilot-plus-recall-2026.webp",
+      "thumb": "/img/thumb/windows-copilot-plus-recall-2026.webp"
     },
     {
       "slug": "anel-inteligente-wearable-saude-2026",
@@ -379,7 +453,9 @@
       "grad": "g6",
       "excerpt": "Oura Ring Gen 4 e Samsung Galaxy Ring monitoram sono, frequência cardíaca e temperatura sem tela e com até 7 dias de bateria. O mercado de wearables de saúde vale US$ 2 bi e cresce 30% ao ano.",
       "read_time": "7 min",
-      "data_pub": "2026-08-27"
+      "data_pub": "2026-08-27",
+      "img": "/img/anel-inteligente-wearable-saude-2026.webp",
+      "thumb": "/img/thumb/anel-inteligente-wearable-saude-2026.webp"
     },
     {
       "slug": "esim-como-funciona-brasil-2026",
@@ -389,7 +465,9 @@
       "grad": "g5",
       "excerpt": "O eSIM já está em 90% dos iPhones e nos Galaxy S25. No Brasil, Vivo, Claro, TIM e Oi ativam em minutos pelo app. Veja como funciona, quais celulares têm e como trocar de operadora sem sair de casa.",
       "read_time": "6 min",
-      "data_pub": "2026-08-26"
+      "data_pub": "2026-08-26",
+      "img": "/img/esim-como-funciona-brasil-2026.webp",
+      "thumb": "/img/thumb/esim-como-funciona-brasil-2026.webp"
     },
     {
       "slug": "ia-eleicoes-2026-deepfake",
@@ -399,7 +477,9 @@
       "grad": "g3",
       "excerpt": "Deepfakes custam US$ 5 e chegam pelo WhatsApp antes de qualquer checagem. Com eleições municipais de 2026, o TSE regulamentou o uso de IA — mas identificar o falso ainda é seu trabalho.",
       "read_time": "8 min",
-      "data_pub": "2026-08-25"
+      "data_pub": "2026-08-25",
+      "img": "/img/ia-eleicoes-2026-deepfake.webp",
+      "thumb": "/img/thumb/ia-eleicoes-2026-deepfake.webp"
     },
     {
       "slug": "chip-2nm-processador-2026",
@@ -409,7 +489,9 @@
       "grad": "g2",
       "excerpt": "Os chips de 2nm da TSMC estão em produção em massa em 2026. AMD, Apple e Nvidia já estão na fila. Entenda o que +15% de desempenho e -30% de consumo significam para o seu próximo celular ou notebook.",
       "read_time": "7 min",
-      "data_pub": "2026-08-24"
+      "data_pub": "2026-08-24",
+      "img": "/img/chip-2nm-processador-2026.webp",
+      "thumb": "/img/thumb/chip-2nm-processador-2026.webp"
     },
     {
       "slug": "cursor-ai-copilot-programar-sem-codigo-2026",
@@ -419,7 +501,9 @@
       "grad": "g4",
       "excerpt": "GitHub Copilot tem 4,7M assinantes; Cursor, Lovable e Bolt permitem criar apps sem programar. Guia prático para não-desenvolvedores sobre como a IA mudou o desenvolvimento em 2026.",
       "read_time": "9 min",
-      "data_pub": "2026-08-21"
+      "data_pub": "2026-08-21",
+      "img": "/img/cursor-ai-copilot-programar-sem-codigo-2026.webp",
+      "thumb": "/img/thumb/cursor-ai-copilot-programar-sem-codigo-2026.webp"
     },
     {
       "slug": "reconhecimento-facial-brasil-2026",
@@ -429,7 +513,9 @@
       "grad": "g3",
       "excerpt": "40% dos brasileiros já são monitorados por câmeras com reconhecimento facial. Aeroportos, metrô e bancos usam a tecnologia — mas a lei ainda não diz o que fazer quando ela erra.",
       "read_time": "7 min",
-      "data_pub": "2026-08-20"
+      "data_pub": "2026-08-20",
+      "img": "/img/reconhecimento-facial-brasil-2026.webp",
+      "thumb": "/img/thumb/reconhecimento-facial-brasil-2026.webp"
     },
     {
       "slug": "ia-educacao-escola-brasil-2026",
@@ -439,7 +525,9 @@
       "grad": "g1",
       "excerpt": "O MEC publicou o primeiro guia nacional de IA para escolas em abril de 2026. Saiba o que muda para alunos e professores, quais ferramentas usar e os riscos reais do uso sem orientação.",
       "read_time": "8 min",
-      "data_pub": "2026-08-19"
+      "data_pub": "2026-08-19",
+      "img": "/img/ia-educacao-escola-brasil-2026.webp",
+      "thumb": "/img/thumb/ia-educacao-escola-brasil-2026.webp"
     },
     {
       "slug": "galaxy-ai-vs-apple-intelligence-2026",
@@ -449,7 +537,9 @@
       "grad": "g5",
       "excerpt": "Samsung tem mais recursos e suporte ao português; Apple tem mais privacidade e polimento. Comparativo completo com o que cada IA faz de verdade no seu celular em 2026.",
       "read_time": "8 min",
-      "data_pub": "2026-08-18"
+      "data_pub": "2026-08-18",
+      "img": "/img/galaxy-ai-vs-apple-intelligence-2026.webp",
+      "thumb": "/img/thumb/galaxy-ai-vs-apple-intelligence-2026.webp"
     },
     {
       "slug": "ia-agronegocio-brasil-2026",
@@ -459,7 +549,9 @@
       "grad": "g1",
       "excerpt": "Drones com visão computacional reduziram o uso de defensivos em até 90% e robôs autônomos já operam no Cerrado. Como a IA está transformando o campo brasileiro em 2026.",
       "read_time": "7 min",
-      "data_pub": "2026-08-17"
+      "data_pub": "2026-08-17",
+      "img": "/img/ia-agronegocio-brasil-2026.webp",
+      "thumb": "/img/thumb/ia-agronegocio-brasil-2026.webp"
     },
     {
       "slug": "ia-gerar-video-como-usar-2026",
@@ -469,7 +561,9 @@
       "grad": "g1",
       "excerpt": "Kling, Runway Gen-4 e Google Veo 3.1: como funciona a IA que gera vídeos, qual escolher e quanto custa. O Sora foi descontinuado em abril — veja o que veio no lugar.",
       "read_time": "8 min",
-      "data_pub": "2026-08-15"
+      "data_pub": "2026-08-15",
+      "img": "/img/ia-gerar-video-como-usar-2026.webp",
+      "thumb": "/img/thumb/ia-gerar-video-como-usar-2026.webp"
     },
     {
       "slug": "oculos-inteligentes-2026-guia",
@@ -479,7 +573,9 @@
       "grad": "g6",
       "excerpt": "Ray-Ban Meta vendeu 2 milhões de pares, Samsung XR chega no 2º semestre e Xreal abre reservas com display abaixo de US$ 1.500. Guia completo com preços no Brasil e quando vale comprar.",
       "read_time": "7 min",
-      "data_pub": "2026-08-14"
+      "data_pub": "2026-08-14",
+      "img": "/img/oculos-inteligentes-2026-guia.webp",
+      "thumb": "/img/thumb/oculos-inteligentes-2026-guia.webp"
     },
     {
       "slug": "ia-multimodal-o-que-e-como-funciona-2026",
@@ -489,7 +585,9 @@
       "grad": "g1",
       "excerpt": "IA multimodal entende texto, imagem, áudio e vídeo ao mesmo tempo. O Gartner prevê 40% dos apps de IA como multimodais até 2027. Veja o que isso muda na prática.",
       "read_time": "7 min",
-      "data_pub": "2026-08-13"
+      "data_pub": "2026-08-13",
+      "img": "/img/ia-multimodal-o-que-e-como-funciona-2026.webp",
+      "thumb": "/img/thumb/ia-multimodal-o-que-e-como-funciona-2026.webp"
     },
     {
       "slug": "agente-ia-substituindo-aplicativos-2026",
@@ -499,7 +597,9 @@
       "grad": "g4",
       "excerpt": "Carl Pei (Nothing) disse que os apps vão acabar. A Apple paga US$ 1 bi/ano ao Google pelo Gemini. Entenda como o agente de IA está substituindo aplicativos em 2026.",
       "read_time": "8 min",
-      "data_pub": "2026-08-12"
+      "data_pub": "2026-08-12",
+      "img": "/img/agente-ia-substituindo-aplicativos-2026.webp",
+      "thumb": "/img/thumb/agente-ia-substituindo-aplicativos-2026.webp"
     },
     {
       "slug": "deepfake-voz-golpe-whatsapp-2026",
@@ -509,7 +609,9 @@
       "grad": "g3",
       "excerpt": "Deepfake de voz cresceu 830% no Brasil entre 2024 e 2025. Com 15 segundos de áudio, a IA clona qualquer voz. Veja como o golpe funciona no WhatsApp e como a palavra-código te protege.",
       "read_time": "7 min",
-      "data_pub": "2026-08-11"
+      "data_pub": "2026-08-11",
+      "img": "/img/deepfake-voz-golpe-whatsapp-2026.webp",
+      "thumb": "/img/thumb/deepfake-voz-golpe-whatsapp-2026.webp"
     },
     {
       "slug": "plano-brasileiro-inteligencia-artificial-pbia-2026",
@@ -519,7 +621,9 @@
       "grad": "g1",
       "excerpt": "O PBIA investe R$ 23 bi em IA até 2028 — supercomputador, nuvem soberana e capacitação. Entenda o que muda para o brasileiro comum.",
       "read_time": "7 min",
-      "data_pub": "2026-08-10"
+      "data_pub": "2026-08-10",
+      "img": "/img/plano-brasileiro-inteligencia-artificial-pbia-2026.webp",
+      "thumb": "/img/thumb/plano-brasileiro-inteligencia-artificial-pbia-2026.webp"
     },
     {
       "slug": "bateria-estado-solido-celular-2026",
@@ -529,7 +633,9 @@
       "grad": "g2",
       "excerpt": "Baterias sólidas de Toyota e Samsung dobram a autonomia; chips neuromórficos gastam até 1.000x menos energia. Entenda qual revolução chega primeiro ao seu bolso.",
       "read_time": "7 min",
-      "data_pub": "2026-08-07"
+      "data_pub": "2026-08-07",
+      "img": "/img/bateria-estado-solido-celular-2026.webp",
+      "thumb": "/img/thumb/bateria-estado-solido-celular-2026.webp"
     },
     {
       "slug": "celular-dobravel-vale-a-pena-2026",
@@ -539,7 +645,9 @@
       "grad": "g5",
       "excerpt": "iPhone dobrável chega em setembro por até US$ 2.400 e a Samsung prepara um Galaxy formato \"passaporte\". Preços no Brasil, prós e contras — e se compensa esperar.",
       "read_time": "7 min",
-      "data_pub": "2026-08-06"
+      "data_pub": "2026-08-06",
+      "img": "/img/celular-dobravel-vale-a-pena-2026.webp",
+      "thumb": "/img/thumb/celular-dobravel-vale-a-pena-2026.webp"
     },
     {
       "slug": "pc-com-ia-npu-vale-a-pena-2026",
@@ -549,7 +657,9 @@
       "grad": "g2",
       "excerpt": "O RTX Spark, chip ARM da Nvidia com 1 petaflop de IA, chega no 2º semestre e muda a conta de quem vai comprar notebook. Veja quando a NPU vale a pena — e quando esperar.",
       "read_time": "8 min",
-      "data_pub": "2026-08-05"
+      "data_pub": "2026-08-05",
+      "img": "/img/pc-com-ia-npu-vale-a-pena-2026.webp",
+      "thumb": "/img/thumb/pc-com-ia-npu-vale-a-pena-2026.webp"
     },
     {
       "slug": "robo-humanoide-2026",
@@ -559,7 +669,9 @@
       "grad": "g2",
       "excerpt": "Na CES 2026 os humanoides ganharam preço de prateleira: de US$ 2.899 a US$ 20 mil, com 10 mil reservas em 5 dias e mercado de US$ 38 bi projetado pela Goldman Sachs.",
       "read_time": "7 min",
-      "data_pub": "2026-08-04"
+      "data_pub": "2026-08-04",
+      "img": "/img/robo-humanoide-2026.webp",
+      "thumb": "/img/thumb/robo-humanoide-2026.webp"
     },
     {
       "slug": "agente-de-ia-o-que-e-2026",
@@ -569,7 +681,9 @@
       "grad": "g1",
       "excerpt": "Chatbot responde, agente resolve: entenda o que é um agente de IA, como ele age sozinho, os casos reais de 2026 no Brasil — e os riscos dessa autonomia.",
       "read_time": "8 min",
-      "data_pub": "2026-08-03"
+      "data_pub": "2026-08-03",
+      "img": "/img/agente-de-ia-o-que-e-2026.webp",
+      "thumb": "/img/thumb/agente-de-ia-o-que-e-2026.webp"
     },
     {
       "slug": "como-explicar-ia-para-leigos-2026",
@@ -579,7 +693,9 @@
       "grad": "g1",
       "excerpt": "Do algoritmo ao agente autônomo: as 5 melhores analogias para entender — e explicar — inteligência artificial sem uma linha de jargão.",
       "read_time": "7 min",
-      "data_pub": "2026-08-01"
+      "data_pub": "2026-08-01",
+      "img": "/img/como-explicar-ia-para-leigos-2026.webp",
+      "thumb": "/img/thumb/como-explicar-ia-para-leigos-2026.webp"
     },
     {
       "slug": "qualquer-pessoa-pode-criar-um-app-2026",
@@ -589,7 +705,9 @@
       "grad": "g4",
       "excerpt": "75% das novas apps de 2026 serão feitas sem programação. Entenda o que é low-code, quem já usa e o risco que ninguém menciona na apresentação de vendas.",
       "read_time": "7 min",
-      "data_pub": "2026-08-01"
+      "data_pub": "2026-08-01",
+      "img": "/img/qualquer-pessoa-pode-criar-um-app-2026.webp",
+      "thumb": "/img/thumb/qualquer-pessoa-pode-criar-um-app-2026.webp"
     },
     {
       "slug": "celular-obsoleto-ia-npu-2026",
@@ -599,7 +717,9 @@
       "grad": "g5",
       "excerpt": "A NPU virou o novo divisor: sem ela, seu celular fica de fora das funções de IA — e o próximo que você comprar vai custar mais por causa disso.",
       "read_time": "7 min",
-      "data_pub": "2026-08-01"
+      "data_pub": "2026-08-01",
+      "img": "/img/celular-obsoleto-ia-npu-2026.webp",
+      "thumb": "/img/thumb/celular-obsoleto-ia-npu-2026.webp"
     },
     {
       "slug": "futuro-profissoes-2026-2030",
@@ -609,7 +729,9 @@
       "grad": "g6",
       "excerpt": "Quanto mais repetitiva sua tarefa, maior o risco. Veja quais carreiras estão em colapso, quais vão explodir e o que fazer agora.",
       "read_time": "8 min",
-      "data_pub": "2026-08-01"
+      "data_pub": "2026-08-01",
+      "img": "/img/futuro-profissoes-2026-2030.webp",
+      "thumb": "/img/thumb/futuro-profissoes-2026-2030.webp"
     },
     {
       "slug": "phishing-whatsapp-email-2026",
@@ -619,7 +741,9 @@
       "grad": "g3",
       "excerpt": "WhatsApp, e-mail, SMS — os golpistas estão em todo lugar. Entenda como o phishing funciona, por que o Brasil é o 2º mais atacado do mundo e o que fazer para não cair.",
       "read_time": "7 min",
-      "data_pub": "2026-08-01"
+      "data_pub": "2026-08-01",
+      "img": "/img/phishing-whatsapp-email-2026.webp",
+      "thumb": "/img/thumb/phishing-whatsapp-email-2026.webp"
     },
     {
       "slug": "perigo-quantico-criptografia-2026",
@@ -629,7 +753,9 @@
       "grad": "g3",
       "excerpt": "Hackers já coletam dados criptografados para abrir depois com computadores quânticos. Entenda o Q-Day e o que já está sendo feito.",
       "read_time": "7 min",
-      "data_pub": "2026-08-01"
+      "data_pub": "2026-08-01",
+      "img": "/img/perigo-quantico-criptografia-2026.webp",
+      "thumb": "/img/thumb/perigo-quantico-criptografia-2026.webp"
     },
     {
       "slug": "ia-generativa-mercado-trabalho-2026",
@@ -639,7 +765,9 @@
       "grad": "g1",
       "excerpt": "5,4% dos trabalhadores brasileiros em alta exposição. Quem perde, quem ganha e o que fazer — com dados do Brookings e PwC.",
       "read_time": "8 min",
-      "data_pub": "2026-08-01"
+      "data_pub": "2026-08-01",
+      "img": "/img/ia-generativa-mercado-trabalho-2026.webp",
+      "thumb": "/img/thumb/ia-generativa-mercado-trabalho-2026.webp"
     }
   ]
 }

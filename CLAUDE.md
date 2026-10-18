@@ -16,10 +16,11 @@ Dona: Mi (violet141521@gmail.com).
 - `artigos/` — artigos publicados + `_catalog.json` (metadata de todos os artigos)
 - `rascunhos/` — artigos aguardando revisão + `fila.json` (fila de publicação com status)
 - `partials/featured.html` e `partials/latest.html` — fallback estático (não editar mais)
-- `index.html` traz nav, hero, manchetes, categorias e rodapé **direto no HTML** (wrappers com `data-static`; o `script.js` não busca de novo). Em produção, `functions/index.js` troca as manchetes pela lista atual do KV a cada visita (cache 60s). Renderização compartilhada em `functions/_lib/home.js`. Após publicar, rodar `node scripts/gerar-home-estatica.mjs` para atualizar as manchetes fixas do `index.html` (fallback sem KV e o que robôs/leitores sem JS veem)
+- `index.html` traz nav, hero, manchetes, categorias e rodapé **direto no HTML** (wrappers com `data-static`; o `script.js` não busca de novo). O card ao lado do título (`#hero-card-root`) mostra sempre o último artigo publicado, e "Em destaque" começa no 2º. Em produção, `functions/index.js` troca o card do hero e as manchetes pela lista atual (artigos com data_pub até hoje + liberados no KV) a cada visita (cache 60s). Renderização compartilhada em `functions/_lib/home.js`. Após subir o lote, rodar `python scripts/gerar-thumbs.py`, `node scripts/gerar-home-estatica.mjs` e `node scripts/gerar-sitemap.mjs` (fallbacks estáticos; ambos já ignoram artigos com data futura). Os cards da home mostram a capa de cada artigo (campos `img`/`thumb` no catálogo, preenchidos automaticamente por `gerar-home-estatica.mjs`; miniaturas 640px em `img/thumb/`); sem imagem, mostram o emoji
 - `sobre.html` (quem faz, política editorial `#politica-editorial`, correções `#correcoes`, FAQ com schema FAQPage) e `404.html` (servido pelo Pages com status 404; lista de recentes é estática)
 - `functions/partials/_middleware.js` — Pages Function que serve featured/latest dinâmico via KV
-- `functions/api/publicar.js` — endpoint para publicar artigo de qualquer dispositivo
+- `functions/api/publicar.js` — endpoint para liberar um artigo antes da data dele (de qualquer dispositivo)
+- `functions/sitemap.xml.js` — sitemap dinâmico (só artigos com data até hoje)
 - `signal-seo-writer/` e `signal-publicador/` — fonte das skills (instaladas no Claude)
 - `validador-text/` — skill de QA editorial: antiplágio, links, SEO automático (instalar no Claude)
 - `signal-blog-publisher/` — skill antiga (aposentada; referência)
@@ -42,16 +43,16 @@ Dona: Mi (violet141521@gmail.com).
    `signal-seo-writer/references/imagem-prompt.md` (render cinematográfico escuro, teal neon
    `#34D399` como cor primária, uma metáfora literal central por imagem, sem texto/logos/rostos)
 3. **Revisão**: a usuária lê o artigo **já auditado e corrigido** + relatório QA e aprova/pede mudanças no chat
-4. **Commit** (requer PC): skill `signal-publicador` move artigo para `artigos/`, atualiza `_catalog.json` e `fila.json`. O artigo fica acessível pela URL direta mas **invisível na home**.
-5. **Publicar na home** (qualquer dispositivo): a usuária decide quando tornar o artigo visível — via URL do celular ou dashboard Cloudflare (ver seção abaixo).
+4. **Lote semanal** (requer PC, 1 push por semana): a skill `signal-publicador` **avisa antes quantos aprovados vão subir** (máx. 5, só o que tiver) com o calendário, e após o OK move os artigos para `artigos/` com **1 data por dia útil** (seg-sex, a partir do próximo dia útil), atualiza `_catalog.json`, `fila.json`, sitemap e home estática, e faz um único commit/push.
+5. **Ir ao ar** (automático): cada artigo aparece sozinho na home e no `/sitemap.xml` à meia-noite (São Paulo) da sua `data_pub` — regra em `functions/_lib/datas.js`. Antes disso só abre pela URL direta. O link `/api/publicar` serve apenas para liberar um artigo **antes** da data.
 
-## Cloudflare KV — controle de visibilidade
+## Visibilidade na home — data + KV
 
-A home é servida por uma Pages Function que lê dois arquivos:
-- `artigos/_catalog.json` — metadata de todos os artigos (git)
-- KV namespace `YARIVI_PUBLISHED` — quais slugs estão visíveis (Cloudflare)
+A home e o `/sitemap.xml` são servidos por Pages Functions que mostram um artigo quando:
+- a `data_pub` dele em `artigos/_catalog.json` já chegou (fuso São Paulo) — **regra principal, automática**; ou
+- o slug está no KV `YARIVI_PUBLISHED` — para liberar antes da data.
 
-**Para publicar um artigo (tornar visível na home):**
+**Para liberar um artigo antes da data dele:**
 
 Opção A — URL simples (funciona no celular):
 ```
@@ -92,13 +93,14 @@ A home atualiza em até 1 minuto após a publicação (cache de 60s).
 - **Regra de dados**: nenhum número, percentual, data ou estatística vai ao ar sem fonte verificada. A auditoria acontece imediatamente após escrever — se não há fonte, o dado é removido e a frase reescrita automaticamente antes de qualquer apresentação à usuária. Nunca manter dado inventado, aproximado ou sem fonte
 - SEO: `<title>` keyword-first ≤60 chars ≠ H1 (manchete com gancho); FAQ com schema FAQPage; 1-3 links internos
 - Checklist completo: `signal-seo-writer/references/seo-checklist.md`
-- Antes de publicar, a skill `signal-publicador` atualiza a data do artigo (meta `article:published_time`, JSON-LD `datePublished`/`dateModified` e o byline) para o dia real da publicação — nunca mantém a data de quando foi escrito
+- Ao subir o lote, a skill `signal-publicador` data cada artigo (meta `article:published_time`, JSON-LD `datePublished`/`dateModified`, byline e `data_pub` no catálogo) com **o dia útil em que ele vai ao ar** — 1 artigo por dia, nunca a data de quando foi escrito
+- Links internos e "Leia também" nunca apontam para artigo com data posterior à do próprio artigo
 
 ## Estado atual (2026-08-01)
 
 - **Rebranding concluído**: Signal. → Yarivi; domínio yarivi.com registrado na Cloudflare
 - 5 rascunhos na fila aguardando revisão. 2 aprovados (agente-de-ia, celular-dobravel); 3 pendentes (robô humanoide, PC com IA/NPU, bateria estado sólido)
-- Agendamento seg-sex 18:00 criado e ativo (task ID: yarivi-publicador-diario)
+- Agendamento diário desligado em 2026-10-17: publicação agora é lote semanal com datas escalonadas + liberação automática pela data
 - Hospedagem decidida: Cloudflare Pages (deploy AINDA NÃO configurado — ver `signal-publicador/references/deploy.md`; pendente: configurar Pages no painel Cloudflare)
 - Perplexity MCP com tokens expirados (skill `pesquisa` usa fallback WebSearch)
 - Cor de destaque secundária: `--teal: #34D399` no tema escuro, `#059669` no tema claro (`style.css`)
@@ -123,4 +125,4 @@ A home atualiza em até 1 minuto após a publicação (cache de 60s).
 12. Criar redes sociais do Yarivi (Twitter/X, Instagram, LinkedIn, YouTube) e adicionar coluna "Social" no footer (`partials/footer.html`) com links reais
 13. Versão em inglês do blog — artigos menos Brasil-específicos, maior alcance orgânico (decidir estrutura: subdomínio `en.yarivi.com` vs. pasta `/en/`)
 14. ~~Validação de plágio dos artigos~~ — skill `validador-text` criada (2026-08-12): antiplágio DIY via WebSearch + link checker + checklist SEO automático. **Pendente: instalar a skill no Claude** (abrir `validador-text/SKILL.md` no Claude → Save skill). Spec em `docs/validador-text-spec.md`.
-15. ~~Definir padrão de imagem por artigo~~ — concluído (2026-09-08): padrão visual e prompt documentados em `signal-seo-writer/references/imagem-prompt.md`; geração automática do prompt incluída no fluxo editorial (passo 2.7). Pendente: gerar e inserir a imagem nos artigos já publicados que ainda não têm (`img/` hoje só cobre 6 dos artigos).
+15. ~~Definir padrão de imagem por artigo~~ — concluído (2026-09-08): padrão visual e prompt documentados em `signal-seo-writer/references/imagem-prompt.md`; geração automática do prompt incluída no fluxo editorial (passo 2.7). Imagens inseridas em todos os 64 artigos (2026-10-17); miniaturas em `img/thumb/` usadas nos cards da home.

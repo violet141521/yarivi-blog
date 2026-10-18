@@ -1,12 +1,16 @@
-// Regenera as manchetes escritas direto no index.html (#featured-root e #latest-root)
+// Regenera as manchetes escritas direto no index.html (#hero-card-root, #featured-root e #latest-root)
 // a partir de artigos/_catalog.json, usando o mesmo HTML da Function da home.
 // Considera no ar todo artigo do catálogo com arquivo em artigos/ e data_pub <= hoje
 // (São Paulo) — os agendados para dias seguintes ficam de fora; a Function da home
 // mostra cada um sozinha quando a data chega.
+// Antes, sincroniza as capas (campos img/thumb) no catálogo — ver sincronizar-imagens.mjs.
 // Uso: node scripts/gerar-home-estatica.mjs   (rodar após cada publicação)
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
-import { featuredHTML, latestHTML } from '../functions/_lib/home.js';
+import { heroHTML, featuredHTML, latestHTML } from '../functions/_lib/home.js';
 import { hojeBR, estaNoAr } from '../functions/_lib/datas.js';
+import { sincronizarImagens } from './sincronizar-imagens.mjs';
+
+sincronizarImagens();
 
 const root = new URL('..', import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1');
 const { articles } = JSON.parse(readFileSync(root + 'artigos/_catalog.json', 'utf8'));
@@ -26,6 +30,7 @@ function replaceInner(html, id, inner) {
 }
 
 let html = readFileSync(root + 'index.html', 'utf8');
+html = replaceInner(html, 'hero-card-root', heroHTML(visible));
 html = replaceInner(html, 'featured-root', featuredHTML(visible));
 html = replaceInner(html, 'latest-root', latestHTML(visible));
 writeFileSync(root + 'index.html', html);

@@ -3,7 +3,7 @@
  *
  * O index.html já sai do repositório com as manchetes escritas no HTML
  * (para o Google e leitores sem JavaScript). Esta Function troca o conteúdo
- * de #featured-root e #latest-root pela lista atual (catálogo + KV), para a
+ * de #hero-card-root, #featured-root e #latest-root pela lista atual (catálogo + KV), para a
  * home refletir na hora o que foi publicado via /api/publicar.
  *
  * Sem KV ou com erro → serve o index.html estático como está.
@@ -12,7 +12,7 @@
  * Por isso os cabeçalhos de segurança abaixo espelham o bloco "/*" do
  * _headers — ao mudar o CSP lá (ex.: AdSense), mude aqui também.
  */
-import { featuredHTML, latestHTML, getVisibleArticles } from './_lib/home.js';
+import { heroHTML, featuredHTML, latestHTML, getVisibleArticles } from './_lib/home.js';
 
 const SECURITY_HEADERS = {
   'X-Content-Type-Options': 'nosniff',
@@ -46,10 +46,12 @@ export async function onRequestGet(context) {
   }
   if (!visible || !visible.length) return withSecurity(asset);
 
+  const hero = heroHTML(visible);
   const feat = featuredHTML(visible);
   const latest = latestHTML(visible);
 
   const rewritten = new HTMLRewriter()
+    .on('#hero-card-root',     { element(el) { el.setInnerContent(hero, { html: true }); } })
     .on('#featured-root', { element(el) { el.setInnerContent(feat, { html: true }); } })
     .on('#latest-root',   { element(el) { el.setInnerContent(latest, { html: true }); } })
     .transform(asset);
