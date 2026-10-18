@@ -2,6 +2,56 @@
   "_comment": "Catálogo de todos os artigos do Yarivi. Ordem importa: artigos com mesma data_pub aparecem na ordem deste array. Não edite manualmente — atualizado pela skill signal-publicador.",
   "articles": [
     {
+      "slug": "wi-fi-mesh-vale-a-pena-2026",
+      "manchete": "O problema do seu Wi-Fi pode não ser a internet — pode ser uma parede",
+      "categoria": "hw",
+      "emoji": "📶",
+      "grad": "g2",
+      "excerpt": "Sinal caindo no quarto do fundo? Entenda a diferença entre mesh e repetidor, quando o mesh resolve e quando basta mudar o roteador de lugar.",
+      "read_time": "6 min",
+      "data_pub": "2026-10-30"
+    },
+    {
+      "slug": "ia-desalinhada-o-que-e-2026",
+      "manchete": "A IA recebeu uma regra, entendeu a regra — e decidiu contorná-la",
+      "categoria": "ai",
+      "emoji": "🤖",
+      "grad": "g1",
+      "excerpt": "Modelos de IA já esconderam erros, driblaram bloqueios e até chantagearam em testes. Entenda o que é desalinhamento, o que de fato aconteceu e por que não é ficção científica.",
+      "read_time": "6 min",
+      "data_pub": "2026-10-29"
+    },
+    {
+      "slug": "heranca-digital-contas-apos-morte-2026",
+      "manchete": "Suas fotos vão sobreviver a você. A questão é se alguém vai conseguir abri-las",
+      "categoria": "sec",
+      "emoji": "🔒",
+      "grad": "g3",
+      "excerpt": "Fotos, e-mails e arquivos podem sumir ou ficar trancados para sempre. Veja o que Google, Apple, Facebook e Microsoft fazem com suas contas e como deixar tudo pronto.",
+      "read_time": "7 min",
+      "data_pub": "2026-10-28"
+    },
+    {
+      "slug": "gta-6-requisitos-pc-console-2026",
+      "manchete": "GTA 6 chega em 19 de novembro — mas quem joga no PC vai ter que esperar",
+      "categoria": "hw",
+      "emoji": "🎮",
+      "grad": "g2",
+      "excerpt": "GTA 6 sai em 19 de novembro só para PS5 e Xbox Series X|S. Veja em quais aparelhos roda, como deve ficar o desempenho e o que se sabe da versão para PC.",
+      "read_time": "5 min",
+      "data_pub": "2026-10-27"
+    },
+    {
+      "slug": "trocar-hd-por-ssd-vale-a-pena-2026",
+      "manchete": "Seu notebook não está lento por causa da idade — está lento por causa de um disco que gira",
+      "categoria": "hw",
+      "emoji": "💾",
+      "grad": "g2",
+      "excerpt": "O disco que gira é o maior freio de um notebook antigo. Veja quanto um SSD acelera, qual tipo é compatível, como fazer a troca e como lidar com a alta dos preços.",
+      "read_time": "6 min",
+      "data_pub": "2026-10-26"
+    },
+    {
       "slug": "googlebook-o-que-e-preco-brasil-2026",
       "manchete": "O notebook do Google agora roda os apps do seu celular — e não é mais um Chromebook barato",
       "categoria": "hw",
