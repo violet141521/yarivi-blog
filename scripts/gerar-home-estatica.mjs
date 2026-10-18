@@ -6,6 +6,7 @@
 // Antes, sincroniza as capas (campos img/thumb) no catálogo — ver sincronizar-imagens.mjs.
 // Uso: node scripts/gerar-home-estatica.mjs   (rodar após cada publicação)
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { heroHTML, featuredHTML, latestHTML } from '../functions/_lib/home.js';
 import { hojeBR, estaNoAr } from '../functions/_lib/datas.js';
 import { sincronizarImagens } from './sincronizar-imagens.mjs';
@@ -34,4 +35,13 @@ html = replaceInner(html, 'hero-card-root', heroHTML(visible));
 html = replaceInner(html, 'featured-root', featuredHTML(visible));
 html = replaceInner(html, 'latest-root', latestHTML(visible));
 writeFileSync(root + 'index.html', html);
+
+// Versão do style.css no link (?v=hash) — o navegador guarda o CSS por 24h (_headers);
+// com a versão no link, ele baixa o novo assim que o arquivo muda.
+const cssV = createHash('md5').update(readFileSync(root + 'style.css')).digest('hex').slice(0, 8);
+for (const f of ['index.html', 'sobre.html', '404.html']) {
+  const page = readFileSync(root + f, 'utf8');
+  const out = page.replace(/href="\/style\.css(\?v=[^"]*)?"/g, `href="/style.css?v=${cssV}"`);
+  if (out !== page) writeFileSync(root + f, out);
+}
 console.log(`index.html: ${visible.length} artigos (mais recente: ${visible[0].slug})`);
