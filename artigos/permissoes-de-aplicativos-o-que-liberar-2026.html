@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permissões de aplicativos: o que liberar e negar | Yarivi</title>
+    <meta name="description" content="Permissões de aplicativos: veja quais liberar, quais negar e como revisar câmera, microfone, localização e acessibilidade no Android e no iPhone.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yarivi.com/artigos/permissoes-de-aplicativos-o-que-liberar-2026">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Yarivi">
+    <meta property="og:title" content="Permissões de aplicativos: o que liberar e negar">
+    <meta property="og:description" content="Permissões de aplicativos: veja quais liberar, quais negar e como revisar câmera, microfone, localização e acessibilidade no Android e no iPhone.">
+    <meta property="og:url" content="https://yarivi.com/artigos/permissoes-de-aplicativos-o-que-liberar-2026">
+    <meta property="og:image" content="https://yarivi.com/og-cover.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="article:published_time" content="2026-11-04">
+    <meta property="article:section" content="Software">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Permissões de aplicativos: o que liberar e negar">
+    <meta name="twitter:description" content="Permissões de aplicativos: veja quais liberar, quais negar e como revisar câmera, microfone, localização e acessibilidade no Android e no iPhone.">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "Um único \"Permitir\" pode entregar a tela inteira do seu celular a um golpista",
+  "description": "Permissões de aplicativos: veja quais liberar, quais negar e como revisar câmera, microfone, localização e acessibilidade no Android e no iPhone.",
+  "datePublished": "2026-11-04",
+  "dateModified": "2026-11-04",
+  "inLanguage": "pt-BR",
+  "url": "https://yarivi.com/artigos/permissoes-de-aplicativos-o-que-liberar-2026",
+  "author": {
+    "@type": "Organization",
+    "name": "Yarivi",
+    "url": "https://yarivi.com/sobre"
+  },
+  "publisher": {
+    "@type": "NewsMediaOrganization",
+    "name": "Yarivi",
+    "url": "https://yarivi.com"
+  },
+  "articleSection": "Software",
+  "keywords": [
+    "permissões de aplicativos",
+    "quais permissões de aplicativos negar",
+    "permissão de acessibilidade android perigo",
+    "como revisar permissões no iphone",
+    "gerenciador de permissões android"
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Negar uma permissão faz o app parar de funcionar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Na maioria das vezes, só o recurso que depende dela deixa de funcionar. Apps bem feitos pedem a permissão na hora em que você usa a função — o WhatsApp, por exemplo, só pede o microfone quando você grava um áudio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dá para ver as permissões antes de instalar um app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Na Google Play, role a página do app até \"Sobre este app\" e toque em \"Permissões do app\" para ver a lista completa do que ele vai pedir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O ponto verde acendeu sozinho. O que eu faço?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Toque no indicador (no Android) ou abra a Central de Controle (no iPhone) para ver qual app está usando a câmera ou o microfone. Se for um app que não deveria, retire a permissão nas configurações de privacidade."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "De quanto em quanto tempo devo revisar as permissões?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Faça uma revisão sempre que instalar um app novo e, além disso, de tempos em tempos — a cada poucos meses já ajuda. Comece por acessibilidade, localização, câmera e microfone."
+      }
+    }
+  ]
+}
+    </script>
+    <script>const t=localStorage.getItem('yarivi-theme');if(t)document.documentElement.setAttribute('data-theme',t);</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap"></noscript>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        #progress-bar{position:fixed;top:64px;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),var(--teal));z-index:199;transition:width .1s linear}
+        .art-page{max-width:720px;margin:0 auto;padding:6rem 2rem 4rem}
+        .art-header{margin-bottom:2.5rem}
+        .art-header .tags{margin-bottom:1rem}
+        .art-headline{font-family:'Fraunces',serif;font-weight:800;font-size:clamp(1.75rem,5vw,2.75rem);line-height:1.15;letter-spacing:-0.02em;color:var(--text-1);margin-bottom:1.25rem}
+        .art-lead{font-size:1.125rem;line-height:1.7;color:var(--text-2);border-left:3px solid var(--accent);padding-left:1.25rem;margin-bottom:1.5rem}
+        .art-byline{display:flex;align-items:center;gap:1rem;font-size:0.85rem;color:var(--text-3);padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+        .art-byline strong{color:var(--text-2)}
+        .art-byline .sep::before{content:'·';margin-right:1rem}
+        .art-body{line-height:1.8;font-size:1.0625rem}
+        .art-body p{margin-bottom:1.5rem;color:var(--text-1)}
+        .art-body h2{font-family:'Fraunces',serif;font-weight:700;font-size:1.5rem;letter-spacing:-0.015em;color:var(--text-1);margin:2.5rem 0 1rem;padding-top:0.5rem}
+        .art-body h3{font-weight:700;font-size:1.1rem;color:var(--text-1);margin:2rem 0 0.75rem}
+        .art-body ul,.art-body ol{margin:0 0 1.5rem 1.5rem;color:var(--text-1)}
+        .art-body li{margin-bottom:0.5rem;line-height:1.7}
+        .art-body strong{color:var(--text-1);font-weight:700}
+        .art-body em{color:var(--accent);font-style:normal;font-weight:600}
+        .data-callout{background:var(--bg-card);border:1px solid var(--border);border-left:4px solid var(--teal);border-radius:var(--radius);padding:1.25rem 1.5rem;margin:2rem 0}
+        .data-callout p{margin-bottom:0;font-size:0.95rem}
+        .art-table-wrap{overflow-x:auto;margin:2rem 0;border-radius:var(--radius);border:1px solid var(--border)}
+        .art-table{width:100%;border-collapse:collapse;font-size:0.9rem}
+        .art-table th{background:var(--bg-elevated);color:var(--text-2);font-weight:600;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.06em;padding:0.75rem 1rem;text-align:left;border-bottom:1px solid var(--border)}
+        .art-table td{padding:0.75rem 1rem;border-bottom:1px solid var(--border);color:var(--text-1);vertical-align:top}
+        .art-table tr:last-child td{border-bottom:none}
+        .art-table tr:hover td{background:var(--bg-elevated)}
+        .stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin:2rem 0}
+        .stat-box{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;text-align:center}
+        .stat-num{font-family:'Fraunces',serif;font-size:1.9rem;font-weight:800;color:var(--teal);line-height:1;margin-bottom:0.4rem}
+        .stat-label{font-size:0.78rem;color:var(--text-2);line-height:1.4}
+        .paradox-box{background:linear-gradient(135deg,rgba(162,89,255,0.08),rgba(245,166,35,0.06));border:1px solid rgba(162,89,255,0.3);border-radius:var(--radius-lg);padding:1.75rem 2rem;margin:2.5rem 0}
+        .paradox-box h3{color:var(--violet);margin-top:0;margin-bottom:0.75rem}
+        .paradox-box p{margin-bottom:0.75rem}
+        .paradox-box p:last-child{margin-bottom:0}
+        .summary-box{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem 2rem;margin:2.5rem 0}
+        .summary-box h2{font-family:'Manrope',sans-serif;margin-top:0!important;padding-top:0!important;letter-spacing:0.05em;text-transform:uppercase;font-size:0.82rem;color:var(--accent);margin-bottom:1rem!important}
+        .summary-box ol{margin-left:1.25rem;margin-bottom:0}
+        .summary-box li{margin-bottom:0.6rem;font-size:0.95rem}
+        .art-sources{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border)}
+        .art-sources h4{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-3);margin-bottom:0.75rem}
+        .art-sources ul{list-style:none;margin:0}
+        .art-sources li{font-size:0.82rem;color:var(--text-3);margin-bottom:0.35rem}
+        .art-sources a{color:var(--text-3);text-decoration:underline;text-underline-offset:3px}
+        .art-sources a:hover{color:var(--accent)}
+        .back-link{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.85rem;color:var(--text-3);text-decoration:none;margin-bottom:2rem;transition:color .2s}
+        .back-link:hover{color:var(--accent)}
+        @media(max-width:640px){.art-page{padding:5rem 1.25rem 3rem}.stat-row{grid-template-columns:repeat(2,1fr)}}
+
+        @media(min-width:681px){
+            .nav-links{flex:0 0 auto;justify-content:flex-end;gap:1.5rem}
+            .nav-link{font-size:.875rem;text-transform:none;letter-spacing:0;padding:.25rem 0}
+        }
+        .art-related{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border)}
+        .art-related h4{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-3);margin-bottom:1rem}
+        .art-related ul{list-style:none;margin:0;display:flex;flex-direction:column;gap:0.75rem}
+        .art-related a{display:block;font-family:"Fraunces",serif;font-weight:700;font-size:1rem;color:var(--text-1);text-decoration:none;line-height:1.4;transition:color .2s}
+        .art-related a:hover{color:var(--accent)}
+    </style>
+</head>
+<body>
+    <nav class="nav" role="navigation" aria-label="Navegação principal">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-logo" aria-label="Yarivi — página inicial">Yarivi</a>
+            <div class="nav-links">
+                <a href="../index.html#em-destaque" class="nav-link">Destaques</a>
+                <a href="../index.html#ultimas" class="nav-link">Notícias</a>
+                <a href="/sobre" class="nav-link">Sobre</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <button id="theme-toggle" aria-label="Alternar tema">🌙</button>
+        </div>
+    </nav>
+    <div id="progress-bar" role="progressbar" aria-hidden="true"></div>
+    <main class="art-page">
+        <a href="../index.html" class="back-link">← Voltar para o Yarivi</a>
+        <header class="art-header">
+            <div class="tags">
+                <span class="tag tag-sw">Software</span>
+                <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+            </div>
+            <h1 class="art-headline">Um único "Permitir" pode entregar a tela inteira do seu celular a um golpista</h1>
+            <p class="art-lead">Permissões de aplicativos são as chaves que você entrega a cada app: câmera, microfone, localização, contatos. A maioria é inofensiva. Mas uma delas, a de acessibilidade, virou a favorita dos golpes bancários no Android, porque deixa o app ver e tocar em tudo na tela. Regra de bolso: só libere o que tem relação direta com a função do app — e revise o que já liberou.</p>
+            <div class="art-byline">
+                <span><a href="/sobre" rel="author"><strong>Yarivi</strong> Redação</a></span>
+                <span class="sep">4 nov 2026</span>
+                <span class="sep">6 min de leitura</span>
+            </div>
+        </header>
+        <img src="../img/permissoes-de-aplicativos-o-que-liberar-2026.webp" alt="Celular com pequenas portas teal e mão encapuzada puxando uma chave mestra vermelha — o risco das permissões de aplicativos" width="1024" height="768" style="width:100%;height:auto;border-radius:8px;margin-bottom:2rem;display:block;" loading="eager">
+        <article class="art-body">
+
+            <h2>Permissões de aplicativos: o que são e por que importam?</h2>
+            <p>Pense num pintor que vai trabalhar na sua sala. Ele precisa da chave da porta da frente. Não precisa da chave do cofre, nem da senha do alarme.</p>
+            <p>Permissões funcionam igual. Cada app pede acesso a um pedaço do celular — a câmera, o GPS, a agenda. O app de mapas precisa saber onde você está. Um jogo de quebra-cabeça, não.</p>
+            <p>O risco não está em liberar permissões. Está em liberar sem pensar, no impulso de começar a usar o app logo.</p>
+
+            <h2>Quais permissões de aplicativos negar?</h2>
+            <p>Nem toda permissão pesa igual. Algumas dão acesso a dados pessoais; outras dão controle sobre o próprio celular. Estas merecem atenção:</p>
+            <div class="art-table-wrap">
+                <table class="art-table">
+                    <thead><tr><th>Permissão</th><th>Quem precisa de verdade</th><th>Sinal de alerta</th></tr></thead>
+                    <tbody>
+                        <tr><td>Localização</td><td>Mapas, transporte, delivery, previsão do tempo</td><td>Jogos, lanternas, editores de foto</td></tr>
+                        <tr><td>Câmera e microfone</td><td>Câmera, chamadas de vídeo, mensagens de voz</td><td>Calculadora, app de notas, papel de parede</td></tr>
+                        <tr><td>Contatos</td><td>Mensageiros, discador</td><td>Jogos e apps que "querem achar seus amigos"</td></tr>
+                        <tr><td>SMS e chamadas</td><td>O app de mensagens e o de telefone padrão</td><td>Qualquer outro app pedindo para virar o app padrão de SMS</td></tr>
+                        <tr><td>Exibir sobre outros apps</td><td>Bolhas de chat, alguns apps de gravação de tela</td><td>Apps que você não reconhece desenhando janelas por cima do banco</td></tr>
+                        <tr><td><strong>Acessibilidade</strong></td><td>Leitores de tela e apps para pessoas com deficiência</td><td>Praticamente qualquer outro app</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Por que a permissão de acessibilidade no Android é tão perigosa?</h2>
+            <p>Os serviços de acessibilidade foram criados para ajudar pessoas com deficiência: um leitor de tela precisa "ler" tudo o que aparece e tocar nos botões no lugar do usuário.</p>
+            <p>É exatamente isso que um golpista quer. Com essa permissão, o app enxerga o que você digita e consegue agir sozinho.</p>
+            <p>O caso mais recente é o <strong>Rokarolla</strong>, um cavalo de troia bancário descoberto em junho de 2026 pela empresa de segurança Zimperium. Ele começa com um app falso que se passa pelo Google Play Protect — o antivírus do próprio Android — e oferece instalar o Chrome ou o TikTok. Depois de instalado, pede acesso à acessibilidade, às notificações, ao SMS e às chamadas.</p>
+            <div class="data-callout">
+                <p>Segundo a Zimperium, o Rokarolla mira <strong>217 aplicativos de bancos e de criptomoedas</strong> e aceita <strong>137 comandos remotos</strong>. Quando a vítima abre um desses apps, ele cobre a tela verdadeira com uma tela de login falsa. Também imita a tela de bloqueio para capturar o PIN ou o padrão de desbloqueio.</p>
+            </div>
+            <div class="paradox-box">
+                <h3>🔑 O recurso de inclusão virou a chave mestra</h3>
+                <p>A permissão de acessibilidade não tem defeito. Ela faz exatamente o que promete: dar controle total da tela a quem precisa de ajuda para usar o celular.</p>
+                <p>O perigo é que ninguém mais precisa disso. Se um app de lanterna, de PDF ou "de atualização" pede acessibilidade, o pedido em si já é o alerta.</p>
+            </div>
+            <p>A Zimperium não encontrou o Rokarolla na Google Play. Ele chega por links e arquivos APK baixados fora da loja — o mesmo caminho dos <a href="../artigos/programa-crackeado-infostealer-perigo-2026">programas piratas que roubam senhas</a>.</p>
+
+            <h2>Como revisar as permissões no Android</h2>
+            <p>O caminho muda um pouco de marca para marca, mas costuma ser este:</p>
+            <ol>
+                <li>Abra <strong>Configurações &gt; Segurança e privacidade &gt; Privacidade &gt; Gerenciador de permissões</strong> (em alguns celulares, fica em Configurações &gt; Apps &gt; Permissões).</li>
+                <li>Toque numa categoria — Localização, Câmera, Microfone — e veja a lista de apps com acesso.</li>
+                <li>Para cada app, escolha entre <strong>Permitir durante o uso do app</strong>, <strong>Perguntar sempre</strong> ou <strong>Não permitir</strong>.</li>
+                <li>Por fim, abra <strong>Configurações &gt; Acessibilidade</strong> e confira a lista de apps instalados ali. Se houver algum que você não reconhece, desative e desinstale.</li>
+            </ol>
+            <p>Três recursos do Android ajudam no dia a dia:</p>
+            <ul>
+                <li><strong>"Só desta vez":</strong> desde o Android 11, ao pedir localização, câmera ou microfone, o sistema oferece uma permissão temporária, que vale só enquanto o app está aberto.</li>
+                <li><strong>Limpeza automática:</strong> o Android remove sozinho as permissões de apps que você não abre há meses. O recurso nasceu no Android 11 e foi levado pelo Google a celulares com Android 6 ou mais novo que têm os serviços do Google Play.</li>
+                <li><strong>Painel de privacidade:</strong> desde o Android 12, mostra quais apps usaram localização, câmera e microfone nas últimas 24 horas.</li>
+            </ul>
+
+            <h2>Como revisar as permissões no iPhone</h2>
+            <ol>
+                <li>Abra <strong>Ajustes &gt; Privacidade e Segurança</strong>.</li>
+                <li>Toque numa categoria (Serviços de Localização, Câmera, Microfone, Contatos) e desligue os apps que não precisam dela.</li>
+                <li>No fim da mesma tela, o <strong>Relatório de Privacidade do App</strong> mostra quais apps acessaram seus dados recentemente.</li>
+            </ol>
+
+            <h2>O que significa o ponto verde no canto da tela?</h2>
+            <p>É um aviso de que algum app está usando a câmera ou o microfone naquele momento. Aparece em qualquer iPhone com iOS 14 ou mais novo e em Android 12 ou mais novo, sem precisar ativar nada.</p>
+            <p>No iPhone, o ponto verde indica câmera; o laranja, só o microfone. No Android, é sempre verde. Se ele acender quando você não está usando nada disso, toque nele (ou abra a Central de Controle, no iPhone) para descobrir qual app foi.</p>
+            <div class="stat-row">
+                <div class="stat-box">
+                    <div class="stat-num">217</div>
+                    <div class="stat-label">apps de bancos e criptomoedas visados pelo Rokarolla</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-num">137</div>
+                    <div class="stat-label">comandos remotos que o malware aceita</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-num">24 h</div>
+                    <div class="stat-label">de histórico no painel de privacidade do Android 12+</div>
+                </div>
+            </div>
+            <p>Se um app já pediu acessibilidade e você liberou, trate como emergência: desative a permissão, desinstale o app e troque as senhas do banco por outro aparelho. Nosso guia sobre <a href="../artigos/golpes-app-banco-pix-como-se-proteger-2026">golpes em apps de banco e Pix</a> mostra os passos seguintes.</p>
+
+            <h2>Perguntas frequentes</h2>
+            <h3>Negar uma permissão faz o app parar de funcionar?</h3>
+            <p>Na maioria das vezes, só o recurso que depende dela deixa de funcionar. Apps bem feitos pedem a permissão na hora em que você usa a função — o WhatsApp, por exemplo, só pede o microfone quando você grava um áudio.</p>
+            <h3>Dá para ver as permissões antes de instalar um app?</h3>
+            <p>Sim. Na Google Play, role a página do app até "Sobre este app" e toque em "Permissões do app" para ver a lista completa do que ele vai pedir.</p>
+            <h3>O ponto verde acendeu sozinho. O que eu faço?</h3>
+            <p>Toque no indicador (no Android) ou abra a Central de Controle (no iPhone) para ver qual app está usando a câmera ou o microfone. Se for um app que não deveria, retire a permissão nas configurações de privacidade.</p>
+            <h3>De quanto em quanto tempo devo revisar as permissões?</h3>
+            <p>Faça uma revisão sempre que instalar um app novo e, além disso, de tempos em tempos — a cada poucos meses já ajuda. Comece por acessibilidade, localização, câmera e microfone.</p>
+            <div class="summary-box">
+                <h2>Resumo em 5 pontos</h2>
+                <ol>
+                    <li><strong>Permissão é chave</strong> — libere só o que tem relação direta com a função do app.</li>
+                    <li><strong>Acessibilidade é a mais perigosa</strong> — fora leitores de tela e apps para PcD, quase nenhum app precisa dela.</li>
+                    <li><strong>O golpe é real</strong> — o Rokarolla, descoberto em 2026, usa essa permissão para mirar 217 apps de bancos e criptomoedas.</li>
+                    <li><strong>Use as opções temporárias</strong> — "Só desta vez" e "Durante o uso do app" bastam para quase tudo.</li>
+                    <li><strong>O ponto verde é seu alarme</strong> — ele avisa quando a câmera ou o microfone estão em uso.</li>
+                </ol>
+            </div>
+            <p><strong>Faça agora:</strong> abra Configurações &gt; Acessibilidade e veja quais apps têm essa permissão. Depois, passe cinco minutos no gerenciador de permissões cortando localização, câmera e microfone de quem não precisa.</p>
+
+            <div class="art-sources">
+                <h4>Fontes</h4>
+                <ul>
+                    <li><a href="https://www.bleepingcomputer.com/news/security/new-rokarolla-android-malware-targets-217-banking-crypto-apps/" target="_blank" rel="noopener">BleepingComputer — New Rokarolla Android malware targets 217 banking, crypto apps (16/06/2026)</a></li>
+                    <li><a href="https://www.helpnetsecurity.com/2026/06/17/rokarolla-android-banking-trojan-device-takeover/" target="_blank" rel="noopener">Help Net Security — Rokarolla Android trojan targets banking and crypto users</a></li>
+                    <li><a href="https://thehackernews.com/2026/06/new-rokarolla-android-malware-steals.html" target="_blank" rel="noopener">The Hacker News — New Rokarolla Android malware steals PINs, SMS codes and crypto</a></li>
+                    <li><a href="https://www.securityweek.com/rokarolla-banking-trojan-targets-200-applications/" target="_blank" rel="noopener">SecurityWeek — Rokarolla Banking Trojan Targets 200 Applications</a></li>
+                    <li><a href="https://developer.android.com/about/versions/11/privacy/permissions" target="_blank" rel="noopener">Android Developers — Permissions updates in Android 11 (one-time permissions)</a></li>
+                    <li><a href="https://android-developers.googleblog.com/2021/09/making-permissions-auto-reset-available.html" target="_blank" rel="noopener">Android Developers Blog — Making permissions auto-reset available to billions more devices</a></li>
+                    <li><a href="https://android-developers.googleblog.com/2021/05/android-security-and-privacy-recap.html" target="_blank" rel="noopener">Android Developers Blog — What's new in Android Privacy (Android 12: painel de privacidade e indicadores de câmera/microfone)</a></li>
+                    <li><a href="https://www.em.com.br/tecnologia/2026/04/7400368-permissoes-de-aplicativos-por-que-voce-deve-limitar-o-acesso-agora.html" target="_blank" rel="noopener">Estado de Minas — Permissões de aplicativos: por que você deve limitar o acesso agora</a></li>
+                    <li><a href="https://www.em.com.br/emfoco/2026/05/23/o-significado-do-ponto-verde-no-celular-pode-surpreender-quem-nunca-reparou-nesse-detalhe/" target="_blank" rel="noopener">Estado de Minas — O significado do ponto verde no celular</a></li>
+                    <li><a href="https://revistaoeste.com/oestegeral/2026/07/10/o-que-significa-o-ponto-verde-na-parte-superior-do-seu-celular/" target="_blank" rel="noopener">Revista Oeste — O que significa o ponto verde na parte superior do seu celular</a></li>
+                    <li><a href="https://canaltech.com.br/smartphone/como-gerenciar-as-permissoes-dos-apps-android-e-ios/" target="_blank" rel="noopener">Canaltech — Como gerenciar as permissões dos apps no Android e no iOS</a></li>
+                </ul>
+            </div>
+            <div class="art-related">
+                <h4>Leia também</h4>
+                <ul>
+                    <li><a href="../artigos/programa-crackeado-infostealer-perigo-2026">O Office "de graça" pode sair pelo preço de todas as suas senhas</a></li>
+                    <li><a href="../artigos/one-ui-9-quais-celulares-recebem-2026">Seu Galaxy vai ganhar um assistente que vigia os outros assistentes</a></li>
+                    <li><a href="../artigos/navegador-com-ia-vale-a-pena-2026">A Perplexity liberou de graça um navegador que faz compras e preenche formulários sozinho</a></li>
+                </ul>
+            </div>
+        </article>
+    </main>
+    <script>
+        const btn=document.getElementById('theme-toggle');
+        function applyTheme(t){document.documentElement.setAttribute('data-theme',t);btn.textContent=t==='light'?'☀️':'🌙';localStorage.setItem('yarivi-theme',t);}
+        applyTheme(localStorage.getItem('yarivi-theme')||'dark');
+        btn.addEventListener('click',()=>applyTheme(document.documentElement.getAttribute('data-theme')==='light'?'dark':'light'));
+        const hbtn=document.getElementById('hamburger');
+        const nlinks=document.querySelector('.nav-links');
+        if(hbtn&&nlinks){
+            hbtn.addEventListener('click',()=>{
+                const open=nlinks.classList.toggle('open');
+                hbtn.setAttribute('aria-expanded',String(open));
+            });
+            nlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+                nlinks.classList.remove('open');
+                hbtn.setAttribute('aria-expanded','false');
+            }));
+        }
+        const bar=document.getElementById('progress-bar');
+        window.addEventListener('scroll',()=>{const d=document.documentElement;bar.style.width=Math.min((d.scrollTop/(d.scrollHeight-d.clientHeight))*100,100)+'%';});
+    </script>
+</body>
+</html>
