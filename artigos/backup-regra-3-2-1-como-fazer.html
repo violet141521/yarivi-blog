@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backup 3-2-1: como funciona e como fazer em casa | Yarivi</title>
+    <meta name="description" content="Backup 3-2-1 explicado sem jargão: 3 cópias, 2 tipos de mídia e 1 fora de casa. Veja por que Drive e iCloud não bastam e como montar o seu hoje.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yarivi.com/artigos/backup-regra-3-2-1-como-fazer">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Yarivi">
+    <meta property="og:title" content="Backup 3-2-1: como funciona e como fazer em casa">
+    <meta property="og:description" content="Backup 3-2-1 explicado sem jargão: 3 cópias, 2 tipos de mídia e 1 fora de casa. Veja por que Drive e iCloud não bastam e como montar o seu hoje.">
+    <meta property="og:url" content="https://yarivi.com/artigos/backup-regra-3-2-1-como-fazer">
+    <meta property="og:image" content="https://yarivi.com/og-cover.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="article:published_time" content="2026-11-10">
+    <meta property="article:section" content="Software">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Backup 3-2-1: como funciona e como fazer em casa">
+    <meta name="twitter:description" content="Backup 3-2-1 explicado sem jargão: 3 cópias, 2 tipos de mídia e 1 fora de casa. Veja por que Drive e iCloud não bastam e como montar o seu hoje.">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Três números decidem se você recupera suas fotos ou as perde para sempre",
+      "description": "Backup 3-2-1 explicado sem jargão: 3 cópias, 2 tipos de mídia e 1 fora de casa. Veja por que Drive e iCloud não bastam e como montar o seu hoje.",
+      "datePublished": "2026-11-10",
+      "dateModified": "2026-11-10",
+      "inLanguage": "pt-BR",
+      "url": "https://yarivi.com/artigos/backup-regra-3-2-1-como-fazer",
+      "author": { "@type": "Organization", "name": "Yarivi", "url": "https://yarivi.com/sobre" },
+      "publisher": { "@type": "NewsMediaOrganization", "name": "Yarivi", "url": "https://yarivi.com" },
+      "articleSection": "Software",
+      "keywords": ["backup 3-2-1", "regra de backup 3-2-1", "como fazer backup", "backup fotos celular", "google drive é backup"]
+    }
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "O Google Fotos conta como backup?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ele ajuda como cópia fora de casa, mas é um serviço de sincronização: se você apaga uma foto no aparelho com a sincronização ligada, ela também sai da nuvem. Para cumprir o 3-2-1, mantenha uma cópia separada em um disco externo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Preciso mesmo das três cópias?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O 3-2-1 é uma linha de base, e a NinjaOne ressalta que não é uma regra fixa para todas as situações. Para o que você não pode refazer, como fotos de família, vale seguir as três. Para o que é fácil de baixar de novo, uma cópia basta."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Com que frequência devo fazer o backup?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sempre que algo importante mudar. O ideal é automatizar com o recurso do sistema, para não depender de memória. O que importa é a perda que você aceita ter: se perder uma semana de fotos já dói, faça a cópia toda semana."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto tempo dura um HD externo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não dá para saber. A análise dos dados da Backblaze mostra que não é possível calcular quanto tempo um disco específico vai durar. Por isso a regra pede mais de uma cópia: ela não depende de acertar o prazo."
+      }
+    }
+  ]
+}
+    </script>
+    <script>const t=localStorage.getItem('yarivi-theme');if(t)document.documentElement.setAttribute('data-theme',t);</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap"></noscript>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        #progress-bar{position:fixed;top:64px;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),var(--teal));z-index:199;transition:width .1s linear}
+        .art-page{max-width:720px;margin:0 auto;padding:6rem 2rem 4rem}
+        .art-header{margin-bottom:2.5rem}
+        .art-header .tags{margin-bottom:1rem}
+        .art-headline{font-family:'Fraunces',serif;font-weight:800;font-size:clamp(1.75rem,5vw,2.75rem);line-height:1.15;letter-spacing:-0.02em;color:var(--text-1);margin-bottom:1.25rem}
+        .art-lead{font-size:1.125rem;line-height:1.7;color:var(--text-2);border-left:3px solid var(--accent);padding-left:1.25rem;margin-bottom:1.5rem}
+        .art-byline{display:flex;align-items:center;gap:1rem;font-size:0.85rem;color:var(--text-3);padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+        .art-byline strong{color:var(--text-2)}
+        .art-byline .sep::before{content:'·';margin-right:1rem}
+        .art-body{line-height:1.8;font-size:1.0625rem}
+        .art-body p{margin-bottom:1.5rem;color:var(--text-1)}
+        .art-body h2{font-family:'Fraunces',serif;font-weight:700;font-size:1.5rem;letter-spacing:-0.015em;color:var(--text-1);margin:2.5rem 0 1rem;padding-top:0.5rem}
+        .art-body h3{font-weight:700;font-size:1.1rem;color:var(--text-1);margin:2rem 0 0.75rem}
+        .art-body ul,.art-body ol{margin:0 0 1.5rem 1.5rem;color:var(--text-1)}
+        .art-body li{margin-bottom:0.5rem;line-height:1.7}
+        .art-body strong{color:var(--text-1);font-weight:700}
+        .art-body em{color:var(--accent);font-style:normal;font-weight:600}
+        .data-callout{background:var(--bg-card);border:1px solid var(--border);border-left:4px solid var(--teal);border-radius:var(--radius);padding:1.25rem 1.5rem;margin:2rem 0}
+        .data-callout p{margin-bottom:0;font-size:0.95rem}
+        .art-table-wrap{overflow-x:auto;margin:2rem 0;border-radius:var(--radius);border:1px solid var(--border)}
+        .art-table{width:100%;border-collapse:collapse;font-size:0.9rem}
+        .art-table th{background:var(--bg-elevated);color:var(--text-2);font-weight:600;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.06em;padding:0.75rem 1rem;text-align:left;border-bottom:1px solid var(--border)}
+        .art-table td{padding:0.75rem 1rem;border-bottom:1px solid var(--border);color:var(--text-1);vertical-align:top}
+        .art-table tr:last-child td{border-bottom:none}
+        .art-table tr:hover td{background:var(--bg-elevated)}
+        .stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin:2rem 0}
+        .stat-box{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;text-align:center}
+        .stat-num{font-family:'Fraunces',serif;font-size:1.9rem;font-weight:800;color:var(--teal);line-height:1;margin-bottom:0.4rem}
+        .stat-label{font-size:0.78rem;color:var(--text-2);line-height:1.4}
+        .paradox-box{background:linear-gradient(135deg,rgba(162,89,255,0.08),rgba(245,166,35,0.06));border:1px solid rgba(162,89,255,0.3);border-radius:var(--radius-lg);padding:1.75rem 2rem;margin:2.5rem 0}
+        .paradox-box h3{color:var(--violet);margin-top:0;margin-bottom:0.75rem}
+        .paradox-box p{margin-bottom:0.75rem}
+        .paradox-box p:last-child{margin-bottom:0}
+        .summary-box{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem 2rem;margin:2.5rem 0}
+        .summary-box h2{font-family:'Manrope',sans-serif;margin-top:0!important;padding-top:0!important;letter-spacing:0.05em;text-transform:uppercase;font-size:0.82rem;color:var(--accent);margin-bottom:1rem!important}
+        .summary-box ol{margin-left:1.25rem;margin-bottom:0}
+        .summary-box li{margin-bottom:0.6rem;font-size:0.95rem}
+        .art-sources{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border)}
+        .art-sources h4{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-3);margin-bottom:0.75rem}
+        .art-sources ul{list-style:none;margin:0}
+        .art-sources li{font-size:0.82rem;color:var(--text-3);margin-bottom:0.35rem}
+        .art-sources a{color:var(--text-3);text-decoration:underline;text-underline-offset:3px}
+        .art-sources a:hover{color:var(--accent)}
+        .back-link{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.85rem;color:var(--text-3);text-decoration:none;margin-bottom:2rem;transition:color .2s}
+        .back-link:hover{color:var(--accent)}
+        @media(max-width:640px){.art-page{padding:5rem 1.25rem 3rem}.stat-row{grid-template-columns:repeat(2,1fr)}}
+
+        @media(min-width:681px){
+            .nav-links{flex:0 0 auto;justify-content:flex-end;gap:1.5rem}
+            .nav-link{font-size:.875rem;text-transform:none;letter-spacing:0;padding:.25rem 0}
+        }
+        .art-related{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border)}
+        .art-related h4{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-3);margin-bottom:1rem}
+        .art-related ul{list-style:none;margin:0;display:flex;flex-direction:column;gap:0.75rem}
+        .art-related a{display:block;font-family:"Fraunces",serif;font-weight:700;font-size:1rem;color:var(--text-1);text-decoration:none;line-height:1.4;transition:color .2s}
+        .art-related a:hover{color:var(--accent)}
+    </style>
+</head>
+<body>
+    <nav class="nav" role="navigation" aria-label="Navegação principal">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-logo" aria-label="Yarivi — página inicial">Yarivi</a>
+            <div class="nav-links">
+                <a href="../index.html#em-destaque" class="nav-link">Destaques</a>
+                <a href="../index.html#ultimas" class="nav-link">Notícias</a>
+                <a href="/sobre" class="nav-link">Sobre</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <button id="theme-toggle" aria-label="Alternar tema">🌙</button>
+        </div>
+    </nav>
+    <div id="progress-bar" role="progressbar" aria-hidden="true"></div>
+    <main class="art-page">
+        <a href="../index.html" class="back-link">← Voltar para o Yarivi</a>
+        <header class="art-header">
+            <div class="tags">
+                <span class="tag tag-sw">Software</span>
+                <span class="tag tag-dest" style="margin-left:.25rem;">Análise</span>
+            </div>
+            <h1 class="art-headline">Três números decidem se você recupera suas fotos ou as perde para sempre</h1>
+            <p class="art-lead">O backup 3-2-1 é uma regra simples: mantenha <strong>3 cópias</strong> dos seus arquivos, em <strong>2 tipos diferentes de armazenamento</strong>, com <strong>1 cópia fora de casa</strong>, como na nuvem. Quem segue essa conta sobrevive a disco queimado, celular roubado, apagão de arquivos e até a ataque de ransomware. Quem guarda tudo num lugar só está apostando que nada vai dar errado.</p>
+            <div class="art-byline">
+                <span><a href="/sobre" rel="author"><strong>Yarivi</strong> Redação</a></span>
+                <span class="sep">10 nov 2026</span>
+                <span class="sep">6 min de leitura</span>
+            </div>
+        </header>
+        <img src="../img/backup-regra-3-2-1-como-fazer.webp" alt="Três chaves luminosas teal em lugares diferentes, ligadas por fios de luz — a regra 3-2-1 de backup" width="1024" height="768" style="width:100%;height:auto;border-radius:8px;margin-bottom:2rem;display:block;" loading="eager">
+        <article class="art-body">
+            <h2>Backup 3-2-1: o que significam os três números?</h2>
+            <p>Pense na chave reserva de casa. Uma fica no seu bolso. Outra, na gaveta de um cômodo. A terceira, com alguém de confiança em outro endereço. Se você perde a do bolso, usa a da gaveta. Se a casa pega fogo, a terceira ainda abre a porta nova.</p>
+            <p>O backup 3-2-1 aplica essa lógica aos seus arquivos. O Tecnoblog resume assim: três cópias dos dados, em dois tipos de mídia diferentes, com pelo menos uma guardada fora do ambiente local, como na nuvem.</p>
+            <ul>
+                <li><strong>3 cópias:</strong> o original (no celular ou no PC) mais duas cópias de segurança.</li>
+                <li><strong>2 tipos de mídia:</strong> por exemplo, o disco do computador e um HD ou SSD externo. Assim, um mesmo defeito não derruba as duas.</li>
+                <li><strong>1 cópia fora de casa:</strong> na nuvem ou na casa de um familiar. É ela que protege contra roubo, incêndio e enchente.</li>
+            </ul>
+
+            <h2>Por que uma cópia só não basta?</h2>
+            <p>Porque todo armazenamento falha, mais cedo ou mais tarde. A empresa de nuvem Backblaze acompanha centenas de milhares de discos rígidos em seus servidores e publica as taxas de falha todo ano. Em 2025, a taxa anual ficou em 1,36%.</p>
+            <div class="data-callout">
+                <p>Em 2025, a Backblaze analisou <strong>344.196 discos rígidos</strong> e registrou taxa anual de falha de <strong>1,36%</strong>, abaixo dos 1,55% de 2024. É um número baixo, mas são discos de servidor em ambiente controlado. A própria análise da imprensa especializada lembra que os dados não permitem prever quando um disco específico vai falhar.</p>
+            </div>
+            <div class="stat-row">
+                <div class="stat-box"><div class="stat-num">1,36%</div><div class="stat-label">taxa anual de falha de discos em 2025 (Backblaze)</div></div>
+                <div class="stat-box"><div class="stat-num">1,55%</div><div class="stat-label">taxa anual em 2024, para comparar</div></div>
+                <div class="stat-box"><div class="stat-num">344.196</div><div class="stat-label">discos rígidos analisados no relatório de 2025</div></div>
+            </div>
+            <p>Disco queimado ainda é o problema mais previsível. Você também perde arquivos quando apaga sem querer, quando o celular é roubado ou quando um vírus criptografa tudo e pede resgate. Nenhum desses casos avisa antes.</p>
+
+            <h2>Google Drive, OneDrive e iCloud são backup?</h2>
+            <p>Não exatamente. Esses serviços são de <em>sincronização</em>: eles mantêm a pasta do seu computador idêntica à da nuvem. Se você apaga um arquivo no PC, ele some da nuvem em seguida. A NinjaOne, empresa de gestão de TI, explica que a exclusão de um arquivo sincronizado localmente pode levar à perda dele em todos os lugares, com a Lixeira como único socorro por tempo limitado.</p>
+            <p>Com vírus de sequestro de dados, o risco é maior. A Nakivo, empresa de software de backup, explica que, quando o ransomware criptografa pastas configuradas para sincronizar com o OneDrive, os arquivos criptografados também são sincronizados.</p>
+            <div class="paradox-box">
+                <h3>⚠️ Ter na nuvem não é ter backup</h3>
+                <p>Sincronizar é espelhar: o erro vai junto. Backup é guardar versões separadas, que não mudam quando o original muda. Serviços como o Google Drive já tentam pausar a sincronização quando detectam criptografia em massa, mas a imprensa especializada reforça que isso é uma camada extra, não substitui o backup.</p>
+                <p>O uso certo da nuvem na regra 3-2-1 é como a <em>cópia fora de casa</em>, alimentada por um backup de verdade (veja o passo a passo abaixo).</p>
+            </div>
+
+            <h2>Como fazer o backup 3-2-1 em casa, passo a passo</h2>
+            <p>Dá para montar uma versão doméstica em uma tarde. Comece pelo que não tem como refazer: fotos, vídeos de família, documentos e arquivos de trabalho.</p>
+            <div class="art-table-wrap">
+                <table class="art-table">
+                    <thead><tr><th>Cópia</th><th>Onde fica</th><th>Quem protege de quê</th></tr></thead>
+                    <tbody>
+                        <tr><td>1 — Original</td><td>Celular ou computador</td><td>Uso do dia a dia</td></tr>
+                        <tr><td>2 — Cópia local</td><td>HD ou SSD externo, em outro tipo de mídia</td><td>Defeito no disco, exclusão acidental</td></tr>
+                        <tr><td>3 — Cópia fora de casa</td><td>Serviço de backup na nuvem ou disco na casa de um familiar</td><td>Roubo, incêndio, enchente</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <ol>
+                <li><strong>Junte o que importa</strong> numa pasta organizada. Quanto menos bagunça, mais fácil de conferir depois.</li>
+                <li><strong>Use o recurso do próprio sistema</strong> para a cópia local, como o Histórico de Arquivos no Windows ou o Time Machine no Mac, apontado para o disco externo.</li>
+                <li><strong>Envie a cópia fora de casa</strong> para um serviço de backup na nuvem, ou um disco que fica na casa de alguém de confiança.</li>
+                <li><strong>Desconecte o disco externo</strong> quando a cópia terminar. Segundo a TechTarget, o ransomware não consegue infectar um backup que não está fisicamente ligado à rede.</li>
+                <li><strong>Abra um arquivo da cópia</strong> de tempos em tempos. Backup que nunca foi testado é só uma esperança.</li>
+            </ol>
+            <p>Se você usa gerenciador de senhas, inclua o backup dele na lista: <a href="../artigos/gerenciador-de-senhas-como-funciona-2026">veja como o gerenciador funciona</a>. E pense também em quem herdaria suas contas, tema do nosso texto sobre <a href="../artigos/heranca-digital-contas-apos-morte-2026">herança digital</a>.</p>
+
+            <h2>O que é 3-2-1-1-0 e quando vale a pena?</h2>
+            <p>É a versão reforçada da regra, criada para a era do ransomware. A Veeam, fabricante de software de backup, descreve a extensão como uma cópia imutável a mais e zero erros na verificação da recuperação. A TechTarget explica o segundo "1" como uma cópia mantida offline.</p>
+            <p>Para uso doméstico, a tradução prática é a dica do passo 4 (disco desconectado) e do passo 5 (testar). A NinjaOne lembra que o 3-2-1 é uma linha de base e não uma regra rígida para todos os casos. Já o modelo estendido serve melhor para empresas.</p>
+            
+            <h2>Perguntas frequentes</h2>
+            <h3>O Google Fotos conta como backup?</h3>
+            <p>Ele ajuda como cópia fora de casa, mas é um serviço de sincronização: se você apaga uma foto no aparelho com a sincronização ligada, ela também sai da nuvem. Para cumprir o 3-2-1, mantenha uma cópia separada em um disco externo.</p>
+            <h3>Preciso mesmo das três cópias?</h3>
+            <p>O 3-2-1 é uma linha de base, e a NinjaOne ressalta que não é uma regra fixa para todas as situações. Para o que você não pode refazer, como fotos de família, vale seguir as três. Para o que é fácil de baixar de novo, uma cópia basta.</p>
+            <h3>Com que frequência devo fazer o backup?</h3>
+            <p>Sempre que algo importante mudar. O ideal é automatizar com o recurso do sistema, para não depender de memória. O que importa é a perda que você aceita ter: se perder uma semana de fotos já dói, faça a cópia toda semana.</p>
+            <h3>Quanto tempo dura um HD externo?</h3>
+            <p>Não dá para saber. A análise dos dados da Backblaze mostra que não é possível calcular quanto tempo um disco específico vai durar. Por isso a regra pede mais de uma cópia: ela não depende de acertar o prazo.</p>
+            <div class="summary-box">
+                <h2>Resumo em 5 pontos</h2>
+                <ol>
+                    <li><strong>3-2-1</strong> — três cópias, dois tipos de mídia, uma fora de casa.</li>
+                    <li><strong>Disco falha</strong> — em 2025, a taxa anual da Backblaze foi de 1,36%, e ninguém sabe prever qual disco será.</li>
+                    <li><strong>Sincronizar não é backup</strong> — apagão e vírus se espalham pela nuvem junto com o arquivo.</li>
+                    <li><strong>Desconecte o disco externo</strong> depois da cópia, para ele ficar a salvo de vírus.</li>
+                    <li><strong>Teste</strong> — abra um arquivo da cópia de vez em quando.</li>
+                </ol>
+            </div>
+            <p><strong>Faça agora:</strong> escolha uma pasta de fotos que você não suportaria perder e copie para um disco externo hoje. Marque no calendário, daqui a um mês, o dia de abrir um arquivo dessa cópia e conferir se ele funciona.</p>
+            
+            <div class="art-sources">
+                <h4>Fontes</h4>
+                <ul>
+                    <li><a href="https://tecnoblog.net/responde/o-que-e-backup/" target="_blank" rel="noopener">Tecnoblog — O que é backup? Como funciona a cópia de segurança dos seus dados</a></li>
+                    <li><a href="https://www.backblaze.com/blog/backblaze-drive-stats-for-2025/" target="_blank" rel="noopener">Backblaze — Drive Stats for 2025</a></li>
+                    <li><a href="https://www.asminternational.org/edfas/backblaze-publishes-2025-drive-stats-report-13-years-of-data-show-a-growing-healthier-drive-fleet/" target="_blank" rel="noopener">ASM International — Backblaze publishes 2025 Drive Stats report (taxa anual de 1,36%)</a></li>
+                    <li><a href="https://heise.de/-11177050" target="_blank" rel="noopener">Heise — Backblaze: Hard drive failure rates continue to decline</a></li>
+                    <li><a href="https://www.veeam.com/blog/pt/321-backup-rule.html" target="_blank" rel="noopener">Veeam — O que é a regra 3-2-1 de backup?</a></li>
+                    <li><a href="https://www.techtarget.com/searchDataBackup/tip/How-the-3-2-1-1-0-backup-rule-reflects-modern-needs" target="_blank" rel="noopener">TechTarget — How the 3-2-1-1-0 backup rule reflects modern needs</a></li>
+                    <li><a href="https://www.ninjaone.com/pt-br/blog/the-3-2-1-backup-rule-explained/" target="_blank" rel="noopener">NinjaOne — Explicação da regra de backup 3-2-1</a></li>
+                    <li><a href="https://www.ninjaone.com/pt-br/blog/uso-do-onedrive-para-backup/" target="_blank" rel="noopener">NinjaOne — Uso do OneDrive para backup</a></li>
+                    <li><a href="https://www.nakivo.com/blog/onedrive-backup-vs-onedrive-sync-myths-and-facts/" target="_blank" rel="noopener">Nakivo — OneDrive Backup vs OneDrive Sync: Myths and Facts</a></li>
+                    <li><a href="https://www.magazine-hd.com/apps/wp/?p=737879" target="_blank" rel="noopener">Magazine HD — Google Drive for desktop terá detecção de ransomware com IA</a></li></ul>
+            </div>
+            <div class="art-related">
+                <h4>Leia também</h4>
+                <ul>
+                    <li><a href="../artigos/gerenciador-de-senhas-como-funciona-2026">Você tem dezenas de senhas. Quantas reutiliza?</a></li>
+                    <li><a href="../artigos/heranca-digital-contas-apos-morte-2026">Suas fotos vão sobreviver a você. A questão é se alguém vai conseguir abri-las</a></li>
+                    <li><a href="../artigos/programa-crackeado-infostealer-perigo-2026">O Office "de graça" pode sair pelo preço de todas as suas senhas</a></li></ul>
+            </div>
+        </article>
+    </main>
+    <script>
+        const btn=document.getElementById('theme-toggle');
+        function applyTheme(t){document.documentElement.setAttribute('data-theme',t);btn.textContent=t==='light'?'☀️':'🌙';localStorage.setItem('yarivi-theme',t);}
+        applyTheme(localStorage.getItem('yarivi-theme')||'dark');
+        btn.addEventListener('click',()=>applyTheme(document.documentElement.getAttribute('data-theme')==='light'?'dark':'light'));
+        const hbtn=document.getElementById('hamburger');
+        const nlinks=document.querySelector('.nav-links');
+        if(hbtn&&nlinks){
+            hbtn.addEventListener('click',()=>{
+                const open=nlinks.classList.toggle('open');
+                hbtn.setAttribute('aria-expanded',String(open));
+            });
+            nlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+                nlinks.classList.remove('open');
+                hbtn.setAttribute('aria-expanded','false');
+            }));
+        }
+        const bar=document.getElementById('progress-bar');
+        window.addEventListener('scroll',()=>{const d=document.documentElement;bar.style.width=Math.min((d.scrollTop/(d.scrollHeight-d.clientHeight))*100,100)+'%';});
+    </script>
+</body>
+</html>

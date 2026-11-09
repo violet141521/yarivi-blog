@@ -1008,9 +1008,12 @@
       "excerpt": "Três cópias, dois tipos de mídia e uma fora de casa: entenda a regra 3-2-1, por que Drive e iCloud não bastam e como montar seu backup hoje.",
       "read_time": "6 min",
       "keyword": "backup 3-2-1",
-      "status": "aguardando-revisao",
+      "status": "publicado",
       "ordem": 75,
-      "criado_em": "2026-10-31"
+      "criado_em": "2026-10-31",
+      "aprovado_em": "2026-11-02",
+      "publicado_em": "2026-11-10",
+      "subido_em": "2026-11-08"
     },
     {
       "slug": "monitor-144hz-ou-240hz-ips-ou-oled",
@@ -1021,9 +1024,12 @@
       "excerpt": "144 Hz ou 240 Hz? IPS ou OLED? A conta do tempo por imagem mostra onde o dinheiro deixa de render, e o teste de burn-in desfaz o maior medo do OLED.",
       "read_time": "7 min",
       "keyword": "monitor 144hz ou 240hz",
-      "status": "aguardando-revisao",
+      "status": "publicado",
       "ordem": 76,
-      "criado_em": "2026-10-31"
+      "criado_em": "2026-10-31",
+      "aprovado_em": "2026-11-02",
+      "publicado_em": "2026-11-11",
+      "subido_em": "2026-11-08"
     },
     {
       "slug": "como-configurar-celular-para-idosos",
@@ -1034,9 +1040,12 @@
       "excerpt": "Letra maior, tela simples, emergência e proteção contra golpes: 8 ajustes no Android e no iPhone antes de entregar o celular aos seus pais.",
       "read_time": "7 min",
       "keyword": "celular para idosos",
-      "status": "aguardando-revisao",
+      "status": "publicado",
       "ordem": 77,
-      "criado_em": "2026-10-31"
+      "criado_em": "2026-10-31",
+      "aprovado_em": "2026-11-02",
+      "publicado_em": "2026-11-12",
+      "subido_em": "2026-11-08"
     },
     {
       "slug": "carro-voador-embraer-eve-quando-chega",
@@ -1047,9 +1056,12 @@
       "excerpt": "O eVTOL da Embraer já voa sem piloto e fez o primeiro voo de transição em agosto, mas a certificação foi para 2028. Veja o calendário e por que atrasa.",
       "read_time": "6 min",
       "keyword": "carro voador embraer",
-      "status": "aguardando-revisao",
+      "status": "publicado",
       "ordem": 78,
-      "criado_em": "2026-10-31"
+      "criado_em": "2026-10-31",
+      "aprovado_em": "2026-11-02",
+      "publicado_em": "2026-11-13",
+      "subido_em": "2026-11-08"
     },
     {
       "slug": "6g-no-brasil-quando-chega",
@@ -1060,9 +1072,12 @@
       "excerpt": "O 6G só deve chegar por volta de 2030, mas a Anatel já discute a faixa de 6 GHz e um leilão em 2028. Veja o calendário e se precisa trocar de celular.",
       "read_time": "5 min",
       "keyword": "6g no brasil",
-      "status": "aguardando-revisao",
+      "status": "publicado",
       "ordem": 79,
-      "criado_em": "2026-10-31"
+      "criado_em": "2026-10-31",
+      "aprovado_em": "2026-11-02",
+      "publicado_em": "2026-11-16",
+      "subido_em": "2026-11-08"
     }
   ]
 }
