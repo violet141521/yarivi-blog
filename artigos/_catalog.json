@@ -2,6 +2,66 @@
   "_comment": "Catálogo de todos os artigos do Yarivi. Ordem importa: artigos com mesma data_pub aparecem na ordem deste array. Não edite manualmente — atualizado pela skill signal-publicador.",
   "articles": [
     {
+      "slug": "chatgpt-anuncios-brasil-o-que-muda",
+      "manchete": "O ChatGPT agora tem anúncios no Brasil — e as respostas, em tese, não mudam",
+      "categoria": "ai",
+      "emoji": "📢",
+      "grad": "g1",
+      "excerpt": "ChatGPT tem anúncios no Brasil desde 4/8/2026 (planos gratuito e Go). Veja quem não vê, o que muda na privacidade e como desligar a personalização.",
+      "read_time": "5 min",
+      "data_pub": "2026-11-23",
+      "img": "/img/chatgpt-anuncios-brasil-o-que-muda.webp",
+      "thumb": "/img/thumb/chatgpt-anuncios-brasil-o-que-muda.webp"
+    },
+    {
+      "slug": "linux-no-pc-antigo-qual-distribuicao-escolher",
+      "manchete": "Seu PC não roda o Windows 11? Talvez ele só precise de outro sistema",
+      "categoria": "sw",
+      "emoji": "🐧",
+      "grad": "g4",
+      "excerpt": "Linux Mint Xfce e Zorin OS Lite rodam a partir de 2 GB de RAM. Veja como escolher, testar sem apagar nada e o que não funciona no Linux antes de trocar.",
+      "read_time": "5 min",
+      "data_pub": "2026-11-20",
+      "img": "/img/linux-no-pc-antigo-qual-distribuicao-escolher.webp",
+      "thumb": "/img/thumb/linux-no-pc-antigo-qual-distribuicao-escolher.webp"
+    },
+    {
+      "slug": "atualizacao-de-celular-quantos-anos-cada-marca-da",
+      "manchete": "Na ficha técnica do celular, o número mais importante não é o da câmera",
+      "categoria": "mob",
+      "emoji": "📱",
+      "grad": "g5",
+      "excerpt": "Google, Samsung e Honor prometem até 7 anos de atualização; Apple, Motorola e Xiaomi variam. Veja a tabela por marca e como conferir antes de comprar.",
+      "read_time": "6 min",
+      "data_pub": "2026-11-19",
+      "img": "/img/atualizacao-de-celular-quantos-anos-cada-marca-da.webp",
+      "thumb": "/img/thumb/atualizacao-de-celular-quantos-anos-cada-marca-da.webp"
+    },
+    {
+      "slug": "windows-10-esu-atualizacoes-ate-2027-como-ativar",
+      "manchete": "O Windows 10 \"morreu\" em 2025, mas seu PC pode ficar protegido até outubro de 2027",
+      "categoria": "sw",
+      "emoji": "🪟",
+      "grad": "g4",
+      "excerpt": "O Windows 10 recebe correções de segurança até 12/10/2027 pelo ESU. Veja quem pode se inscrever, como ativar de graça e o que o programa não resolve.",
+      "read_time": "5 min",
+      "data_pub": "2026-11-18",
+      "img": "/img/windows-10-esu-atualizacoes-ate-2027-como-ativar.webp",
+      "thumb": "/img/thumb/windows-10-esu-atualizacoes-ate-2027-como-ativar.webp"
+    },
+    {
+      "slug": "golpes-black-friday-eletronicos-como-evitar",
+      "manchete": "O golpe mais comum da Black Friday é uma loja que nunca existiu",
+      "categoria": "sec",
+      "emoji": "🛒",
+      "grad": "g3",
+      "excerpt": "Black Friday 2026 é em 27/11. Veja como identificar loja falsa, escolher o pagamento, conferir o selo da Anatel e usar seu direito de desistir da compra.",
+      "read_time": "6 min",
+      "data_pub": "2026-11-17",
+      "img": "/img/golpes-black-friday-eletronicos-como-evitar.webp",
+      "thumb": "/img/thumb/golpes-black-friday-eletronicos-como-evitar.webp"
+    },
+    {
       "slug": "6g-no-brasil-quando-chega",
       "manchete": "O 6G só deve chegar por volta de 2030 — mas o leilão dele já está em discussão",
       "categoria": "fut",
@@ -11,7 +71,7 @@
       "read_time": "5 min",
       "data_pub": "2026-11-16",
       "img": "/img/6g-no-brasil-quando-chega.webp",
-      "thumb": "/img/6g-no-brasil-quando-chega.webp"
+      "thumb": "/img/thumb/6g-no-brasil-quando-chega.webp"
     },
     {
       "slug": "carro-voador-embraer-eve-quando-chega",
@@ -23,7 +83,7 @@
       "read_time": "6 min",
       "data_pub": "2026-11-13",
       "img": "/img/carro-voador-embraer-eve-quando-chega.webp",
-      "thumb": "/img/carro-voador-embraer-eve-quando-chega.webp"
+      "thumb": "/img/thumb/carro-voador-embraer-eve-quando-chega.webp"
     },
     {
       "slug": "como-configurar-celular-para-idosos",
@@ -35,7 +95,7 @@
       "read_time": "7 min",
       "data_pub": "2026-11-12",
       "img": "/img/como-configurar-celular-para-idosos.webp",
-      "thumb": "/img/como-configurar-celular-para-idosos.webp"
+      "thumb": "/img/thumb/como-configurar-celular-para-idosos.webp"
     },
     {
       "slug": "monitor-144hz-ou-240hz-ips-ou-oled",
@@ -47,7 +107,7 @@
       "read_time": "7 min",
       "data_pub": "2026-11-11",
       "img": "/img/monitor-144hz-ou-240hz-ips-ou-oled.webp",
-      "thumb": "/img/monitor-144hz-ou-240hz-ips-ou-oled.webp"
+      "thumb": "/img/thumb/monitor-144hz-ou-240hz-ips-ou-oled.webp"
     },
     {
       "slug": "backup-regra-3-2-1-como-fazer",
@@ -59,7 +119,7 @@
       "read_time": "6 min",
       "data_pub": "2026-11-10",
       "img": "/img/backup-regra-3-2-1-como-fazer.webp",
-      "thumb": "/img/backup-regra-3-2-1-como-fazer.webp"
+      "thumb": "/img/thumb/backup-regra-3-2-1-como-fazer.webp"
     },
     {
       "slug": "notebook-black-friday-o-que-olhar-2026",
