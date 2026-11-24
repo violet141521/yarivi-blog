@@ -30,7 +30,7 @@ Dona: Mi (violet141521@gmail.com).
 
 1. **Pauta**: skill `signal-seo-writer` — pesquisa (via skill `pesquisa`, fallback WebSearch), 10 temas, usuária escolhe 5
 2. **Produção**: os 5 artigos viram rascunhos em `rascunhos/` com status `aguardando-revisao` na fila — **nunca publicar direto**
-2.5. **QA automático** (executar imediatamente após escrever cada artigo): skill `validador-text` gera `rascunhos/qa-[slug].md` com antiplágio, links quebrados e checklist SEO
+2.5. **QA automático com nota mínima 90** (executar imediatamente após escrever cada artigo): skill `validador-text` (v2) calcula nota 0–100 (dados e fontes 25, originalidade 15, SEO 15, links 10, estilo 20, utilidade 15) e gera `rascunhos/qa-[slug].md`. **Aprovado = nota ≥ 90 e zero bloqueantes.** Abaixo disso: corrigir o artigo, refazer o QA e repetir até passar — nenhum rascunho é apresentado à usuária com nota < 90 (regra permanente de 14/11/2026). O relatório registra a nota de cada rodada e as correções aplicadas
 2.6. **Auditoria de dados + correção automática** (executar imediatamente após o QA, antes de apresentar à usuária — obrigatório): verificar **todos** os números, percentuais, datas e estatísticas no texto. Para cada dado:
    - Se tiver fonte verificável (WebSearch confirma): manter e citar a fonte na seção `art-sources`
    - Se não tiver fonte verificável: **remover do texto imediatamente e reescrever a frase** para manter coerência — nunca inventar, aproximar ou deixar o dado pendente para a usuária decidir
@@ -91,6 +91,7 @@ A home atualiza em até 1 minuto após a publicação (cache de 60s).
 - Nada vai ao ar sem aprovação humana (status `aprovado` na fila)
 - Estilo Yarivi: frases curtas, analogia antes de jargão, dados com fonte nomeada, ação concreta no final
 - **Regra de dados**: nenhum número, percentual, data ou estatística vai ao ar sem fonte verificada. A auditoria acontece imediatamente após escrever — se não há fonte, o dado é removido e a frase reescrita automaticamente antes de qualquer apresentação à usuária. Nunca manter dado inventado, aproximado ou sem fonte
+- **Regra de recência**: fontes de no máximo 1 ano antes da data em que o artigo é escrito. Fonte mais antiga só para fato histórico fixo (data de lei, lançamento, evento), após confirmar que não há informação mais nova. Na auditoria (passo 2.6), dado com fonte de mais de 1 ano sem essa justificativa é tratado como dado sem fonte: remover e reescrever a frase
 - SEO: `<title>` keyword-first ≤60 chars ≠ H1 (manchete com gancho); FAQ com schema FAQPage; 1-3 links internos
 - Checklist completo: `signal-seo-writer/references/seo-checklist.md`
 - Ao subir o lote, a skill `signal-publicador` data cada artigo (meta `article:published_time`, JSON-LD `datePublished`/`dateModified`, byline e `data_pub` no catálogo) com **o dia útil em que ele vai ao ar** — 1 artigo por dia, nunca a data de quando foi escrito

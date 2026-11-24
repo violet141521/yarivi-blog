@@ -123,3 +123,19 @@ Fluxo atualizado:
 ```
 
 A skill `signal-publicador` pode futuramente checar se `rascunhos/qa-[slug].md` existe antes de publicar (guarda-costas extra — opcional).
+
+---
+
+## Revisão v2 — 14/11/2026
+
+Substitui o score "100 − 15/🔴 − 5/🟡" e o limite 70 de R1.
+
+- **R1 (v2)** Nota 0–100 por rubrica ponderada: Dados e fontes 25 · Originalidade 15 · SEO técnico 15 · Links 10 · Estilo Yarivi 20 · Utilidade ao leitor 15. Aprovado somente com **nota ≥ 90 e zero 🔴**.
+- **R1.3** Nota < 90 ou 🔴 ⇒ o artigo é corrigido e o QA refeito (loop), sem limite fixo de rodadas; após 4 rodadas sem passar, parar e relatar o impedimento. O relatório mantém histórico (nota e correções por rodada).
+- **R2 (v2)** Antiplágio com as 5 frases sempre; 2 delas com dado/número. 0 matches = 15 pts; cada match −6; 3+ = 🔴.
+- **R3 (v2)** Se não houver rede, links pendentes são verificados via WebFetch e informados em `links_verificados`. Link interno para artigo com `data_pub` posterior = 🔴.
+- **R6 — Dados e fontes** (novo): ≥3 fontes; fonte com data no rótulo e ≤1 ano (mais antiga = tratada como dado sem fonte); parágrafo com número deve atribuir à fonte; dados sem fonte e citações sem origem remanescentes descontam 5 pts cada; dados removidos entram no relatório.
+- **R7 — Estilo** (novo): média de palavras por frase ≤20; ≤10% das frases >30; jargão explicado perto da 1ª ocorrência; ação concreta no final; lead ≤60 palavras.
+- **R8 — Utilidade** (novo): lead entrega a resposta; ≥4 H2; FAQ ≥3 perguntas; imagem com alt ou prompt `img-[slug].md`; 900–2.200 palavras; sem canibalização (mesma palavra-chave principal ou título >60% parecido com outro artigo).
+- **R5 (v2)**: acrescenta palavra-chave no title, na meta description, nas 100 primeiras palavras e em algum H2.
+- Ajustes manuais de julgamento editorial entram em `ajustes` com pontos e motivo, sempre registrados no relatório.

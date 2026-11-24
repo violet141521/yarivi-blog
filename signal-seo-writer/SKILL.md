@@ -105,6 +105,14 @@ Agora sim o conteúdo. 3 buscas no mesmo turno guiadas pelo esqueleto:
 
 Extraia 3-5 fatos com números e fontes Tier A/B (institutos, empresas, portais especializados).
 
+**Regra de recência das fontes (pedido da Mi, 02/11/2026):** use só fontes publicadas nos
+**últimos 12 meses** (contando da data em que o artigo é escrito). Fonte mais antiga só entra
+para fato histórico que não muda (data de uma lei, data e preço de lançamento de um produto,
+ano de um evento) — e, mesmo assim, só depois de buscar e confirmar que não há informação mais
+nova sobre aquilo. Números de uso, mercado, preço atual, adoção e previsões precisam sempre de
+fonte com até 1 ano. Se o único dado disponível for mais velho, remova o dado e reescreva a
+frase (mesma regra da auditoria de dados). Na seção `art-sources`, mostre a data de cada fonte.
+
 ## PASSO 4 — Escrever o artigo
 
 Use `references/article-template.html` substituindo os `{{PLACEHOLDERS}}` e os componentes
@@ -193,6 +201,17 @@ agenda a publicação. Os prompts de imagem estão em `rascunhos/img-*.md`, pron
 num gerador de imagem."
 
 ---
+
+## PASSO 5.5 — QA com nota mínima 90 (obrigatório, antes de apresentar)
+
+Depois de salvar cada rascunho, chame a skill `validador-text` (v2). O artigo só é apresentado à usuária com **nota ≥ 90 e zero bloqueantes**. Se ficar abaixo: corrija o HTML, refaça o QA e repita até passar.
+
+Para chegar à nota já na primeira rodada, escreva assim:
+- Coloque a **data no rótulo de cada fonte** (ex.: `Canaltech — título (22/10/2026)`), com fontes de no máximo 1 ano e pelo menos 3.
+- Atribua todo número à fonte no próprio parágrafo («segundo a Anatel…»).
+- Lead com até 60 palavras e a palavra-chave nas primeiras 100 palavras; palavra-chave no `<title>`, na meta description e em algum H2.
+- Frases curtas (média até 20 palavras; evite passar de 30), jargão explicado na 1ª ocorrência, FAQ com 3+ perguntas e ação concreta no final.
+- Antes de escrever, confira se já existe artigo com a mesma palavra-chave principal (canibalização).
 
 ## Referência rápida de categorias
 

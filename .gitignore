@@ -8,3 +8,6 @@ Thumbs.db
 
 # Node (caso futuro)
 node_modules/
+
+# Cache do Python (scripts do validador-text)
+__pycache__/
