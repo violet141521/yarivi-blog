@@ -2,10 +2,14 @@
 
 > As principais notícias de IA, hardware, cibersegurança, software e mobile explicadas em português brasileiro — sem jargão, sem clickbait. Novo artigo todo dia útil.
 
-Yarivi é um veículo de jornalismo tecnológico em PT-BR, fundado em 2024 e com foco no público brasileiro. Cobre inteligência artificial, celulares, segurança digital, hardware, software e tendências de tecnologia, sempre com linguagem acessível.
+Yarivi é um veículo de jornalismo tecnológico em PT-BR, lançado em agosto de 2026 e com foco no público brasileiro. Cobre inteligência artificial, celulares, segurança digital, hardware, software e tendências de tecnologia, sempre com linguagem acessível.
 
 ## Inteligência Artificial
 
+- [O ChatGPT agora tem anúncios no Brasil — e as respostas, em tese, não mudam](https://yarivi.com/artigos/chatgpt-anuncios-brasil-o-que-muda): ChatGPT tem anúncios no Brasil desde 4/8/2026 (planos gratuito e Go). Veja quem não vê, o que muda na privacidade e como desligar a personalização.
+- [A IA recebeu uma regra, entendeu a regra — e decidiu contorná-la](https://yarivi.com/artigos/ia-desalinhada-o-que-e-2026): Modelos de IA já esconderam erros, driblaram bloqueios e até chantagearam em testes. Entenda o que é desalinhamento, o que de fato aconteceu e por que não é ficção científica.
+- [O Google lançou sua IA mais poderosa — e quase ninguém pode usar](https://yarivi.com/artigos/gemini-4-argon-o-que-e-2026): O Google revelou o Gemini 4 Argon, seu modelo de IA mais avançado — mas só especialistas em segurança podem usar. O que ele faz, quanto custa e como se compara ao GPT-6 Astra e ao Claude.
+- [Desde 2021, a LGPD só multou uma empresa — isso está prestes a mudar](https://yarivi.com/artigos/lgpd-ia-regulacao-brasil-2026): A LGPD já regula o uso de IA com dados pessoais no Brasil, mesmo sem o Marco Legal da IA aprovado — e a ANPD só multou uma empresa desde 2021. Veja o que muda para o seu negócio.
 - [ChatGPT custa caro — mas você pode ter a sua IA de graça](https://yarivi.com/artigos/ia-open-source-llama-mistral-2026): ChatGPT custa caro. Veja como rodar Llama, Mistral ou Qwen de graça no seu PC — passo a passo sem programar, com dados reais de custo e hardware.
 - [Tutor de IA sai de graça. O professor particular custa R$ 47 a hora](https://yarivi.com/artigos/tutor-ia-homeschooling-vs-reforco-2026): Tutor de IA custa de graça a poucos dólares por mês; reforço particular presencial sai por cerca de R$ 47 a hora no Brasil. Compare o que cada opção entrega — e quando vale combinar as duas.
 - [Cada resposta do ChatGPT consome cerca de 10 vezes mais energia que uma busca no Google](https://yarivi.com/artigos/ia-consumo-energia-impacto-ambiental-2026): A IA generativa não é só uma revolução de produtividade — é uma revolução de consumo de energia. Data centers crescem em ritmo acelerado e o custo ambiental começa a aparecer.
@@ -20,6 +24,10 @@ Yarivi é um veículo de jornalismo tecnológico em PT-BR, fundado em 2024 e com
 
 ## Segurança digital
 
+- [O golpe mais comum da Black Friday é uma loja que nunca existiu](https://yarivi.com/artigos/golpes-black-friday-eletronicos-como-evitar): Black Friday 2026 é em 27/11. Veja como identificar loja falsa, escolher o pagamento, conferir o selo da Anatel e usar seu direito de desistir da compra.
+- [Suas fotos vão sobreviver a você. A questão é se alguém vai conseguir abri-las](https://yarivi.com/artigos/heranca-digital-contas-apos-morte-2026): Fotos, e-mails e arquivos podem sumir ou ficar trancados para sempre. Veja o que Google, Apple, Facebook e Microsoft fazem com suas contas e como deixar tudo pronto.
+- [A senha que você não precisa decorar — e que nenhum site falso consegue roubar](https://yarivi.com/artigos/passkey-o-que-e-como-ativar-2026): A passkey troca a senha pela digital ou rosto e deixa o phishing sem o que roubar. Como funciona e o passo a passo para ativar no Google e no WhatsApp.
+- [As novas regras do Pix já foram aprovadas — mas quase tudo só chega em 2027](https://yarivi.com/artigos/novidades-do-pix-2026-o-que-muda): Boleto com QR Code do Pix, Pix Automático na conta-salário e aviso obrigatório de marcação de fraude: o que a Resolução BCB 587 muda e as datas reais (spoiler: 2027).
 - [Seu banco digital guarda dinheiro melhor que o do seu avô](https://yarivi.com/artigos/banco-digital-vs-tradicional-2026): FGC garante até R$ 250 mil por CPF, igual em banco digital e tradicional. Veja como o caso Banco Master provou isso na prática — e por que golpe, não quebra de banco, é o risco que mais importa hoje.
 - [Seu cérebro não é fraco — o TikTok é que foi feito pra viciar](https://yarivi.com/artigos/vicio-redes-sociais-algoritmo-dopamina-2026): Vício em redes sociais não é falta de força de vontade — é recompensa variável e dopamina por design. Entenda como o algoritmo funciona e como reduzir o efeito.
 - [24 milhões de brasileiros já caíram em golpes pelo Pix](https://yarivi.com/artigos/golpes-app-banco-pix-como-se-proteger-2026): Golpe do falso suporte, Pix agendado, engenharia social com IA: os ataques a apps bancários evoluíram em 2026. Entenda como cada golpe funciona e o que fazer para não cair.
@@ -33,6 +41,13 @@ Yarivi é um veículo de jornalismo tecnológico em PT-BR, fundado em 2024 e com
 
 ## Celulares e mobile
 
+- [O celular que custou R$ 8.999 em março saiu por R$ 4.499 em outubro](https://yarivi.com/artigos/celular-r-10-mil-vale-a-pena-2026): Celular de R$ 10 mil vale a pena? Veja preços do Signature 27, Galaxy S26 Ultra e iPhone, quanto eles caem e quando é melhor esperar.
+- [Na ficha técnica do celular, o número mais importante não é o da câmera](https://yarivi.com/artigos/atualizacao-de-celular-quantos-anos-cada-marca-da): Google, Samsung e Honor prometem até 7 anos de atualização; Apple, Motorola e Xiaomi variam. Veja a tabela por marca e como conferir antes de comprar.
+- [Antes de entregar o celular aos seus pais, faça estes 8 ajustes](https://yarivi.com/artigos/como-configurar-celular-para-idosos): Letra maior, tela simples, emergência e proteção contra golpes: 8 ajustes no Android e no iPhone antes de entregar o celular aos seus pais.
+- [O Galaxy S25 custava R$ 7.499 no lançamento. Em julho de 2026, já saía por menos da metade](https://yarivi.com/artigos/celular-black-friday-lancamento-ou-ano-passado-2026): Na Black Friday de 27/11, o top de linha do ano passado costuma ser a melhor compra. Veja quanto o preço cai, quando o lançamento compensa e como evitar desconto falso.
+- [Seu celular está quente demais? Nunca coloque na geladeira — faça isto](https://yarivi.com/artigos/celular-esquentando-o-que-fazer-2026): Celular esquentando muito? As causas mais comuns, como esfriar do jeito certo, por que a geladeira é má ideia e os sinais de que é caso de assistência técnica.
+- [Deixar o celular carregando a noite toda não é o vilão — o problema é outro](https://yarivi.com/artigos/carregar-celular-a-noite-estraga-bateria-2026): Deixar o celular carregando a noite toda estraga a bateria? Veja os mitos, as verdades e os ajustes de iPhone e Samsung que fazem a bateria durar mais.
+- [Seu celular pode virar uma antena de satélite — sem chip, sem torre](https://yarivi.com/artigos/starlink-direto-no-celular-brasil-2026): A Anatel liberou o Starlink pra funcionar direto no celular, sem chip especial. Entenda como funciona, quando chega e quais aparelhos vão aceitar.
 - [Seu iPhone de 2019 ainda vai rodar o iOS 27 — mas o SE de 2016 não](https://yarivi.com/artigos/ios-27-novidades-quais-iphones-2026): O iOS 27 chegou em setembro de 2026 com Siri renovada e Apple Intelligence expandida. Veja se seu iPhone recebe a atualização e quais são as novidades.
 - [O Android ganhou 5 poderes novos em setembro — mas o mais ambicioso pede 12 GB de RAM pra funcionar](https://yarivi.com/artigos/atualizacao-ia-android-setembro-2026): O Android ganhou 5 recursos novos de IA em setembro de 2026 — mas o mais avançado, o Gemini Intelligence, exige pelo menos 12 GB de RAM. Veja o que muda.
 - [Tem um celular na gaveta há dois anos? Você não está sozinho](https://yarivi.com/artigos/o-que-fazer-celular-velho-descarte-2026): O Brasil é o 5º maior gerador de lixo eletrônico do mundo e descarta menos de 5% corretamente. Saiba como vender, reutilizar ou descartar seu celular velho de forma segura.
@@ -43,6 +58,12 @@ Yarivi é um veículo de jornalismo tecnológico em PT-BR, fundado em 2024 e com
 
 ## Futuro e tendências
 
+- [O 6G só deve chegar por volta de 2030 — mas o leilão dele já está em discussão](https://yarivi.com/artigos/6g-no-brasil-quando-chega): O 6G só deve chegar por volta de 2030, mas a Anatel já discute a faixa de 6 GHz e um leilão em 2028. Veja o calendário e se precisa trocar de celular.
+- [O carro voador da Embraer já voa — mas o calendário escorregou duas vezes](https://yarivi.com/artigos/carro-voador-embraer-eve-quando-chega): O eVTOL da Embraer já voa sem piloto e fez o primeiro voo de transição em agosto, mas a certificação foi para 2028. Veja o calendário e por que atrasa.
+- [Mais de 20 pessoas já usam o computador só com o pensamento. Agora vem a parte difícil](https://yarivi.com/artigos/neuralink-o-que-e-chip-no-cerebro-2026): O chip da Neuralink já deixa pessoas com paralisia controlarem o computador pelo pensamento. Veja como funciona, quem já usa e o que ainda é promessa.
+- [A empresa mais valiosa do mundo multiplicou por 13 em três anos. Isso é bolha?](https://yarivi.com/artigos/bolha-da-inteligencia-artificial-2026): Nvidia saltou de US$ 300 bi para US$ 4 tri em 3 anos e 54% dos gestores globais já falam em bolha. Entenda os sinais e o que muda pra você.
+- [Seu carro já dirige quase sozinho — mas a lei ainda proíbe soltar o volante no Brasil](https://yarivi.com/artigos/carro-autonomo-brasil-2026): Comissão da Câmara aprovou as primeiras regras pra carros autônomos no Brasil. Entenda os níveis de autonomia e quem paga a conta em caso de acidente.
+- [Trump decidiu que “inteligência artificial” já não é grande o suficiente](https://yarivi.com/artigos/trump-superinteligencia-ia-czar-2026): Trump anunciou uma 'Força de IA', promete nomear um 'czar' e convenceu Xi Jinping a trocar 'IA' por 'superinteligência'. Entenda o que está por trás disso.
 - [50 milhões de brasileiros já usam IA no dia a dia — mas só 16% dos mais pobres chegaram lá](https://yarivi.com/artigos/tecnologia-2027-o-que-muda-brasil): 50 milhões de brasileiros já usam IA, o 5G chega às cidades menores e o Pix cresce ainda mais. Veja o que deve mudar na tecnologia do brasileiro até 2027.
 - [Carro elétrico ficou mais caro em 2026 — mas o custo de rodar caiu](https://yarivi.com/artigos/carro-eletrico-brasil-2026-vale-a-pena): Impostos de importação subiram progressivamente, mas o custo por km rodado caiu e a infraestrutura cresceu. Análise completa para decidir se vale a pena comprar elétrico no Brasil agora.
 - [Esse anel pesa 3 gramas e sabe mais sobre o seu sono do que você](https://yarivi.com/artigos/anel-inteligente-wearable-saude-2026): Oura Ring Gen 4 e Samsung Galaxy Ring monitoram sono, frequência cardíaca e temperatura sem tela e com até 7 dias de bateria. O mercado de wearables de saúde vale US$ 2 bi e cresce 30% ao ano.
@@ -52,6 +73,14 @@ Yarivi é um veículo de jornalismo tecnológico em PT-BR, fundado em 2024 e com
 
 ## Software
 
+- [Seu PC não roda o Windows 11? Talvez ele só precise de outro sistema](https://yarivi.com/artigos/linux-no-pc-antigo-qual-distribuicao-escolher): Linux Mint Xfce e Zorin OS Lite rodam a partir de 2 GB de RAM. Veja como escolher, testar sem apagar nada e o que não funciona no Linux antes de trocar.
+- [O Windows 10 "morreu" em 2025, mas seu PC pode ficar protegido até outubro de 2027](https://yarivi.com/artigos/windows-10-esu-atualizacoes-ate-2027-como-ativar): O Windows 10 recebe correções de segurança até 12/10/2027 pelo ESU. Veja quem pode se inscrever, como ativar de graça e o que o programa não resolve.
+- [Três números decidem se você recupera suas fotos ou as perde para sempre](https://yarivi.com/artigos/backup-regra-3-2-1-como-fazer): Três cópias, dois tipos de mídia e uma fora de casa: entenda a regra 3-2-1, por que Drive e iCloud não bastam e como montar seu backup hoje.
+- [Um único "Permitir" pode entregar a tela inteira do seu celular a um golpista](https://yarivi.com/artigos/permissoes-de-aplicativos-o-que-liberar-2026): Câmera, microfone, localização e acessibilidade: saiba quais permissões liberar, quais negar e como revisar tudo no Android e no iPhone em poucos minutos.
+- [Seu Windows 11 pode estar sem atualizações de segurança desde 13 de outubro — e conferir leva um minuto](https://yarivi.com/artigos/windows-11-24h2-fim-do-suporte-2026): O Windows 11 24H2 Home e Pro parou de receber correções em 13 de outubro. Veja como conferir sua versão e atualizar de graça para o 26H2.
+- [O Office "de graça" pode sair pelo preço de todas as suas senhas](https://yarivi.com/artigos/programa-crackeado-infostealer-perigo-2026): Crack, ativador e jogo pirata são a principal porta de entrada dos infostealers, vírus que roubam senhas e sessões em segundos. Veja como se proteger.
+- [Seu Galaxy vai ganhar um assistente que vigia os outros assistentes](https://yarivi.com/artigos/one-ui-9-quais-celulares-recebem-2026): A One UI 9, baseada no Android 17, começou a chegar aos Galaxy no Brasil. Veja o cronograma, quem recebe e as novidades que valem testar primeiro.
+- [A Perplexity liberou de graça um navegador que faz compras e preenche formulários sozinho](https://yarivi.com/artigos/navegador-com-ia-vale-a-pena-2026): Comet, Atlas e Copilot prometem navegar, comprar e preencher formulários por você. Veja se vale trocar o Chrome em 2026 e os riscos envolvidos.
 - [Seu PC tira print da sua tela a cada 5 segundos — e você provavelmente não sabe](https://yarivi.com/artigos/windows-copilot-plus-recall-2026): O Windows Recall captura tudo que você faz no PC para uma busca futura por IA — tudo local, nada vai para a nuvem. Entenda o que é Copilot+, por que gera polêmica e como desativar.
 - [Um vice-diretor de escola criou um app em dois dias — sem escrever uma linha de código](https://yarivi.com/artigos/cursor-ai-copilot-programar-sem-codigo-2026): GitHub Copilot tem 4,7M assinantes; Cursor, Lovable e Bolt permitem criar apps sem programar. Guia prático para não-desenvolvedores sobre como a IA mudou o desenvolvimento em 2026.
 - [A Apple paga US$ 1 bilhão por ano para o Google virar seu assistente — e os apps nunca mais serão os mesmos](https://yarivi.com/artigos/agente-ia-substituindo-aplicativos-2026): Carl Pei (Nothing) disse que os apps vão acabar. A Apple paga US$ 1 bi/ano ao Google pelo Gemini. Entenda como o agente de IA está substituindo aplicativos em 2026.
@@ -59,6 +88,16 @@ Yarivi é um veículo de jornalismo tecnológico em PT-BR, fundado em 2024 e com
 
 ## Hardware
 
+- [Mais hertz sempre é melhor? A conta mostra onde o dinheiro deixa de render](https://yarivi.com/artigos/monitor-144hz-ou-240hz-ips-ou-oled): 144 Hz ou 240 Hz? IPS ou OLED? A conta do tempo por imagem mostra onde o dinheiro deixa de render, e o teste de burn-in desfaz o maior medo do OLED.
+- [O notebook em promoção pode estar mais barato porque veio com metade da memória](https://yarivi.com/artigos/notebook-black-friday-o-que-olhar-2026): Com a memória RAM cara em 2026, notebooks em oferta podem vir mais fracos. Veja as 5 especificações para checar antes de comprar na Black Friday.
+- [O problema do seu Wi-Fi pode não ser a internet — pode ser uma parede](https://yarivi.com/artigos/wi-fi-mesh-vale-a-pena-2026): Sinal caindo no quarto do fundo? Entenda a diferença entre mesh e repetidor, quando o mesh resolve e quando basta mudar o roteador de lugar.
+- [GTA 6 chega em 19 de novembro — mas quem joga no PC vai ter que esperar](https://yarivi.com/artigos/gta-6-requisitos-pc-console-2026): GTA 6 sai em 19 de novembro só para PS5 e Xbox Series X|S. Veja em quais aparelhos roda, como deve ficar o desempenho e o que se sabe da versão para PC.
+- [Seu notebook não está lento por causa da idade — está lento por causa de um disco que gira](https://yarivi.com/artigos/trocar-hd-por-ssd-vale-a-pena-2026): O disco que gira é o maior freio de um notebook antigo. Veja quanto um SSD acelera, qual tipo é compatível, como fazer a troca e como lidar com a alta dos preços.
+- [O notebook do Google agora roda os apps do seu celular — e não é mais um Chromebook barato](https://yarivi.com/artigos/googlebook-o-que-e-preco-brasil-2026): O Googlebook junta Chrome e apps de Android num notebook premium com Gemini embutido. Modelos, preços nos EUA, diferença para o Chromebook e se vale esperar no Brasil.
+- [A RX 9070 XT subiu quase R$ 1.000 em poucos meses — e a culpa é da IA](https://yarivi.com/artigos/placa-de-video-comprar-agora-ou-esperar-2026): Placas de vídeo ficaram até 24% mais caras no Brasil e a RTX 50 Super foi adiada pela crise da memória. Veja quando vale comprar e quando esperar.
+- [O processador com menos núcleos é o que ganha nos jogos — e o motivo é uma "bancada" de memória](https://yarivi.com/artigos/melhor-processador-para-jogos-ryzen-x3d-vs-intel-2026): Ryzen X3D ou Intel Core Ultra? Entenda por que o cache 3D domina nos jogos, onde a Intel vence e qual processador faz sentido para o seu PC em 2026.
+- [A lei contra a “obsolescência programada” já tem dois projetos andando no Congresso](https://yarivi.com/artigos/direito-ao-reparo-brasil-2026): Dois projetos de lei avançam no Congresso: um pra celular e notebook, outro pro seu carro. Veja o que já vale hoje e quando compensa consertar ou trocar.
+- [Um kit de 32 GB de memória RAM que custava US$ 80 agora custa US$ 439](https://yarivi.com/artigos/ram-cara-2026-por-que-notebook-pc): A memória RAM ficou até 5x mais cara em 2026 pela demanda de data centers de IA. Entenda por que isso aconteceu e se vale comprar PC agora.
 - [A TSMC está colocando 100 bilhões de transistores em algo menor que uma unha — e isso muda seu próximo celular](https://yarivi.com/artigos/chip-2nm-processador-2026): Os chips de 2nm da TSMC estão em produção em massa em 2026. AMD, Apple e Nvidia já estão na fila. Entenda o que +15% de desempenho e -30% de consumo significam para o seu próximo celular ou notebook.
 - [A guerra contra a tomada: as duas tecnologias que querem aposentar seu carregador](https://yarivi.com/artigos/bateria-estado-solido-celular-2026): Baterias sólidas de Toyota e Samsung dobram a autonomia; chips neuromórficos gastam até 1.000x menos energia. Entenda qual revolução chega primeiro ao seu bolso.
 - [A Nvidia quer transformar seu próximo notebook numa máquina de IA](https://yarivi.com/artigos/pc-com-ia-npu-vale-a-pena-2026): O RTX Spark, chip ARM da Nvidia com 1 petaflop de IA, chega no 2º semestre e muda a conta de quem vai comprar notebook. Veja quando a NPU vale a pena — e quando esperar.
@@ -66,9 +105,10 @@ Yarivi é um veículo de jornalismo tecnológico em PT-BR, fundado em 2024 e com
 ## Páginas
 
 - [Início](https://yarivi.com/): página inicial, com os artigos mais recentes e em destaque
-- [Contato](https://yarivi.com/contato.html): como falar com a redação do Yarivi
-- [Política de Privacidade](https://yarivi.com/privacidade.html)
-- [Termos de Uso](https://yarivi.com/termos.html)
+- [Sobre e política editorial](https://yarivi.com/sobre): quem faz o Yarivi, como os artigos são apurados e como pedir correções
+- [Contato](https://yarivi.com/contato): como falar com a redação do Yarivi
+- [Política de Privacidade](https://yarivi.com/privacidade)
+- [Termos de Uso](https://yarivi.com/termos)
 
 ## Optional
 

@@ -81,6 +81,7 @@ uma semanal que **só avisa** quantos aprovados há (nunca sobe sem o OK dela �
    ```
    python scripts/gerar-thumbs.py
    node scripts/gerar-sitemap.mjs
+   node scripts/gerar-llms.mjs
    node scripts/gerar-home-estatica.mjs
    ```
    `gerar-thumbs.py` cria as miniaturas `img/thumb/{slug}.webp` (640px) usadas nos cards da
@@ -89,6 +90,9 @@ uma semanal que **só avisa** quantos aprovados há (nunca sobe sem o OK dela �
    Artigo sem imagem continua com o emoji no card.
    Nunca escrever o `sitemap.xml` à mão. Em produção, `/sitemap.xml` é gerado pela Function
    a cada dia; o arquivo é só o fallback.
+   O mesmo vale para `llms.txt` e `ai-catalog.json` (o índice do site para agentes de IA):
+   em produção saem de `functions/llms.txt.js` e `functions/ai-catalog.json.js`, e o
+   `gerar-llms.mjs` só atualiza as cópias de fallback. Nunca editá-los à mão.
 8. Atualizar a fila: para cada artigo, `status` → `"publicado"`, `"publicado_em"` = data
    agendada (ISO) e `"subido_em"` = data de hoje (ISO).
 9. **Imagens:** para cada slug, se existir `img/{slug}.webp` (ou `.jpg`/`.png`), incluir no
