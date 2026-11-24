@@ -55,7 +55,9 @@
     <script>const t=localStorage.getItem('yarivi-theme');if(t)document.documentElement.setAttribute('data-theme',t);</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap"></noscript>
     <link rel="stylesheet" href="../style.css">
     <style>
         #progress-bar{position:fixed;top:64px;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),var(--teal));z-index:199;transition:width .1s linear}
@@ -109,6 +111,11 @@
             .nav-links{flex:0 0 auto;justify-content:flex-end;gap:1.5rem}
             .nav-link{font-size:.875rem;text-transform:none;letter-spacing:0;padding:.25rem 0}
         }
+        .art-related{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border)}
+        .art-related h4{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-3);margin-bottom:1rem}
+        .art-related ul{list-style:none;margin:0;display:flex;flex-direction:column;gap:0.75rem}
+        .art-related a{display:block;font-family:"Fraunces",serif;font-weight:700;font-size:1rem;color:var(--text-1);text-decoration:none;line-height:1.4;transition:color .2s}
+        .art-related a:hover{color:var(--accent)}
     </style>
 </head>
 <body>
@@ -236,6 +243,14 @@
                     <li><a href="https://canaltech.com.br/hardware/crise-da-memoria-ram-notebooks-ficam-ate-30-mais-caros-em-2026/" target="_blank" rel="noopener">Canaltech — Crise da memória RAM: notebooks ficam até 30% mais caros em 2026</a></li>
                     <li><a href="https://blog.kabum.com.br/memoria-ram-mais-cara-precos-ddr4-ddr5-subiram/" target="_blank" rel="noopener">Blog KaBuM! — Memória RAM mais cara: por que os preços da DDR4 e DDR5 subiram</a></li>
                     <li><a href="https://www.techtudo.com.br/noticias/2026/02/crise-no-mercado-ram-entenda-o-aumento-de-preco-nos-modulos-de-memoria-edinfoeletro.ghtml" target="_blank" rel="noopener">TechTudo — Crise no mercado RAM: entenda o aumento de preço</a></li>
+                </ul>
+            </div>
+            <div class="art-related">
+                <h4>Leia também</h4>
+                <ul>
+                    <li><a href="../artigos/chip-2nm-processador-2026">A TSMC está colocando 100 bilhões de transistores em algo menor que uma unha — e isso muda seu próximo celular</a></li>
+                    <li><a href="../artigos/bateria-estado-solido-celular-2026">A guerra contra a tomada: as duas tecnologias que querem aposentar seu carregador</a></li>
+                    <li><a href="../artigos/pc-com-ia-npu-vale-a-pena-2026">A Nvidia quer transformar seu próximo notebook numa máquina de IA</a></li>
                 </ul>
             </div>
         </article>
